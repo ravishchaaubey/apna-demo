@@ -115,13 +115,17 @@
   "shs4": 13,
   "vs5": 14,
   "shs5": 15,
-  "som": 16,
-  "somCore": 17,
-  "somSam": 18,
-  "somTam": 19,
-  "adj": 20,
-  "base": 23,
-  "baseSh": 24,
-  "mult": 25
+  "lsh1": 17,
+  "lsh2": 18,
+  "lsh3": 19,
+  "lsh4": 20,
+  "som": 21,
+  "somCore": 22,
+  "somSam": 23,
+  "somTam": 24,
+  "adj": 25,
+  "base": 28,
+  "baseSh": 29,
+  "mult": 30
  }
 }

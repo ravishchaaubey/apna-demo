@@ -139,6 +139,11 @@ def build():
     for sid, desc, key in layers:
         vals = [fc[s]["y3_" + key] if fc else 0 for s in ("Conservative", "Base", "Aggressive")]
         A.add(sid, desc, *vals, "₹ lakh ex-GST", "business_forecast.xlsx 3yr_Scenarios (linked by run_all.py)", "[EST] model output", FMT_1DP)
+    for sid, desc, key in [("SOM-LRN-TRI", "Y3 tricity-origin career learners (L2+L3 new students)", "lrn_tri"),
+                           ("SOM-LRN-REG", "Y3 out-of-town career learners (offline + satellite)", "lrn_reg"),
+                           ("SOM-LRN-HYB", "Y3 incremental destination/hybrid learners", "lrn_hyb")]:
+        vals = [fc[s]["y3_" + key] if fc else 0 for s in ("Conservative", "Base", "Aggressive")]
+        A.add(sid, desc, *vals, "learners", "business_forecast.xlsx 3yr_Scenarios (linked by run_all.py)", "[EST] model output", FMT_INT)
     A.add("SOM-BASELINE", "Illustrative PNA baseline revenue today (CA-01 x assumed fees; NOT actual revenue)",
           *[fc[s]["baseline_rev_lakh"] if fc else 0 for s in ("Conservative", "Base", "Aggressive")], "₹ lakh ex-GST",
           "business_forecast.xlsx Unit_Economics baseline (CA-01, CA-02)", "[HYP]", FMT_1DP)
@@ -414,6 +419,11 @@ def build():
     for sid, skey, lab in pairs:
         ol(r, f"{lab}: PNA Y3 revenue", lambda j, c, sid=sid: f"{a(sid, cs[j])}*{g(j)}/100", FMT_2DP, f"{sid} x (1+GST) / 100", "v" + skey); somrows.append(r); r += 1
         ol(r, f"{lab}: implied share of SAM component", lambda j, c, skey=skey: f"IFERROR({c}{O['v' + skey]}/{SN}{c}{S[skey]},0)", FMT_PCT, "", "sh" + skey, True); r += 1
+    section(wso, r, "Learner-share test (primary: PNA charges ~1.8x the tricity average fee, so revenue share overstates position)", 6); r += 1
+    ol(r, "PNA Y3 tricity career learners / tricity makeup-led learners (SAM-1)", lambda j, c: f"{a('SOM-LRN-TRI', cs[j])}/{SN}{c}{S['s1L']}", FMT_PCT, "Chandigarh agent: 10-30% is the plausible single-centre band", "lsh1", True); r += 1
+    ol(r, "PNA Y3 out-of-town career learners / net regional reachable learners (SAM-2)", lambda j, c: f"IFERROR({a('SOM-LRN-REG', cs[j])}/({SN}{c}{S['s2L']}+{TR}{c}{T['recOut']}),0)", FMT_PCT, "denominator incl. inflow already in tricity", "lsh2", True); r += 1
+    ol(r, "PNA Y3 hybrid learners / hybrid-willing learners (SAM-3)", lambda j, c: f"IFERROR({a('SOM-LRN-HYB', cs[j])}/{SN}{c}{S['s3L']},0)", FMT_PCT, "", "lsh3", True); r += 1
+    ol(r, "PNA Y3 tricity career learners / CA-05 tricity learners (BM test: flag if >10% without regional engine)", lambda j, c: f"{a('SOM-LRN-TRI', cs[j])}/{TR}{c}{T['ca05L']}", FMT_PCT, "", "lsh4"); r += 1
     ol(r, "SOM training total (₹ crore, quoted)", lambda j, c: "+".join(f"{c}{x}" for x in somrows), FMT_2DP, "", "som", True); r += 1
     ol(r, "SOM / SAM core (excl. online)", lambda j, c: f"({c}{O['som']}-{c}{O['vs5']})/{SN}{c}{S['core']}", FMT_PCT, "", "somCore", True); r += 1
     ol(r, "SOM / SAM total", lambda j, c: f"{c}{O['som']}/{SN}{c}{S['tot']}", FMT_PCT, "", "somSam"); r += 1
@@ -442,6 +452,7 @@ def build():
         ("  SAM-5 Online layer (North-reachable)", SN, S['s5'], FMT_2DP, ""),
         ("SOM  PNA Year-3 revenue (quoted, training only)", "SOM_PNA!", O['som'], FMT_2DP, "business_forecast 3yr_Scenarios (Cons/Base/Aggr)"),
         ("  SOM as % of SAM core (excl. online)", "SOM_PNA!", O['somCore'], FMT_PCT, ""),
+        ("  PNA learner share of tricity makeup-led learners (Y3)", "SOM_PNA!", O['lsh1'], FMT_PCT, "primary share test"),
         ("  SOM as % of TAM incl. online", "SOM_PNA!", O['somTam'], FMT_PCT2, ""),
         ("Today  PNA illustrative baseline (NOT actual revenue)", "SOM_PNA!", O['base'], FMT_2DP, "CA-01 x CA-02 assumptions"),
         ("Learners: India makeup-led paid learners", TA, TAM['tamL'], FMT_INT, ""),
@@ -493,7 +504,7 @@ def build():
         ("Low <= Base <= High for reconciled tricity revenue", f"=AND(Tricity_Recon!C{T['recR']}<=Tricity_Recon!D{T['recR']},Tricity_Recon!D{T['recR']}<=Tricity_Recon!E{T['recR']})", ""),
         ("SAM total < TAM incl. online (all cases)", f"=AND(SAM_North!C{S['tot']}<TAM_India!C{TAM['tamOnl']},SAM_North!D{S['tot']}<TAM_India!D{TAM['tamOnl']},SAM_North!E{S['tot']}<TAM_India!E{TAM['tamOnl']})", ""),
         ("SOM < SAM total (all cases)", f"=AND(SOM_PNA!C{O['som']}<SAM_North!C{S['tot']},SOM_PNA!D{O['som']}<SAM_North!D{S['tot']},SOM_PNA!E{O['som']}<SAM_North!E{S['tot']})", ""),
-        ("Base SOM share of tricity <= 25%", f"=SOM_PNA!D{O['shs1']}<=0.25", ""),
+        ("Base SOM learner share of tricity <= 25% (revenue share shown separately)", f"=SOM_PNA!D{O['lsh1']}<=0.25", ""),
         ("KPMG tricity intensity within 10% of affluence weight (cross-check)", f"=ABS(Tricity_Recon!D{T['kpmgT']}/Tricity_Recon!D{T['aff']}-1)<0.1", ""),
     ]
     for i, (lab, f, d) in enumerate(checks):

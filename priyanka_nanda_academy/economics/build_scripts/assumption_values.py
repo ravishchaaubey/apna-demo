@@ -28,12 +28,12 @@ a("A-ECO-24", "Fees quoted GST-inclusive? (1 = PNA absorbs GST from list fee; 0 
 
 # ---------------------------------------------------------------- prices (Growth agent ladder)
 a("A-GRO-04", "L1 Career Taster ticket", 999, 999, 999, "₹", "A-GRO-04 base (range ₹499-1,999); credited on enrolment", "[HYP]", R)
-a("A-GRO-05", "L2 Foundation fee (4 weeks, ~80 h)", 30000, 39900, 50000, "₹", "A-GRO-05", "[HYP]", R)
+a("A-GRO-05", "L2 Foundation fee (4 weeks, ~80 h)", 30000, 39900, 45000, "₹", "A-GRO-05 (Aggressive = midpoint of Growth base/high to avoid stacking upsides)", "[HYP]", R)
 a("A-GRO-06", "L3 Professional Bridal Programme list tuition (after proof gate; kit optional)", 75000, 90000, 120000, "₹", "A-GRO-06", "[HYP]", R)
 a("A-BM-02", "L3 realised fee after discounts/credits (after proof gate)", 65000, 80000, 100000, "₹", "A-BM-02 (list ₹90k-1.25L)", "[HYP]", R)
-a("A-GRO-07", "L4 masterclass average ticket", 5000, 10000, 18000, "₹", "A-GRO-07", "[HYP]", R)
-a("A-GRO-08", "L1-S5 self-makeup workshop price", 3000, 4999, 8000, "₹", "A-GRO-08", "[HYP]", R)
-a("A-GRO-09", "L5 Pro Circle membership", 4999, 9999, 14999, "₹/yr", "A-GRO-09; free year 1 for L3 graduates", "[HYP]", R)
+a("A-GRO-07", "L4 masterclass average ticket", 5000, 10000, 14000, "₹", "A-GRO-07 (Aggressive = midpoint of base ₹10k / high ₹18k)", "[HYP]", R)
+a("A-GRO-08", "L1-S5 self-makeup workshop price", 3000, 4999, 6500, "₹", "A-GRO-08 (Aggressive = midpoint)", "[HYP]", R)
+a("A-GRO-09", "L5 Pro Circle membership", 4999, 9999, 12499, "₹/yr", "A-GRO-09 (Aggressive = midpoint); free year 1 for L3 graduates", "[HYP]", R)
 a("A-ECO-17", "Hybrid Pro (online pre-work + 5-6 wk intensive) realised fee, at L3 parity", 65000, 80000, 100000, "₹", "Growth/BM: hybrid at L3 price parity; = A-BM-02", "[HYP]", R)
 
 # ---------------------------------------------------------------- funnel (A-GRO)
@@ -109,9 +109,18 @@ a("A-BM-04c", "Assistant salary", 20000, 18000, 16000, "₹/mo", "A-BM-04 ₹15-
 a("A-ECO-46", "Batch slots one trainer FTE can lead (morning + afternoon)", 2, 2, 2, "slots", "Judgement", "[HYP]", I)
 a("A-ECO-47", "Average cohort fill (students per L3/L2 batch; cap 12, A-BM-01)", 8, 10, 11, "students", "A-BM-01 cap 12", "[HYP]", D1)
 a("A-ECO-48", "L3 seat-months per student (12-week programme)", 3, 3, 3, "seat-months", "A-BM-03", "[EST]", D1)
-a("A-ECO-49", "Hybrid seat-months per student (5-6 week intensive)", 1.5, 1.5, 1.5, "seat-months", "A-BM-03", "[EST]", D1)
+a("A-ECO-49", "Destination/hybrid seat-months per student (4-wk online pre-work + 5-6-wk full-day intensive = Growth Fast-track)", 2.5, 2.5, 2.5, "seat-months", "A-BM-03; ~1.2 months x 2 slots", "[EST]", D1)
 
 # ---------------------------------------------------------------- timing switches used by funnel + forecast
-a("A-ECO-104", "Month the L3 price steps from CA-02 to A-GRO-06/A-BM-02 (proof gate: outcomes report + >=30 reviews)", 13, 7, 5, "month #",
-  "Growth agent §6: hold current fee for next two batches; Conservative does not clear the gate in Year 1", "[HYP]", I)
+a("A-ECO-104", "Month the L3 price steps from CA-02 to A-GRO-06/A-BM-02 (proof gate: outcomes report + >=30 reviews)", 10, 7, 5, "month #",
+  "Growth agent §6: hold current fee for next two batches (~6 months); Conservative clears the gate late (M10)", "[HYP]", I)
 a("A-ECO-105", "Month from which the <5-min speed-to-lead SLA is met (counsellor + CRM live)", 4, 3, 2, "month #", "BM gate G0 by M3", "[HYP]", I)
+
+# ---------------------------------------------------------------- Growth agent 12-month budget lines (growth_marketing_strategy.md §10)
+a("A-GRO-42", "Martech stack run-rate (BSP + CRM + telephony + tools)", 8000, 18000, 30000, "₹/mo", "A-GRO-42 as used in Growth §10 budget", "[EST]", R)
+a("A-GRO-45", "Admissions counsellor (FTE, incl. incentive)", 20000, 25000, 25000, "₹/mo", "Growth §10 budget usage (A-GRO-45 range ₹20-32k)", "[EST]", R)
+a("A-GRO-46", "Marketing/content team (B: exec ₹35k; A: manager ₹45k + creator ₹30k)", 0, 35000, 75000, "₹/mo", "Growth §10", "[EST]", R)
+a("A-GRO-47", "Freelance shooter/editor retainer", 12000, 20000, 25000, "₹/mo", "Growth §10", "[EST]", R)
+a("A-GRO-48", "Performance-marketing freelancer/agency", 0, 20000, 35000, "₹/mo", "Growth §10", "[EST]", R)
+a("A-GRO-49", "Website rebuild (one-off)", 50000, 120000, 250000, "₹", "Growth §10", "[EST]", R)
+a("A-GRO-50", "SEO content freelancer", 0, 15000, 25000, "₹/mo", "Growth §10", "[EST]", R)
