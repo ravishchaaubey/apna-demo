@@ -42,19 +42,20 @@ const slides = [
     kicker: `Executive summary · 1 of 2`,
     title: `Build one Chandigarh Flagship, prove it before pricing it, fund it in tranches`,
     subtitle: `One academy, proof first, price second, money released only against evidence.`,
+    found: `**What we found:** India's paid makeup tuition is ≈₹388 cr; the tricity's ₹3.27 cr is enough to start, not to finish; nobody publishes outcomes; PNA is invisible online (tool-limited).`,
     listHeading: `Six recommendations`,
     items: [
       { text: `Build one trainer-delivered, small-batch (≤12) bridal-specialist **Chandigarh Flagship** with a published course ladder, a counsellor-run WhatsApp funnel and published alumni outcomes.` },
       { text: `First rupee buys **proof and response discipline**, not advertising.` },
       { text: `Raise the flagship price **only after proof**, in two steps (₹75k list → ₹90k list; ₹80k realised).`, badges: [`hypothesis`], badgeNote: `planning prices` },
-      { text: `**Plan ₹25L, authorise ₹35L, be ready to lose ₹33L.**`, badges: [`estimate`], badgeNote: `model output` },
+      { text: `**Expect to need ₹25L, authorise ₹35L.** Worst case ≈₹36L if nobody acts (above the ceiling), ≈₹25L with the March cut, ≈₹33L if the post-move season fails.`, badges: [`estimate`], badgeNote: `model output` },
       { text: `Someone other than the founder runs it (**Admissions & Operations Lead**, month 1).` },
       { text: `Second engine: out-of-town **"Destination"** students, piloted Aug–Sep 2027, scaled only at gate G2.` },
     ],
     notDoing: {
       heading: `What we are NOT doing`,
       items: [`Beauty-services marketplace`, `Owned Delhi NCR or Ludhiana centre`, `Franchising now`, `National online course now`, `₹50L plan in Year 1`],
-      foot: `Each is rejected on numbers, not taste: see slide 10.`,
+      foot: `Each scores in the bottom half or fails on the numbers: see slide 10.`,
     },
     source: `recommended_strategy.md §1 (1–7), §4.4; economics §1A (peak cash ₹25.2L), §1A.2 (downside)`,
     note: `₹ lakh, Year 1 = Nov 2026–Oct 2027, planning case G1 at M9.`,
@@ -63,7 +64,7 @@ const slides = [
   {
     id: `3`, section: `Executive summary`, layout: `execNumbers`,
     kicker: `Executive summary · 2 of 2`,
-    title: `Year 1 breaks roughly even before her salary; Year 3 pays only if gates pass`,
+    title: `Year 1 loses ₹2.8L before her salary and needs ₹25L of cash; Year 3 pays only if gates pass`,
     subtitle: `₹60.6L revenue and −₹2.8L EBITDA in Year 1; ₹162.9L and ₹39.3L in Year 3 only with every gate passed; cash back in month 29.`,
     keyCaption: `Planning case (Staged_G1M9): G1 passed July 2027, all later gates passed`,
     kpis: [
@@ -76,8 +77,8 @@ const slides = [
     ],
     choiceHeading: `The founder's choice (decision D2)`,
     options: [
-      { name: `Boutique`, sub: `₹10L plan at Base rates`, text: `₹39.8L revenue, +₹10.8L EBITDA, peak cash ₹3.1L, ~52 career students, founder keeps teaching` },
-      { name: `Institution`, sub: `₹35L authorised`, text: `−₹12L after salary in Year 1, cash back Year 3, a bet on ₹90k pricing and out-of-town demand` },
+      { name: `Boutique`, sub: `₹10L plan at Base rates`, text: `₹39.8L revenue; Year-1 EBITDA +₹10.8L before her salary (+₹1.8L after); peak cash ₹3.1L; ~52 career students; founder keeps teaching` },
+      { name: `Institution`, sub: `₹35L authorised`, text: `₹60.6L revenue; Year-1 EBITDA −₹2.8L before her salary (−₹11.8L after); cash back M29 before salary, M40 after; a bet on ₹90k pricing and out-of-town demand` },
     ],
     source: `Economics §1A (planning table), §1A.3 (Year-3 decomposition), §1A.4 (Payback_IRR), §1B row 21 (₹10L plan); recommended_strategy.md §1 (8, 10)`,
     note: `₹ lakh ex-GST; Year 1 Nov 2026–Oct 2027; Year 3 FY to Oct 2029; planning case G1 at M9.`,
@@ -99,12 +100,12 @@ Detail: Year-1 EBITDA is −₹2.8L before founder salary and −₹11.8L after 
       { topic: `Volume`, badges: [`founder`], found: `<60 paying students a year; founder-stated, not yet verified.`, soWhat: `Too small for an outcomes record yet; proof has to be built cohort by cohort.` },
       { topic: `Fee`, badges: [`hypothesis`, `estimate`], found: `Not supplied; modelled at ₹60k incl. kit vs a local diploma band of ₹35–75k.`, soWhat: `Publish today's fee first; raise it only after proof.` },
       { topic: `Illustrative revenue`, badges: [`estimate`], found: `₹19.6L quoted (₹16.6L ex-GST), **not reported**. About 7% of tricity makeup-led learners, illustrative (3–12%).`, soWhat: `Everything downstream is a plan for a hypothetical academy until the data pull (D1).` },
-      { topic: `Digital footprint`, badges: [`verified`, `estimate`], found: `Website only; no rating, Instagram, reviews or listings found by our tools (Instagram/Maps/Justdial blocked; site refused our proxy). Maturity 3.0/10, provisional.`, soWhat: `Tool-limited finding: if a real following or rating exists, the proof timeline and price path move earlier.` },
+      { topic: `Digital footprint`, badges: [`claim`, `estimate`], found: `Tool-limited absence: website only; no rating, Instagram, reviews or listings found by our tools (Instagram/Maps/Justdial blocked; site refused our proxy). Maturity 3.0/10, provisional.`, soWhat: `Tool-limited finding: if a real following or rating exists, the proof timeline and price path move earlier.` },
       { topic: `Founder dependency`, badges: [`founder`], found: `Founder ≈100% of teaching, counselling and brand; wants to step back within 24–36 months. Investment appetite ₹10–50L.`, soWhat: `Hire an execution owner and a Lead Trainer; pace the step-back by evidence, not the calendar.` },
     ],
     callout: `Founder verifies the real footprint on day 0 (D9)`,
     source: `assumptions_register.md CA-01, CA-02, CA-03, CA-04, CA-07; chandigarh_competitors.md §2.1–2.4 (S-LC-01/02/07/51/56); economics §1 note (illustrative revenue), §1C #5 (today's share)`,
-    note: `₹ per year, 2026. Footprint: VERIFIED as an absence in our searches, tool-limited (CLAIM for site contents).`,
+    note: `₹ per year, 2026. Footprint: a tool-limited absence in our searches (CLAIM), not a verified fact; founder confirms on day 0 (D9).`,
     notes: `We never saw PNA's own records, and our tools could not open Instagram, Google Maps or Justdial, so the "invisible" finding is tool-limited and must be checked by phone and app before the first meeting. If the founder has a real following or a strong Google rating, the proof timeline and price path move earlier. Everything downstream is a plan for a hypothetical academy until the data pull (D1) lands.`,
   },
   {
@@ -129,7 +130,7 @@ Detail: Year-1 EBITDA is −₹2.8L before founder salary and −₹11.8L after 
       badges: [`estimate`],
     },
     som: {
-      code: `SOM · PNA Year 3`, title: `PNA Year-3 training revenue`, value: `₹1.88 cr`, range: `Range ₹0.41–3.83 cr, incl. GST, all gates passed`,
+      code: `SOM · PNA Year 3`, title: `PNA Year-3 training revenue`, value: `₹1.88 cr`, range: `Range ₹0.41–3.83 cr, incl. GST; Base reference bundle (planning case ≈₹1.85 cr)`,
       note: `22% of SAM core; 13% of tricity learners; ≈20% of the professional tier (reviewer estimate; model line pending).`,
       badges: [`estimate`],
     },
@@ -138,9 +139,9 @@ Detail: Year-1 EBITDA is −₹2.8L before founder salary and −₹11.8L after 
       { text: `**SAM-5 Online layer ₹7.9 cr** (0.75–54): deferred, out of plan`, tone: `muted` },
       { text: `**Today, illustrative, NOT actual: ≈₹0.20 cr**`, tone: `rose` },
     ],
-    context: `**Beauty & Salon sector ₹76,141 cr (2025P):** context only, ~200x the education TAM. Never the market for this plan.`,
+    context: `**Beauty & Salon sector ₹76,141 cr (2025P, a published projection):** context only, ~200x the education TAM. Never the market for this plan.`,
     source: `market_opportunity.md §2 rows 1–9, §3 tree; economics §1B rows 1–9 (sizing TAM_India, Tricity_Recon, SAM_North, SOM_PNA); S-IND-01`,
-    note: `₹ cr per year, run-rate, quoted fees (GST-inclusive); SOM = FY ending Oct 2029. SAM-5 low end 0.75 per economics §1B row 7.`,
+    note: `₹ cr per year, run-rate, quoted fees (GST-inclusive); SOM = FY ending Oct 2029. SOM and share tests use the Base reference bundle (Y3 ₹165.5L ex-GST); the planning case is ≈₹1.85 cr. SAM-5 low end 0.75 (economics §1B row 7).`,
     notes: `The 17x width of the India band comes from unobserved fee mix and the share of beauty learners who choose makeup, not from learner counts. The tricity number replaces the research file's ₹5.7 cr, which counted makeup and beauty-artistry learners together. The SOM is a plan output checked against the market for plausibility, not a share-of-market assumption.`,
   },
   {
@@ -151,7 +152,7 @@ Detail: Year-1 EBITDA is −₹2.8L before founder salary and −₹11.8L after 
     chart: { title: `Tricity makeup-led market, ₹ cr/yr`, unit: `≈730 learners at Base (484–879)`, categories: [`Low`, `Base`, `High`], values: [1.45, 3.27, 5.28] },
     take: {
       head: `One-centre take at 15–25% share ≈ ₹0.5–0.8 cr`,
-      text: `By Year 3 the plan reaches 13% of all tricity learners and ≈20% of the professional tier (reviewer estimate; model line pending), at ≈1.8x the tricity average fee: H1 binds unless out-of-town students arrive.`,
+      text: `By Year 3 the Base bundle reaches 13% of all tricity learners and ≈20% of the professional tier (reviewer estimate; model line pending), at ≈1.8x the tricity average fee: H1 binds unless out-of-town students arrive.`,
     },
     hubHeading: `Destination hub: plausible, unproven; test it for almost nothing`,
     forItems: [
@@ -167,7 +168,7 @@ Detail: Year-1 EBITDA is −₹2.8L before founder salary and −₹11.8L after 
     ],
     seats: { label: `Studio seats, planning case 2027: share of demand that fits`, items: [[`May`, `78%`], [`Jun`, `67%`], [`Jul`, `77%`], [`Sep`, `94%`]], text: `For 12–18 months, seats, visibility and founder hours bind first, not market size.` },
     source: `recommended_strategy.md §3 Q1–Q2, §4.5 H1–H2; market_opportunity.md §7; economics §1A (seat capacity), §2; S-CHD-06/11/18/20; S-IND-01`,
-    note: `₹ cr per year; seat-fit = planning case 2027. ≈20% tier share: reviewer estimate, model line pending (economics §1A.8).`,
+    note: `₹ cr per year; seat-fit = planning case 2027. Share tests use the Base reference bundle (Y3 ₹165.5L). ≈20% tier share: reviewer estimate, model line pending (economics §1A.8).`,
     notes: `The tricity is a strong, affluent base and a plausible destination hub, but too small to be the whole story at the plan's fee. The cheap test is to tag every lead by city from month 1 and run a six-student Destination pilot in the August–September 2027 intakes; regional spend waits for gate G2. In the first year the binding constraints are seats in the studio, visibility and the founder's hours, not market size.`,
   },
   {
@@ -195,9 +196,9 @@ Detail: Year-1 EBITDA is −₹2.8L before founder salary and −₹11.8L after 
     unit: {
       heading: `Decision unit`, sub: `Parents and spouses`,
       stats: [
-        { value: `35%`, label: `of students name parents as their main advisor`, badge: `verified` },
+        { value: `35%`, label: `of Indian students cite parents as main advisor`, badge: `claim` },
         { value: `≥70%`, label: `of S1 cases: parents/spouses approve and pay`, badge: `hypothesis` },
-        { value: `₹14–45k`, label: `per function, tricity bridal MUAs (median ₹25k)`, badge: `verified` },
+        { value: `₹14–45k`, label: `per function, tricity bridal MUA listings (median ₹25k)`, badge: `verified` },
         { value: `₹1.2–6.2 LPA`, label: `salaried MUA pay: the ROI anchor families ask about`, badge: `claim` },
         { value: ``, label: `No public data on time to first paid booking`, badge: `verified` },
       ],
@@ -213,8 +214,8 @@ Detail: Year-1 EBITDA is −₹2.8L before founder salary and −₹11.8L after 
   {
     id: `8`, section: `Findings`, layout: `competitors`,
     kicker: `Findings · Competitive landscape`,
-    title: `Chains sell breadth and certificates; nobody publishes fees or outcomes`,
-    subtitle: `Five tiers compete for the same student; counsellor-led conversion with EMI is universal; fee opacity and "100% placement" claims are the norm.`,
+    title: `Chains sell breadth and certificates; few publish fees and nobody publishes outcomes`,
+    subtitle: `Six tiers compete for the same student; counsellor-led conversion with EMI is universal; fee opacity and "100% placement" claims are the norm.`,
     columns: [
       { header: `Who`, w: 2.15 },
       { header: `What they sell`, w: 1.7 },
@@ -224,13 +225,13 @@ Detail: Year-1 EBITDA is −₹2.8L before founder salary and −₹11.8L after 
     rows: [
       [`**Sector 34A cluster:** Orane, Lakmé ×2, VLCC, Zuri, Cassia`, `Broad cosmetology, certificates, "100% placement"`, `Lead form → counsellor → free demo → EMI`, { text: `Local 3–6-month diploma ₹35–75k`, tag: `estimate` }],
       [`**Founder-led peers:** Nav Brar, Tanvi KG`, `Small batches, short pro courses`, `WhatsApp-first, visible proof`, { text: `Proof, not price: Tanvi KG 4.9/125`, tag: `claim` }],
-      [`**Government diplomas:** MCM DAV, HMV`, `12-month diplomas`, `Admissions cycle`, { text: `₹3,730–35,000`, tag: `verified` }],
+      [`**Government diplomas:** MCM DAV (Chandigarh), HMV (Jalandhar)`, `12-month diplomas`, `Admissions cycle`, { text: `₹3,730–35,000 (aggregator-reported)`, tag: `verified` }],
       [`**National chains:** Lakmé 140+, Orane 110+, VLCC 106+ centres (self-reported)`, `Makeup courses; franchises`, `Counsellor-led, EMI partners, city microsites`, { text: `₹35k–1.5L; Lakmé ₹1.3–1.5L; franchise ₹30–60L`, tag: `claim` }],
       [`**Premium:** Daniel Bauer, Pearl`, `Access, placements, brand halo`, `Published prices, campus tours`, { text: `DBA ₹2.25–5.95L ex GST; Pearl ₹4.45L incl. GST`, tag: `verified` }],
       [`**Online:** Orane Online, AAFT`, `Micro-courses, online diplomas`, `Celebrity masterclass funnels`, { text: `₹499 masterclass → ₹80k diploma`, tag: `claim` }],
     ],
     ladder: {
-      title: `Price ladder, ₹ list price (log scale)`,
+      title: `Price ladder, ₹, log scale (mixed evidence)`,
       rows: [
         { label: `T0 digital`, lo: 499, hi: 2999, text: `₹499–2,999` },
         { label: `T1 short module`, lo: 35000, hi: 50000, text: `₹35k–50k` },
@@ -253,7 +254,7 @@ Detail: Year-1 EBITDA is −₹2.8L before founder salary and −₹11.8L after 
   {
     id: `9`, section: `Findings`, layout: `whiteSpace`,
     kicker: `Findings · White space`,
-    title: `Published fees, verifiable outcomes and small batches in a working studio`,
+    title: `PNA's white space is published fees, outcomes and small batches; only the outcomes record is hard to copy`,
     subtitle: `PNA's white space is contestable in a week on fees, but a working bridal studio and an outcomes record cannot be copied quickly, so proof comes before price.`,
     position: `The small-batch bridal makeup academy inside a working bridal studio. Students learn the PNA Method on real faces, assist on real bridal bookings in season and leave with a portfolio.`,
     leftHeader: `What the market does`,
@@ -261,7 +262,7 @@ Detail: Year-1 EBITDA is −₹2.8L before founder salary and −₹11.8L after 
     rows: [
       { finding: `Hidden fees: only Zuri publishes a fee ladder locally.`, badge: `verified`, soWhat: `Publish the ladder with all-in cost, EMI and refund terms.`, soWhatBadge: `recommendation` },
       { finding: `"100% placement" everywhere, with no cohort data.`, badge: `verified`, soWhat: `Alumni Outcomes Report: n, dates, % with a paid booking ≤90 days.`, soWhatBadge: `recommendation` },
-      { finding: `Classroom institutes: breadth over bridal depth (chain hours 120–260 h).`, badge: `claim`, soWhat: `≤12-seat batches, ~280–300 practice hours, live brides.`, soWhatBadge: `hypothesis` },
+      { finding: `Classroom institutes: breadth over bridal depth (chain hours 120–260 h).`, badge: `claim`, soWhat: `≤12-seat batches, ~280–300 programme hours (≥150 h on live models), live brides.`, soWhatBadge: `hypothesis` },
       { finding: `Founder-led peers sell proof they can show.`, badge: `claim`, soWhat: `Trainers made visible (PNA Certified Educator); founder hours stated per course.`, soWhatBadge: `recommendation` },
     ],
     chips: [
@@ -281,8 +282,8 @@ Trust moves from the founder to three owned assets: the PNA Method, PNA Certifie
   {
     id: `10`, section: `Recommendation`, layout: `scorecard`,
     kicker: `Recommendation · Options`,
-    title: `The integrated flagship scores highest under every weighting; five options are rejected`,
-    subtitle: `Flagship + destination learning ranks first (3.85 / 3.90 / 3.85); marketplace, owned NCR or Ludhiana centre, franchising and the ₹50L plan fail.`,
+    title: `The integrated flagship is the top full-scale model under every weighting; five options are rejected`,
+    subtitle: `Flagship + destination learning ranks first among full-scale models (3.85 / 3.90 / 3.85); marketplace, owned NCR or Ludhiana centre, franchising and the ₹50L plan fail.`,
     options: [
       { name: `Integrated primary`, desc: `flagship + hybrid layer + masterclasses + studio + alumni desk + credential`, s: [`3.85`, `3.90`, `3.85`], tint: true, bold: true },
       { name: `G Regional destination + pop-ups`, s: [`3.55`, `3.70`, `3.55`], tint: true },
@@ -304,10 +305,10 @@ Trust moves from the founder to three owned assets: the PNA Method, PNA Certifie
     whyNot: [
       { lead: `Marketplace`, badges: [`estimate`, `verified`], text: `−₹932/booking, LTV/CAC 0.35; Urban Company ~10 years to positive adjusted EBITDA, 22.75% of services revenue on onboarding; Blow LTD liquidated` },
       { lead: `Owned NCR`, badges: [`verified`], text: `rent 3.5x (₹167 vs ₹47/sq ft), same ₹25k bridal median, brand unknown` },
-      { lead: `Owned Ludhiana now`, badges: [`estimate`], text: `≈₹29L fixed cost, −₹7.4L at 46 students, break-even 62 (11–21% of local paid learners) in a chain-served city` },
+      { lead: `Owned Ludhiana now`, badges: [`estimate`], text: `≈₹29L fixed cost a year, −₹7.4L a year at 46 students, break-even 62 (11–21% of local paid learners) in a chain-served city` },
       { lead: `Chain franchisee`, badges: [`claim`], text: `₹30–60L + 15%+ royalty, erases the founder brand` },
-      { lead: `₹50L plan`, badges: [`estimate`], text: `₹99.3L revenue but −₹3.0L EBITDA and ₹44.2L cash` },
-      { lead: `Launching at ₹90k in month 1`, badges: [`estimate`], text: `no proof, conversion ±20% is worth ₹12.6L` },
+      { lead: `₹50L plan`, badges: [`estimate`], text: `₹99.3L revenue but −₹3.0L EBITDA and a ₹44.2L peak cash need (Year 1)` },
+      { lead: `Launching at ₹90k in month 1`, badges: [`estimate`], text: `no proof; conversion ±20% is worth ₹12.6L of Year-1 EBITDA` },
     ],
     source: `business_model_evaluation.md §4 scorecard, §6.4; recommended_strategy.md §3 Q4, §4.4; economics §3 #9, §5 #5, #8 (BM_Unit_Economics, Plan50L_BaseRates); S-INT-11/12/25; S-CHD-12/22; S-NC-07; S-BM-08`,
     note: `₹ lakh per year at Base rates, directional. Scores: HYPOTHESIS (judgements on thin evidence).`,
@@ -318,8 +319,8 @@ Also from the model: a franchise earns ≈₹2L a year per unit after support; d
   {
     id: `11`, section: `Recommendation`, layout: `model`,
     kicker: `Recommendation · The model`,
-    title: `One flagship, built as an institution: PNA Method, certified educators, published outcomes`,
-    subtitle: `A trainer-delivered, ≤12-seat bridal academy in the founder's studio, sold through a published ladder and closed by a counsellor at a parent visit.`,
+    title: `Build one flagship as an institution: PNA Method, certified educators, published outcomes`,
+    subtitle: `A trainer-delivered, ≤12-seat bridal academy that starts in the founder's studio and moves to a 12-station space after G1.`,
     engine1: {
       heading: `Engine 1 · Chandigarh Flagship`,
       parts: [
@@ -371,19 +372,19 @@ Takeaway: a Destination format is the second engine.`,
       [`Destination student`, `Contribution positive at small scale, no new rent while flagship seats are spare`],
       [`Owned vs destination`, `Owned wins only above ≈69 local students when 10 would have travelled`],
       [`Partner satellite`, `Needs more than 2.4x the destination number (N_dest)`],
-      [`Delhi NCR`, `7.4x the pool but rent 3.5x, same ₹25k bridal median: online/hybrid only`],
+      [`Delhi NCR`, `Delhi NCT 7.4x the pool but rent 3.5x, same ₹25k bridal median: online/hybrid only`],
     ],
     disclosure: `**Lowered bar, disclosed.** The station-based fill test (≥6 of 8 in the studio; ≥9 of 12 after the move) is a lower bar than the original ≥75%-of-12 test, which no run meets in Year 1; the 8-weekly calendar's effect on revenue timing is not yet modelled.`,
     source: `geographic_expansion.md §0–§2, §4.1, §6; recommended_strategy.md §4.2–4.3, §6.2, §7.1; economics §3 #9; S-CHD-01/06/12/13/22`,
     note: `₹ lakh per year at Base rates, directional. Feeder roles: RECOMMENDATION on ESTIMATE pools.`,
-    notes: `The order follows cost and reversibility: fix visibility and response first, grow regionally without fixed cost, add a site only when one city shows demand that converts but is blocked by distance. The empirical question is how much a local site lifts enrolment; only a lift of about 2.4x justifies a partner site and about 3x an owned one. The reference point is Mao Geping, which took 24 years to reach nine campuses.
+    notes: `The order follows cost and reversibility: fix visibility and response first, grow regionally without fixed cost, add a site only when one city shows demand that converts but is blocked by distance. The empirical question is how much a local site lifts enrolment; only a lift of about 2.4x justifies a partner site, and an owned centre needs ≈69 local students. The reference point is Mao Geping, which took 24 years to reach nine campuses.
 
 Feeder roles: Ludhiana (priority feeder, first satellite candidate), Jalandhar, Amritsar (hybrid), Patiala and Ambala (commuters), Shimla/Solan (seasonal), Jammu (online only).`,
   },
   {
     id: `13`, section: `Recommendation`, layout: `ladder`,
     kicker: `Recommendation · Programme ladder`,
-    title: `A published five-step ladder, with the flagship price raised only after proof`,
+    title: `Publish a five-step ladder and raise the flagship price only after proof`,
     subtitle: `₹999 taster → ₹39,900 Foundation → L3 Pro (today's fee → ₹75k list → ₹90k list; ₹80k realised) → ₹10k masterclasses → ₹9,999 Pro Circle; credits carry upward; kit optional.`,
     keyItems: [[`hypothesis`, `all prices (planning prices)`], [`recommendation`, `credit rules, gating, kit optional`], [`estimate`, `all-in costs`]],
     columns: [
@@ -450,8 +451,8 @@ Families see the all-in cost on every fee page.`,
       `Parent present at ≥60% of S1 visits`,
     ],
     standardFoot: `Masterclasses and self-makeup are self-serve. The website is the trust hub, not the closer. The founder is never the inbox. Refund and transfer policy published.`,
-    chip: `Missing the 5-minute standard costs ≈₹32k/month of extra media for the same enrolments, or −2.3 enrolments (model output of a vendor benchmark; untested).`,
-    source: `admissions_funnel.md §1, §3–§5.1, §8.2, §10.1 (Funnel_Base); economics §1B row 25 (Speed_to_Lead); recommended_strategy.md §3 Q6, §4.5 H6–H7; S-CUS-14/20 [CLAIM]`,
+    chip: `Missing the 5-minute standard costs ≈₹32k/month of extra acquisition spend (≈₹15k of it paid media) for the same enrolments, or −2.3 enrolments (model output of a vendor benchmark; untested).`,
+    source: `admissions_funnel.md §10.1 (stage counts and route split; the Funnel_Base workbook gives 64.2 QL and 12.0 applied), §1, §3–§5.1, §8.2; economics §1B row 25 (Speed_to_Lead); recommended_strategy.md §3 Q6, §4.5 H6–H7; S-CUS-14/20 [CLAIM]`,
     note: `Per month, steady state after G1, Base rates. Organic/referral +60% uplift: HYPOTHESIS (unevidenced, RT-08).`,
     notes: `The hypothesis that WhatsApp beats a website-first funnel is right but incomplete: WhatsApp captures and nurtures, but a high-ticket course is closed at a visit with the parent in the room. Speed-to-lead discipline costs nothing, so it stays, but the "1.5x media" benefit is the output of a vendor benchmark we have not tested; the January–March SLA pilot decides. The organic and referral lines are the least evidenced part of this funnel and are re-based in February on real CRM data.`,
   },
@@ -499,7 +500,7 @@ Phases: 0 Foundations (19 Oct–22 Nov 2026) · 1 Test & Prove (to 28 Feb 2027; 
   {
     id: `16`, section: `Recommendation`, layout: `blueprint`,
     kicker: `Recommendation · Website, CRM and analytics`,
-    title: `One WhatsApp inbox, one lead record, enforced reply timers, conversions fed back to ads`,
+    title: `A ₹20k/month stack makes the funnel visible and the five-minute rule enforceable`,
     subtitle: `A minimum stack at ≈₹18–20k/month (BSP + CRM + GA4/CAPI + payment links) that makes the funnel visible and the SLA enforceable; no LMS until Year 2.`,
     flow: [
       { head: `Entry points`, items: [`CTWA ads, Search ads`, `Google Business Profile, Instagram`, `Website: trust hub, five core pages (L3, L2, Fees & EMI, For Parents, Student Work); ₹1.2L rebuild`, `Walk-in, referral codes`] },
@@ -531,7 +532,7 @@ Phases: 0 Foundations (19 Oct–22 Nov 2026) · 1 Test & Prove (to 28 Feb 2027; 
     id: `17`, section: `Economics`, layout: `channel`,
     kicker: `Economics · Channel funnel`,
     title: `Route-level media buys an enrolment for ≈₹5.9k; the budget we plan costs ≈₹11.7k`,
-    subtitle: `₹35k/month buys ten enrolments at Base rates; the plan spends ₹1.0L/month, reconciled by a calibration factor (2.42); the cost range is ~9x wide.`,
+    subtitle: `At Base rates ₹35k of media buys the six paid enrolments (organic and referral add four); the plan spends ₹1.0L/month; the cost range is ~9x.`,
     tableTitle: `By route, Base month`,
     columns: [
       { header: `Route`, w: 1.6, bold: true },
@@ -548,16 +549,16 @@ Phases: 0 Foundations (19 Oct–22 Nov 2026) · 1 Test & Prove (to 28 Feb 2027; 
       [{ text: `Total`, fill: `plumTint` }, { text: `143`, fill: `plumTint`, bold: true }, { text: `—`, fill: `plumTint` }, { text: `₹5,878 (6 paid)`, fill: `plumTint`, bold: true }],
     ],
     recon: [
-      `The planned ₹1.0L/month is **≈1.9x** what the route maths needs (**₹37.6k**); the gap is awareness, retargeting and brand spend, reconciled in the model by **A-ECO-51 = 2.42**, not by evidence.`,
+      `The ₹70k career share of the planned ₹1.0L/month is **≈1.9x** the route maths (**₹37.6k**); the whole ₹1.0L is ≈2.7x. The gap (awareness, retargeting, brand) is reconciled by **A-ECO-51 = 2.42**, not by evidence.`,
       `Months 7–12: effective media CAC **₹11.7k (SG4 amber)**; fully loaded acquisition **53% of career revenue (red)**.`,
-      `The Q4 ramp is not pre-approved: at G1 the founder accepts the 53% reading or a **₹70k/month** steady state (≈7 fewer enrolments, −₹0.5L EBITDA).`,
+      `Q4 ramp not pre-approved: at G1 the founder accepts the 53% reading or a **₹70k/month** steady state (≈7 fewer enrolments, −₹0.5L EBITDA).`,
     ],
     chart: {
       title: `Media CAC per paid enrolment, ₹ thousand, same 10 enrolments`,
       categories: [`Aggressive`, `Base`, `Conservative`], values: [2.1, 5.9, 18.5],
-      line: 11.7, lineLabel: `Planning case effective CAC ₹11.7k (× 2.42 calibration)`,
+      line: 11.7, lineLabel: `Planning case effective CAC ₹11.7k`,
       bands: `SG4 bands: green ≤9k · amber 9–12k · red >12k`,
-      detail: `Base: 143 leads, ₹35,265 media + ₹6,000 rewards, ₹5,878. Conservative: ≈257 leads, ≈₹1.1L media, ≈₹18,450. Aggressive: ≈89 leads, ≈₹12.5k, ≈₹2,080.`,
+      detail: `Bars are the Growth file's route view. Base: 143 leads, ₹35,265 media + ₹6,000 rewards, ₹5,878. Conservative: ≈257 leads, ≈₹1.1L, ≈₹18,450. Aggressive: ≈89 leads, ≈₹12.5k, ≈₹2,080. The model's paid-route CAC is ₹4.8k (× 2.42 = ₹11.7k).`,
     },
     split: { label: `Steady-state ₹1.0L/month`, items: [`Meta career CTWA ₹32k`, `Workshops ₹15k`, `Masterclass launches ₹8k`, `Proof & retargeting ₹18k`, `Google Search ₹22k`, `Test reserve ₹5k`] },
     source: `admissions_funnel.md §10.1–10.2 (Funnel_Base, funnel Summary); economics §1A (gate metrics), §1A.7 (A-ECO-51), §3 #4, #7; marketing_channel_plan.md §1 (3), §3.1; recommended_strategy.md §3 Q6`,
@@ -572,32 +573,32 @@ Phases: 0 Foundations (19 Oct–22 Nov 2026) · 1 Test & Prove (to 28 Feb 2027; 
     chart: {
       title: `L3 seat economics, ₹ thousand per student`,
       categories: [`Today ₹60k incl. kit`, `Step 1 ₹75k list`, `Step 2 ₹90k list`],
-      series: [{ name: `Contribution before CAC`, values: [22.2, 39.6, 50.4] }, { name: `After CAC`, values: [0, 32.0, 42.8] }],
+      series: [{ name: `Contribution before CAC`, values: [22.2, 39.6, 50.4] }, { name: `After CAC`, values: [14.6, 32.0, 42.8] }],
     },
     table: {
       columns: [{ header: ``, w: 2.0, bold: true }, { header: `Today`, w: 1.55 }, { header: `Step 1`, w: 1.4 }, { header: `Step 2`, w: 1.65 }],
       rows: [
         [`Realised price`, `₹60k incl. kit`, `₹66.7k realised`, `₹80k realised (₹67.8k ex-GST)`],
-        [`Contribution margin`, `44%`, `—`, `74%`],
+        [`Contribution margin`, `44%`, `70%`, `74%`],
         [`Cohort break-even fill`, `67% (8 of 12)`, `38%`, `30% (3.6 of 12)`],
       ],
     },
     stats: [
       { value: `7.8`, unit: `/month`, label: `Break-even career enrolments`, text: `94/yr at step 1 on the M12 cost base, which carries the second trainer and the Operations Lead. Reference: 5.5/month (66) unstaged Base; 4.4 (52) Conservative.`, badge: `estimate` },
       { prefix: `₹`, value: `10.9`, unit: `L/yr`, label: `GST absorbed vs on top`, text: `Planning-case swing (₹12.7L at Base). No exemption for private non-recognised training (VERIFIED). A CA opinion is decision D8.`, badge: `estimate` },
-      { value: `8.0x`, label: `Career student LTV:CAC, Base`, text: `First-course contribution ₹41.8k, 24-month LTV ₹50.5k, blended CAC ₹6.3k (funnel view).`, badge: `estimate` },
+      { value: `8.0x`, label: `Career student LTV:CAC, Base`, text: `₹41.8k first course, ₹50.5k 24-month LTV, ₹6.3k blended CAC (funnel view). At the planning case's ₹11.7k paid CAC the ratio is ≈4x; fully loaded acquisition is 53% of career revenue (M7–M12).`, badge: `estimate` },
     ],
     chip: `Replacing the founder's unpaid teaching costs ≈₹10L in Year 1 and ₹17–19L a year in Years 2–3, plus ≈₹8L a year for an academy manager from Year 2.`,
     source: `Economics §1B rows 10–14, §1C #2, §1A (break-even, GST), §5 #1, #2, #6; recommended_strategy.md §3 Q7 table`,
     note: `₹ per student / per month, Base rates, ex-GST unless stated. All seat and cohort figures: ESTIMATE (Unit_Economics).`,
-    notes: `The proof gate is an economic hinge, not a marketing milestone: at today's fee a 12-seat batch needs eight students to cover its trainer and occupancy cost, which is why the business cannot carry salaried trainers without the price step. The founder's unpaid teaching is today's margin; the step-back is affordable only at roughly six or more career enrolments a month after the full price step. A chartered accountant's opinion on GST is worth about ₹11 lakh a year and is decision D8.
+    notes: `The proof gate is an economic hinge, not a marketing milestone: at today's fee a 12-seat batch needs eight students to cover its trainer and occupancy cost, which is why the business cannot carry salaried trainers without the price step. The founder's unpaid teaching is today's margin; the step-back is affordable only at roughly 5.5 or more career enrolments a month after the full price step (6.5 at the step-1 fee). A chartered accountant's opinion on GST is worth about ₹11 lakh a year and is decision D8.
 
 Step 1: ₹39.6k before CAC, ₹32.0k after; break-even 38%. Step 2 (₹80k realised, ₹67.8k ex-GST): ₹50.4k (74%) / ₹42.8k; break-even 30% (3.6 of 12).`,
   },
   {
     id: `19`, section: `Economics`, layout: `scenarios`, top: 1.95,
     kicker: `Economics · Scenarios, cash and staging`,
-    title: `Plan to need ₹25L, authorise ₹35L, and know the worst case is ₹33–36L`,
+    title: `Expect to need ₹25L, authorise ₹35L, and know the worst case is ₹33–36L`,
     subtitle: `Tranche 1 ≤₹15L to a July 2027 gate (₹11.8L expected); Tranche 2 ≤₹15L only on May–July actuals; ₹5L contingency above; three hard rules make the ceiling real.`,
     scen: {
       title: `Year 1 by scenario, ₹ lakh (career enrolments)`,
@@ -748,7 +749,7 @@ Day 0–7: founder verifies her real footprint (D9), supplies her numbers (D1), 
       { label: `Founder share / teaching h`, kind: `values`, values: [`92% · 81`, `83% · 73`, `75% · 66`, `67% · 59`, `58% · 103`, `50% · 88`, `48% · 85`, `47% · 82`, `45% · 79`, `43% · 114`, `42% · 110`, `40% · 106`], emphasis: [9] },
       { label: `Cumulative cash, ₹L`, kind: `values`, values: [`−3.93`, `−5.85`, `−9.97`, `−11.00`, `−11.71`, `−11.80`, `−11.43`, `−10.84`, `−25.18`, `−25.06`, `−23.79`, `−22.54`], emphasis: [8] },
     ],
-    disclosure: `**Lowered bar (G1):** the station test replaces the original ≥75%-of-12 test, which no run meets in Year 1; revenue timing on the 8-weekly calendar is not yet modelled.   * = founder decision at G1.`,
+    disclosure: `**Lowered bar (G1):** the station test replaces the original ≥75%-of-12 test, which no run meets in Year 1; studio cohorts above 8 use two daily slots and are not capacity-checked; revenue timing on the 8-weekly calendar is not yet modelled.  * = founder decision at G1.`,
     source: `execution/twelve_month_roadmap.md §0, §1, §3, §3.1, §4.1, §4.3, §5, §7, §9 (re-based to Staged_G1M9); recommended_strategy.md §3 Q8, §7.1 G1, §9.2, §10 row 32; economics §1A.6`,
     note: `Nov 2026–Oct 2027; ₹ lakh ex-GST; hours per month, planning case. Cohorts, hours, cash: ESTIMATE.`,
     notes: `The year has one job: prove the flagship on today's studio inside the Tranche-1 budget, then build it out at G1. The old gate test (two cohorts three-quarters full of twelve) is never met in Year 1 on any run, so G1 is now measured against the stations in the room, and the intake calendar runs eight-weekly from March, the only modelled calendar on which the studio cohorts pass and both post-move cohorts reach nine of twelve. The hidden constraint is founder hours, not share: on the planning case her teaching reaches 114 hours in August, and if she exceeds 110 hours for two months running the second trainer is pulled forward or takes more slots.
@@ -763,7 +764,7 @@ Planning case by quarter: revenue ₹5.5L / ₹13.4L / ₹16.6L / ₹25.0L; EBIT
     id: `23`, section: `Next steps`, layout: `risks`,
     kicker: `Next steps · Risks and validation tests`,
     title: `Price, the post-move downside and founder load are the risks; seven tests decide them`,
-    subtitle: `Ten named risks with owners; the paid tests, the willingness-to-pay block, the SLA pilot and the Destination pilot replace the weakest assumptions by mid-2027.`,
+    subtitle: `Ten named risks with owners; paid tests and the WTP block (by March) and the Destination pilot (by October) replace the weakest assumptions in 2027.`,
     riskCols: [`#`, `Risk`, `Evidence (one figure)`, `Mitigation`, `Owner`],
     risks: [
       [`1`, `Price realisation fails`, `₹19.7L Year-1 EBITDA swing; zero elasticity modelled; all-in cost +45%`, `Two gated steps; KT-5 rollback; WTP block in V3`, `Founder + Ops Lead`],
@@ -804,15 +805,15 @@ Tornado (planning-case Year-1 EBITDA swing, ₹ lakh): fees 19.7 · conversion 1
   {
     id: `24`, section: `Next steps`, layout: `decisions`,
     kicker: `Next steps · Founder decisions and next actions`,
-    title: `Twelve decisions, three of them this week, decide which academy PNA becomes`,
+    title: `Eleven decisions, six of them within a week, decide which academy PNA becomes`,
     subtitle: `Supply the numbers, choose boutique or institution, authorise Tranche 1 with the three hard rules, and hire the execution owner before anything else starts.`,
     decisions: [
       { code: `D1`, by: `day 10`, text: `**Supply actual** enrolments, fees, enquiry log, stations, team costs`, def: `Models run on labelled assumptions` },
-      { code: `D2`, by: `day 7`, text: `**Boutique** (₹10L, +₹10.8L/yr, she keeps teaching) **or institution** (₹35L authorised, −₹12L after salary in Year 1, cash back Year 3)`, def: `Staged plan` },
+      { code: `D2`, by: `day 7`, text: `**Boutique** (₹10L; Year-1 EBITDA +₹10.8L before salary, +₹1.8L after) **or institution** (₹35L; −₹2.8L before, −₹11.8L after; cash back M29 / M40)`, def: `Staged plan; confirm after D1 (day 10)` },
       { code: `D3`, by: `day 7`, text: `**Authorise Tranche 1** (≤₹15L) and the ₹30L + ₹5L envelope with the three rules`, def: `—` },
       { code: `D4`, by: `day 30`, text: `**Studio stays a separate P&L** and the practice engine`, def: `Studio continues as Priyanka Nanda Studio` },
       { code: `D5`, by: `day 7`, text: `**Hire a Lead Trainer** at market pay with IP assignment; stop being the inbox`, def: `—` },
-      { code: `D5a`, by: `day 7`, blocking: true, text: `**Hire the Admissions & Operations Lead in November** (counsellor pay + ₹15k/month, ₹1.8L/yr)`, def: `None acceptable: nothing else starts` },
+      { code: `D5a`, by: `day 7`, blocking: true, text: `**Hire the Admissions & Operations Lead in November** (₹40k/month: counsellor pay + ₹15k premium, ₹1.8L/yr)`, def: `None acceptable: nothing else starts` },
       { code: `D6 / 6a / 6b`, by: `day 7`, text: `**Step-back path, 110-hour rule, Year-1 income:** the studio pays her (if the academy pays, peak cash ₹32.6L, contingency consumed)`, def: `Studio pays the founder` },
       { code: `D7`, by: `day 24`, text: `**Published fees** with all-in cost, EMI, refunds; no placement promises`, def: `—` },
       { code: `D8`, by: `opinion day 21`, text: `**CA on GST;** counsel on lease, NOC, key-person cover`, def: `Fees modelled GST-inclusive` },
@@ -847,7 +848,7 @@ Tornado (planning-case Year-1 EBITDA swing, ₹ lakh): fees 19.7 · conversion 1
   {
     id: `A1`, section: `Appendix`, layout: `a1`,
     kicker: `Appendix A1 · Market sizing method`,
-    title: `Two methods, one tricity number: ₹3.27 cr, not ₹5.7 cr`,
+    title: `Three methods, one tricity number: ₹3.27 cr, not ₹5.7 cr`,
     subtitle: `The India TAM is the mean of a pipeline method and a supply method; the tricity figure reconciles a ₹5.7 cr "makeup + beauty-artistry" estimate down to makeup-led learners only.`,
     pairs: [
       [`Tricity ₹5.7 cr / 1,256 students`, `₹3.27 cr base (₹1.45–5.28), ≈730 learners`],
@@ -877,8 +878,8 @@ Tornado (planning-case Year-1 EBITDA swing, ₹ lakh): fees 19.7 · conversion 1
   {
     id: `A2`, section: `Appendix`, layout: `appTable`,
     kicker: `Appendix A2 · Hypothesis verdicts`,
-    title: `Two hypotheses hold, four are plausible but unproven, one is strongly supported`,
-    subtitle: `H1 and H5 are supported; H2, H4, H6, H7 need the tests in the plan; H3 is a constraint more than an asset.`,
+    title: `H1 and H5 hold, H3 holds as a constraint, and four (H2, H4, H6, H7) await the tests in the plan`,
+    subtitle: `Each hypothesis with its verdict, the evidence that decides it and the test that settles it; H3 is a constraint more than an asset.`,
     columns: [
       { header: `Hypothesis`, w: 2.2, bold: true },
       { header: `Verdict`, w: 2.5 },
@@ -890,12 +891,12 @@ Tornado (planning-case Year-1 EBITDA swing, ₹ lakh): fees 19.7 · conversion 1
       [`H2 Chandigarh as destination hub`, { text: `Plausible, unproven`, tag: `hypothesis` }, `GER inflow (VERIFIED); no beauty-origin data; PG cost/safety`, `≥20% out-of-town QLs; two pop-ups ≥8%; six-student pilot`],
       [`H3 Founder brand = asset and constraint`, { text: `Constraint strongly supported; asset unverified outside the referral circle`, tag: `estimate` }, `100% of delivery; teaching up to 114 h/month on the planning case, 128 on the G1-at-M6 upside; Mao Geping "founder absent" complaint (CLAIM; 9 campuses in 24 years)`, `Team-led conversion ≥75% of founder-led by G1`],
       [`H4 Hybrid beats pure online on completion and price`, { text: `Supported on price for hands-on bridal tiers; completion unproven`, tag: `hypothesis` }, `Premium tiers offline; 47% prefer blended (VERIFIED); Airblack's 80% completion claim is live-online (CLAIM)`, `Destination pilot completion ≥85%, practical pass within 5 points, price ≥90%`],
-      [`H5 Marketplace is a different business`, { text: `Strongly supported`, tag: `verified` }, `UC ~10 years; Blow liquidated (VERIFIED); LTV/CAC 0.35`, `Not expected to change`],
+      [`H5 Marketplace is a different business`, { text: `Strongly supported`, tag: `estimate` }, `UC ~10 years; Blow liquidated (VERIFIED); LTV/CAC 0.35`, `Not expected to change`],
       [`H6 WhatsApp counselling beats website-first`, { text: `Right but incomplete`, tag: `hypothesis` }, `Preference claim is Meta-commissioned (CLAIM); the close is a parent visit or paid taster`, `T1, T4`],
       [`H7 Follow-up discipline beats more spend`, { text: `Plausible, untested`, tag: `hypothesis` }, `1.5x media is a model output of A-GRO-24; 5-vs-30-minute study is a 2007 vendor study (CLAIM)`, `V7 SLA pilot Jan–Mar 2027; SG2 kept because it costs nothing`],
     ],
     source: `recommended_strategy.md §4.5; business_model_evaluation.md §5; international_benchmarks.md §6.3; S-CHD-11; S-IND-01; S-INT-05/11/12/25; S-CUS-14/20/33`,
-    note: `Verdicts: ESTIMATE / HYPOTHESIS as stated per row.`,
+    note: `Verdicts: ESTIMATE / HYPOTHESIS as stated per row. Share tests use the Base reference bundle.`,
     notes: `The review downgraded H7 from "supported" to "plausible, untested" because its evidence was circular, and re-tagged two headline facts as commissioned surveys. Nothing in the plan depends on H7 being true, because the response-time standard costs nothing. The expensive bets, H2 and the price path, are gated behind pilots that cost almost nothing to run.`,
   },
   {
@@ -919,7 +920,7 @@ Tornado (planning-case Year-1 EBITDA swing, ₹ lakh): fees 19.7 · conversion 1
       [`G1 (1)`, `Last week of Jul 2027, on May–July actuals`, `Two consecutive L3 cohorts starting at ≥6 of 8 studio stations (adopted 8-weekly calendar: 26 Apr ≈8.7, 21 Jun ≈9.4; first passable with the 21 Jun cohort, M8); ≥9 of 12 after the move (16 Aug ≈9.1, 11 Oct ≈10.1)`, `Unlocks Tranche 2. If missed: stay in the studio on T1's cost base, re-review M12, then KT-10b`],
       [`G1 (2)–(4)`, `as above`, `(2) Completion ≥85%, NPS ≥50, ≥40% of completers review on cohorts 1–2. (3) Pooled trainer-led cohorts within 0.3/5 of founder-led; team-led conversion ≥75% of founder-led. (4) SG1–SG3 green 4 weeks; SG4 ≤₹12k with ≥12 cumulative paid enrolments; paid-social lead→enrolment ≥4%`, `All eight tests must hold`],
       [`G1 (5)–(8)`, `as above`, `(5) Outcomes Report n≥30 with "% paid booking ≤90 days"; ≥30 reviews at ≥4.5. (6) Founder ≤50% of hours. (7) Cumulative cash ≤₹15L. (8) No lease before this reading; ≤3 months' notice, fire NOC, shop-and-establishment clearance`, `All eight tests must hold`],
-      [{ text: `G1 disclosure`, color: `amberDark` }, `—`, { text: `Test (1) is a lower bar than the original ≥75%-of-12 test, which no run meets in Year 1, and the 8-weekly calendar's effect on revenue timing and trainer hours is not yet modelled`, color: `amberDark` }, `Disclosed (R-7)`],
+      [{ text: `G1 disclosure`, color: `amberDark` }, `—`, { text: `Test (1) is a lower bar than the original ≥75%-of-12 test, which no run meets in Year 1, and the 8-weekly calendar's effect on revenue timing and trainer hours is not yet modelled. Studio cohorts above 8 (8.7, 9.4) run across two daily slots (2.5 slots/day from March); not capacity-checked until the deferred run`, color: `amberDark` }, `Disclosed (R-7)`],
       [`G2`, `M15–M18 (Jan–Apr 2028)`, `Utilisation ≥75% for two quarters; out-of-town ≥20% of QLs and ≥15% of enrolments before regional spend; two pop-ups ≥25 paid attendees and ≥8% attendee→enrolment in 60 days, tickets ≥70% of cost; Destination pilot completion ≥85%, practical pass within 5 points, price ≥90% of Weekday; accommodation partners signed, zero serious incidents; trainer bench ≥3; founder ≤30%; flagship EBITDA-positive two quarters; SG4 ≤40%`, `Unlocks Tranche 3 and price step 2 (only if step-1 conversion held within −15%)`],
     ],
     source: `recommended_strategy.md §6.2, §7.1–7.2; growth_marketing_strategy.md §9; economics §1A (gate metrics), §1A.6`,
@@ -929,8 +930,8 @@ Tornado (planning-case Year-1 EBITDA swing, ₹ lakh): fees 19.7 · conversion 1
   {
     id: `A4`, section: `Appendix`, layout: `appTable`,
     kicker: `Appendix A4 · Kill and pivot triggers`,
-    title: `Thirteen triggers say in advance what stops, when, and what it costs`,
-    subtitle: `The money rules (KT-1a, KT-10, KT-11) protect the ₹35L ceiling; the quality rules (KT-2, KT-3, KT-5, KT-7) protect the brand; KT-12/13 cover trainer loss and founder incapacity.`,
+    title: `Fifteen triggers say in advance what stops, when, and what it costs`,
+    subtitle: `KT-1 to KT-13 plus KT-1a and KT-10b. The money rules (KT-1a, KT-10, KT-11) protect the ₹35L ceiling; the quality rules (KT-2, KT-3, KT-5, KT-7) protect the brand; KT-12/13 cover trainer loss and founder incapacity.`,
     columns: [
       { header: `Trigger`, w: 1.0, bold: true },
       { header: `Condition`, w: 4.6 },
@@ -938,7 +939,7 @@ Tornado (planning-case Year-1 EBITDA swing, ₹ lakh): fees 19.7 · conversion 1
     ],
     rows: [
       [`KT-1`, `G0 unmet by Feb 2027`, `No media above ₹15k, no trainer hire`],
-      [{ text: `KT-1a`, fill: `plumTint` }, { text: `March 2027 review: cash ≥₹15L, or paid CAC >₹12k after minimum learning spend, or 1 Mar cohort <4`, fill: `plumTint` }, { text: `Mandatory deep cut to the stop-loss state (paid media paused, content team and freelancers released, Lead Trainer 0.5 FTE, founder-led delivery, Operations Lead kept): modelled ₹25.4L by Oct 2027 vs ₹28.7L shallow / ₹33.9L at M10 / ₹36.2L no cut; team notice ≈₹1.2L`, fill: `plumTint`, bold: true }],
+      [{ text: `KT-1a`, fill: `plumTint` }, { text: `March 2027 review: cash ≥₹15L, or paid CAC >₹12k after minimum learning spend, or 1 Mar cohort <4`, fill: `plumTint` }, { text: `Mandatory deep cut to the stop-loss state (paid media paused, content team and freelancers released, Lead Trainer 0.5 FTE, founder-led delivery, Operations Lead kept): modelled ₹25.4L by Oct 2027 vs ₹28.7L shallow / ₹33.9L at M10 / ₹36.2L no cut; team notice ≈₹1.3L`, fill: `plumTint`, bold: true }],
       [`KT-2`, `From the 26 Apr cohort, two consecutive cohorts <5 students (cohorts 1–2 exempt)`, `Freeze fixed costs, review price and response speed`],
       [`KT-3`, `After the first two trainer-led cohorts, NPS >15 points below founder-led or team conversion <60%`, `Hold founder share ≤50%; the move waits one intake`],
       [`KT-4`, `Cost per QL >2x target or zero QLs after ₹5,000; CAC payback >6 months for two quarters`, `Kill the cell; cut the channel`],
@@ -961,7 +962,7 @@ Tornado (planning-case Year-1 EBITDA swing, ₹ lakh): fees 19.7 · conversion 1
     id: `A5`, section: `Appendix`, layout: `a5`,
     kicker: `Appendix A5 · Sensitivities`,
     title: `Fees, conversion and GST move Year-1 EBITDA by ₹20L, ₹13L and ₹11L`,
-    subtitle: `The tornado is run on the recommended plan, not the unstaged Base; any single adverse driver at the tested magnitude breaches the ₹30L planned line but stays inside ₹35L.`,
+    subtitle: `The tornado is run on the recommended plan, not the unstaged Base; only fees at ×0.8 breach the ₹30L planned line (₹33.3L), and every single driver stays inside ₹35L.`,
     tornado: {
       title: `Swing in Year-1 EBITDA, planning case, ₹ lakh (adverse peak cash)`,
       categories: [`Fees ×0.8/×1.15 (₹33.3L)`, `Conversion ×0.8/×1.2 (₹29.7L)`, `GST on top vs absorbed (₹19.1L if on top)`, `Rent ₹130/₹47 per sq ft (₹29.6L)`, `Variable cost ×1.25/×0.75 (₹27.2L)`, `CPL ×1.3/×0.7 (₹26.0L)`, `Media ±30% (₹24.8L / ₹26.2L)`, `Cohort fill ×0.8/×1.2 (₹25.7L)`],
@@ -984,7 +985,7 @@ Tornado (planning-case Year-1 EBITDA swing, ₹ lakh): fees 19.7 · conversion 1
     id: `A6`, section: `Appendix`, layout: `a6`,
     kicker: `Appendix A6 · Downside runs`,
     title: `The founder can be told exactly what each failure path costs and when she would know`,
-    subtitle: `Five modelled failure paths, their Year-1 EBITDA, peak cash, the month they become visible, and what is sunk versus recoverable.`,
+    subtitle: `Six modelled runs (five failure paths and the upside-timing variant), their Year-1 EBITDA, peak cash, the month they become visible, and what is sunk versus recoverable.`,
     columns: [
       { header: `Run`, w: 2.0, bold: true },
       { header: `What happens`, w: 4.4 },
@@ -1020,7 +1021,7 @@ Tornado (planning-case Year-1 EBITDA swing, ₹ lakh): fees 19.7 · conversion 1
       ],
       studioTest: { value: 6, from: 0, to: 7, label: `Studio test ≥6 of 8 stations (to July)` },
       moveTest: { value: 9, from: 7, to: 10, label: `Post-move test ≥9 of 12 (from August)` },
-      g1: { at: 6.6, label: `G1 decision 26 Jul on May–July actuals` },
+      g1: { at: 7.0, label: `G1 decision 26 Jul on May–July actuals` },
     },
     sideColumns: [
       { header: `Calendar`, w: 0.95, bold: true },
@@ -1034,7 +1035,7 @@ Tornado (planning-case Year-1 EBITDA swing, ₹ lakh): fees 19.7 · conversion 1
     ],
     tally: `8-weekly: 4 of 6 cohorts pass. 6-weekly: 3 of 7 pass. The end-July decision is achievable on either calendar.`,
     decision: `Intakes 8-weekly from 1 March 2027 (adopted)`,
-    caveat: `The calendar re-allocates modelled enrolments; revenue timing on it is a deferred model run.`,
+    caveat: `The calendar re-allocates modelled enrolments; revenue timing on it is a deferred model run. Studio cohorts above 8 (8.7, 9.4) run across two daily slots (2.5 slots/day from March); not capacity-checked until that run.`,
     source: `Economics §1A.6 (final), §1A.8 item 5; recommended_strategy.md §7.1 G1, §10 rows 22, 31–32; execution/twelve_month_roadmap.md §3.1; execution/kpi_framework.md §3 DEL-01`,
     note: `Students per cohort, 2027 intake dates. Cohort sizes: ESTIMATE (Staged_G1M9 section K, A-ECO-164/165); thresholds and calendar: RECOMMENDATION.`,
     notes: `Cohorts one and two are expected to under-fill and are exempt from the kill trigger. The six-weekly rhythm passes one cohort earlier but leaves the 16 August intake only a six-week enrolment window, so it cannot fill a twelve-station room; any post-move test would then fail on the plan's own path. The calendar changes which cohort a student joins, not how many enrol, so modelled revenue and trainer hours are unchanged until the deferred run.
@@ -1085,7 +1086,7 @@ Takeaway: only the 8-weekly calendar also fills a 12-station room after the move
     id: `A9`, section: `Appendix`, layout: `a9`,
     kicker: `Appendix A9 · Evidence and sources`,
     title: `Every number carries a tag, a source and, where it is still open, a date`,
-    subtitle: `Six evidence labels, one source register, three workbooks with 0 formula errors, and four outstanding model runs that do not change the recommendation.`,
+    subtitle: `Six evidence labels, one source register, three workbooks with 0 formula errors, and five outstanding model runs, none of which changes the recommendation.`,
     legend: [
       [`verified`, `[FACT] sourced and checked`],
       [`claim`, `First-party or unverified; never read as verified`],
@@ -1094,20 +1095,20 @@ Takeaway: only the 8-weekly calendar also fills a 12-station room after the move
       [`hypothesis`, `[HYP] to be validated`],
       [`recommendation`, `[REC] a decision, not a model output`],
     ],
-    registerColumns: [{ header: `Prefix`, w: 0.95, bold: true }, { header: `Covers`, w: 2.6 }, { header: `F / S`, w: 1.0 }],
+    registerColumns: [{ header: `Prefix`, w: 0.95, bold: true }, { header: `Covers`, w: 2.6 }, { header: `Entries`, w: 1.0, align: `right` }],
     register: [
-      [`S-IND`, `India market, skill council, KPMG`, `See register`],
-      [`S-CHD`, `Chandigarh demographics, rents, PGs`, `See register`],
-      [`S-NC`, `National competitors`, `See register`],
-      [`S-LC`, `Local competitors, PNA footprint`, `See register`],
-      [`S-INT`, `International benchmarks`, `See register`],
-      [`S-CUS`, `Customer research`, `See register`],
-      [`S-BM`, `Business-model sources`, `See register`],
-      [`S-GRO`, `Growth and martech vendors`, `See register`],
+      [`S-IND`, `India market, skill council, KPMG`, `63`],
+      [`S-CHD`, `Chandigarh demographics, rents, PGs`, `29`],
+      [`S-NC`, `National competitors`, `54`],
+      [`S-LC`, `Local competitors, PNA footprint`, `57`],
+      [`S-INT`, `International benchmarks`, `50`],
+      [`S-CUS`, `Customer research`, `54`],
+      [`S-BM`, `Business-model sources`, `15`],
+      [`S-GRO`, `Growth and martech vendors`, `18`],
     ],
-    registerNote: `research/sources.md: all accessed 2026-10-16. Access limits: Instagram, Maps, Justdial, Sulekha blocked; PNA's site refused the proxy.`,
-    workbooks: `**Workbooks:** market_sizing_model.xlsx, funnel_economics.xlsx, business_forecast.xlsx: 0 formula errors; all Checks TRUE. Delivered after Gate E: Staged_Cons_CutM5_Deep (₹25.4L) and the G1 station-test pass month (M7 on 6-weekly, M8 on 8-weekly).`,
-    openHeading: `Outstanding model items (no deck number depends on them)`,
+    registerNote: `Register: research/sources.md (S-BM in BM §10; S-GRO in the growth and tech files); all accessed 2026-10-16. Instagram, Maps, Justdial, Sulekha blocked; PNA's site refused the proxy.`,
+    workbooks: `**Workbooks:** market_sizing_model, funnel_economics, business_forecast (.xlsx): 0 formula errors, all Checks TRUE. Added after Gate E: Staged_Cons_CutM5_Deep (₹25.4L) and the G1 station-test pass month (M7 6-weekly, M8 8-weekly).`,
+    openHeading: `Outstanding model items (only the ≈20% tier share depends on them)`,
     open: [
       `**Staged_FalsePos_PhasedFitout:** phased fit-out; sunk cost in the false-positive case`,
       `**Staged_G1M9_Retainer:** retainer trainer from M4; four-week founder-incapacity stress`,
@@ -1116,7 +1117,7 @@ Takeaway: only the 8-weekly calendar also fills a 12-station room after the move
       `**8-weekly calendar:** effect on revenue timing and trainer hours (§1A.8)`,
     ],
     source: `Economics header, §1A.8, §7; recommended_strategy.md §11.3; research/sources.md header; final/deck_sources.md`,
-    note: `"0 formula errors": VERIFIED (build log, economics header). F = fetched, S = snippet-only.`,
+    note: `"0 formula errors": VERIFIED (build log, economics header). Entries = distinct source IDs per prefix.`,
     notes: `The deck's number discipline is its credibility: one source of numbers, assumption IDs on every input, superseded figures kept in an audit note. The outstanding runs refine the downside and the share test; none of them changes the recommendation, the ask or the gates.`,
   },
 ];

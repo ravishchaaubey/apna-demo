@@ -111,8 +111,9 @@ No numbers. Status line: RS header; IR §1 (verdict). Tag legend: RS "Tags" line
 | Batch cap | ≤12 | A-BM-01; RS §4.1 |
 | Price steps (list) | ₹75k → ₹90k | A-ECO-160 (₹75k list); A-GRO-06 (₹90k list); RS §7.2 |
 | Realised planning fee | ₹80k | A-BM-02 (Base); ECO §3 #1 |
-| Plan / authorise / worst | ₹25L (₹25.2L) / ₹35L (₹30L + ₹5L) / ≈₹33L (₹32.7L) | BF `Staged_G1M9` peak cash (ECO §1A); A-ECO-153 (T1 cap), A-ECO-167 (₹5L); BF `Staged_FalsePos` (ECO §1A.2); RS §1 (4), §5 |
-| Operations Lead premium | ₹15k/month (counsellor pay +) | A-ECO-157; RS §1 (5) |
+| Expect to need / authorise / worst case | ₹25L (₹25.2L) / ₹35L (₹30L plan + ₹5L) / ≈₹36L if nobody acts (₹36.2L), ≈₹25L with the March cut (₹25.4L), ≈₹33L if the post-move season fails (₹32.7L) | BF `Staged_G1M9` peak cash (ECO §1A); A-ECO-153 (T1 cap), A-ECO-167 (₹5L); BF `Staged_Cons` B157, `Staged_Cons_CutM5_Deep`, `Staged_FalsePos` (ECO §1A.2); RS §1 (4), §5 (round 2, independent QA M1) |
+| "What we found" strip | ≈₹388 cr; ₹3.27 cr; nobody publishes outcomes; invisible online (tool-limited) | MS `TAM_India`, `Tricity_Recon` (ECO §1B rows 1, 4); `chandigarh_competitors.md` §7; CA-07 (round 2, S17) |
+| Operations Lead premium | ₹15k/month (counsellor pay +); role ≈₹40k/month | A-ECO-157; RS §1 (5); F90 §1 D5a |
 | Destination pilot | 6 students, Aug–Sep 2027 (M10–M11) | A-ECO-161; ECO §1A definition; RS §4.2 |
 | Rejections | marketplace, NCR, Ludhiana, franchising, national online, ₹50L plan | RS §4.4; BM §6.4 |
 
@@ -121,7 +122,7 @@ No numbers. Status line: RS header; IR §1 (verdict). Tag legend: RS "Tags" line
 | Number | Value | Source |
 |---|---|---|
 | Year-1 revenue | ₹60.6L | BF `Staged_G1M9` (revenue row; `Dashboard`); ECO §1A table |
-| Year-1 EBITDA before / after founder salary | −₹2.8L / −₹11.8L | BF `Staged_G1M9` EBITDA row; A-ECO-138 (₹75k/month memo); ECO §1A, §1C #4 |
+| Year-1 EBITDA before / after founder salary (title: "loses ₹2.8L … needs ₹25L of cash") | −₹2.8L / −₹11.8L | BF `Staged_G1M9` EBITDA row; A-ECO-138 (₹75k/month memo); ECO §1A, §1C #4 |
 | Career enrolments Year 1 | 81 | BF `Staged_G1M9` row 33 (career enrolments KPI); ECO §1A |
 | Peak cash | ₹25.2L at M9 | BF `Staged_G1M9` row 108 (peak cash to date); ECO §1A |
 | Year-3 revenue, all gates | ₹162.9L | BF `3yr_Scenarios` group 1 (planning case); ECO §1A, §1A.3 |
@@ -130,8 +131,8 @@ No numbers. Status line: RS header; IR §1 (verdict). Tag legend: RS "Tags" line
 | Gated share | ₹54.1L (33%) | ECO §1A.3 (162.9 − 108.8) |
 | Payback | M29 (before salary) / M40 (after) | BF `Payback_IRR`; ECO §1A.4 |
 | IRR to M36 | 46% / −10% | BF `Payback_IRR`; ECO §1A.4 |
-| Boutique (₹10L plan at Base rates) | ₹39.8L revenue; +₹10.8L EBITDA; peak cash ₹3.1L; ≈52 career students | BF `Plan10L_BaseRates`; ECO §1B row 21, §1C note; RS §1 (10) |
-| Institution loss after salary Year 1 | ≈−₹12L (−₹11.8L) | ECO §1A; RS §1 (10) |
+| Boutique (₹10L plan at Base rates) | ₹39.8L revenue; Year-1 EBITDA +₹10.8L before founder salary (+₹1.8L after); peak cash ₹3.1L; ≈52 career students | BF `Plan10L_BaseRates` B153 (+₹10.77L), B155 (+₹1.77L); ECO §1B row 21, §1C note; RS §1 (10) |
+| Institution, same salary basis | ₹60.6L revenue; Year-1 EBITDA −₹2.8L before salary (−₹11.8L after); cash back M29 before salary, M40 after | BF `Staged_G1M9` B153, B155; `Payback_IRR` row 8; ECO §1A, §1A.4 (round 2, M2: both options now on the same basis) |
 
 ### Slide 4 · Where PNA starts
 
@@ -142,7 +143,7 @@ No numbers. Status line: RS header; IR §1 (verdict). Tag legend: RS "Tags" line
 | Local diploma band | ₹35–75k | `research/chandigarh_competitors.md` §6 (S-LC-13 and listings) |
 | Illustrative revenue | ₹19.6L quoted / ₹16.6L ex-GST | ECO §1 status note (CA-01 × CA-02 × A-ECO-101 mix); BF `Unit_Economics` baseline block |
 | Today's share | ≈7% (3–12%) | MS `SOM_PNA`; ECO §1C #5 |
-| Digital footprint | website only; nothing else found; tools blocked | CA-07 (AR row 17); S-LC-01, S-LC-02, S-LC-07, S-LC-51, S-LC-56; `chandigarh_competitors.md` §2 |
+| Digital footprint (tagged CLAIM: a tool-limited absence, not a verified fact) | website only; nothing else found; tools blocked | CA-07 (AR row 17); RT-09; S-LC-01, S-LC-02, S-LC-07, S-LC-51, S-LC-56; `chandigarh_competitors.md` §2 |
 | Digital maturity | 3.0/10, provisional | `chandigarh_competitors.md` §2.4 |
 | Founder dependency | ≈100% | RS §2 [EST] |
 | Step-back horizon | 24–36 months | CA-04 (AR row 14) |
@@ -161,7 +162,7 @@ No numbers. Status line: RS header; IR §1 (verdict). Tag legend: RS "Tags" line
 | SAM core and components | ₹7.8 cr (₹2.3–24.2): 3.3 / 1.9 / 1.4 / 1.2 | MS `SAM_North`; ECO §1B row 6; MO §3 tree |
 | SAM online layer | ₹7.9 cr (₹0.75–54) | MS `SAM_North`; ECO §1B row 7 |
 | SAM total | ₹15.7 cr (₹3.0–78) | MO §3 tree |
-| SOM | ₹1.88 cr (₹0.41–3.83) incl. GST, FY to Oct 2029 | MS `SOM_PNA`; ECO §1B row 8 |
+| SOM | ₹1.88 cr (₹0.41–3.83) incl. GST, FY to Oct 2029; Base reference bundle (Y3 ₹165.5L ex-GST), planning case ≈₹1.85 cr | MS `SOM_PNA` A2, D21 (Base bundle from `3yr_Scenarios`); ECO §1B row 8, §3 #9 (round 2, S4) |
 | SOM shares | 22% of SAM core; 13% of tricity learners | MS `SOM_PNA` row 17; ECO §1B row 9 |
 | Professional-tier share | ≈20% (reviewer estimate; model line pending) | IR RT-12 [EST, reviewer]; MO §2 memo; A-IND-05 tier mix; pending `SOM_PNA` line: ECO §1A.8 / RS §11.3 item 5 |
 | Today, illustrative | ≈₹0.20 cr | MO §3 tree (= ₹19.6L quoted) |
@@ -190,7 +191,7 @@ No numbers. Status line: RS header; IR §1 (verdict). Tag legend: RS "Tags" line
 | Number | Value | Source |
 |---|---|---|
 | Segment priorities S1–S8 | as listed | POS §1–§2; `research/customer_segments.md` §3.3 |
-| Parents as main advisor | 35% | S-CUS-45 |
+| Parents as main advisor | 35% (tagged CLAIM: press-reported study-abroad survey, snippet-only) | S-CUS-45 (Low-Medium reliability) |
 | Parents/spouses approve and pay | ≥70% of S1 cases | A-CUS-27 [HYP]; POS §2 |
 | Bridal price per function | ₹14–45k, median ₹25k | S-CHD-12 (WedMeGood listings) |
 | Salaried MUA pay | ₹1.2–6.2 LPA | `research/customer_segments.md` §1 (2) (AmbitionBox, CLAIM) |
@@ -207,7 +208,7 @@ No numbers. Status line: RS header; IR §1 (verdict). Tag legend: RS "Tags" line
 | Orane 0% EMI partners | Bajaj / LoanTap / SaveIN | S-NC-15; S-LC-08 |
 | Zuri fee ladder; franchising royalty | published; 15% | S-LC-13; S-BM-08 |
 | Founder-led peers | Nav Brar; Tanvi KG 4.9/125 (self-reported) | S-LC-27..34 |
-| Government diplomas | ₹3,730–35,000 | `chandigarh_competitors.md` §6 (MCM DAV, HMV; aggregator-reported) |
+| Government diplomas | ₹3,730–35,000 | `chandigarh_competitors.md` §6 (MCM DAV, Chandigarh; HMV, Jalandhar; aggregator-reported, low reliability) |
 | Chain centre counts | Lakmé 140+; Orane 110+; VLCC 106+ | S-NC-01; S-NC-15/16; S-NC-13 |
 | Chain course fees | ₹35k–1.5L; Lakmé ₹1.3–1.5L | S-NC-31 (₹35k); S-NC-02 (₹1.3–1.5L) |
 | Franchise investment | ₹30–60L | S-NC-07 (low reliability) |
@@ -224,7 +225,7 @@ No numbers. Status line: RS header; IR §1 (verdict). Tag legend: RS "Tags" line
 | Positioning statement and short form | text | POS §3.1 |
 | Three owned trust assets | PNA Method, Certified Educators, Alumni outcomes | POS §1 (3), §4.2; RS §3 Q5 |
 | Only Zuri publishes a ladder | fact of review | S-LC-13; `chandigarh_competitors.md` §7 row 1 |
-| Practice hours | ~280–300 h (PNA) vs Lakmé 152–260 h, Orane 120–218 h | POS §6 ladder logic; S-LC-19/21, S-LC-10 |
+| Programme hours | ~280–300 h programme (≥150 h on live models) (PNA) vs Lakmé 152–260 h, Orane 120–218 h | POS §6 ladder logic (row L3); S-LC-19/21, S-LC-10 |
 | NSQF reference | 510–660 h | S-CUS-10/11 |
 | Batch cap | ≤12; ≤1:6 practicals | A-BM-01; POS §5 D2 [HYP] |
 | "Contestable in a week" | judgement | RS §3 Q3 |
@@ -267,7 +268,7 @@ No numbers. Status line: RS header; IR §1 (verdict). Tag legend: RS "Tags" line
 | Gate thresholds (headline) | as listed | RS §7.1; GEO §6 |
 | Indifference rules | owned beats destination only >69 local when 10 travel; partner needs >2.4x N_dest | ECO §3 #9 (vs GEO §4.1 55 / 1.7x, superseded) |
 | Owned Ludhiana | ≈₹29L fixed; −₹7.4L at 46; break-even 62 | A-BM-13; BF `BM_Unit_Economics`; RS §3 Q4 |
-| Delhi NCR pool and income | 7.4x tricity pool (3,464k vs 471k women 17–35); 2.43x income | S-CHD-01 (pool est.); S-CHD-06; GEO §2 |
+| Delhi NCR pool and income | 7.4x tricity pool (Delhi NCT only: 3,464k vs 471k women 17–35); 2.43x income | S-CHD-01 (pool est.); S-CHD-06; GEO §2 |
 | NCR rent | 3.5x (₹167 vs ₹47) | S-CHD-22 |
 | Bridal medians | Chd ₹25k; Mohali ₹20k; Ludhiana ₹21k; Amritsar ₹25k; Patiala ₹15k; Shimla ₹15k | S-CHD-12/13 |
 | Travel times | Ludhiana ~2 h; Jalandhar 2.5–3 h; Amritsar 4–4.5 h; Patiala ~1.5 h; Ambala ~1 h; Shimla ~3 h 15; Jammu 6–7 h; NCR 4–5 h | GEO §2 (S-CHD §4; [FACT] where marked) |
@@ -297,14 +298,14 @@ No numbers. Status line: RS header; IR §1 (verdict). Tag legend: RS "Tags" line
 
 | Number | Value | Source |
 |---|---|---|
-| Stage volumes, Base month | 143 → 65.9 → 37.8 → 12.2 → 10.0 → 9.0 completed; ≈4.1 reviews | FE `Funnel_Base`; AF §10.1 (rates A-GRO-18..22, mix A-GRO-03, completion A-GRO-31 90%, reviews A-GRO-32 45%) |
+| Stage volumes, Base month | 143 → 65.9 → 37.8 → 12.2 → 10.0 → 9.0 completed; ≈4.1 reviews (bars schematic) | AF §10.1 (stage counts; FE `Funnel_Base` gives 64.2 QL, 12.0 applied); (rates A-GRO-18..22, mix A-GRO-03, completion A-GRO-31 90%, reviews A-GRO-32 45%) |
 | Route leads | CTWA 56.8; Search 28.9; Organic 39.9; Referral 8.0; Taster 9.4 tickets | FE `Funnel_Base`; AF §10.1 |
 | Media and rewards | ₹35,265 + ₹6,000 | AF §10.1 |
 | SLA | auto-reply ≤1 min; median <5 min; P90 <30 min; ≥90% in 1 h; ≥5 touches/14 days; counselling within 48 h | AF §5.1–5.2; GMS §9 SG2 |
 | Parent present | ≥60% of S1 visits | AF §4 stage 4 |
 | Token | ₹5,000 | A-GRO-39; AF §8.2 |
 | EMI subvention | 3–7% | A-GRO-35b [HYP]; AF §8.2 |
-| Speed-to-lead cost | +₹32k/month or −2.3 enrolments | FE `Speed_to_Lead`; ECO §1B row 25; A-GRO-24 (0.67 factor) |
+| Speed-to-lead cost | +₹32k/month of acquisition spend (≈₹15.2k paid media + ≈₹17.2k organic content) or −2.3 enrolments | FE `Speed_to_Lead` B12 + C12, D12, E12, E14; ECO §1B row 25 (mislabelled "media" upstream); A-GRO-24 (0.67 factor) |
 | Speed-to-lead evidence | 21x at 5 vs 30 min (2007 vendor study, US) | S-CUS-20 [CLAIM]; S-CUS-22 |
 | Messaging preference | >70% prefer messaging (Meta-commissioned) | S-CUS-14 [CLAIM] |
 | CTWA free window | 72 h | S-CUS-16 |
@@ -348,7 +349,10 @@ No numbers. Status line: RS header; IR §1 (verdict). Tag legend: RS "Tags" line
 |---|---|---|
 | Route table (leads, cost per QL, media CAC) | CTWA 56.8 / ₹750 / ₹5,682; Search 28.9 / ₹1,111 / ₹7,234; Organic 39.9 / — / ₹0; Referral 8.0 / — / ₹3,000; Taster 9.4 / ₹400 / ₹3,752 (≈−₹5.6k net); total ₹5,878 (6 paid) | FE `Funnel_Base`; AF §10.1 (A-GRO-10/12/13/14/15 CPLs; A-GRO-34 reward ₹3,000) |
 | Rate-set comparison | Conservative ≈257 leads, ≈₹1,10,700, ≈₹18,450; Base 143, ≈₹35,300, ≈₹5,880; Aggressive ≈89, ≈₹12,500, ≈₹2,080 | FE `Summary` / `Funnel_Conservative` / `_Aggressive`; AF §10.2 |
-| Route-level career media needed | ₹37.6k/month | ECO §1A.7, §3 #7 |
+| Route-level career media needed | ₹37.6k/month (₹35,265 media in the Growth file's route table) | ECO §1A.7, §3 #7; FE `Summary` C9 = ₹37,633; AF §10.1 |
+| Planned media vs route maths | ₹70k career share ≈1.9x ₹37.6k; the whole ₹1.0L ≈2.7x | ECO §3 #7, §1A.7 (round 2, M4: the earlier "₹1.0L ≈1.9x" was an arithmetic slip, also in RS §3 Q6) |
+| Model paid-route CAC | ₹4.8k (× 2.42 = ₹11.7k); the ₹5.9k bars are the Growth file's route view | FE `Summary` C29 = ₹4,826; ECO §1A.7 (round 2, S1) |
+| Paid vs total enrolments at Base | ₹35k of media buys 6 paid enrolments; organic and referral supply the other 4 | AF §10.1; FE `Funnel_Base` D24 (organic fixed content cost) |
 | Calibration factor | A-ECO-51 = 2.42 (= ₹70,000 ÷ ₹28,956) | ECO §1A.7 |
 | Effective media CAC M7–12 | ₹11.7k planning; ₹11.1k upside; ₹10.7k Base; ₹34.3k Conservative | BF `Staged_G1M9` row 134 (corrected KPI), `Dashboard` rows 23–24; ECO §1A.7 |
 | Fully loaded acquisition M7–12 | 53% planning (red); 49% upside; 42% Base | BF `Dashboard` row 25; ECO §1A, §3 #4 |
@@ -362,16 +366,16 @@ No numbers. Status line: RS header; IR §1 (verdict). Tag legend: RS "Tags" line
 
 | Number | Value | Source |
 |---|---|---|
-| L3 at today's fee | ₹60k incl. kit; ₹22.2k (44%); break-even 67% (8 of 12) | BF `Unit_Economics`; ECO §1B rows 11–12; CA-02; A-ECO-103 (kit cost ₹15k pre-step) |
-| L3 at step 1 | ₹75k list, ₹66.7k realised; ₹39.6k / ₹32.0k; 38% | BF `Unit_Economics` column J; ECO §1C #2; A-ECO-160 |
+| L3 at today's fee | ₹60k incl. kit; ₹22.2k (44%) before CAC, ₹14.6k after CAC; break-even 67% (8 of 12) | BF `Unit_Economics`; ECO §1B rows 11–12; CA-02; A-ECO-103 (kit cost ₹15k pre-step) |
+| L3 at step 1 | ₹75k list, ₹66.7k realised; ₹39.6k (70%) / ₹32.0k; 38% | BF `Unit_Economics` column J (J17 = 0.70), E19 = ₹14,597 (today after CAC; round 2, M7); ECO §1C #2; A-ECO-160 |
 | L3 at step 2 | ₹80k realised (₹67.8k ex-GST); ₹50.4k (74%) / ₹42.8k; 30% (3.6 of 12) | BF `Unit_Economics`; ECO §1B rows 10, 12; A-BM-02 |
 | Variable cost inputs | consumables ₹7,000 (A-BM-16 Base); kit; trainer standard cost; gateway; EMI subvention | ECO §4.2; A-BM-16; A-GRO-35b/41 |
-| Career student funnel view | ₹41.8k / ₹50.5k / ₹6.3k / 8.0x (Base); Cons ₹7.9k / ₹10.9k / ₹13.1k / 0.8x; Aggr ₹59.9k / ₹78.1k / ₹2.8k / 27.6x | FE `Summary`; ECO §1B row 13 |
+| Career student funnel view | ₹41.8k / ₹50.5k / ₹6.3k / 8.0x (Base); ≈4x at the planning case's ₹11.7k paid CAC (BF `Staged_G1M9` B172; 53% fully loaded, B174); Cons ₹7.9k / ₹10.9k / ₹13.1k / 0.8x; Aggr ₹59.9k / ₹78.1k / ₹2.8k / 27.6x | FE `Summary`; ECO §1B row 13 |
 | Break-even career enrolments | 7.8/month (94/yr) planning; 5.5 (66) Base; 4.4 (52) Conservative | BF `Staged_G1M9` / `Outlook_*` KPI rows; ECO §1A, §1B row 14 |
 | GST swing | ₹10.9L planning; ₹12.7L Base | BF `Flex_gst_*`, `Sensitivity`; ECO §1A.5, §5 #2 |
 | GST status | no exemption for private non-recognised training; ₹20L registration threshold | ECO §5 #2 (GST Council flyer [FACT]; statute not re-verified) |
 | Founder teaching replacement cost | ≈₹10L Y1; ₹17–19L/yr Y2–3; ≈₹8L/yr academy manager | ECO §5 #6; A-ECO-125 (₹65k/month), A-ECO-218 |
-| Step-back affordability | ≈5.5+/month after full step; 7.8 at step-1 fee on M12 base | ECO §5 #6, §1A |
+| Step-back affordability | ≈5.5+/month after full step (6.5 at the step-1 fee); 7.8 at step-1 fee on M12 base | ECO §5 #6, §1A |
 
 ### Slide 19 · 12-month scenarios, cash and investment staging
 
@@ -472,12 +476,13 @@ No numbers. Status line: RS header; IR §1 (verdict). Tag legend: RS "Tags" line
 | Number | Value | Source |
 |---|---|---|
 | Decisions D1–D10, D5a, D6a, D6b and dates | as listed (D9 day 0; D1 day 10; D2/D3/D5/D5a/D6 day 7; D8 opinion day 21; D7 day 24; D4 day 30) | RS §9.1; F90 §1; ES "Decisions needed" |
-| Boutique figures | +₹10.8L/yr on ₹39.8L; ≈52 students | BF `Plan10L_BaseRates`; ECO §1B row 21 |
-| Institution figures | ₹35L authorised; −₹11.8L after salary Year 1; payback Year 3 (M29/M40) | ECO §1A, §1A.4; RS §1 (10) |
+| Boutique figures | Year-1 EBITDA +₹10.8L before salary (+₹1.8L after) on ₹39.8L; ≈52 students | BF `Plan10L_BaseRates` B153, B155; ECO §1B row 21 |
+| Institution figures | ₹35L authorised; Year-1 EBITDA −₹2.8L before salary (−₹11.8L after); payback M29 / M40 | ECO §1A, §1A.4; RS §1 (10) |
 | D6b cash rule | studio pays by default; T1 cap read before the draw; academy-paid peak ₹32.6L, contingency consumed | RM §4.3; RS §9.1 D6b, §10 row 32; ECO §1A reading 5 |
 | "Find out for ≈₹12L before committing ₹14.7L" | ₹11.8L T1 use; ₹14.7L space | ECO §1A; RS §1 (10), §5; RM §4.2 |
 | Next actions days 0–7 | as listed | RS §9.2; F90 §0, §4 week 1; MCP §4 |
-| Ops Lead premium | ₹15k/month (₹1.8L/yr) | A-ECO-157; RS §9.1 D5a |
+| Ops Lead cost | ₹40k/month: counsellor pay + ₹15k/month premium (₹1.8L/yr) | A-ECO-157; RS §9.1 D5a; F90 §1 D5a |
+| Decision count | 11 rows, 13 codes (D1–D10, D5a, D6a, D6b); 6 rows due within a week (D2 provisional, confirmed after D1) | RS §6.4, §9.1; ES "Decisions needed" (round 2, M6, S18) |
 
 ### Slide A1 · Market sizing method and reconciliation
 
@@ -509,14 +514,14 @@ No numbers. Status line: RS header; IR §1 (verdict). Tag legend: RS "Tags" line
 | G0, SG1–SG5, G1 (eight tests), G2 thresholds | as listed | RS §7.1–7.2; GMS §9; RM §3 (dates and planning-case readings: paid enrolments ≈21, CAC ₹11.7k, founder share 45%, cash ₹11.8L) |
 | Planning-path cohort sizes | 26 Apr 8.7; 21 Jun 9.4; 16 Aug 9.1; 11 Oct 10.1 | ECO §1A.6; RM §3.1 |
 | SG4 planning readings | ₹11.7k; 53% | BF `Dashboard` rows 25, 27; ECO §1A |
-| G1 test disclosure (R-7) | lower bar than ≥75%-of-12; 8-weekly timing unmodelled | ECO §1A.6, §1A.8; IR §8.1 C2 |
+| G1 test disclosure (R-7) | lower bar than ≥75%-of-12; 8-weekly timing unmodelled; studio cohorts 8.7 and 9.4 exceed 8 stations and run across two daily slots, not capacity-checked | ECO §1A.6, §1A.8; IR §8.1 C2; BF `Staged_G1M9` row 25 (8 stations to M9), rows 145–146; A-ECO-154..156 (2.5 slots/day from M5) (round 2, S9) |
 
 ### Slide A4 · Kill and pivot triggers
 
 | Number | Value | Source |
 |---|---|---|
-| KT-1 … KT-13 definitions and actions | as listed | RS §7.3; RM §3, §3.1, §5 (stop-loss staffing) |
-| KT-1a modelled outcomes | ₹25.4L / ₹28.7L / ₹33.9L / ₹36.2L; notice ≈₹1.2–1.3L | BF `Staged_Cons*`; ECO §1A.2 |
+| KT-1 … KT-13, KT-1a, KT-10b (fifteen) definitions and actions | as listed | RS §7.3; RM §3, §3.1, §5 (stop-loss staffing) |
+| KT-1a modelled outcomes | ₹25.4L / ₹28.7L / ₹33.9L / ₹36.2L; team notice ≈₹1.3L (deep cut; ₹1.2L is the shallow cut) | BF `Staged_Cons*` (`_Deep` exit + severance ₹132,500); ECO §1A.2 (round 2, S12) |
 | KT-10 thresholds and costs | <60% of plan (≈5.5 / ≈6.1 students); ₹3.1L notice; ₹1.8L severance; ₹11.6L sunk; floor ₹32–33L | RM §3; A-ECO-158/159; ECO §1A.2 |
 | KT-10b boutique path | ≈52 students; +₹10.8L | BF `Plan10L_BaseRates` |
 | KT-11 | ₹28L; discretionary ≈₹1.2L/month; committed ≈₹4L/month | RS §7.3; IR RT-14 |
@@ -529,6 +534,7 @@ No numbers. Status line: RS header; IR §1 (verdict). Tag legend: RS "Tags" line
 | Named stresses | masterclass half −₹5.9L / +₹4.2L; non-paid flat −₹2.5L, −6.9; lead trainer ₹75k −₹1.7L; step 1 −₹0.8L / −₹2.0L | BF flex cells; ECO §1A.5 (RT-21, RT-08, RT-11) |
 | Step-2 Year-3 response | +₹14.5L / +₹7.5L / +₹0.4L | BF `Sensitivity` groups 6–8; ECO §1A.3 |
 | Superseded unstaged-Base tornado | 23.0 / 15.1 / 12.7 / 8.7 | BF `Sensitivity`; ECO §1B row 24 |
+| ₹30L / ₹35L test | only fees ×0.8 breach ₹30L (₹33.3L); every driver stays inside ₹35L | BF `Sensitivity` H6–H13 (29.66 / 33.30 / 25.72 / 25.95 / 27.15 / 29.63 / 26.15 / 25.18) (round 2, M5) |
 | Masterclass seats Year 1 | 153 | BF `Staged_G1M9` row 46; RM §8 |
 
 ### Slide A6 · Downside runs in detail
@@ -547,7 +553,7 @@ No numbers. Status line: RS header; IR §1 (verdict). Tag legend: RS "Tags" line
 | 8-weekly cohort sizes | 3.2 · 5.6 · 8.7 · 9.4 · 9.1 · 10.1 | BF `Staged_G1M9` section K (A-ECO-165); ECO §1A.6; RM §3.1 |
 | 6-weekly cohort sizes | 3.2 · 5.6 · 6.3 · 7.2 · 6.8 · 6.9 · 7.5 (26–63% of 12) | BF section K (A-ECO-164); ECO §1A.6 |
 | First passable; post-move result | 21 Jun (M8) / met; 24 May (M7) / not met | ECO §1A.6 table |
-| Calendar decision and caveat | 8-weekly from 1 Mar; revenue timing deferred | RS §10 row 32; RM §3.1; ECO §1A.8 item 5 |
+| Calendar decision and caveat | 8-weekly from 1 Mar; revenue timing deferred; cohorts above 8 run across two daily slots, not capacity-checked | RS §10 row 32; RM §3.1; ECO §1A.8 item 5; BF `Staged_G1M9` row 25 (round 2, S9) |
 
 ### Slide A8 · Review changes and investor questions
 
@@ -564,4 +570,5 @@ No numbers. Status line: RS header; IR §1 (verdict). Tag legend: RS "Tags" line
 | Workbook integrity | 0 formula errors; all `Checks` TRUE; formula counts 535 / 1,002 / ≈63,800 | ECO header |
 | Access limitations | Instagram 429; Maps, Justdial, Sulekha blocked; site refused proxy | `research/sources.md` header; S-LC-56 |
 | Delivered final runs | `Staged_Cons_CutM5_Deep` ₹25.4L; station test M7 (6-weekly) / M8 (8-weekly) | ECO §1A.2, §1A.6; RS §10 rows 31–32 |
-| Outstanding items | phased fit-out; retainer trainer and incapacity stress; tier-matched SOM line; contingency sensitivity; 8-weekly revenue timing | ECO §1A.8; RS §11.3 |
+| Outstanding items (five; only the ≈20% tier share depends on one of them) | phased fit-out; retainer trainer and incapacity stress; tier-matched SOM line; contingency sensitivity; 8-weekly revenue timing | ECO §1A.8; RS §11.3 |
+| Source IDs per prefix | S-IND 63, S-CHD 29, S-NC 54, S-LC 57, S-INT 50, S-CUS 54 (`research/sources.md`); S-BM 15 (BM §10); S-GRO 18 (GMS, TECH) | distinct IDs counted in each register (round 2, N13) |

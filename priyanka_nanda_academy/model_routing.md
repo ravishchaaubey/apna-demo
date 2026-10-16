@@ -38,4 +38,11 @@ Note: the brief suggests 3–5 concurrent agents. Competitive intelligence was s
 | 12b | Independent Reviewer closure check (C1–C8) | fable (resumed #12) | Gate E | strategy/independent_review.md §8 | done — fit for founder; Criticals closed; residuals R-1–R-7 fixed by orchestrator (§10 row 33) |
 | 14 | (status) Executive Storyline | fable | Gate F | final/slide_storyboard.md, final/deck_sources.md | done — 24 core + 9 appendix; 60-figure consistency table |
 | 15 | Presentation Production — phase 2 (build, render, inspect, number check) | opus | Gate F | final/Priyanka_Nanda_Academy_Growth_Strategy.pptx, final/deck_quality_review.md | done — 24 core + 9 appendix (35 pages); validate pass; 60/60 storyboard numbers; 6 QA rounds (resumed once after a usage-limit stop) |
-| 16 | Presentation QA (independent: deck vs upstream sources) | opus | Gate F | final/presentation_qa_independent.md | dispatched |
+| 16 | Presentation QA (independent: deck vs upstream sources) | opus | Gate F | final/presentation_qa_independent.md | done — 7 Must / 20 Should / 13 Nice; all Must+Should fixed by #15 (round 2) |
+| 15b | Presentation Production — round 2 fixes | opus (resumed #15) | Gate F | final deck, storyboard, deck_sources, deck_quality_review | done — validate pass, 0 fit warnings, 60/60 numbers |
+
+## Final model-use summary
+- **Families used:** Sonnet (5 bounded research agents), Opus (customer research, growth, business model, economics, roadmap, deck design system, deck build, independent deck QA), Fable (lead strategist arbitration, independent red-team review, executive storyline). **Haiku: never used.**
+- **Orchestrator:** main session on Opus 5.5 (disclosed above); all Fable-tier judgements were delegated to Fable agents.
+- **Parallelism:** up to 6 concurrent agents in Gate A, 3–4 in later phases; follow-ups resumed existing agents to preserve context rather than spawning duplicates.
+- **Known runtime limits:** shared WebSearch quota (~200/turn) exhausted during Gate A; several sites blocked by the egress proxy; one usage-limit stop during the deck build (resumed from saved state).

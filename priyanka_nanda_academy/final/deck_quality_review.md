@@ -126,3 +126,59 @@ Rebuild with `node build_deck.js`, then run QA with `./qa.sh ../Priyanka_Nanda_A
 - **Repeated paragraph properties.** pptxgenjs writes repeated `<a:pPr>` elements in multi-run paragraphs. `validate.py` treats this as non-fatal (PowerPoint opens such files), and the phase-1 demo deck has the same property.
 - **Data without its own badge.** Category-level evidence for chart data is shown once per chart with a badge, not per bar. The Gantt rows on slides 21–22 rely on the footer note ("Cohorts, hours, cash: ESTIMATE"; "Plan, dates, G0 criteria: RECOMMENDATION") rather than badges on each row.
 - **Limits of the number check.** It matches numeric tokens, not their sentence context. It confirms that every table value is present on the cited slides, but not that, say, "81" sits next to "enrolments". I spot-checked those pairings by eye on every page during the visual pass.
+
+## 6. Round 2: independent QA fixes
+
+Source: `final/presentation_qa_independent.md` (7 Must-fix, 20 Should-fix, 13 Nice). All Must-fix and Should-fix items are applied, and so are 12 of the 13 Nice items, with N9 partly applied. The same corrections are made in `final/slide_storyboard.md` (titles, takeaways, bodies, evidence status, the number-consistency table, and inconsistency note (j)) and in `final/deck_sources.md`. `strategy/recommended_strategy.md` and `final/executive_summary.md` are left to the orchestrator, as agreed.
+
+| ID | Slide | Fix applied |
+|---|---|---|
+| M1 | 2 | Item 4 now reads: "**Expect to need ₹25L, authorise ₹35L.** Worst case ≈₹36L if nobody acts (above the ceiling), ≈₹25L with the March cut, ≈₹33L if the post-move season fails." |
+| M2 | 3, 24 | Both options are now on the same salary basis. Boutique: Year-1 EBITDA +₹10.8L before her salary (+₹1.8L after). Institution: −₹2.8L before (−₹11.8L after), cash back M29 before salary and M40 after. D2 on slide 24 uses the same basis |
+| M3 | 10 | Title: "The integrated flagship is the top full-scale model under every weighting; five options are rejected". The subtitle says "ranks first among full-scale models" |
+| M4 | 17 | "The ₹70k career share of the planned ₹1.0L/month is ≈1.9x the route maths (₹37.6k); the whole ₹1.0L is ≈2.7x" |
+| M5 | 31 (A5) | Subtitle: "only fees at ×0.8 breach the ₹30L planned line (₹33.3L), and every single driver stays inside ₹35L" |
+| M6 | 24 | Title: "Eleven decisions, six of them within a week, decide which academy PNA becomes". There are 11 rows; D2, D3, D5, D5a, D6/6a/6b and D9 are due by day 7 |
+| M7 | 18 | The "After CAC" bar at today's fee is ₹14.6k (workbook `Unit_Economics` E19), no longer 0. The step-1 contribution margin is 70% |
+| S1 | 17 | The subtitle now says ₹35k of media buys the six paid enrolments, and organic and referral add the other four. The chart note says the bars are the Growth file's route view and that the model's paid-route CAC is ₹4.8k (× 2.42 = ₹11.7k). The line label was shortened so it no longer collides with the line |
+| S2 | 14 | The footer cites `admissions_funnel.md` §10.1 for the stage counts and notes that the workbook gives 64.2 QL and 12.0 applied |
+| S3 | 14 | The chip reads "≈₹32k/month of extra acquisition spend (≈₹15k of it paid media)" |
+| S4 | 5, 6, 26 | The SOM box and the footers state the basis: the Base reference bundle (Y3 ₹165.5L), with the planning case at ≈₹1.85 cr. Slide 6 says "the Base bundle reaches 13%" |
+| S5 | 2, 19 | "Expect to need ₹25L" is used for the peak. "₹30L plan" stays for the envelope |
+| S6 | 4 | The Digital footprint badge is now CLAIM; the text starts "Tool-limited absence", and the footer explains it |
+| S7 | 7 | The 35% figure is badged CLAIM: "of Indian students cite parents as main advisor" |
+| S8 | 26 (A2) | The H5 verdict is tagged ESTIMATE. Title: "H1 and H5 hold, H3 holds as a constraint, and four (H2, H4, H6, H7) await the tests in the plan" |
+| S9 | 22, 28, 33 | The disclosure on all three slides now says studio cohorts above 8 (8.7, 9.4) run across two daily slots (2.5 slots/day from March) and are not capacity-checked until the deferred run |
+| S10 | 35 (A9) | "Five outstanding model runs". Box heading: "only the ≈20% tier share depends on them" |
+| S11 | 8 | Title: "…few publish fees and nobody publishes outcomes". Subtitle: "Six tiers" |
+| S12 | 29 (A4) | KT-1a team notice is ≈₹1.3L, matching A6 |
+| S13 | 29–30 (A4) | Title: "Fifteen triggers…". The subtitle names KT-1 to KT-13 plus KT-1a and KT-10b |
+| S14 | 18 | The LTV:CAC tile adds: "At the planning case's ₹11.7k paid CAC the ratio is ≈4x; fully loaded acquisition is 53% of career revenue (M7–M12)" |
+| S15 | 3 | Title: "Year 1 loses ₹2.8L before her salary and needs ₹25L of cash; Year 3 pays only if gates pass" |
+| S16 | 23 | Subtitle: "…paid tests and the WTP block (by March) and the Destination pilot (by October) replace the weakest assumptions in 2027" |
+| S17 | 2 | A "What we found" strip under the subtitle: ≈₹388 cr; ₹3.27 cr is enough to start, not finish; nobody publishes outcomes; PNA is invisible online (tool-limited) |
+| S18 | 24 | D5a reads "(₹40k/month: counsellor pay + ₹15k premium, ₹1.8L/yr)". D2's default reads "Staged plan; confirm after D1 (day 10)" |
+| S19 | 14 | Funnel bars now narrow at every stage (each narrower than the one above), and the header is labelled "bar lengths schematic" |
+| S20 | 11 | Subtitle: "…starts in the founder's studio and moves to a 12-station space after G1" |
+| N1 | 5 | "(2025P, a published projection)" |
+| N2 | 8 | "MCM DAV (Chandigarh), HMV (Jalandhar)"; "₹3,730–35,000 (aggregator-reported)"; the ladder title reads "(mixed evidence)" |
+| N3 | 7 | "tricity bridal MUA listings" |
+| N4 | 12 | "Delhi NCT 7.4x the pool". The notes now say an owned centre needs ≈69 local students, not "about 3x" |
+| N5 | 25 (A1) | "Three methods, one tricity number…" |
+| N6 | 32 (A6) | "Six modelled runs (five failure paths and the upside-timing variant)" |
+| N7 | 9 | "~280–300 programme hours (≥150 h on live models)" |
+| N8 | 10, 24 | Units added: "/yr", "peak cash need (Year 1)", "of Year-1 EBITDA". Slide 24's D2 uses the M2 wording |
+| N9 | 33, 22, 19 | **Partly applied.** On A7 the G1 marker moved into the gap between the 5 Jul and 16 Aug cohorts, so it no longer touches "6.8". On 22 the gate marker lines already pass behind value and label boxes (masked since round 1). **Not applied:** the 26-Feb diamond is correctly placed in late February (position 3.89 on the month grid; only its label runs into March). The ₹28L KT-11 line stays on slide 19 because the storyboard specifies it, and its label is separated from the ₹30L label |
+| N10 | 9, 11, 13, 16 | Assertion titles: 9 "PNA's white space is published fees, outcomes and small batches; only the outcomes record is hard to copy"; 11 "Build one flagship as an institution: …"; 13 "Publish a five-step ladder and raise the flagship price only after proof"; 16 "A ₹20k/month stack makes the funnel visible and the five-minute rule enforceable" |
+| N11 | 18 (notes) | "roughly 5.5 or more … (6.5 at the step-1 fee)" |
+| N12 | 2 | Foot: "Each scores in the bottom half or fails on the numbers: see slide 10". Pure digital (C) is in slide 10's scorecard at 2.55 |
+| N13 | 35 (A9) | The F/S column is replaced by distinct source-ID counts per prefix: S-IND 63, S-CHD 29, S-NC 54, S-LC 57, S-INT 50, S-CUS 54, S-BM 15, S-GRO 18. The register's fragments do not carry fetched/snippet markers consistently enough to count those |
+
+**Not in the deck's files:** QA §8's upstream corrections are for the orchestrator. These are `recommended_strategy.md` §1(4), §5, §3 Q6, §1(10), §9.1 D2 and §7.3 KT-1a, and the "media" label in economics §1B row 25.
+
+**Round 2 checks:**
+- `node build_deck.js`: 0 text-fit warnings.
+- `validate.py`: **All validations PASSED**.
+- Re-render: 90 dpi. All 28 changed pages were inspected on 2×2 contact sheets; slide 17 was re-checked at crop after the line-label fix.
+- Number check against the updated storyboard table: **60 of 60 rows match**. 56 are exact on the cited slides and 3 differ only in format or rounding (rows 41, 45, 58, as in section 4). In row 56, rent ₹47 vs ₹167 appears on slides 10 and 12.
+- The deck is still 35 pages: 24 core and 9 appendix slides, with A3 and A4 running to two pages each.

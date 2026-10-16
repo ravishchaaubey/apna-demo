@@ -545,6 +545,19 @@ function numberedList(slide, items, o) {
 // Layouts
 // =============================================================================================
 
+/** Bottom edge of the title + subtitle block, mirroring components.addTitle. */
+function headerBottom(d) {
+  const f = fitText(d.title, { font: "Cambria", w: GRID.CW, h: GRID.titleH + 0.05, max: 28, min: 22, maxLines: 2, stable: true });
+  let bottom = GRID.titleY + f.lines.length * lineHeight(f.size, "Cambria");
+  if (d.subtitle) {
+    const y = bottom + 0.1;
+    const avail = GRID.top - 0.12 - y;
+    const fs = fitText(d.subtitle, { w: GRID.CW, h: Math.max(avail, 0.26), max: 15, min: 12, maxLines: avail > 0.5 ? 2 : 1 });
+    bottom = y + fs.height + 0.04;
+  }
+  return bottom;
+}
+
 function contentSlide(deck, d) {
   return deck.contentSlide({ kicker: d.kicker, title: d.title, subtitle: d.subtitle, source: d.source, note: d.note, notes: d.notes });
 }
@@ -565,6 +578,12 @@ L.cover = (deck, d) => {
 // ---- 2 Executive recommendation -------------------------------------------------------------
 L.execRec = (deck, d) => {
   const s = contentSlide(deck, d);
+  if (d.found) {
+    const fy = headerBottom(d) + 0.08;
+    const fh = TOP - 0.1 - fy;
+    card(s, { x: X0, y: fy, w: CW, h: fh, fill: "plumTint", line: null, name: "Found strip" });
+    tb(s, d.found, { x: X0 + 0.2, y: fy + 0.03, w: CW - 0.4, h: fh - 0.06, size: 11.5, min: 10.5, color: "aubergine", valign: "middle", name: "Found text" });
+  }
   const lw = 7.9;
   card(s, { x: X0, y: TOP, w: lw, h: BOT - TOP, name: "Recommendations card" });
   label(s, d.listHeading, { x: X0 + 0.22, y: TOP + 0.16, w: 4 });
@@ -613,7 +632,7 @@ L.execNumbers = (deck, d) => {
 // ---- 4 Where PNA starts ---------------------------------------------------------------------
 L.startPoint = (deck, d) => {
   const s = contentSlide(deck, d);
-  const topicW = 2.0;
+  const topicW = 2.25;
   const foundX = X0 + topicW + 0.1;
   const soX = 8.62;
   const foundW = soX - 0.42 - foundX;
@@ -1026,7 +1045,7 @@ L.funnel = (deck, d) => {
   const barX = X0 + labW + 0.15;
   const barMax = X0 + fw - barX;
   label(s, "Stage", { x: X0, y: TOP, w: 1.5 });
-  label(s, d.funnelHeader, { x: barX, y: TOP, w: 4 });
+  label(s, `${d.funnelHeader} · bar lengths schematic`, { x: barX, y: TOP, w: 4.6 });
   badges(s, ["estimate"], X0 + fw, TOP, "right");
   const y0 = TOP + 0.36;
   const leadH = 1.02;
@@ -1040,8 +1059,9 @@ L.funnel = (deck, d) => {
     const bh = Math.min(0.36, rowH * 0.72);
     const by = i === 0 ? ry + 0.04 : ry + (rh - bh) / 2;
     tb(s, [{ text: st.label, bold: true }, ...(st.sub ? [{ text: st.sub, color: "muted", sizeDelta: -1.5 }] : [])], { x: X0, y: i === 0 ? ry : ry, w: labW, h: i === 0 ? 0.46 : rh, size: 12, min: 11, paraGap: 0, valign: "middle", name: "Funnel stage" });
-    const frac = 1 - (i * 0.62) / (n - 1);
-    const bw = barMax * frac;
+    // Schematic widths: every stage narrower than the one above (the labels carry the values).
+    const leadW = barMax - 0.75;
+    const bw = i === 0 ? barMax : leadW * (1 - (i * 0.62) / (n - 1));
     if (i === 0) {
       let x = barX;
       const total = d.routes.reduce((a, r) => a + r.value, 0);
@@ -1250,7 +1270,7 @@ L.channel = (deck, d) => {
   ], { ...base, valAxisMinVal: 0, valAxisMaxVal: 22, valAxisHidden: true, showLegend: false, objectName: "CAC chart", altText: d.chart.title });
   // Line label (top right of plot, above the dashed line)
   const yLine = area.y + area.h * (1 - d.chart.line / 22);
-  tb(s, d.chart.lineLabel, { x: area.x + 0.1, y: yLine - 0.42, w: area.w * 0.58, h: 0.38, size: 10, min: 10, bold: true, color: "amberDark", valign: "bottom", name: "CAC line label" });
+  tb(s, d.chart.lineLabel, { x: area.x + 0.1, y: yLine - 0.7, w: area.w * 0.58, h: 0.3, size: 10, min: 10, bold: true, color: "amberDark", valign: "bottom", name: "CAC line label" });
   const fy = area.y + area.h + 0.04;
   tb(s, `**${d.chart.bands}**`, { x: area.innerX, y: fy, w: area.innerW, h: 0.22, size: 10, min: 10, color: "muted", name: "SG4 bands" });
   tb(s, d.chart.detail, { x: area.innerX, y: fy + 0.25, w: area.innerW, h: detailH, size: 10, min: 10, color: "muted", name: "Rate-set detail" });
@@ -1451,8 +1471,8 @@ L.ninety = (deck, d) => {
 L.roadmap = (deck, d) => {
   const s = contentSlide(deck, d);
   const top = d.top || TOP;
-  const discH = 0.34;
-  const g = timeGrid(s, { x: X0, y: top, w: CW, labelW: 1.7, periods: MONTHS, groups: MONTH_GROUPS, markers: d.markers, rows: d.rows, rowH: 0.32 });
+  const discH = 0.43;
+  const g = timeGrid(s, { x: X0, y: top, w: CW, labelW: 1.7, periods: MONTHS, groups: MONTH_GROUPS, markers: d.markers, rows: d.rows, rowH: 0.305 });
   const dy = Math.max(g.bottom + 0.1, BOT - discH);
   card(s, { x: X0, y: dy, w: CW, h: BOT - dy, fill: "amberTint", line: null, name: "Disclosure chip" });
   tb(s, d.disclosure, { x: X0 + 0.2, y: dy, w: CW - 0.4, h: BOT - dy, size: 10.5, min: 10, color: "amberDark", valign: "middle", name: "Disclosure text" });
@@ -1701,9 +1721,9 @@ L.a9 = (deck, d) => {
   const x2 = X0 + w1 + GAP;
   const w2 = 4.35;
   label(s, "Source register", { x: x2, y: TOP, w: 3 });
-  const t = table(s, { x: x2, y: TOP + 0.3, w: w2, h: 3.1, columns: d.registerColumns, rows: d.register, max: 11, min: 10, name: "Register table" });
+  const t = table(s, { x: x2, y: TOP + 0.3, w: w2, h: 3.1, columns: d.registerColumns, rows: d.register, max: 10.5, min: 10, name: "Register table" });
   const ny = TOP + 0.3 + t.height + 0.12;
-  tb(s, [{ text: d.registerNote, color: "muted" }, { text: d.workbooks }], { x: x2, y: ny, w: w2, h: BOT - ny, size: 10.5, min: 10, paraGap: 5, name: "Register note" });
+  tb(s, [{ text: d.registerNote, color: "muted" }, { text: d.workbooks }], { x: x2, y: ny, w: w2, h: BOT - ny, size: 10.5, min: 10, paraGap: 3, name: "Register note" });
   const x3 = x2 + w2 + GAP;
   const w3 = X1 - x3;
   card(s, { x: x3, y: TOP, w: w3, h: BOT - TOP, fill: "amberTint", line: null, name: "Open items card" });
