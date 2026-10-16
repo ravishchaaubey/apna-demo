@@ -10,3 +10,5 @@
 | 2026-10-16 | Gate A research | 5 of 6 done | All agents hit the shared WebSearch quota (~200/turn); Instagram/Justdial/Maps/PNA site blocked. Gaps logged in each file. |
 | 2026-10-16 | Canonical assumptions | Done | assumptions_register.md CA-01..07; open reconciliation of tricity vs India TAM share. |
 | 2026-10-16 | Growth & MarTech agent | Dispatched | Depends only on Gate A customer/competitor evidence. |
+| 2026-10-16 | **Gate A — Evidence** | **Passed with disclosed gaps** | 6 research files + merged `research/sources.md` (≈300 sources). Material gaps: PNA's own operating data (founder), verified competitor fees (mystery shop needed), institute counts, Lakmé Academy/franchise economics, makeup-specific funnel benchmarks, hybrid completion data. Decision: proceed to Gate B/C with gaps labelled [HYP]; BM agent gets limited follow-up research on Lakmé Academy + Airblack. |
+| 2026-10-16 | Gate B/C agents | Dispatched | Business model (opus) + economics (opus) in parallel with growth (opus); economics to align with growth/BM outputs when available. |
