@@ -93,6 +93,17 @@ def main():
                 nm = "Career-enquiry seasonality Jan..Dec" if m.group(1) == "A-GRO-40" else "Self-makeup seasonality Jan..Dec"
                 reg.append(f"| {m.group(1)}-01..12 | {nm} | — | {vals} | — | index | {esc(series[0]['src'])} | {esc(series[0]['tag'])} |")
             continue
+        mc = re.match(r"^(A-ECO-164|A-ECO-165)-(\d)$", k)
+        if mc:
+            if mc.group(1) in seen_series:
+                continue
+            seen_series.add(mc.group(1))
+            series = [rows[x] for x in order if re.match(rf"^{mc.group(1)}-\d$", x)]
+            vals = " / ".join(x["vals"][1] for x in series)
+            nm = ("L3 local cohort start times, 6-weekly intake calendar (model months from 1 Nov 2026; 2.10 = 4 Jan 2027)" if mc.group(1) == "A-ECO-164"
+                  else "Alternative 8-weekly intake calendar: L3 cohort start times (model months)")
+            reg.append(f"| {mc.group(1)}-1..{len(series)} | {nm} | — | {vals} | — | model months | {esc(series[0]['src'])} | {esc(series[0]['tag'])} |")
+            continue
         if k.startswith("SOM-"):
             continue
         reg.append(f"| {k} | {esc(e['desc'])} | {e['vals'][0]} | {e['vals'][1]} | {e['vals'][2]} | {esc(e['unit'])} | {esc(e['src'])} | {esc(e['tag'])} |")

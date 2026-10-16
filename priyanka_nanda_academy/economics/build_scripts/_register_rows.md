@@ -3,6 +3,7 @@
 | CA-01 | PNA paying students per year today (all courses) - founder 'under 60' | 30 | 50 | 60 | students/yr | Founder 2026-10-16 (canonical CA-01) | [FOUNDER] |
 | CA-02 | Current flagship professional course fee (incl. kit) | ₹40,000 | ₹60,000 | ₹75,000 | ₹ | Not supplied; local diploma band ₹35-75k (S-LC §6) | [HYP] |
 | CA-03 | Growth investment envelope, 12 months | ₹1,000,000 | ₹3,000,000 | ₹5,000,000 | ₹ | Founder: moderate ₹10-50L | [FOUNDER] |
+| A-BM-01 | Batch cap: students per L3 cohort | 12 | 12 | 12 | students | BM A-BM-01 (cap 12) | [HYP] |
 | A-BM-02 | L3 realised fee after discounts/credits (after proof gate) | ₹65,000 | ₹80,000 | ₹100,000 | ₹ | A-BM-02 (list ₹90k-1.25L) | [HYP] |
 | A-BM-04a | Lead trainer salary | ₹75,000 | ₹60,000 | ₹55,000 | ₹/mo | A-BM-04 ₹50-80k | [HYP] |
 | A-BM-04b | Trainer salary | ₹45,000 | ₹38,000 | ₹32,000 | ₹/mo | A-BM-04 ₹30-45k | [HYP] |
@@ -110,7 +111,7 @@
 | A-ECO-125 | Academy manager / admissions head salary | ₹65,000 | ₹65,000 | ₹65,000 | ₹/mo | BM §6.1: academy manager M12-18 | [HYP] |
 | A-ECO-126 | Academy manager start month | 99 | 13 | 10 | month # | BM §6.1 | [HYP] |
 | A-ECO-127 | LMS / hybrid platform | ₹5,000 | ₹5,000 | ₹8,000 | ₹/mo | From hybrid launch | [HYP] |
-| A-ECO-128 | Destination/hybrid format launch month (out-of-town L3 students switch format) | 99 | 10 | 8 | month # | BM: hybrid pilot before G2; Growth Fast-track | [HYP] |
+| A-ECO-128 | Destination format start month: pilot cohort (A-ECO-161) over the first two intakes, then out-of-town L3 students take the format (Staged: not before G1+1) | 99 | 10 | 8 | month # | BM: pilot before G2; Gate E: pilot Aug-Sep 2027 (M10-M11) after G1 at M9 | [HYP] |
 | A-ECO-129 | Hybrid pre-work content production + LMS set-up (capex, 2 months before launch) | ₹100,000 | ₹350,000 | ₹550,000 | ₹ | BM §6.5: ₹1L / 3-4L / 5-6L | [EST] |
 | A-ECO-130 | Regional pop-up pilot start month | 99 | 9 | 6 | month # | BM: pilots ≤₹2L from ~M9 before G2 | [HYP] |
 | A-ECO-131 | Masterclass (L4) seats offered per month at steady state | 12 | 24 | 30 | seats/mo | A-GRO §10.3 (2 x 12 base); BM A-BM-05 | [HYP] |
@@ -127,7 +128,17 @@
 | A-ECO-154 | Staged Plan: running cost of the studio weekend/evening batch slot (utilities, housekeeping, weekend premium) | ₹10,000 | ₹8,000 | ₹6,000 | ₹/mo | recommended_strategy.md §5/§10 #16; judgement | [HYP] |
 | A-ECO-155 | Staged Plan: studio batch slots per day once the weekend/evening slot is added (before the move) | 2.50 | 2.50 | 2.50 | slots | recommended_strategy.md §11.3 #2 (2.5 slots a day) | [HYP] |
 | A-ECO-156 | Staged Plan: month the studio weekend/evening slot starts | 5 | 5 | 5 | month # | recommended_strategy.md §5 T1 (from M5) | [HYP] |
+| A-ECO-157 | Staged Plan: Admissions & Operations Lead premium over the counsellor salary (replaces counsellor #1 from M1; owns the 90-day plan) | ₹15,000 | ₹15,000 | ₹15,000 | ₹/mo | independent_review.md C3/RT-03; rationale: senior admissions/ops hire in tricity | [HYP] |
+| A-ECO-158 | Stop-loss lease exit: months of new-space rent paid as notice after an exit decision (booked in the exit month) | 3 | 3 | 3 | months | independent_review.md C1 (3-month rent notice); typical commercial lease notice | [HYP] |
+| A-ECO-159 | Stop-loss severance: months of salary for staff released at a cut / exit | 1 | 1 | 1 | months | independent_review.md C1 (1 month of salaries) | [HYP] |
 | A-ECO-160 | Price step 1 list fee (two-step path) | ₹75,000 | ₹75,000 | ₹75,000 | ₹ | recommended_strategy.md §7.2 (= A-GRO-06 low) | [HYP] |
+| A-ECO-161 | Destination pilot cohort: out-of-town L3 students over the two pilot intakes from the Destination start (planning case Aug-Sep 2027, M10-M11) | 4 | 6 | 8 | students | twelve_month_roadmap.md pilot ≥6; growth_marketing_strategy.md §1.1 Phase 3 (Aug-Sep 2027); RT-15 | [HYP] |
+| A-ECO-162 | False-positive stress: demand after a G1 false positive, share of planned demand (all products) | 60% | 60% | 60% | % | independent_review.md RT-01/C1: contribution 40% below plan from G1+1 | [HYP] |
+| A-ECO-163 | Staged Plan: second trainer (first additional trainer FTE) in post from month (not before G1+1) | 10 | 10 | 10 | month # | independent_review.md C4/RT-04/RT-11: second trainer from Aug 2027 (M10) in the planning case | [HYP] |
+| A-ECO-164-1..7 | L3 local cohort start times, 6-weekly intake calendar (model months from 1 Nov 2026; 2.10 = 4 Jan 2027) | — | 2.10 / 4 / 5.37 / 6.74 / 8.13 / 9.48 / 10.87 | — | model months | twelve_month_roadmap.md intake rhythm: cohort 1 Mon 4 Jan, cohort 2 Mon 1 Mar, then about every 6 weeks (one local L3 cohort per intake) | [HYP] |
+| A-ECO-165-1..6 | Alternative 8-weekly intake calendar: L3 cohort start times (model months) | — | 2.10 / 4 / 5.83 / 7.67 / 9.48 / 11.33 | — | model months | Gate E test of the G1 cohort criterion: intakes every 8 weeks instead of 6 | [HYP] |
+| A-ECO-166 | G1 cohort test: fill threshold for two consecutive L3 cohorts | 75% | 75% | 75% | % | recommended_strategy.md §7.1 G1 (2 consecutive cohorts ≥75% full) | [REC] |
+| A-ECO-167 | Founder contingency reserve above the ₹30L envelope (KT-11) | ₹500,000 | ₹500,000 | ₹500,000 | ₹ | recommended_strategy.md §5 / KT-11 (₹30L + ₹5L contingency) | [REC] |
 | A-ECO-170 | Optional pro kit price to the student (itemised, near cost) | ₹25,000 | ₹20,000 | ₹18,000 | ₹ | positioning_and_segments.md §6: ₹18-25k | [HYP] |
 | A-ECO-171 | Local commute per class day (tricity resident) | ₹150 | ₹120 | ₹100 | ₹/day | Judgement (auto/bus within tricity) | [HYP] |
 | A-ECO-172a | Class days: Weekday format (12 weeks x 5 days) | 60 | 60 | 60 | days | §6.1 Weekday 12 weeks | [EST] |
@@ -172,6 +183,8 @@
 | A-ECO-226a | Capex Y2 (hybrid content refresh / build, stations, photo studio) | ₹300,000 | ₹300,000 | ₹500,000 | ₹ | Directional | [EST] |
 | A-ECO-226b | Capex Y3 (content refresh, stations) | ₹200,000 | ₹300,000 | ₹400,000 | ₹ | Directional | [EST] |
 | A-ECO-227 | Kit / product margin on retail sales to students & alumni, per career student per year (post price-step) | ₹600 | ₹960 | ₹1,400 | ₹/student | Same basis as A-ECO-37 (optional kit at near cost) | [HYP] |
+| A-ECO-228a | Price-response stress at price step 2 (₹90k list): change in career conversion (3yr sensitivity group 7) | -10% | -10% | -10% | % | independent_review.md RT-05/C5 (-10%) | [HYP] |
+| A-ECO-228b | Price-response stress at price step 2 (₹90k list): change in career conversion (3yr sensitivity group 8) | -20% | -20% | -20% | % | independent_review.md RT-05/C5 (-20%) | [HYP] |
 | A-ECO-301 | B1 owned regional centre: annual fixed cost (rent, lead trainer, trainer, counsellor, utilities, local brand, management) |  | 2,910,000 |  | ₹/yr | A-BM-13 [HYP] | [HYP] |
 | A-ECO-302 | B1 owned centre: capex + launch |  | 1,650,000 |  | ₹ | A-BM-13 ₹13-20L [HYP] | [HYP] |
 | A-ECO-303 | B1 owned centre: P1 students per year at maturity (Base) |  | 46 |  | students | BM breakeven ~46 [HYP] | [HYP] |

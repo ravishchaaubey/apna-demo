@@ -28,5 +28,6 @@ Note: the brief suggests 3–5 concurrent agents. Competitive intelligence was s
 | 9c | Economics rerun (hybrid library deferred, M5 slot) | opus (resumed #9) | Gate D | economics/* | done — Staged Y1 ₹66.5L rev, +₹2.2L EBITDA, peak cash ₹25.6L |
 | 10c | Lead Strategist final number sync | fable (resumed #10) | Gate D | 3 strategy/summary files | done — contingency kept (expected undrawn); G1 M6 default kept |
 | 12 | Independent Strategy Reviewer (red team) | fable | Gate E | strategy/independent_review.md | done — Approve with conditions; 3 Critical, 12 Major, 20 defects |
-| 9d | Economics Gate E fixes (C1, C2, C3 cost, C4, C5) | opus (resumed #9) | Gate E | economics/* | dispatched |
+| 9d | Economics Gate E fixes (C1, C2, C3 cost, C4, C5) | opus (resumed #9) | Gate E | economics/* | done — planning case G1@M9; downside, payback/IRR, tornado on Staged; 92 checks pass |
 | 7c | Growth Gate E fixes (C6, C7, defects) | opus (resumed #7) | Gate E | own 5 files | done — Destination pilot Aug–Sep 2027; media ≈₹27.0L total (₹30L plan) |
+| 10d | Lead Strategist Gate E re-decision | fable (resumed #10) | Gate E | 3 strategy/summary files | dispatched |
