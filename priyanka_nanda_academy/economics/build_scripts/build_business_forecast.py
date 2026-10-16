@@ -203,7 +203,7 @@ f("A-ECO-227", "Kit / product margin on retail sales to students & alumni, per c
 
 
 SELOPTS = {"staged": "=Assumptions!$D$5", "g1": "=Assumptions!$F$5", "pp": "=Assumptions!$H$5", "fp": "=Assumptions!$J$5",
-           "fpos": "=Assumptions!$L$5", "xm": "=Assumptions!$N$5"}
+           "fpos": "=Assumptions!$L$5", "xm": "=Assumptions!$N$5", "deep": "=Assumptions!$P$5"}
 PLAN_OPTS = {"staged": 1, "g1": 9, "pp": 2, "fp": 2}     # planning case (Gate E): Staged, G1 at M9, two-step price, founder ≤40% M12
 STAGED_RUNS = [
     ("Staged_G1M9", 2, 2, "PLANNING CASE - STAGED PLAN, G1 at M9 (Jul 2027): Base team from M1 with an Admissions & Operations Lead; ₹10L-plan capex, studio stations (+ weekend/evening slot from M5) and media ≤₹60k/month until G1; T2 (space move, 0.5 counsellor, pop-ups) from M10; second trainer from M10; Destination pilot M10-M11; two-step price (step 1 M10, step 2 M16); founder ≤40% at M12; media ₹80k M10, ₹1.0L M11-12",
@@ -214,6 +214,8 @@ STAGED_RUNS = [
      {"staged": 1, "g1": 99, "pp": 2, "fp": 2}),
     ("Staged_Cons_CutM5", 1, 2, "DOWNSIDE (a) - as Staged_Cons, cut to the ₹10L-plan cost base at a T1 review in M5 (1 month severance)",
      {"staged": 1, "g1": 99, "pp": 2, "fp": 2, "xm": 5}),
+    ("Staged_Cons_CutM5_Deep", 1, 2, "DOWNSIDE (a) - as Staged_Cons, KT-1a mandatory cut at the March 2027 review (M5) to the stop-loss state as strategy §7 defines it: ₹10L-plan team and media lines, paid media paused, content executive and freelancers released, Lead Trainer 0.5 FTE, founder-led delivery (no additional trainers), Operations Lead kept",
+     {"staged": 1, "g1": 99, "pp": 2, "fp": 2, "xm": 5, "deep": 1}),
     ("Staged_Cons_CutM10", 1, 2, "DOWNSIDE (a) - as Staged_Cons, strategy rule as written: G1 fails at the M9 review, ₹10L-plan cost base from M10 (1 month severance)",
      {"staged": 1, "g1": 99, "pp": 2, "fp": 2, "xm": 10}),
     ("Staged_FalsePos", 2, 2, "DOWNSIDE (b) - planning-case timing: G1 passed at M9 on a false positive; T2 released (fit-out + deposit M9, move M10); demand x0.6 from M10; KT-5 price reversion for the M11 intake; miss visible in M11; stop-loss exit M12 (3 months' rent notice + 1 month salaries; ₹10L-plan cost base back in the studio)",
@@ -328,7 +330,8 @@ def outlook(wb, name, A, rate_idx, plan_idx, label, flex=None):
     for lc, lab, vc, key, dflt in [("P3", "Staged Plan? (1 = yes)", "Q3", "staged", 0), ("P4", "G1 month (Staged: move, step 1 and T2 follow at G1+1; 99 = G1 not passed)", "Q4", "g1", 9),
                                    ("R3", "Price path (1 single step / 2 two-step)", "S3", "pp", 1), ("R4", "Founder path (1 A-BM-10 / 2 Gate D ≤40% M12)", "S4", "fp", 1),
                                    ("T3", "False-positive stress (1 = demand x A-ECO-162 from G1+1, KT-5 price reversion at G1+2)", "U3", "fpos", 0),
-                                   ("T4", "Stop-loss cut / exit month (99 = none): ₹10L-plan cost base, lease exit + severance", "U4", "xm", 99)]:
+                                   ("T4", "Stop-loss cut / exit month (99 = none): ₹10L-plan cost base, lease exit + severance", "U4", "xm", 99),
+                                   ("X3", "Stop-loss depth from the cut month (0 = ₹10L-plan base; 1 = deep: paid media paused, content team and freelancers released, no additional trainers)", "Y3", "deep", 0)]:
         ws[lc] = lab
         ws[lc].font = NOTE_FONT
         ws[vc] = opts.get(key, dflt)
@@ -345,7 +348,8 @@ def outlook(wb, name, A, rate_idx, plan_idx, label, flex=None):
     p, ps, cur, prev = S.p, S.ps, S.cur, S.prev
     conv, fee, fill, cpl, var, rentx, budx, gstsw = "$F$3", "$H$3", "$J$3", "$L$3", "$N$3", "$F$4", "$J$4", "$H$4"
     pr1, npe, mcv, tpay = "$L$4", "$N$4", "$W$3", "$W$4"
-    st, g1, pp, fp, fpos, xm = "$Q$3", "$Q$4", "$S$3", "$S$4", "$U$3", "$U$4"
+    st, g1, pp, fp, fpos, xm, deep = "$Q$3", "$Q$4", "$S$3", "$S$4", "$U$3", "$U$4", "$Y$3"
+    dcut = lambda m: f"AND({deep}=1,{m}>={xm})"            # deep stop-loss state in force
     mv = f"IF({st}=1,{g1}+1,{ps('A-ECO-112')})"          # move month (Staged: G1 + 1)
     s1m = f"IF({st}=1,{g1}+1,{ps('A-ECO-104')})"         # price step 1 / single step
     s2m = f"IF({pp}=2,{ps('A-ECO-106')},999)"             # price step 2 (two-step path only)
@@ -378,7 +382,7 @@ def outlook(wb, name, A, rate_idx, plan_idx, label, flex=None):
     bud1 = A.rows["A-GRO-BUD-01"]
     brng = f"Assumptions!$C${bud1}:$E${bud1 + 11}"
     S.row("bud", "Paid media budget (Growth ramp; Staged: ≤A-ECO-151 until G1, then the post-G1 ramp from G1+1)",
-          lambda m, c: f"IF(AND({st}=1,{m}<={g1}),MIN(INDEX({brng},{m},{c}${S.R['pix']}),{p('A-ECO-151')}),INDEX({brng},IF({st}=1,MIN(12,{m}-{g1}+6),{m}),{c}${S.R['pix']}))*{budx}",
+          lambda m, c: f"IF(AND({st}=1,{m}<={g1}),MIN(INDEX({brng},{m},{c}${S.R['pix']}),{p('A-ECO-151')}),INDEX({brng},IF({st}=1,MIN(12,{m}-{g1}+6),{m}),{c}${S.R['pix']}))*{budx}*IF({dcut(m)},0,1)",
           FMT_INT, notetxt="A-GRO-BUD-01..12 (ramp written for G1 at M6); Staged: month m after G1 uses ramp month m-G1+6 (planning case: ₹80k M10, ₹1.0L M11-12 = ₹7.0L)")
     S.row("ecac", "Effective paid CAC = funnel paid CAC x calibration factor A-ECO-51 x CPL flex / conversion flex", lambda m, c: f"{p('A-ECO-FUN-01')}*{p('A-ECO-51')}*{cpl}/{conv}", FMT_INT, total="avg")
     S.row("sla", "Speed-to-lead factor on new (incremental) leads: A-GRO-24 before the SLA month",
@@ -480,13 +484,13 @@ def outlook(wb, name, A, rate_idx, plan_idx, label, flex=None):
     S.row("tslots", "Batch-slots taught by trainers (x (1 - founder share))", lambda m, c: f"{c}{S.R['slots']}*(1-{c}{S.R['fsh']})", FMT_1DP, total="max")
     S.row("lead", "Lead trainer (FTE)", lambda m, c: f"IF({m}>={p('A-ECO-52')},{p('A-ECO-52b')},0)", FMT_1DP, total="last")
     S.row("trn", "Additional trainers (FTE; 0.1 FTE overflow absorbed by founder/assistant; Staged: second trainer from A-ECO-163, not before G1+1)",
-          lambda m, c: f"IF({c}{S.R['lead']}=0,0,MAX(IF(AND({st}=1,{m}>=MAX({p('A-ECO-163')},{g1}+1),{m}<{xm}),1,0),ROUNDUP(({c}{S.R['tslots']}-{c}{S.R['lead']}*{p('A-ECO-46')})/{p('A-ECO-46')}-0.1,0)))", FMT_INT, total="max")
+          lambda m, c: f"IF(OR({c}{S.R['lead']}=0,{dcut(m)}),0,MAX(IF(AND({st}=1,{m}>=MAX({p('A-ECO-163')},{g1}+1),{m}<{xm}),1,0),ROUNDUP(({c}{S.R['tslots']}-{c}{S.R['lead']}*{p('A-ECO-46')})/{p('A-ECO-46')}-0.1,0)))", FMT_INT, total="max")
     S.row("ast", "Assistants (FTE; 1 per 2 active batch-slots, practical ratio ≤1:6)", lambda m, c: f"ROUNDUP({c}{S.R['slots']}/2,0)", FMT_INT, total="max")
     S.row("ctr", "Trainer + assistant cost", lambda m, c: f"{c}{S.R['lead']}*{p('A-BM-04a')}*{tpay}+{c}{S.R['trn']}*{p('A-BM-04b')}+{c}{S.R['ast']}*{p('A-BM-04c')}", FMT_INT)
     S.row("csl", "Admissions counsellors (A-GRO-45 x FTE; Staged: counsellor #1 is the Admissions & Operations Lead)",
           lambda m, c: f"(IF({m}>={p('A-ECO-53')},1,0)+IF({m}>=IF({st}=1,MAX({p('A-ECO-55')},{g1}+1),{p('A-ECO-55')}),{p('A-ECO-54')},0))*{p('A-GRO-45')}", FMT_INT)
     S.row("cmk", "Marketing/content team, shooter/editor, performance and SEO freelancers (Growth §10)",
-          lambda m, c: f"IF({m}>={p('A-ECO-57a')},{p('A-GRO-46')},0)+IF({m}>={p('A-ECO-57d')},{p('A-GRO-47')},0)+IF({m}>={p('A-ECO-57b')},{p('A-GRO-48')},0)+IF({m}>={p('A-ECO-57c')},{p('A-GRO-50')},0)", FMT_INT)
+          lambda m, c: f"IF({dcut(m)},0,IF({m}>={p('A-ECO-57a')},{p('A-GRO-46')},0)+IF({m}>={p('A-ECO-57d')},{p('A-GRO-47')},0)+IF({m}>={p('A-ECO-57b')},{p('A-GRO-48')},0)+IF({m}>={p('A-ECO-57c')},{p('A-GRO-50')},0))", FMT_INT)
     S.row("cfd", "Front-desk / operations coordinator (while in the new space)", lambda m, c: f"IF({insp(m)},{p('A-ECO-124')},0)", FMT_INT)
     S.row("cam", "Academy manager / admissions head", lambda m, c: f"IF({m}>={p('A-ECO-126')},{p('A-ECO-125')},0)", FMT_INT)
     S.row("cops", "Admissions & Operations Lead premium over counsellor pay (Staged, A-ECO-157; execution owner of the 90-day plan)",
@@ -532,7 +536,7 @@ def outlook(wb, name, A, rate_idx, plan_idx, label, flex=None):
 
     # ---------------------------------------------------------------- K. cohort-level fill (G1 / DEL-01 / KT-2 testable; review RT-02)
     S.sec("K. L3 cohort fill on the intake calendar (A-ECO-164: one local L3 cohort per intake; L3 local starts + upgrades allocated to cohorts by date)")
-    thr, cap12, st8 = ps("A-ECO-166"), ps("A-BM-01"), ps("A-ECO-110")
+    thr, cap12 = ps("A-ECO-166"), ps("A-BM-01")
     for tag, cal, apfx, ttl in (("", COHORTS, "A-ECO-164", "6-weekly intake calendar (planning assumption)"),
                                 ("8", COHORTS8, "A-ECO-165", "Alternative: 8-weekly intake calendar (A-ECO-165)")):
         ovr = []
@@ -545,8 +549,9 @@ def outlook(wb, name, A, rate_idx, plan_idx, label, flex=None):
                   total=f"=SUMPRODUCT(C{rnext}:N{rnext},C{S.R['l3']}:N{S.R['l3']}+C{S.R['upg']}:N{S.R['upg']})")
             ovr.append(rnext)
         S.r += 1
-        for j, h in enumerate([f"L3 cohort - {ttl}", "", "Students", "Fill (% of A-BM-01 = 12)", "Two consecutive ≥ A-ECO-166 of 12 (G1 test)", "Start month #",
-                               "Two consecutive ≥ A-ECO-166 of an 8-station studio cohort (A-ECO-110)"]):
+        for j, h in enumerate([f"L3 cohort - {ttl}", "", "Students", "Fill (% of A-BM-01 = 12)", "Two consecutive ≥ A-ECO-166 of 12 (old G1 test, retired)", "Start month #",
+                               "RESTATED G1 TEST: this and the previous cohort ≥ A-ECO-166 of the stations in the room in use at their start (6 of 8 studio; 9 of 12 after the move)",
+                               "This cohort ≥ A-ECO-166 of stations in use"]):
             ws.cell(row=S.r, column=1 + j, value=h).font = BOLD
         cohr = []
         for k, (t, dt, mm) in enumerate(cal, 1):
@@ -558,10 +563,12 @@ def outlook(wb, name, A, rate_idx, plan_idx, label, flex=None):
             ws.cell(row=r_, column=4, value=f"=C{r_}/{cap12}").number_format = FMT_PCT
             ws.cell(row=r_, column=5, value=(f"=IF(AND(D{r_}>={thr},D{r_ - 1}>={thr}),1,0)" if k > 1 else "=0")).number_format = FMT_INT
             ws.cell(row=r_, column=6, value=mm).number_format = FMT_INT
-            ws.cell(row=r_, column=7, value=(f"=IF(AND(C{r_}>={thr}*{st8},C{r_ - 1}>={thr}*{st8}),1,0)" if k > 1 else "=0")).number_format = FMT_INT
+            stnr = f"$C${S.R['stn']}:$N${S.R['stn']}"
+            ws.cell(row=r_, column=8, value=f"=IF(C{r_}>={thr}*INDEX({stnr},MIN(12,F{r_})),1,0)").number_format = FMT_INT
+            ws.cell(row=r_, column=7, value=(f"=IF(AND(H{r_}=1,H{r_ - 1}=1),1,0)" if k > 1 else "=0")).number_format = FMT_INT
         S.R[f"coh{tag}1"], S.R[f"coh{tag}N"] = cohr[0], cohr[-1]
     note(ws, S.r + 1, "Cohort fill tests G1 ('2 consecutive L3 cohorts ≥75% full'), KT-2 and DEL-01 against the model's own enrolment path. A parallel Flex cohort at an intake would split the fill further. "
-                      "In the 8-station studio a cohort above 8 needs paired practice or the 2.5-slot timetable; column G tests the criterion against an 8-station cohort.")
+                      "In the 8-station studio a cohort above 8 needs paired practice or the 2.5-slot timetable. Column G is the G1 fill test as restated at Gate E (recommended_strategy.md §7.1): stations in the room in use at each cohort's start (row 'Stations available').")
     S.r += 1
 
     # ---------------------------------------------------------------- KPIs block
@@ -625,7 +632,10 @@ def outlook(wb, name, A, rate_idx, plan_idx, label, flex=None):
         ("L3 cohort fill: average of the 7 Year-1 cohorts", f"=AVERAGE(D{R_['coh1']}:D{R_['cohN']})", FMT_PCT, None),
         ("First month a second consecutive L3 cohort ≥75% full starts (G1 cohort test)", f"=IFERROR(INDEX(F{R_['coh1']}:F{R_['cohN']},MATCH(1,E{R_['coh1']}:E{R_['cohN']},0)),\"not in Y1\")", FMT_GEN, None),
         ("L3 students in the latest Year-1 cohort (27 Sep 2027 start)", f"=C{R_['cohN']}", FMT_1DP, None),
-        ("G1 cohort test vs an 8-station studio cohort (≥6 students), 6-weekly calendar: first month met", f"=IFERROR(INDEX(F{R_['coh1']}:F{R_['cohN']},MATCH(1,G{R_['coh1']}:G{R_['cohN']},0)),\"not in Y1\")", FMT_GEN, None),
+        ("RESTATED G1 fill test (two consecutive cohorts ≥75% of stations in use), 6-weekly calendar: first cohort-start month met", f"=IFERROR(INDEX(F{R_['coh1']}:F{R_['cohN']},MATCH(1,G{R_['coh1']}:G{R_['cohN']},0)),\"not in Y1\")", FMT_GEN, None),
+        ("RESTATED G1 fill test, 8-weekly calendar (A-ECO-165): first cohort-start month met", f"=IFERROR(INDEX(F{R_['coh81']}:F{R_['coh8N']},MATCH(1,G{R_['coh81']}:G{R_['coh8N']},0)),\"not in Y1\")", FMT_GEN, None),
+        ("Restated test, 6-weekly: Year-1 cohorts at ≥75% of stations in use (of 7)", f"=SUM(H{R_['coh1']}:H{R_['cohN']})", FMT_INT, None),
+        ("Restated test, 8-weekly: Year-1 cohorts at ≥75% of stations in use (of 6)", f"=SUM(H{R_['coh81']}:H{R_['coh8N']})", FMT_INT, None),
         ("G1 cohort test (≥75% of 12) on an 8-weekly intake calendar (A-ECO-165): first month met", f"=IFERROR(INDEX(F{R_['coh81']}:F{R_['coh8N']},MATCH(1,E{R_['coh81']}:E{R_['coh8N']},0)),\"not in Y1\")", FMT_GEN, None),
         ("L3 cohort fill on the 8-weekly calendar: cohorts 3-5 average (Apr-Aug 2027 starts)", f"=AVERAGE(D{R_['coh81'] + 2}:D{R_['coh81'] + 4})", FMT_PCT, None),
         ("Paid-route career enrolments delivered, months 7-12", f"=SUM(I{R_['paid']}:N{R_['paid']})", FMT_1DP, None),
@@ -680,7 +690,7 @@ def build():
         ws[f"{col}{rr}"].number_format = FMT_2DP
     ws.column_dimensions["J"].width = 8
     for col, lab, val in [("A", "Run options for Outlook_Selected:", None), ("C", "Staged (0/1)", 0), ("E", "G1 month", 9), ("G", "Price path (1/2)", 1), ("I", "Founder path (1/2)", 1),
-                          ("K", "False-positive (0/1)", 0), ("M", "Cut/exit month (99 none)", 99)]:
+                          ("K", "False-positive (0/1)", 0), ("M", "Cut/exit month (99 none)", 99), ("O", "Deep stop-loss (0/1)", 0)]:
         ws[f"{col}5"] = lab
         ws[f"{col}5"].font = NOTE_FONT if col != "A" else BOLD
         if val is not None:
@@ -1220,6 +1230,7 @@ def build():
     COLN = {"Outlook_Conservative": "Conservative", "Outlook_Base": "Base", "Outlook_Aggressive": "Aggressive", "Plan10L_BaseRates": "₹10L plan @ Base rates",
             "Plan50L_BaseRates": "₹50L plan @ Base rates", "Staged_G1M9": "PLANNING CASE: Staged, G1 M9 / move M10", "Staged_G1M6": "Upside: Staged, G1 M6 / move M7",
             "Staged_Cons": "Downside (a): T1 team at Cons. rates, no cut", "Staged_Cons_CutM5": "Downside (a): cut to ₹10L-plan base at M5",
+            "Staged_Cons_CutM5_Deep": "Downside (a): KT-1a cut at M5 to the deep stop-loss state",
             "Staged_Cons_CutM10": "Downside (a): cut at M10 (G1 fails at M9 review)", "Staged_FalsePos": "Downside (b): false-positive G1 M9, exit M12",
             "Staged_FalsePos_M6": "Downside (b): false-positive G1 M6, exit M9", "Base_TwoStep": "Base + two-step price", "Conservative_TwoStep": "Conservative + two-step price",
             "Base_Founder40": "Base + founder ≤40% M12"}
@@ -1325,7 +1336,7 @@ def build():
     for si in range(1, NG + 1):
         for y in (1, 2, 3):
             ck.append((f"3yr {GL[si - 1]} Y{y}: SOM layers reconcile", f"=ABS('3yr_Scenarios'!{ycol(si, y)}{T['chk']})<0.001"))
-    ck.append(("Selected outlook equals Base when selector = Base (and run options at defaults)", f"=IF(AND(Assumptions!$C$3=\"Base\",Assumptions!$D$5=0,Assumptions!$H$5=1,Assumptions!$J$5=1,Assumptions!$L$5=0,Assumptions!$N$5=99),ABS(Outlook_Selected!O{outs['Outlook_Selected']['ebitda']}-Outlook_Base!O{outs['Outlook_Base']['ebitda']})<1,TRUE)"))
+    ck.append(("Selected outlook equals Base when selector = Base (and run options at defaults)", f"=IF(AND(Assumptions!$C$3=\"Base\",Assumptions!$D$5=0,Assumptions!$H$5=1,Assumptions!$J$5=1,Assumptions!$L$5=0,Assumptions!$N$5=99,Assumptions!$P$5=0),ABS(Outlook_Selected!O{outs['Outlook_Selected']['ebitda']}-Outlook_Base!O{outs['Outlook_Base']['ebitda']})<1,TRUE)"))
     ck.append(("Calibration: Base month-12 paid demand is budget-limited exactly at target (A-ECO-51)",
                f"=ABS(Outlook_Base!N{outs['Outlook_Base']['ach']}-{A.r('A-GRO-01', 'base')}*({A.r('A-GRO-03a', 'base')}+{A.r('A-GRO-03b', 'base')}+{A.r('A-GRO-03e', 'base')}))<0.01"))
     for si in range(1, NG + 1):
