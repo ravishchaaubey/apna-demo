@@ -51,11 +51,11 @@ f("A-ECO-50", "Share of the paid-media budget that buys career (L2/L3) leads", 0
   "marketing_channel_plan.md rows 8-15: career CTWA, regional, Search, brand, taster half of M3, retargeting ≈70% of base ₹1.0L", "[EST]", "pct", "rate")
 f("A-ECO-51", "Awareness/retargeting overhead factor on funnel CAC (calibrated so the Base plan budget buys the Base target at steady state)",
   "=CAL", "=CAL", "=CAL", "x", "Calibrated: A-ECO-50 x Base Oct-27 budget / (A-GRO-01 base x paid mix x A-ECO-FUN-01 base)", "[EST] calibration", "2dp", "rate")
-ramp = {"C": [10, 25, 30, 35, 40, 40, 40, 40, 40, 40, 40, 40], "B": [15, 40, 50, 60, 80, 90, 100, 100, 100, 100, 100, 100],
-        "A": [15, 50, 60, 70, 120, 170, 200, 200, 200, 200, 200, 200]}
+ramp = {"C": [10, 15, 30, 35, 40, 40, 40, 40, 40, 40, 40, 40], "B": [15, 15, 40, 50, 60, 60, 80, 100, 100, 100, 100, 100],
+        "A": [15, 15, 50, 60, 60, 120, 170, 200, 200, 200, 200, 200]}  # marketing_channel_plan.md §3.2 (re-aligned to Gate D caps)
 for i, mth in enumerate(MONTHS):
     f(f"A-GRO-BUD-{i + 1:02d}", f"Paid media budget, month {i + 1} ({mth})", ramp["C"][i] * 1000, ramp["B"][i] * 1000, ramp["A"][i] * 1000, "₹",
-      "growth_marketing_strategy.md §6.4/§10; marketing_channel_plan.md §3.2 (Mar+ only if spend gates green)", "[EST]", "rs", "plan")
+      "marketing_channel_plan.md §3.2 / growth_marketing_strategy.md §10 (re-aligned): ≤₹15k until G0, ≤₹60k until G1; B assumes G1 green at M7", "[EST]", "rs", "plan")
 sea = [0.70, 0.80, 0.90, 1.00, 1.30, 1.35, 1.25, 1.10, 1.05, 1.00, 0.80, 0.75]
 s5 = [1.2, 1.3, 0.9, 0.8, 0.7, 0.6, 0.6, 0.8, 1.1, 1.4, 1.4, 1.2]
 for i in range(12):
@@ -85,10 +85,11 @@ f("A-ECO-52b", "Lead trainer FTE (0.5 = part-time senior trainer in the ₹10L p
 f("A-ECO-138", "Memo: market salary for the founder's ongoing role (brand face, curriculum, masterclasses, assessment)", 75000, 75000, 75000, "₹/mo", "BM quotes EBITDA after a founder-role salary; judgement", "[HYP]", "rs", "rate")
 f("A-ECO-53", "Counsellor #1 start month", 3, 1, 1, "month #", "Growth §10: C 1 FTE x10 mo; B/A from M1", "[EST]", "int", "plan")
 f("A-ECO-54", "Counsellor #2 FTE", 0, 0.5, 1, "FTE", "Growth §10: B 0.5 FTE x7; A 1 FTE x9", "[EST]", "1dp", "plan")
-f("A-ECO-55", "Counsellor #2 start month", 99, 6, 4, "month #", "Growth §10", "[EST]", "int", "plan")
+f("A-ECO-55", "Counsellor #2 start month", 99, 7, 4, "month #", "Growth §10 (re-aligned): B 0.5 FTE x6 after G1; A 1 FTE x9", "[EST]", "int", "plan")
 f("A-ECO-57a", "Marketing/content team start month", 2, 2, 2, "month #", "Growth §10 (x11 months)", "[EST]", "int", "plan")
 f("A-ECO-57b", "Performance freelancer start month", 2, 2, 2, "month #", "Growth §10 (x11)", "[EST]", "int", "plan")
 f("A-ECO-57c", "SEO freelancer start month", 3, 3, 3, "month #", "Growth §10 (x10)", "[EST]", "int", "plan")
+f("A-ECO-57d", "Shooter/editor start month", 1, 2, 1, "month #", "Growth §10 (re-aligned): C x12, B x11 from M2, A x12", "[EST]", "int", "plan")
 f("A-ECO-58", "Partnerships, PR / outcomes report, contingency (Growth §10 lines, monthly average)", 3333, 15833, 19167, "₹/mo",
   "Growth §10: partnerships/events ex-rewards & pop-ups + outcomes/PR + contingency", "[EST]", "rs", "plan")
 f("A-ECO-110", "Stations in today's Sector 8 studio-academy", 8, 8, 8, "stations", "Founder to confirm (BM: 8-12 needed)", "[HYP]", "int", "rate")
@@ -407,7 +408,7 @@ def outlook(wb, name, A, rate_idx, plan_idx, label, flex=None):
     S.row("csl", "Admissions counsellors (A-GRO-45 x FTE)",
           lambda m, c: f"(IF({m}>={p('A-ECO-53')},1,0)+IF({m}>=IF({st}=1,MAX({p('A-ECO-55')},{g1}+1),{p('A-ECO-55')}),{p('A-ECO-54')},0))*{p('A-GRO-45')}", FMT_INT)
     S.row("cmk", "Marketing/content team, shooter/editor, performance and SEO freelancers (Growth §10)",
-          lambda m, c: f"IF({m}>={p('A-ECO-57a')},{p('A-GRO-46')},0)+{p('A-GRO-47')}+IF({m}>={p('A-ECO-57b')},{p('A-GRO-48')},0)+IF({m}>={p('A-ECO-57c')},{p('A-GRO-50')},0)", FMT_INT)
+          lambda m, c: f"IF({m}>={p('A-ECO-57a')},{p('A-GRO-46')},0)+IF({m}>={p('A-ECO-57d')},{p('A-GRO-47')},0)+IF({m}>={p('A-ECO-57b')},{p('A-GRO-48')},0)+IF({m}>={p('A-ECO-57c')},{p('A-GRO-50')},0)", FMT_INT)
     S.row("cfd", "Front-desk / operations coordinator (from move)", lambda m, c: f"IF({m}>={mv},{p('A-ECO-124')},0)", FMT_INT)
     S.row("cam", "Academy manager / admissions head", lambda m, c: f"IF({m}>={p('A-ECO-126')},{p('A-ECO-125')},0)", FMT_INT)
     S.row("ppl", "Total people cost (founder not charged - owner's return)", lambda m, c: f"SUM({c}{S.R['ctr']}:{c}{S.R['cam']})", FMT_INT, bold=True)
@@ -487,6 +488,9 @@ def outlook(wb, name, A, rate_idx, plan_idx, label, flex=None):
         ("L3 realised fee, month 12 (incl. GST)", f"=N{S.R['fl3']}", FMT_INT),
         ("Space move month (99 = none in Year 1)", f"={mv}", FMT_GEN),
         ("Price step 1 month", f"={s1m}", FMT_GEN),
+        ("Growth & marketing spend, Year 1 (paid media + growth team + martech + website + partnerships/PR/contingency + rewards + pop-ups; Growth §10 scope)",
+         f"=O{S.R['med']}+O{S.R['csl']}+O{S.R['cmk']}+12*{p('A-GRO-42')}+{p('A-GRO-49')}+O{S.R['part']}+O{S.R['vref']}+O{S.R['vpu']}", FMT_INT),
+        ("  of which paid media, Year 1", f"=O{S.R['med']}", FMT_INT),
     ]
     for i, (lab, form, fmt) in enumerate(kp):
         rr = k0 + i
@@ -962,7 +966,9 @@ def build():
           ("EBITDA, last quarter (Aug-Oct 2027)", 1e5, FMT_1DP), ("First month with EBITDA >= 0", None, FMT_GEN), ("Cash position, end of Year 1", 1e5, FMT_1DP),
           ("First month cumulative cash need reaches the T1 cap (₹15L)", None, FMT_GEN), ("First month cumulative cash need reaches ₹10L", None, FMT_GEN),
           ("Peak cash need at the end of T1 (month before the G1 month in Q4; T2 capex follows G1)", 1e5, FMT_1DP), ("Trainer + assistant cost, Year 1", 1e5, FMT_1DP),
-          ("L3 realised fee, month 12 (incl. GST)", "rs", FMT_RS), ("Space move month (99 = none in Year 1)", None, FMT_GEN), ("Price step 1 month", None, FMT_GEN)]
+          ("L3 realised fee, month 12 (incl. GST)", "rs", FMT_RS), ("Space move month (99 = none in Year 1)", None, FMT_GEN), ("Price step 1 month", None, FMT_GEN),
+          ("Growth & marketing spend, Year 1 (paid media + growth team + martech + website + partnerships/PR/contingency + rewards + pop-ups; Growth §10 scope)", 1e5, FMT_1DP),
+          ("  of which paid media, Year 1", 1e5, FMT_1DP)]
     D = {}
     for i, (lab, sc, fmt) in enumerate(dk):
         r_ = 5 + i

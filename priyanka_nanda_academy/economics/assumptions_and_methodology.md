@@ -18,36 +18,41 @@ All rupee figures are nominal. "L" = ₹ lakh and "cr" = ₹ crore. **Market siz
 ### 1A. STAGED PLAN (recommended): primary financial view for the deck
 
 **Definition** (recommended_strategy.md §5–§7; sheets `Staged_G1M6` and `Staged_G1M9`). The run uses Base rates and the Base (₹30L) plan, released in two tranches:
-- **Before G1 (T1 Prove):** Base team from M1; ₹10L-plan capex; studio stations only; paid media capped at ₹60k/month; ₹1L basic recording of theory modules in M3.
-- **From G1 + 1 month (T2 Build):** space move (~1,300 sq ft); second counsellor (0.5 FTE); pop-up pilots; ₹3.5L hybrid pre-work build.
+- **Before G1 (T1 Prove):** Base team from M1; ₹10L-plan capex; studio stations only; paid media on the re-aligned channel-plan ramp, capped at ≤₹15k/month until G0 and ≤₹60k/month until G1; ₹1L basic recording of theory modules in M3.
+- **From G1 + 1 month (T2 Build):** space move (~1,300 sq ft); media ramp to ₹1.0L/month; second counsellor (0.5 FTE); pop-up pilots; ₹3.5L hybrid pre-work build.
 - **Price:** two-step path. Today's fee CA-02 runs until price step 1 at G1 + 1: ₹75k list, ₹66.7k realised. Price step 2 at M16: ₹90k list, ₹80k realised (~89% realisation).
 - **Founder share of contact hours:** ≤40% at M12 (Gate D path).
 - **Timing:** M1 = Nov 2026; all values ex-GST.
 
 | Metric | **Staged Plan: G1 at M6, move M7 (central)** | Staged Plan: G1 at M9, move M10 (latest G1) |
 |---|---|---|
-| Year-1 revenue | **₹66.6L** | ₹57.4L |
-| Year-1 EBITDA (before founder salary) | **+₹1.6L** (2%) | −₹2.4L |
-| Year-1 EBITDA after a ₹75k/month founder-role salary | **−₹7.4L** | −₹11.4L |
-| Cash need at the end of T1 (peak to the month before G1; T1 cap ₹15L) | **₹11.4L** (M5): inside the cap | ₹11.4L (M8): inside the cap |
-| Peak cumulative cash need, Year 1 (vs ₹30L, T1 + T2) | **₹29.3L** (reached M7; headroom ₹0.7L) | ₹28.8L (reached M10; headroom ₹1.2L) |
+| Year-1 revenue | **₹65.9L** | ₹57.3L |
+| Year-1 EBITDA (before founder salary) | **+₹1.9L** (3%) | −₹1.8L |
+| Year-1 EBITDA after a ₹75k/month founder-role salary | **−₹7.1L** | −₹10.8L |
+| Cash need at the end of T1 (peak to the month before G1; T1 cap ₹15L) | **₹10.9L** (M5): inside the cap | ₹10.9L (M8): inside the cap |
+| Peak cumulative cash need, Year 1 (vs ₹30L, T1 + T2) | **₹28.8L** (reached M7; headroom ₹1.2L) | ₹28.2L (reached M10; headroom ₹1.8L) |
 | Capex + deposits, Year 1 | ₹20.7L | ₹20.7L |
-| Month seat capacity first binds | **M6** in the studio; M8–M10 again in the new space at peak season | **M6** in the studio; demand that fits falls to 55–65% in M7–M9 |
-| Career enrolments, Year 1 (L2 + L3 new students) | **91** | 75 (about 16 lost to the later move) |
+| Growth & marketing spend, Year 1 (Growth §10 scope); of which paid media | ₹28.5L; ₹8.2L | ₹26.8L; ₹7.2L (held at ₹60k until G1) |
+| Month seat capacity first binds | **M6** in the studio; M9–M10 again in the new space at peak season | **M6** in the studio; demand that fits falls to 55–65% in M7–M9 |
+| Career enrolments, Year 1 (L2 + L3 new students) | **89** | 75 (about 15 lost to the later move) |
 | First month EBITDA ≥ 0 | M7 | M8 |
 | Break-even career enrolments at the M12 cost base (step-1 fee) | 6.5/month (78/yr) | 6.5/month |
-| Gate metrics, months 7–12: effective media CAC; fully loaded acquisition / career revenue | ₹10.8k (SG4 amber); 49% (amber/red vs 40%) | ₹11.4k; 59% |
-| 3-year revenue Y1 / Y2 / Y3 | **₹66.6L / ₹117.1L / ₹166.9L** | ₹57.4L / ₹112.6L / ₹161.7L* |
-| 3-year EBITDA, before founder salary | **₹1.6L / ₹14.8L / ₹44.8L** | −₹2.4L / ₹17.3L* / ₹40.3L |
-| 3-year EBITDA, after founder-role salary (₹9L/yr, +8%/yr) | **−₹7.4L / ₹5.1L / ₹34.3L** | −₹11.4L / ₹7.6L / ₹29.8L |
+| Gate metrics, months 7–12: effective media CAC; fully loaded acquisition / career revenue | ₹10.6k (SG4 amber); 49% (above the 40% Year-1 threshold) | ₹11.4k; 59% |
+| 3-year revenue Y1 / Y2 / Y3 | **₹65.9L / ₹116.0L / ₹165.5L** | ₹57.3L / ₹112.6L / ₹161.7L* |
+| 3-year EBITDA, before founder salary | **₹1.9L / ₹13.8L / ₹43.6L** | −₹1.8L / ₹17.3L* / ₹40.3L |
+| 3-year EBITDA, after founder-role salary (₹9L/yr, +8%/yr) | **−₹7.1L / ₹4.1L / ₹33.1L** | −₹10.8L / ₹7.6L / ₹29.8L |
 | Year-3 founder share of contact hours | ~12.5% | ~12.5% |
 
-\*In the M10 variant, Year 2 is driven by pre-capacity demand for the months before the move (`y2d` row). This puts its Year 2 slightly above the M7 variant's. Treat Years 2–3 of the two variants as converging, at about ₹113–117L in Year 2 and ₹162–167L in Year 3. The later move costs Year-1 profit (about ₹4L) and about 16 enrolments, not the long-run run-rate.
+\*In the M10 variant, Year 2 is driven by pre-capacity demand for the months before the move (`y2d` row). This puts its Year 2 slightly above the M7 variant's. Treat Years 2–3 of the two variants as converging, at about ₹113–116L in Year 2 and ₹162–166L in Year 3. The later move costs Year-1 profit (about ₹4L) and about 15 enrolments, not the long-run run-rate.
 
 **Reading.**
 1. The Staged Plan caps money at risk before proof at about ₹11L, inside the ₹15L T1 authorisation.
-2. After G1, its full-year cash need (₹29.3L) uses almost all of the ₹30L envelope. That is about ₹3.7L more than the unstaged Base bundle (₹25.7L), for two reasons. The two-step price path realises ₹66.7k instead of ₹80k from M7, which costs about ₹5L of Year-1 EBITDA (see 1C). The T1 recording adds ₹1L.
-3. There is almost no room for slippage. About ₹1–2L of extra cost or lost revenue before M7 breaches the ₹30L cap. Either hold the hybrid build (₹3.5L) until cash from the first post-move cohorts arrives, or authorise a small contingency above ₹30L.
+2. After G1, its full-year cash need (₹28.8L) uses almost all of the ₹30L envelope. That is about ₹4.3L more than the unstaged Base bundle (₹24.6L). The two-step price path realises ₹66.7k instead of ₹80k from M7, which costs about ₹4.9L of Year-1 EBITDA (see 1C). The T1 recording adds ₹1L.
+3. There is little room for slippage. About ₹1–2L of extra cost or lost revenue breaches the ₹30L cap. Either hold the hybrid build (₹3.5L) until cash from the first post-move cohorts arrives, or authorise a small contingency above ₹30L.
+4. **Marketing totals are consistent with the re-aligned channel plan.**
+   - Paid media in the model is exactly the plan ramp: ₹4.1L / ₹8.2L / ₹14.9L.
+   - Growth-scope spend is ₹9.7L / ₹28.5L / ₹49.8L, against the Growth agent's ≈₹9.6L / ₹28.6L / ₹48.1L.
+   - The Aggressive gap (₹1.7L) arises because the model runs more pop-up events and rewards as variables, not as the plan's ₹3.0L lump.
 
 ### 1B. Scenario bundles (original; unchanged by the Gate D additions)
 
@@ -60,35 +65,35 @@ All rupee figures are nominal. "L" = ₹ lakh and "cr" = ₹ crore. **Market siz
 | 5 | Tricity as share of India base TAM | % | 0.37% | **0.84%** | 1.36% | sizing `Tricity_Recon` |
 | 6 | **SAM core** (tricity + regional destination + hybrid + working-artist CPD) | ₹ cr/yr | 2.3 | **7.8** | 24.2 | sizing `SAM_North` |
 | 7 | SAM online layer (North-reachable) | ₹ cr/yr | 0.75 | **7.9** | 54 | sizing `SAM_North` |
-| 8 | **SOM: PNA Year-3 training revenue** (quoted incl. GST) | ₹ cr, FY ending Oct-2029 | 0.41 | **1.89** | 3.83 | sizing `SOM_PNA` |
-| 9 | SOM as % of SAM core; PNA share of tricity makeup-led learners (Y3) | % | 17%; 7% | **23%; 13%** | 14%; 11% | sizing `SOM_PNA` |
+| 8 | **SOM: PNA Year-3 training revenue** (quoted incl. GST) | ₹ cr, FY ending Oct-2029 | 0.41 | **1.88** | 3.83 | sizing `SOM_PNA` |
+| 9 | SOM as % of SAM core; PNA share of tricity makeup-led learners (Y3) | % | 17%; 7% | **22%; 13%** | 14%; 11% | sizing `SOM_PNA` |
 | 10 | L3 Pro programme, after price step: realised fee / contribution per seat before CAC / after CAC | ₹ per student, Base rates | — | **₹80k list-realised (₹67.8k ex-GST) / ₹50.4k (74%) / ₹42.8k** | — | forecast `Unit_Economics` |
 | 11 | L3 at today's assumed fee (CA-02 ₹60k incl. kit): contribution before CAC | ₹ per student | — | **₹22.2k (44%)** | — | forecast `Unit_Economics` |
 | 12 | Breakeven fill per 12-seat L3 cohort (trainer + occupancy + CAC) | % of cap | — | **30% (3.6 students) after the step; 67% (8 students) at today's fee** | — | forecast `Unit_Economics` |
 | 13 | Career student (L2/L3 mix), funnel view: first-course contribution / 24-month LTV / blended CAC / LTV:CAC | ₹, steady state | ₹7.9k / ₹10.9k / ₹13.1k / 0.8x | **₹41.8k / ₹50.5k / ₹6.3k / 8.0x** | ₹59.9k / ₹78.1k / ₹2.8k / 27.6x | funnel `Summary` |
 | 14 | **Break-even career enrolments** at the month-12 cost base | per month (per year) | 4.4 (52) | **5.5 (66)** | 4.9 (58) | forecast `Outlook_*` KPIs |
-| 15 | **12-month revenue** (Nov-26 to Oct-27) | ₹ L ex-GST | 17.6 | **71.8** | 134.8 | forecast `Dashboard` |
-| 16 | **12-month EBITDA** (before any founder salary) | ₹ L | −13.1 | **+6.0 (8%)** | +35.2 (26%) | forecast `Dashboard` |
-| 17 | Memo: 12-month EBITDA after a ₹75k/month founder-role salary | ₹ L | −22.1 | **−3.0** | +26.2 | forecast `Dashboard` |
-| 18 | **Peak cumulative cash need, Year 1** (vs envelope CA-03) | ₹ L | 15.0 (vs 10; **over by 5.0**) | **25.7 (vs 30; headroom 4.3)** | 28.6 (vs 50) | forecast `Dashboard` |
+| 15 | **12-month revenue** (Nov-26 to Oct-27) | ₹ L ex-GST | 17.6 | **71.0** | 134.8 | forecast `Dashboard` |
+| 16 | **12-month EBITDA** (before any founder salary) | ₹ L | −13.0 | **+6.8 (10%)** | +37.2 (28%) | forecast `Dashboard` |
+| 17 | Memo: 12-month EBITDA after a ₹75k/month founder-role salary | ₹ L | −22.0 | **−2.2** | +28.2 | forecast `Dashboard` |
+| 18 | **Peak cumulative cash need, Year 1** (vs envelope CA-03) | ₹ L | 14.9 (vs 10; **over by 4.9**) | **24.6 (vs 30; headroom 5.4)** | 28.1 (vs 50) | forecast `Dashboard` |
 | 19 | Capex + deposits, Year 1 | ₹ L | 0.5 | **19.7** | 27.0 | forecast `Dashboard` |
-| 20 | Career enrolments, Year 1 (new L2 + L3 students) | students | 33 | **91** | 124 | forecast `Dashboard` |
-| 21 | Envelope test at Base rates: ₹10L plan / ₹50L plan | 12-month revenue; EBITDA; peak cash (₹ L) | ₹10L plan: 39.8; +10.7; 3.2 | — | ₹50L plan: 100.7; −4.0; 44.8 | forecast `Plan10L_BaseRates`, `Plan50L_BaseRates` |
-| 22 | **3-year revenue** (Y1 / Y2 / Y3) | ₹ L ex-GST | 17.6 / 26.6 / 36.7 | **71.8 / 120.0 / 166.9** | 134.8 / 235.7 / 334.6 | forecast `3yr_Scenarios` |
-| 23 | 3-year EBITDA (Y1 / Y2 / Y3) | ₹ L | −13.1 / −7.2 / −9.6 | **6.0 / 17.6 / 44.9** | 35.2 / 96.4 / 162.7 | forecast `3yr_Scenarios` |
-| 24 | Top sensitivities: swing in Base Year-1 EBITDA | ₹ L | — | **Fees −20%/+15%: 23.3 · Conversion ±20%: 13.8 · GST charged on top vs absorbed: 12.9** · rent ₹130/₹47 per sq ft: 8.7 | — | forecast `Sensitivity` |
+| 20 | Career enrolments, Year 1 (new L2 + L3 students) | students | 33 | **89** | 124 | forecast `Dashboard` |
+| 21 | Envelope test at Base rates: ₹10L plan / ₹50L plan | 12-month revenue; EBITDA; peak cash (₹ L) | ₹10L plan: 39.8; +10.8; 3.1 | — | ₹50L plan: 99.3; −3.0; 44.2 | forecast `Plan10L_BaseRates`, `Plan50L_BaseRates` |
+| 22 | **3-year revenue** (Y1 / Y2 / Y3) | ₹ L ex-GST | 17.6 / 26.6 / 36.7 | **71.0 / 118.8 / 165.5** | 134.8 / 235.7 / 334.6 | forecast `3yr_Scenarios` |
+| 23 | 3-year EBITDA (Y1 / Y2 / Y3) | ₹ L | −13.0 / −7.2 / −9.6 | **6.8 / 16.5 / 43.6** | 37.2 / 96.4 / 162.7 | forecast `3yr_Scenarios` |
+| 24 | Top sensitivities: swing in Base Year-1 EBITDA | ₹ L | — | **Fees −20%/+15%: 23.0 · Conversion ±20%: 15.1 · GST charged on top vs absorbed: 12.7** · rent ₹130/₹47 per sq ft: 8.7 | — | forecast `Sensitivity` |
 | 25 | Speed-to-lead: cost of missing the <5-min SLA (Base) | per month | — | **+₹32k media for the same enrolments, or −2.3 enrolments (≈₹0.97L contribution) at the same budget** | — | funnel `Speed_to_Lead` |
 
 ### 1C. Gate D model additions (recommended_strategy.md §11.3)
 
 | # | Item | Result | Where |
 |---|---|---|---|
-| 2 | **Two-step price path.** Step 1: ₹75k list (₹66.7k realised) at proof gate 1. Step 2: ₹90k list (₹80k realised) at proof gate 2 (M16). | **Base timing** (step 1 M7): Year-1 revenue ₹66.7L, EBITDA +₹1.0L, peak cash ₹26.5L. That is −₹5.2L revenue and −₹5.0L EBITDA vs the single step to ₹80k realised at M7. Year-2 realised fee averages ₹76.7k (3 months at step 1, 9 at step 2). **Conservative timing** (step 1 M10): identical to the Conservative bundle, because its list is ₹75k in both steps (realised ₹65k). Unit view: an L3 seat at step 1 contributes ₹39.6k before CAC (₹32.0k after); cohort breakeven fill is 38%. | `Base_TwoStep`, `Conservative_TwoStep`; `Unit_Economics` column J |
-| 3 | **Founder share ≤40% at M12** (vs ≤30%) in Base | **No trainer-cost or EBITDA effect in Year 1.** Trainer cost stays ₹9.8L and EBITDA +₹6.0L, because headcount is lumpy: 1 lead trainer + 2 assistants either way at M12. The founder carries about 26 more contact hours a month at M12 (0.10 × 3 batch-slots × 4 h × 22 days). Year 2 on the Gate D path averages 29% vs 15%, and the M7 Staged run still needs the same trainer headcount as Base (₹17.4L). The benefit is conversion and price protection while proof is built (A-GRO-25), which the model does not credit. | `Base_Founder40`; `3yr_Scenarios` |
-| 4 | **EBITDA after founder salary, Years 2–3** (₹75k/month, +8%/yr) | Base: −₹3.0L / +₹7.9L / +₹34.4L. Conservative: −₹22.1L / −₹17.1L / −₹20.5L. Aggressive: +₹26.2L / +₹86.7L / +₹152.3L. Staged M7: −₹7.4L / +₹5.1L / +₹34.3L. | `3yr_Scenarios` row "Memo: EBITDA after a founder-role salary" |
+| 2 | **Two-step price path.** Step 1: ₹75k list (₹66.7k realised) at proof gate 1. Step 2: ₹90k list (₹80k realised) at proof gate 2 (M16). | **Base timing** (step 1 M7): Year-1 revenue ₹65.9L, EBITDA +₹1.9L, peak cash ₹25.8L. That is −₹5.1L revenue and −₹4.9L EBITDA vs the single step to ₹80k realised at M7. Year-2 realised fee averages ₹76.7k (3 months at step 1, 9 at step 2). **Conservative timing** (step 1 M10): identical to the Conservative bundle, because its list is ₹75k in both steps (realised ₹65k). Unit view: an L3 seat at step 1 contributes ₹39.6k before CAC (₹32.0k after); cohort breakeven fill is 38%. | `Base_TwoStep`, `Conservative_TwoStep`; `Unit_Economics` column J |
+| 3 | **Founder share ≤40% at M12** (vs ≤30%) in Base | **No trainer-cost or EBITDA effect in Year 1.** Trainer cost stays ₹9.8L and EBITDA +₹6.8L, because headcount is lumpy: 1 lead trainer + 2 assistants either way at M12. The founder carries about 26 more contact hours a month at M12 (0.10 × 3 batch-slots × 4 h × 22 days). Year 2 on the Gate D path averages 29% vs 15%, and the M7 Staged run still needs the same trainer headcount as Base (₹17.4L). The benefit is conversion and price protection while proof is built (A-GRO-25), which the model does not credit. | `Base_Founder40`; `3yr_Scenarios` |
+| 4 | **EBITDA after founder salary, Years 2–3** (₹75k/month, +8%/yr) | Base: −₹2.2L / +₹6.8L / +₹33.1L. Conservative: −₹22.0L / −₹17.1L / −₹20.5L. Aggressive: +₹28.2L / +₹86.7L / +₹152.3L. Staged M7: −₹7.1L / +₹4.1L / +₹33.1L. | `3yr_Scenarios` row "Memo: EBITDA after a founder-role salary" |
 | 5 | **Today's PNA share of tricity makeup-led learners.** **ILLUSTRATIVE**: CA-01 ÷ reconciled learners; to confirm with the founder data pull (V1) | **≈7% base** (50 ÷ 726). Range 3–12% (30 ÷ 879 to 60 ÷ 484). Counts all PNA students against all makeup-led learners, both including short courses. | `market_sizing_model.xlsx` → `SOM_PNA` |
 | 6 | **Student all-in cost** (tuition + optional kit + living/travel; GST-inclusive as families see it) | At step 2 (₹90k list), with / without the ₹20k optional kit: **Weekday, tricity resident ₹1.17L / ₹0.97L**; Weekday, out-of-town 12-week stay ₹1.54L / ₹1.34L; Flex, tricity resident ₹1.17L / ₹0.97L; **Destination ₹1.33L / ₹1.13L**. Destination saves an out-of-town family about ₹21k vs a 12-week stay; it is 13% above a resident's all-in, vs 31% for the 12-week stay. At step 1 (₹75k), the without-kit figures are ₹0.82L resident and ₹0.98L Destination. At today's assumed fee (₹60k, kit included) they are ₹0.67L resident and ₹0.83L Destination. | `Unit_Economics` all-in block |
-| 7 | **Cash-cap test (Conservative)** | Cumulative cash need reaches **₹10L in M7 (May 2027)**, ₹13.5L in M9, ₹14.6L in M11 and **≈₹15.0L in M12 (Oct 2027)**. It keeps rising in Year 2 (₹25.2L at end-Year 2). **Time the T1 review no later than M9 (Jul 2027)**; by then a Conservative trajectory has used about ₹13.5L of the ₹15L T1 authorisation. | `Outlook_Conservative` KPI rows; `Dashboard` |
+| 7 | **Cash-cap test (Conservative)** | Cumulative cash need reaches **₹10L in M7 (May 2027)**, ₹13.4L in M9, ₹14.5L in M11 and **₹14.9L in M12 (Oct 2027)**: the ₹15L cap is effectively reached at the end of Year 1. It keeps rising in Year 2 (₹25.1L at end-Year 2). **Time the T1 review no later than M9 (Jul 2027)**; by then a Conservative trajectory has used about ₹13.4L of the ₹15L T1 authorisation. | `Outlook_Conservative` KPI rows; `Dashboard` |
 
 **Model mechanics added.** Every outlook sheet has four run options in P3:S4: Staged (0/1), G1 month, price path (1/2) and founder path (1/2). The defaults reproduce the original bundles exactly. `Outlook_Selected` reads them from `Assumptions!D5:J5`, alongside the scenario selector, so any combination can be run without copying sheets. New inputs:
 - A-ECO-106: proof-gate-2 month.
@@ -105,7 +110,7 @@ All rupee figures are nominal. "L" = ₹ lakh and "cr" = ₹ crore. **Market siz
 
 Two cross runs separate the two effects. Each runs one plan at **Base rates**:
 - ₹10L plan: it is profitable in Year 1 but grows career volume only to about 52 students a year.
-- ₹50L plan: it adds capacity, team and media ahead of demand, so Year-1 EBITDA is about zero and the cash need is about ₹45L.
+- ₹50L plan: it adds capacity, team and media ahead of demand, so Year-1 EBITDA is about −₹3L and the cash need is about ₹44L.
 
 The Conservative bundle is a **no-intervention stress case**. In practice, failing gate G1 at M9–12 would hold spend at test level (Growth §9). Conservative Years 2–3 already include that stop-loss on media and a part-time operations lead.
 
@@ -154,7 +159,7 @@ TAM  India paid makeup-led tuition ............. 388  (80–1,373)   + online/sh
           │   ├─ SAM-3 Hybrid beyond reach .......... 1.4  (0.2–5.8)   8% hybrid-willing
           │   └─ SAM-4 Working-artist CPD ........... 1.2  (0.4–2.5)   4,000 artists x 30% x ₹10k (scope extension: repeat buyers)
           └─ SAM-5 Online layer (North-reachable) ..... 7.9  (0.8–54)
-               └─ SOM  PNA Year-3 training revenue ... 1.89 (0.41–3.83)  = 23% of SAM core; 13% of tricity learners
+               └─ SOM  PNA Year-3 training revenue ... 1.88 (0.41–3.83)  = 22% of SAM core; 13% of tricity learners
                     Today (illustrative, NOT actual) .. 0.20
 ```
 
@@ -169,12 +174,12 @@ Context only, and **never TAM**: India Beauty & Salon services ₹76,141 cr (202
 | 1 | **Flagship price.** BM ₹80k (A-BM-02) vs Growth ₹90k (A-GRO-06) | Both kept, with different meanings. **₹90k is the list tuition** (A-GRO-06: ₹75k / 90k / 1.2L). **₹80k is the realised fee** after taster/L2 credits, early-bird and referee discounts (A-BM-02: ₹65k / 80k / 1.0L), a realisation of about 89%. **Revenue always uses the realised fee.** Until the proof gate (first outcomes report + ≥30 reviews), PNA charges today's fee CA-02 (₹40k / 60k / 75k, incl. kit). The step happens in **M10 / M7 / M5** (A-ECO-104). Fees are assumed GST-inclusive (revenue = fee ÷ 1.18). |
 | 2 | **Programme naming and duration.** Growth's 7-week Fast-track vs BM's hybrid intensive | One product, **L3 Professional Bridal Makeup Artist Programme**, in three formats: **Weekday** (12 weeks, ~3 seat-months); **Flex** (~20 weeks part-time, ~3 seat-months equivalent); and **Destination** (4 weeks of online pre-work + a 5–6-week full-day Chandigarh intensive, ≈2.5 seat-months, price parity). Destination replaces both "Fast-track" and "hybrid intensive". In Year 1, out-of-town L3 students switch to Destination from the launch month (A-ECO-128: none / M10 / M8). The incremental regional engine (BM Option G) starts in Year 2 after gate G2. |
 | 3 | **Gate naming.** BM stage gates G0/G1/G2/G3a/G3b vs Growth's five scale-up gates G1–G5 | Growth's gates are read as **spend gates SG1–SG5**. Mapping: **SG1 Tracking + SG2 Follow-up discipline** fall inside **BM G0** (M3: baseline instrumented). **SG3 Capacity + SG4 Unit economics + SG5 Product proof** fall inside **BM G1** (M9–12: flagship proven). BM G2 (M15–18) releases the regional engine. G3a and G3b release satellite and franchise. Spend gates govern the media ramp month to month; stage gates govern investment stages. |
-| 4 | **Unit-economics gate threshold.** Growth proposed media CAC ≤ ₹9k per paid enrolment and fully loaded CAC ≤ 25% of revenue; BM G1 proposed CAC ≤ 12% of realised fee and payback ≤ 3 months | **Re-derived from the model** (see §5.4): **media CAC per paid career enrolment, counting all career-attributable paid media: green ≤ ₹9k, amber ₹9–12k, red > ₹12k.** ₹12k is roughly where LTV/CAC falls to about 3 at today's ₹60k fee. **Fully loaded acquisition ≤ 40% of career revenue in Year 1, ≤ 30% from Year 2.** The Base plan runs at ₹10.7k (amber) and 42% in months 7–12. The 25% target would need about 17.5 career enrolments a month with the Base growth team, so as written it would keep spend at test level all year. Route-only CAC from CPLs (₹4.8k Base) understates the true cost by about 2.4x, because the Growth budget includes awareness and retargeting (A-ECO-51). BM G1's "CAC ≤ 12% of realised fee" should be read on the route-level CAC (Base 7%). Payback ≤ 3 months passes in every case except Conservative (5.0 months). |
+| 4 | **Unit-economics gate threshold.** Growth proposed media CAC ≤ ₹9k per paid enrolment and fully loaded CAC ≤ 25% of revenue; BM G1 proposed CAC ≤ 12% of realised fee and payback ≤ 3 months | **Re-derived from the model** (see §5.4): **media CAC per paid career enrolment, counting all career-attributable paid media: green ≤ ₹9k, amber ₹9–12k, red > ₹12k.** ₹12k is roughly where LTV/CAC falls to about 3 at today's ₹60k fee. **Fully loaded acquisition ≤ 40% of career revenue in Year 1, ≤ 30% from Year 2.** The Base plan runs at ₹10.6k (amber) and 42% in months 7–12. The Staged Plan runs at ₹10.6k and 49%, because of the lower step-1 fee. The 25% target would need about 17.5 career enrolments a month with the Base growth team, so as written it would keep spend at test level all year. Route-only CAC from CPLs (₹4.8k Base) understates the true cost by about 2.4x, because the Growth budget includes awareness and retargeting (A-ECO-51). BM G1's "CAC ≤ 12% of realised fee" should be read on the route-level CAC (Base 7%). Payback ≤ 3 months passes in every case except Conservative (5.0 months). |
 | 5 | **"~₹0.3 crore today"** (BM) | Labelled as CA-01 × CA-02, an estimate and not actual revenue (`Unit_Economics` baseline block; `SOM_PNA`). |
 | 6 | Growth A-GRO-01 base (10 career enrolments/month from M7) was set as "≈10% of CA-05" | Kept as the plan target. Against the reconciled market it implies **13% of tricity makeup-led learners by Year 3** (7% of CA-05 learners). That is ambitious but inside the plausible band. It also implies about 3x today's career volume in Year 1, so it is a **gated plan, not a forecast of what happens without execution**. |
 | 7 | Growth budget vs funnel-required media | The Growth paid budget (Base ₹1.0L/month steady state, ~70% career-attributable) is about 1.9x the funnel-required career media at Base CPLs (₹37.6k/month). We keep the Growth budget as the plan. An overhead factor (A-ECO-51 = 2.42) is calibrated so the Base budget exactly buys the Base paid target. Conservative and Aggressive inherit the same factor. |
 | 8 | Growth cost-line conventions | For CPL, conversion and wage rates we map Growth's Low/Base/High per its stated rule (for cost lines, "High" = Conservative). For **plan lines** (team, martech, website) we use the values Growth actually budgeted in §10 (e.g. counsellor ₹20k in the ₹10L plan), because §10 is what the founder would fund. In Aggressive, secondary product prices (L2, L4, L1-S5, L5) use the **midpoint of Growth base and high**, to avoid stacking every upside. |
-| 9 | BM directional Y3 (₹0.55 / 1.32 / 2.36 cr) and Ludhiana numbers | Our Base Y3 is ₹1.67 cr ex-GST (₹1.89 cr quoted training-only). It is higher because A-GRO-01 drives more career volume (134 vs BM's 105 P1). Our Conservative is lower (adverse rates and the proof gate at M10). For Ludhiana, BM's contribution figures (₹56k destination, ₹62.8k owned) are pre-GST and exclude trainer standard cost. Ours are ₹35.8k and ₹47.1k. That makes BM's indifference rules more demanding: an owned centre beats destination only above about 69 local students (BM: 55) when 10 would travel, and a partner satellite needs more than 2.4x N_dest (BM: 1.7x). The direction of BM's conclusion is unchanged. |
+| 9 | BM directional Y3 (₹0.55 / 1.32 / 2.36 cr) and Ludhiana numbers | Our Base Y3 is ₹1.66 cr ex-GST (₹1.88 cr quoted training-only). It is higher because A-GRO-01 drives more career volume (132 vs BM's 105 P1). Our Conservative is lower (adverse rates and the proof gate at M10). For Ludhiana, BM's contribution figures (₹56k destination, ₹62.8k owned) are pre-GST and exclude trainer standard cost. Ours are ₹35.8k and ₹47.1k. That makes BM's indifference rules more demanding: an owned centre beats destination only above about 69 local students (BM: 55) when 10 would travel, and a partner satellite needs more than 2.4x N_dest (BM: 1.7x). The direction of BM's conclusion is unchanged. |
 | 10 | BM asked for a 36-month monthly model | The brief specified 12 months monthly plus directional Years 2–3. We provide that, with Year 2 built from the de-seasonalised H2 run-rate. |
 
 ---
@@ -324,12 +329,12 @@ A unit-level tornado on contribution per paid L3 student is included.
    - Today's space (8 stations × 2 slots [HYP]) holds about 58 L3 starts a year.
    - The A-GRO-01 target needs about 153% of it.
    - In Base, seats bind from month 6, which is why the move is in M7. Years 2–3 need a third (evening/weekend) slot and 14 stations to hold utilisation at 81–85%, close to the ≥85% G3a trigger.
-4. **The ₹30L Base plan clears its envelope with little room.** Peak cash need is ₹25.7L. That is driven by ₹19.7L of capex and deposits (fit-out ₹10.4L, stations ₹1.2L, deposit ₹3.1L, CRM/proof kit ₹1.5L, hybrid content ₹3.5L), plus team ramp before revenue. Year-1 EBITDA is +₹6L before any founder salary and about −₹3L after a ₹75k/month founder-role salary.
+4. **The ₹30L Base plan clears its envelope with little room.** Peak cash need is ₹24.6L (₹28.8L in the Staged Plan). That is driven by ₹19.7L of capex and deposits (fit-out ₹10.4L, stations ₹1.2L, deposit ₹3.1L, CRM/proof kit ₹1.5L, hybrid content ₹3.5L), plus team ramp before revenue. Year-1 EBITDA is +₹6.8L before any founder salary and about −₹2.2L after a ₹75k/month founder-role salary (Staged Plan: +₹1.9L / −₹7.1L).
 5. **More money does not mean more Year-1 profit.**
-   - At Base rates, the ₹50L plan raises revenue to ₹1.0 cr, but EBITDA is about −₹4L and the cash need is about ₹45L.
+   - At Base rates, the ₹50L plan raises revenue to ₹0.99 cr, but EBITDA is about −₹3L and the cash need is about ₹44L.
    - The ₹10L plan earns about +₹11L with only ₹3L of cash, but leaves career volume at about 52 a year.
    - The envelope should be released in tranches against gates G0 and G1.
-6. **The founder's unpaid teaching is today's margin.** Replacing it costs about ₹10L (Year 1) rising to ₹17–19L a year (Years 2–3) in trainers and assistants, plus about ₹8L a year for an academy manager from Year 2. Under Conservative rates (₹40k fee, adverse CPL, proof gate at M10) the academy loses money in all three years. **The step-back is affordable only at roughly 5.5 or more career enrolments a month after the price step.**
+6. **The founder's unpaid teaching is today's margin.** Replacing it costs about ₹10L (Year 1) rising to ₹17–19L a year (Years 2–3) in trainers and assistants, plus about ₹8L a year for an academy manager from Year 2. Under Conservative rates (₹40k fee, adverse CPL, proof gate at M10) the academy loses money in all three years. **The step-back is affordable only at roughly 5.5 or more career enrolments a month after the full price step (6.5 at the step-1 fee).**
 7. **Speed-to-lead discipline beats budget (H7).** At Base, missing the SLA costs 1.5x the media for the same enrolments. That is more than the gap between base and optimistic CPL.
 8. **Marketplace is value-destroying at PNA's scale (H5).**
    - The marketplace loses ₹932 per booking before fixed costs, LTV/CAC is 0.35, and break-even is unreachable.
@@ -429,10 +434,11 @@ A unit-level tornado on contribution per paid L3 student is included.
 | A-ECO-52b | Lead trainer FTE (0.5 = part-time senior trainer in the ₹10L plan) | 0.50 | 1 | 1 | FTE | BM §6.5: ₹10L plan = part-time trainer | [HYP] | BF |
 | A-ECO-53 | Counsellor #1 start month | 3 | 1 | 1 | month # | Growth §10: C 1 FTE x10 mo; B/A from M1 | [EST] | BF |
 | A-ECO-54 | Counsellor #2 FTE | 0 | 0.50 | 1 | FTE | Growth §10: B 0.5 FTE x7; A 1 FTE x9 | [EST] | BF |
-| A-ECO-55 | Counsellor #2 start month | 99 | 6 | 4 | month # | Growth §10 | [EST] | BF |
+| A-ECO-55 | Counsellor #2 start month | 99 | 7 | 4 | month # | Growth §10 (re-aligned): B 0.5 FTE x6 after G1; A 1 FTE x9 | [EST] | BF |
 | A-ECO-57a | Marketing/content team start month | 2 | 2 | 2 | month # | Growth §10 (x11 months) | [EST] | BF |
 | A-ECO-57b | Performance freelancer start month | 2 | 2 | 2 | month # | Growth §10 (x11) | [EST] | BF |
 | A-ECO-57c | SEO freelancer start month | 3 | 3 | 3 | month # | Growth §10 (x10) | [EST] | BF |
+| A-ECO-57d | Shooter/editor start month | 1 | 2 | 1 | month # | Growth §10 (re-aligned): C x12, B x11 from M2, A x12 | [EST] | BF |
 | A-ECO-58 | Partnerships, PR / outcomes report, contingency (Growth §10 lines, monthly average) | ₹3,333 | ₹15,833 | ₹19,167 | ₹/mo | Growth §10: partnerships/events ex-rewards & pop-ups + outcomes/PR + contingency | [EST] | BF |
 | A-ECO-60-01 | Self-makeup (S5) seasonality, calendar month 1 | 1.20 | 1.20 | 1.20 | index | Peaks Oct-Feb before weddings/festivals (A-CUS-29); sums to 12 | [HYP] | BF |
 | A-ECO-60-02 | Self-makeup (S5) seasonality, calendar month 2 | 1.30 | 1.30 | 1.30 | index | Peaks Oct-Feb before weddings/festivals (A-CUS-29); sums to 12 | [HYP] | BF |
@@ -632,18 +638,18 @@ A unit-level tornado on contribution per paid L3 student is included.
 | A-GRO-48 | Performance-marketing freelancer/agency | ₹0 | ₹20,000 | ₹35,000 | ₹/mo | Growth §10 | [EST] | FE, BF |
 | A-GRO-49 | Website rebuild (one-off) | ₹50,000 | ₹120,000 | ₹250,000 | ₹ | Growth §10 | [EST] | FE, BF |
 | A-GRO-50 | SEO content freelancer | ₹0 | ₹15,000 | ₹25,000 | ₹/mo | Growth §10 | [EST] | FE, BF |
-| A-GRO-BUD-01 | Paid media budget, month 1 (Nov-26) | ₹10,000 | ₹15,000 | ₹15,000 | ₹ | growth_marketing_strategy.md §6.4/§10; marketing_channel_plan.md §3.2 (Mar+ only if spend gates green) | [EST] | BF |
-| A-GRO-BUD-02 | Paid media budget, month 2 (Dec-26) | ₹25,000 | ₹40,000 | ₹50,000 | ₹ | growth_marketing_strategy.md §6.4/§10; marketing_channel_plan.md §3.2 (Mar+ only if spend gates green) | [EST] | BF |
-| A-GRO-BUD-03 | Paid media budget, month 3 (Jan-27) | ₹30,000 | ₹50,000 | ₹60,000 | ₹ | growth_marketing_strategy.md §6.4/§10; marketing_channel_plan.md §3.2 (Mar+ only if spend gates green) | [EST] | BF |
-| A-GRO-BUD-04 | Paid media budget, month 4 (Feb-27) | ₹35,000 | ₹60,000 | ₹70,000 | ₹ | growth_marketing_strategy.md §6.4/§10; marketing_channel_plan.md §3.2 (Mar+ only if spend gates green) | [EST] | BF |
-| A-GRO-BUD-05 | Paid media budget, month 5 (Mar-27) | ₹40,000 | ₹80,000 | ₹120,000 | ₹ | growth_marketing_strategy.md §6.4/§10; marketing_channel_plan.md §3.2 (Mar+ only if spend gates green) | [EST] | BF |
-| A-GRO-BUD-06 | Paid media budget, month 6 (Apr-27) | ₹40,000 | ₹90,000 | ₹170,000 | ₹ | growth_marketing_strategy.md §6.4/§10; marketing_channel_plan.md §3.2 (Mar+ only if spend gates green) | [EST] | BF |
-| A-GRO-BUD-07 | Paid media budget, month 7 (May-27) | ₹40,000 | ₹100,000 | ₹200,000 | ₹ | growth_marketing_strategy.md §6.4/§10; marketing_channel_plan.md §3.2 (Mar+ only if spend gates green) | [EST] | BF |
-| A-GRO-BUD-08 | Paid media budget, month 8 (Jun-27) | ₹40,000 | ₹100,000 | ₹200,000 | ₹ | growth_marketing_strategy.md §6.4/§10; marketing_channel_plan.md §3.2 (Mar+ only if spend gates green) | [EST] | BF |
-| A-GRO-BUD-09 | Paid media budget, month 9 (Jul-27) | ₹40,000 | ₹100,000 | ₹200,000 | ₹ | growth_marketing_strategy.md §6.4/§10; marketing_channel_plan.md §3.2 (Mar+ only if spend gates green) | [EST] | BF |
-| A-GRO-BUD-10 | Paid media budget, month 10 (Aug-27) | ₹40,000 | ₹100,000 | ₹200,000 | ₹ | growth_marketing_strategy.md §6.4/§10; marketing_channel_plan.md §3.2 (Mar+ only if spend gates green) | [EST] | BF |
-| A-GRO-BUD-11 | Paid media budget, month 11 (Sep-27) | ₹40,000 | ₹100,000 | ₹200,000 | ₹ | growth_marketing_strategy.md §6.4/§10; marketing_channel_plan.md §3.2 (Mar+ only if spend gates green) | [EST] | BF |
-| A-GRO-BUD-12 | Paid media budget, month 12 (Oct-27) | ₹40,000 | ₹100,000 | ₹200,000 | ₹ | growth_marketing_strategy.md §6.4/§10; marketing_channel_plan.md §3.2 (Mar+ only if spend gates green) | [EST] | BF |
+| A-GRO-BUD-01 | Paid media budget, month 1 (Nov-26) | ₹10,000 | ₹15,000 | ₹15,000 | ₹ | marketing_channel_plan.md §3.2 / growth_marketing_strategy.md §10 (re-aligned): ≤₹15k until G0, ≤₹60k until G1; B assumes G1 green at M7 | [EST] | BF |
+| A-GRO-BUD-02 | Paid media budget, month 2 (Dec-26) | ₹15,000 | ₹15,000 | ₹15,000 | ₹ | marketing_channel_plan.md §3.2 / growth_marketing_strategy.md §10 (re-aligned): ≤₹15k until G0, ≤₹60k until G1; B assumes G1 green at M7 | [EST] | BF |
+| A-GRO-BUD-03 | Paid media budget, month 3 (Jan-27) | ₹30,000 | ₹40,000 | ₹50,000 | ₹ | marketing_channel_plan.md §3.2 / growth_marketing_strategy.md §10 (re-aligned): ≤₹15k until G0, ≤₹60k until G1; B assumes G1 green at M7 | [EST] | BF |
+| A-GRO-BUD-04 | Paid media budget, month 4 (Feb-27) | ₹35,000 | ₹50,000 | ₹60,000 | ₹ | marketing_channel_plan.md §3.2 / growth_marketing_strategy.md §10 (re-aligned): ≤₹15k until G0, ≤₹60k until G1; B assumes G1 green at M7 | [EST] | BF |
+| A-GRO-BUD-05 | Paid media budget, month 5 (Mar-27) | ₹40,000 | ₹60,000 | ₹60,000 | ₹ | marketing_channel_plan.md §3.2 / growth_marketing_strategy.md §10 (re-aligned): ≤₹15k until G0, ≤₹60k until G1; B assumes G1 green at M7 | [EST] | BF |
+| A-GRO-BUD-06 | Paid media budget, month 6 (Apr-27) | ₹40,000 | ₹60,000 | ₹120,000 | ₹ | marketing_channel_plan.md §3.2 / growth_marketing_strategy.md §10 (re-aligned): ≤₹15k until G0, ≤₹60k until G1; B assumes G1 green at M7 | [EST] | BF |
+| A-GRO-BUD-07 | Paid media budget, month 7 (May-27) | ₹40,000 | ₹80,000 | ₹170,000 | ₹ | marketing_channel_plan.md §3.2 / growth_marketing_strategy.md §10 (re-aligned): ≤₹15k until G0, ≤₹60k until G1; B assumes G1 green at M7 | [EST] | BF |
+| A-GRO-BUD-08 | Paid media budget, month 8 (Jun-27) | ₹40,000 | ₹100,000 | ₹200,000 | ₹ | marketing_channel_plan.md §3.2 / growth_marketing_strategy.md §10 (re-aligned): ≤₹15k until G0, ≤₹60k until G1; B assumes G1 green at M7 | [EST] | BF |
+| A-GRO-BUD-09 | Paid media budget, month 9 (Jul-27) | ₹40,000 | ₹100,000 | ₹200,000 | ₹ | marketing_channel_plan.md §3.2 / growth_marketing_strategy.md §10 (re-aligned): ≤₹15k until G0, ≤₹60k until G1; B assumes G1 green at M7 | [EST] | BF |
+| A-GRO-BUD-10 | Paid media budget, month 10 (Aug-27) | ₹40,000 | ₹100,000 | ₹200,000 | ₹ | marketing_channel_plan.md §3.2 / growth_marketing_strategy.md §10 (re-aligned): ≤₹15k until G0, ≤₹60k until G1; B assumes G1 green at M7 | [EST] | BF |
+| A-GRO-BUD-11 | Paid media budget, month 11 (Sep-27) | ₹40,000 | ₹100,000 | ₹200,000 | ₹ | marketing_channel_plan.md §3.2 / growth_marketing_strategy.md §10 (re-aligned): ≤₹15k until G0, ≤₹60k until G1; B assumes G1 green at M7 | [EST] | BF |
+| A-GRO-BUD-12 | Paid media budget, month 12 (Oct-27) | ₹40,000 | ₹100,000 | ₹200,000 | ₹ | marketing_channel_plan.md §3.2 / growth_marketing_strategy.md §10 (re-aligned): ≤₹15k until G0, ≤₹60k until G1; B assumes G1 green at M7 | [EST] | BF |
 | A-IND-01 | B&WSSC-certified candidates per year (all beauty & wellness) | 130,000 | 170,000 | 210,000 | learners/yr | 10.25 lakh/8 yrs=1.28; 13 lakh/9=1.44; 20.7 lakh/10-11=1.88-2.07 (S-IND-02,-04,-05) | [EST] | MS |
 | A-IND-02 | Organised share of vocational training (total = certified / share) | 40% | 40% | 40% | % | KPMG: unorganised ≈60% of vocational education (S-IND-01 p.67) | [EST] | MS |
 | A-IND-03 | Paid (self-funded) share of trainees | 64% | 72% | 80% | % | 60% unorganised (self-paid) + 40% organised x 10/30/50% fee-paying (S-IND-01, S-IND-04) | [EST] | MS |
@@ -664,16 +670,16 @@ A unit-level tornado on contribution per paid L3 student is included.
 | A-IND-10b | Online / short-course layer: average fee | ₹600 | ₹1,500 | ₹3,000 | ₹ | Orane ₹590-5,990; Airblack from ₹150 | [HYP] | MS |
 | A-IND-16 | FX for USD display only | 88 | 88 | 88 | ₹/USD | Illustrative | [HYP] | MS |
 | A-IND-17 | Regional proxy: Chd+PB+HR+HP+J&K share of India incremental B&W workforce need | 7.65% | 7.65% | 7.65% | % | KPMG Table 5 (S-IND-01 pp.46-47) | [FACT] | MS |
-| SOM-ADJ | Y3 adjacent revenue outside the training market (kit margin, services desk, partnerships) | 2 | 6.55 | 10.13 | ₹ lakh ex-GST | business_forecast.xlsx 3yr_Scenarios (linked by run_all.py) | [EST] model output | MS |
+| SOM-ADJ | Y3 adjacent revenue outside the training market (kit margin, services desk, partnerships) | 2 | 6.54 | 10.13 | ₹ lakh ex-GST | business_forecast.xlsx 3yr_Scenarios (linked by run_all.py) | [EST] model output | MS |
 | SOM-BASELINE | Illustrative PNA baseline revenue today (CA-01 x assumed fees; NOT actual revenue) | 6.71 | 16.61 | 24.92 | ₹ lakh ex-GST | business_forecast.xlsx Unit_Economics baseline (CA-01, CA-02) | [HYP] | MS |
-| SOM-CPD | Y3 working-artist CPD revenue (L4 masterclasses + L5 Pro Circle) | 5.84 | 27.06 | 61.15 | ₹ lakh ex-GST | business_forecast.xlsx 3yr_Scenarios (linked by run_all.py) | [EST] model output | MS |
+| SOM-CPD | Y3 working-artist CPD revenue (L4 masterclasses + L5 Pro Circle) | 5.84 | 27.04 | 61.15 | ₹ lakh ex-GST | business_forecast.xlsx 3yr_Scenarios (linked by run_all.py) | [EST] model output | MS |
 | SOM-HYB | Y3 hybrid programme revenue | 4.63 | 25.15 | 49.35 | ₹ lakh ex-GST | business_forecast.xlsx 3yr_Scenarios (linked by run_all.py) | [EST] model output | MS |
 | SOM-LRN-HYB | Y3 incremental destination/hybrid learners | 8 | 35 | 53.90 | learners | business_forecast.xlsx 3yr_Scenarios (linked by run_all.py) | [EST] model output | MS |
-| SOM-LRN-REG | Y3 out-of-town career learners (offline + satellite) | 7.40 | 40.20 | 95 | learners | business_forecast.xlsx 3yr_Scenarios (linked by run_all.py) | [EST] model output | MS |
-| SOM-LRN-TRI | Y3 tricity-origin career learners (L2+L3 new students) | 33.60 | 93.90 | 97.50 | learners | business_forecast.xlsx 3yr_Scenarios (linked by run_all.py) | [EST] model output | MS |
+| SOM-LRN-REG | Y3 out-of-town career learners (offline + satellite) | 7.40 | 39.60 | 95 | learners | business_forecast.xlsx 3yr_Scenarios (linked by run_all.py) | [EST] model output | MS |
+| SOM-LRN-TRI | Y3 tricity-origin career learners (L2+L3 new students) | 33.60 | 92.30 | 97.50 | learners | business_forecast.xlsx 3yr_Scenarios (linked by run_all.py) | [EST] model output | MS |
 | SOM-ONL | Y3 online short-course revenue | 1.27 | 11.43 | 33.88 | ₹ lakh ex-GST | business_forecast.xlsx 3yr_Scenarios (linked by run_all.py) | [EST] model output | MS |
-| SOM-REG | Y3 regional destination revenue (L3 outstation share + satellite if gated in) | 3.40 | 24.86 | 75.56 | ₹ lakh ex-GST | business_forecast.xlsx 3yr_Scenarios (linked by run_all.py) | [EST] model output | MS |
-| SOM-TRI | Y3 tricity-origin flagship revenue (L1 taster, L1-S5 self-makeup, L2, L3 tricity share) | 19.51 | 71.88 | 104.57 | ₹ lakh ex-GST | business_forecast.xlsx 3yr_Scenarios (linked by run_all.py) | [EST] model output | MS |
+| SOM-REG | Y3 regional destination revenue (L3 outstation share + satellite if gated in) | 3.40 | 24.45 | 75.56 | ₹ lakh ex-GST | business_forecast.xlsx 3yr_Scenarios (linked by run_all.py) | [EST] model output | MS |
+| SOM-TRI | Y3 tricity-origin flagship revenue (L1 taster, L1-S5 self-makeup, L2, L3 tricity share) | 19.51 | 70.90 | 104.57 | ₹ lakh ex-GST | business_forecast.xlsx 3yr_Scenarios (linked by run_all.py) | [EST] model output | MS |
 | X-BS-SECTOR | Context only: Beauty & Salon sector size 2025P (NOT the education market) | 76,141 | 76,141 | 76,141 | ₹ crore | S-IND-01 Table 1 p.15 | [FACT] | MS |
 | X-BW-CHD | B&W share of state workforce: Chandigarh | 6.16% | 6.16% | 6.16% | % | S-IND-01 (highest in India) | [FACT] | MS |
 | X-BW-HP | B&W share of state workforce: HP | 2.02% | 2.02% | 2.02% | % | S-IND-01 | [FACT] | MS |

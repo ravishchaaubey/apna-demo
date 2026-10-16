@@ -1136,7 +1136,9 @@
    "Trainer + assistant cost, Year 1": 144,
    "L3 realised fee, month 12 (incl. GST)": 145,
    "Space move month (99 = none in Year 1)": 146,
-   "Price step 1 month": 147
+   "Price step 1 month": 147,
+   "Growth & marketing spend, Year 1 (paid media + growth team + martech + website + partnerships/PR/contingency + rewards + pop-ups; Growth \u00a710 scope)": 148,
+   "  of which paid media, Year 1": 149
   },
   "Outlook_Base": {
    "Revenue, Year 1 (ex-GST)": 114,
@@ -1172,7 +1174,9 @@
    "Trainer + assistant cost, Year 1": 144,
    "L3 realised fee, month 12 (incl. GST)": 145,
    "Space move month (99 = none in Year 1)": 146,
-   "Price step 1 month": 147
+   "Price step 1 month": 147,
+   "Growth & marketing spend, Year 1 (paid media + growth team + martech + website + partnerships/PR/contingency + rewards + pop-ups; Growth \u00a710 scope)": 148,
+   "  of which paid media, Year 1": 149
   },
   "Outlook_Aggressive": {
    "Revenue, Year 1 (ex-GST)": 114,
@@ -1208,7 +1212,9 @@
    "Trainer + assistant cost, Year 1": 144,
    "L3 realised fee, month 12 (incl. GST)": 145,
    "Space move month (99 = none in Year 1)": 146,
-   "Price step 1 month": 147
+   "Price step 1 month": 147,
+   "Growth & marketing spend, Year 1 (paid media + growth team + martech + website + partnerships/PR/contingency + rewards + pop-ups; Growth \u00a710 scope)": 148,
+   "  of which paid media, Year 1": 149
   },
   "Outlook_Selected": {
    "Revenue, Year 1 (ex-GST)": 114,
@@ -1244,7 +1250,9 @@
    "Trainer + assistant cost, Year 1": 144,
    "L3 realised fee, month 12 (incl. GST)": 145,
    "Space move month (99 = none in Year 1)": 146,
-   "Price step 1 month": 147
+   "Price step 1 month": 147,
+   "Growth & marketing spend, Year 1 (paid media + growth team + martech + website + partnerships/PR/contingency + rewards + pop-ups; Growth \u00a710 scope)": 148,
+   "  of which paid media, Year 1": 149
   },
   "Plan10L_BaseRates": {
    "Revenue, Year 1 (ex-GST)": 114,
@@ -1280,7 +1288,9 @@
    "Trainer + assistant cost, Year 1": 144,
    "L3 realised fee, month 12 (incl. GST)": 145,
    "Space move month (99 = none in Year 1)": 146,
-   "Price step 1 month": 147
+   "Price step 1 month": 147,
+   "Growth & marketing spend, Year 1 (paid media + growth team + martech + website + partnerships/PR/contingency + rewards + pop-ups; Growth \u00a710 scope)": 148,
+   "  of which paid media, Year 1": 149
   },
   "Plan50L_BaseRates": {
    "Revenue, Year 1 (ex-GST)": 114,
@@ -1316,7 +1326,9 @@
    "Trainer + assistant cost, Year 1": 144,
    "L3 realised fee, month 12 (incl. GST)": 145,
    "Space move month (99 = none in Year 1)": 146,
-   "Price step 1 month": 147
+   "Price step 1 month": 147,
+   "Growth & marketing spend, Year 1 (paid media + growth team + martech + website + partnerships/PR/contingency + rewards + pop-ups; Growth \u00a710 scope)": 148,
+   "  of which paid media, Year 1": 149
   },
   "Staged_G1M6": {
    "Revenue, Year 1 (ex-GST)": 114,
@@ -1352,7 +1364,9 @@
    "Trainer + assistant cost, Year 1": 144,
    "L3 realised fee, month 12 (incl. GST)": 145,
    "Space move month (99 = none in Year 1)": 146,
-   "Price step 1 month": 147
+   "Price step 1 month": 147,
+   "Growth & marketing spend, Year 1 (paid media + growth team + martech + website + partnerships/PR/contingency + rewards + pop-ups; Growth \u00a710 scope)": 148,
+   "  of which paid media, Year 1": 149
   },
   "Staged_G1M9": {
    "Revenue, Year 1 (ex-GST)": 114,
@@ -1388,7 +1402,9 @@
    "Trainer + assistant cost, Year 1": 144,
    "L3 realised fee, month 12 (incl. GST)": 145,
    "Space move month (99 = none in Year 1)": 146,
-   "Price step 1 month": 147
+   "Price step 1 month": 147,
+   "Growth & marketing spend, Year 1 (paid media + growth team + martech + website + partnerships/PR/contingency + rewards + pop-ups; Growth \u00a710 scope)": 148,
+   "  of which paid media, Year 1": 149
   },
   "Base_TwoStep": {
    "Revenue, Year 1 (ex-GST)": 114,
@@ -1424,7 +1440,9 @@
    "Trainer + assistant cost, Year 1": 144,
    "L3 realised fee, month 12 (incl. GST)": 145,
    "Space move month (99 = none in Year 1)": 146,
-   "Price step 1 month": 147
+   "Price step 1 month": 147,
+   "Growth & marketing spend, Year 1 (paid media + growth team + martech + website + partnerships/PR/contingency + rewards + pop-ups; Growth \u00a710 scope)": 148,
+   "  of which paid media, Year 1": 149
   },
   "Conservative_TwoStep": {
    "Revenue, Year 1 (ex-GST)": 114,
@@ -1460,7 +1478,9 @@
    "Trainer + assistant cost, Year 1": 144,
    "L3 realised fee, month 12 (incl. GST)": 145,
    "Space move month (99 = none in Year 1)": 146,
-   "Price step 1 month": 147
+   "Price step 1 month": 147,
+   "Growth & marketing spend, Year 1 (paid media + growth team + martech + website + partnerships/PR/contingency + rewards + pop-ups; Growth \u00a710 scope)": 148,
+   "  of which paid media, Year 1": 149
   },
   "Base_Founder40": {
    "Revenue, Year 1 (ex-GST)": 114,
@@ -1496,7 +1516,9 @@
    "Trainer + assistant cost, Year 1": 144,
    "L3 realised fee, month 12 (incl. GST)": 145,
    "Space move month (99 = none in Year 1)": 146,
-   "Price step 1 month": 147
+   "Price step 1 month": 147,
+   "Growth & marketing spend, Year 1 (paid media + growth team + martech + website + partnerships/PR/contingency + rewards + pop-ups; Growth \u00a710 scope)": 148,
+   "  of which paid media, Year 1": 149
   }
  },
  "T": {
@@ -1619,7 +1641,9 @@
   "Trainer + assistant cost, Year 1": 33,
   "L3 realised fee, month 12 (incl. GST)": 34,
   "Space move month (99 = none in Year 1)": 35,
-  "Price step 1 month": 36
+  "Price step 1 month": 36,
+  "Growth & marketing spend, Year 1 (paid media + growth team + martech + website + partnerships/PR/contingency + rewards + pop-ups; Growth \u00a710 scope)": 37,
+  "  of which paid media, Year 1": 38
  },
- "D3": 40
+ "D3": 42
 }

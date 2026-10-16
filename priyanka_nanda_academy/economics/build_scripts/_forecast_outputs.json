@@ -12,14 +12,14 @@
   "baseline_rev_lakh": 6.71
  },
  "Base": {
-  "y3_tri": 71.88,
-  "y3_reg": 24.86,
+  "y3_tri": 70.9,
+  "y3_reg": 24.45,
   "y3_hyb": 25.15,
-  "y3_cpd": 27.06,
+  "y3_cpd": 27.04,
   "y3_onl": 11.43,
-  "y3_adj": 6.55,
-  "y3_lrn_tri": 93.9,
-  "y3_lrn_reg": 40.2,
+  "y3_adj": 6.54,
+  "y3_lrn_tri": 92.3,
+  "y3_lrn_reg": 39.6,
   "y3_lrn_hyb": 35.0,
   "baseline_rev_lakh": 16.61
  },

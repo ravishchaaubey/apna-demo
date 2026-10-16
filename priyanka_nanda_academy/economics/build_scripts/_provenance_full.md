@@ -79,10 +79,11 @@
 | A-ECO-52b | Lead trainer FTE (0.5 = part-time senior trainer in the ₹10L plan) | 0.50 | 1 | 1 | FTE | BM §6.5: ₹10L plan = part-time trainer | [HYP] | BF |
 | A-ECO-53 | Counsellor #1 start month | 3 | 1 | 1 | month # | Growth §10: C 1 FTE x10 mo; B/A from M1 | [EST] | BF |
 | A-ECO-54 | Counsellor #2 FTE | 0 | 0.50 | 1 | FTE | Growth §10: B 0.5 FTE x7; A 1 FTE x9 | [EST] | BF |
-| A-ECO-55 | Counsellor #2 start month | 99 | 6 | 4 | month # | Growth §10 | [EST] | BF |
+| A-ECO-55 | Counsellor #2 start month | 99 | 7 | 4 | month # | Growth §10 (re-aligned): B 0.5 FTE x6 after G1; A 1 FTE x9 | [EST] | BF |
 | A-ECO-57a | Marketing/content team start month | 2 | 2 | 2 | month # | Growth §10 (x11 months) | [EST] | BF |
 | A-ECO-57b | Performance freelancer start month | 2 | 2 | 2 | month # | Growth §10 (x11) | [EST] | BF |
 | A-ECO-57c | SEO freelancer start month | 3 | 3 | 3 | month # | Growth §10 (x10) | [EST] | BF |
+| A-ECO-57d | Shooter/editor start month | 1 | 2 | 1 | month # | Growth §10 (re-aligned): C x12, B x11 from M2, A x12 | [EST] | BF |
 | A-ECO-58 | Partnerships, PR / outcomes report, contingency (Growth §10 lines, monthly average) | ₹3,333 | ₹15,833 | ₹19,167 | ₹/mo | Growth §10: partnerships/events ex-rewards & pop-ups + outcomes/PR + contingency | [EST] | BF |
 | A-ECO-60-01 | Self-makeup (S5) seasonality, calendar month 1 | 1.20 | 1.20 | 1.20 | index | Peaks Oct-Feb before weddings/festivals (A-CUS-29); sums to 12 | [HYP] | BF |
 | A-ECO-60-02 | Self-makeup (S5) seasonality, calendar month 2 | 1.30 | 1.30 | 1.30 | index | Peaks Oct-Feb before weddings/festivals (A-CUS-29); sums to 12 | [HYP] | BF |
@@ -282,18 +283,18 @@
 | A-GRO-48 | Performance-marketing freelancer/agency | ₹0 | ₹20,000 | ₹35,000 | ₹/mo | Growth §10 | [EST] | FE, BF |
 | A-GRO-49 | Website rebuild (one-off) | ₹50,000 | ₹120,000 | ₹250,000 | ₹ | Growth §10 | [EST] | FE, BF |
 | A-GRO-50 | SEO content freelancer | ₹0 | ₹15,000 | ₹25,000 | ₹/mo | Growth §10 | [EST] | FE, BF |
-| A-GRO-BUD-01 | Paid media budget, month 1 (Nov-26) | ₹10,000 | ₹15,000 | ₹15,000 | ₹ | growth_marketing_strategy.md §6.4/§10; marketing_channel_plan.md §3.2 (Mar+ only if spend gates green) | [EST] | BF |
-| A-GRO-BUD-02 | Paid media budget, month 2 (Dec-26) | ₹25,000 | ₹40,000 | ₹50,000 | ₹ | growth_marketing_strategy.md §6.4/§10; marketing_channel_plan.md §3.2 (Mar+ only if spend gates green) | [EST] | BF |
-| A-GRO-BUD-03 | Paid media budget, month 3 (Jan-27) | ₹30,000 | ₹50,000 | ₹60,000 | ₹ | growth_marketing_strategy.md §6.4/§10; marketing_channel_plan.md §3.2 (Mar+ only if spend gates green) | [EST] | BF |
-| A-GRO-BUD-04 | Paid media budget, month 4 (Feb-27) | ₹35,000 | ₹60,000 | ₹70,000 | ₹ | growth_marketing_strategy.md §6.4/§10; marketing_channel_plan.md §3.2 (Mar+ only if spend gates green) | [EST] | BF |
-| A-GRO-BUD-05 | Paid media budget, month 5 (Mar-27) | ₹40,000 | ₹80,000 | ₹120,000 | ₹ | growth_marketing_strategy.md §6.4/§10; marketing_channel_plan.md §3.2 (Mar+ only if spend gates green) | [EST] | BF |
-| A-GRO-BUD-06 | Paid media budget, month 6 (Apr-27) | ₹40,000 | ₹90,000 | ₹170,000 | ₹ | growth_marketing_strategy.md §6.4/§10; marketing_channel_plan.md §3.2 (Mar+ only if spend gates green) | [EST] | BF |
-| A-GRO-BUD-07 | Paid media budget, month 7 (May-27) | ₹40,000 | ₹100,000 | ₹200,000 | ₹ | growth_marketing_strategy.md §6.4/§10; marketing_channel_plan.md §3.2 (Mar+ only if spend gates green) | [EST] | BF |
-| A-GRO-BUD-08 | Paid media budget, month 8 (Jun-27) | ₹40,000 | ₹100,000 | ₹200,000 | ₹ | growth_marketing_strategy.md §6.4/§10; marketing_channel_plan.md §3.2 (Mar+ only if spend gates green) | [EST] | BF |
-| A-GRO-BUD-09 | Paid media budget, month 9 (Jul-27) | ₹40,000 | ₹100,000 | ₹200,000 | ₹ | growth_marketing_strategy.md §6.4/§10; marketing_channel_plan.md §3.2 (Mar+ only if spend gates green) | [EST] | BF |
-| A-GRO-BUD-10 | Paid media budget, month 10 (Aug-27) | ₹40,000 | ₹100,000 | ₹200,000 | ₹ | growth_marketing_strategy.md §6.4/§10; marketing_channel_plan.md §3.2 (Mar+ only if spend gates green) | [EST] | BF |
-| A-GRO-BUD-11 | Paid media budget, month 11 (Sep-27) | ₹40,000 | ₹100,000 | ₹200,000 | ₹ | growth_marketing_strategy.md §6.4/§10; marketing_channel_plan.md §3.2 (Mar+ only if spend gates green) | [EST] | BF |
-| A-GRO-BUD-12 | Paid media budget, month 12 (Oct-27) | ₹40,000 | ₹100,000 | ₹200,000 | ₹ | growth_marketing_strategy.md §6.4/§10; marketing_channel_plan.md §3.2 (Mar+ only if spend gates green) | [EST] | BF |
+| A-GRO-BUD-01 | Paid media budget, month 1 (Nov-26) | ₹10,000 | ₹15,000 | ₹15,000 | ₹ | marketing_channel_plan.md §3.2 / growth_marketing_strategy.md §10 (re-aligned): ≤₹15k until G0, ≤₹60k until G1; B assumes G1 green at M7 | [EST] | BF |
+| A-GRO-BUD-02 | Paid media budget, month 2 (Dec-26) | ₹15,000 | ₹15,000 | ₹15,000 | ₹ | marketing_channel_plan.md §3.2 / growth_marketing_strategy.md §10 (re-aligned): ≤₹15k until G0, ≤₹60k until G1; B assumes G1 green at M7 | [EST] | BF |
+| A-GRO-BUD-03 | Paid media budget, month 3 (Jan-27) | ₹30,000 | ₹40,000 | ₹50,000 | ₹ | marketing_channel_plan.md §3.2 / growth_marketing_strategy.md §10 (re-aligned): ≤₹15k until G0, ≤₹60k until G1; B assumes G1 green at M7 | [EST] | BF |
+| A-GRO-BUD-04 | Paid media budget, month 4 (Feb-27) | ₹35,000 | ₹50,000 | ₹60,000 | ₹ | marketing_channel_plan.md §3.2 / growth_marketing_strategy.md §10 (re-aligned): ≤₹15k until G0, ≤₹60k until G1; B assumes G1 green at M7 | [EST] | BF |
+| A-GRO-BUD-05 | Paid media budget, month 5 (Mar-27) | ₹40,000 | ₹60,000 | ₹60,000 | ₹ | marketing_channel_plan.md §3.2 / growth_marketing_strategy.md §10 (re-aligned): ≤₹15k until G0, ≤₹60k until G1; B assumes G1 green at M7 | [EST] | BF |
+| A-GRO-BUD-06 | Paid media budget, month 6 (Apr-27) | ₹40,000 | ₹60,000 | ₹120,000 | ₹ | marketing_channel_plan.md §3.2 / growth_marketing_strategy.md §10 (re-aligned): ≤₹15k until G0, ≤₹60k until G1; B assumes G1 green at M7 | [EST] | BF |
+| A-GRO-BUD-07 | Paid media budget, month 7 (May-27) | ₹40,000 | ₹80,000 | ₹170,000 | ₹ | marketing_channel_plan.md §3.2 / growth_marketing_strategy.md §10 (re-aligned): ≤₹15k until G0, ≤₹60k until G1; B assumes G1 green at M7 | [EST] | BF |
+| A-GRO-BUD-08 | Paid media budget, month 8 (Jun-27) | ₹40,000 | ₹100,000 | ₹200,000 | ₹ | marketing_channel_plan.md §3.2 / growth_marketing_strategy.md §10 (re-aligned): ≤₹15k until G0, ≤₹60k until G1; B assumes G1 green at M7 | [EST] | BF |
+| A-GRO-BUD-09 | Paid media budget, month 9 (Jul-27) | ₹40,000 | ₹100,000 | ₹200,000 | ₹ | marketing_channel_plan.md §3.2 / growth_marketing_strategy.md §10 (re-aligned): ≤₹15k until G0, ≤₹60k until G1; B assumes G1 green at M7 | [EST] | BF |
+| A-GRO-BUD-10 | Paid media budget, month 10 (Aug-27) | ₹40,000 | ₹100,000 | ₹200,000 | ₹ | marketing_channel_plan.md §3.2 / growth_marketing_strategy.md §10 (re-aligned): ≤₹15k until G0, ≤₹60k until G1; B assumes G1 green at M7 | [EST] | BF |
+| A-GRO-BUD-11 | Paid media budget, month 11 (Sep-27) | ₹40,000 | ₹100,000 | ₹200,000 | ₹ | marketing_channel_plan.md §3.2 / growth_marketing_strategy.md §10 (re-aligned): ≤₹15k until G0, ≤₹60k until G1; B assumes G1 green at M7 | [EST] | BF |
+| A-GRO-BUD-12 | Paid media budget, month 12 (Oct-27) | ₹40,000 | ₹100,000 | ₹200,000 | ₹ | marketing_channel_plan.md §3.2 / growth_marketing_strategy.md §10 (re-aligned): ≤₹15k until G0, ≤₹60k until G1; B assumes G1 green at M7 | [EST] | BF |
 | A-IND-01 | B&WSSC-certified candidates per year (all beauty & wellness) | 130,000 | 170,000 | 210,000 | learners/yr | 10.25 lakh/8 yrs=1.28; 13 lakh/9=1.44; 20.7 lakh/10-11=1.88-2.07 (S-IND-02,-04,-05) | [EST] | MS |
 | A-IND-02 | Organised share of vocational training (total = certified / share) | 40% | 40% | 40% | % | KPMG: unorganised ≈60% of vocational education (S-IND-01 p.67) | [EST] | MS |
 | A-IND-03 | Paid (self-funded) share of trainees | 64% | 72% | 80% | % | 60% unorganised (self-paid) + 40% organised x 10/30/50% fee-paying (S-IND-01, S-IND-04) | [EST] | MS |
@@ -314,16 +315,16 @@
 | A-IND-10b | Online / short-course layer: average fee | ₹600 | ₹1,500 | ₹3,000 | ₹ | Orane ₹590-5,990; Airblack from ₹150 | [HYP] | MS |
 | A-IND-16 | FX for USD display only | 88 | 88 | 88 | ₹/USD | Illustrative | [HYP] | MS |
 | A-IND-17 | Regional proxy: Chd+PB+HR+HP+J&K share of India incremental B&W workforce need | 7.65% | 7.65% | 7.65% | % | KPMG Table 5 (S-IND-01 pp.46-47) | [FACT] | MS |
-| SOM-ADJ | Y3 adjacent revenue outside the training market (kit margin, services desk, partnerships) | 2 | 6.55 | 10.13 | ₹ lakh ex-GST | business_forecast.xlsx 3yr_Scenarios (linked by run_all.py) | [EST] model output | MS |
+| SOM-ADJ | Y3 adjacent revenue outside the training market (kit margin, services desk, partnerships) | 2 | 6.54 | 10.13 | ₹ lakh ex-GST | business_forecast.xlsx 3yr_Scenarios (linked by run_all.py) | [EST] model output | MS |
 | SOM-BASELINE | Illustrative PNA baseline revenue today (CA-01 x assumed fees; NOT actual revenue) | 6.71 | 16.61 | 24.92 | ₹ lakh ex-GST | business_forecast.xlsx Unit_Economics baseline (CA-01, CA-02) | [HYP] | MS |
-| SOM-CPD | Y3 working-artist CPD revenue (L4 masterclasses + L5 Pro Circle) | 5.84 | 27.06 | 61.15 | ₹ lakh ex-GST | business_forecast.xlsx 3yr_Scenarios (linked by run_all.py) | [EST] model output | MS |
+| SOM-CPD | Y3 working-artist CPD revenue (L4 masterclasses + L5 Pro Circle) | 5.84 | 27.04 | 61.15 | ₹ lakh ex-GST | business_forecast.xlsx 3yr_Scenarios (linked by run_all.py) | [EST] model output | MS |
 | SOM-HYB | Y3 hybrid programme revenue | 4.63 | 25.15 | 49.35 | ₹ lakh ex-GST | business_forecast.xlsx 3yr_Scenarios (linked by run_all.py) | [EST] model output | MS |
 | SOM-LRN-HYB | Y3 incremental destination/hybrid learners | 8 | 35 | 53.90 | learners | business_forecast.xlsx 3yr_Scenarios (linked by run_all.py) | [EST] model output | MS |
-| SOM-LRN-REG | Y3 out-of-town career learners (offline + satellite) | 7.40 | 40.20 | 95 | learners | business_forecast.xlsx 3yr_Scenarios (linked by run_all.py) | [EST] model output | MS |
-| SOM-LRN-TRI | Y3 tricity-origin career learners (L2+L3 new students) | 33.60 | 93.90 | 97.50 | learners | business_forecast.xlsx 3yr_Scenarios (linked by run_all.py) | [EST] model output | MS |
+| SOM-LRN-REG | Y3 out-of-town career learners (offline + satellite) | 7.40 | 39.60 | 95 | learners | business_forecast.xlsx 3yr_Scenarios (linked by run_all.py) | [EST] model output | MS |
+| SOM-LRN-TRI | Y3 tricity-origin career learners (L2+L3 new students) | 33.60 | 92.30 | 97.50 | learners | business_forecast.xlsx 3yr_Scenarios (linked by run_all.py) | [EST] model output | MS |
 | SOM-ONL | Y3 online short-course revenue | 1.27 | 11.43 | 33.88 | ₹ lakh ex-GST | business_forecast.xlsx 3yr_Scenarios (linked by run_all.py) | [EST] model output | MS |
-| SOM-REG | Y3 regional destination revenue (L3 outstation share + satellite if gated in) | 3.40 | 24.86 | 75.56 | ₹ lakh ex-GST | business_forecast.xlsx 3yr_Scenarios (linked by run_all.py) | [EST] model output | MS |
-| SOM-TRI | Y3 tricity-origin flagship revenue (L1 taster, L1-S5 self-makeup, L2, L3 tricity share) | 19.51 | 71.88 | 104.57 | ₹ lakh ex-GST | business_forecast.xlsx 3yr_Scenarios (linked by run_all.py) | [EST] model output | MS |
+| SOM-REG | Y3 regional destination revenue (L3 outstation share + satellite if gated in) | 3.40 | 24.45 | 75.56 | ₹ lakh ex-GST | business_forecast.xlsx 3yr_Scenarios (linked by run_all.py) | [EST] model output | MS |
+| SOM-TRI | Y3 tricity-origin flagship revenue (L1 taster, L1-S5 self-makeup, L2, L3 tricity share) | 19.51 | 70.90 | 104.57 | ₹ lakh ex-GST | business_forecast.xlsx 3yr_Scenarios (linked by run_all.py) | [EST] model output | MS |
 | X-BS-SECTOR | Context only: Beauty & Salon sector size 2025P (NOT the education market) | 76,141 | 76,141 | 76,141 | ₹ crore | S-IND-01 Table 1 p.15 | [FACT] | MS |
 | X-BW-CHD | B&W share of state workforce: Chandigarh | 6.16% | 6.16% | 6.16% | % | S-IND-01 (highest in India) | [FACT] | MS |
 | X-BW-HP | B&W share of state workforce: HP | 2.02% | 2.02% | 2.02% | % | S-IND-01 | [FACT] | MS |

@@ -79,10 +79,11 @@
 | A-ECO-52b | Lead trainer FTE (0.5 = part-time senior trainer in the ₹10L plan) | 0.50 | 1 | 1 | FTE | BM §6.5: ₹10L plan = part-time trainer | [HYP] |
 | A-ECO-53 | Counsellor #1 start month | 3 | 1 | 1 | month # | Growth §10: C 1 FTE x10 mo; B/A from M1 | [EST] |
 | A-ECO-54 | Counsellor #2 FTE | 0 | 0.50 | 1 | FTE | Growth §10: B 0.5 FTE x7; A 1 FTE x9 | [EST] |
-| A-ECO-55 | Counsellor #2 start month | 99 | 6 | 4 | month # | Growth §10 | [EST] |
+| A-ECO-55 | Counsellor #2 start month | 99 | 7 | 4 | month # | Growth §10 (re-aligned): B 0.5 FTE x6 after G1; A 1 FTE x9 | [EST] |
 | A-ECO-57a | Marketing/content team start month | 2 | 2 | 2 | month # | Growth §10 (x11 months) | [EST] |
 | A-ECO-57b | Performance freelancer start month | 2 | 2 | 2 | month # | Growth §10 (x11) | [EST] |
 | A-ECO-57c | SEO freelancer start month | 3 | 3 | 3 | month # | Growth §10 (x10) | [EST] |
+| A-ECO-57d | Shooter/editor start month | 1 | 2 | 1 | month # | Growth §10 (re-aligned): C x12, B x11 from M2, A x12 | [EST] |
 | A-ECO-58 | Partnerships, PR / outcomes report, contingency (Growth §10 lines, monthly average) | ₹3,333 | ₹15,833 | ₹19,167 | ₹/mo | Growth §10: partnerships/events ex-rewards & pop-ups + outcomes/PR + contingency | [EST] |
 | A-ECO-60-01..12 | Self-makeup seasonality Jan..Dec | — | 1.20/1.30/0.90/0.80/0.70/0.60/0.60/0.80/1.10/1.40/1.40/1.20 | — | index | Peaks Oct-Feb before weddings/festivals (A-CUS-29); sums to 12 | [HYP] |
 | A-ECO-101 | Career (L2/L3-type) share of today's students | 60% | 60% | 60% | % | Assumed mix; founder data pull (V1) to replace | [HYP] |
@@ -260,7 +261,7 @@
 | A-GRO-48 | Performance-marketing freelancer/agency | ₹0 | ₹20,000 | ₹35,000 | ₹/mo | Growth §10 | [EST] |
 | A-GRO-49 | Website rebuild (one-off) | ₹50,000 | ₹120,000 | ₹250,000 | ₹ | Growth §10 | [EST] |
 | A-GRO-50 | SEO content freelancer | ₹0 | ₹15,000 | ₹25,000 | ₹/mo | Growth §10 | [EST] |
-| A-GRO-BUD-01..12 | Paid-media budget by month, Nov-26..Oct-27 | 10k/25k/30k/35k/40k/40k/40k/40k/40k/40k/40k/40k | 15k/40k/50k/60k/80k/90k/100k/100k/100k/100k/100k/100k | 15k/50k/60k/70k/120k/170k/200k/200k/200k/200k/200k/200k | ₹ | growth_marketing_strategy.md §6.4/§10 | [EST] |
+| A-GRO-BUD-01..12 | Paid-media budget by month, Nov-26..Oct-27 | 10k/15k/30k/35k/40k/40k/40k/40k/40k/40k/40k/40k | 15k/15k/40k/50k/60k/60k/80k/100k/100k/100k/100k/100k | 15k/15k/50k/60k/60k/120k/170k/200k/200k/200k/200k/200k | ₹ | growth_marketing_strategy.md §6.4/§10 | [EST] |
 | A-IND-01 | B&WSSC-certified candidates per year (all beauty & wellness) | 130,000 | 170,000 | 210,000 | learners/yr | 10.25 lakh/8 yrs=1.28; 13 lakh/9=1.44; 20.7 lakh/10-11=1.88-2.07 (S-IND-02,-04,-05) | [EST] |
 | A-IND-02 | Organised share of vocational training (total = certified / share) | 40% | 40% | 40% | % | KPMG: unorganised ≈60% of vocational education (S-IND-01 p.67) | [EST] |
 | A-IND-03 | Paid (self-funded) share of trainees | 64% | 72% | 80% | % | 60% unorganised (self-paid) + 40% organised x 10/30/50% fee-paying (S-IND-01, S-IND-04) | [EST] |
