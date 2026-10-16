@@ -74,6 +74,9 @@ f("A-BM-10c-G", "Founder share, Year 2 average - Gate D path (40% M12 -> 30% M18
 f("A-BM-10d-G", "Founder share, Year 3 average - Gate D path (15% M24 -> 10% M36)", 0.125, 0.125, 0.125, "%", "Linear path average", "[EST]", "pct", "plan")
 f("A-ECO-151", "Staged Plan: paid-media cap per month before G1 (T1 test level)", 60000, 60000, 60000, "₹/mo", "recommended_strategy.md §5 T1 (≤₹60k/month)", "[REC]", "rs", "plan")
 f("A-ECO-152", "Staged Plan: basic recording of theory modules in T1 (month 3)", 100000, 100000, 100000, "₹", "recommended_strategy.md §5 T1 (₹1L)", "[REC]", "rs", "plan")
+f("A-ECO-154", "Staged Plan: running cost of the studio weekend/evening batch slot (utilities, housekeeping, weekend premium)", 10000, 8000, 6000, "₹/mo", "recommended_strategy.md §5/§10 #16; judgement", "[HYP]", "rs", "rate")
+f("A-ECO-155", "Staged Plan: studio batch slots per day once the weekend/evening slot is added (before the move)", 2.5, 2.5, 2.5, "slots", "recommended_strategy.md §11.3 #2 (2.5 slots a day)", "[HYP]", "1dp", "plan")
+f("A-ECO-156", "Staged Plan: month the studio weekend/evening slot starts", 5, 5, 5, "month #", "recommended_strategy.md §5 T1 (from M5)", "[HYP]", "int", "plan")
 f("A-ECO-153", "Tranche T1 cash cap (cumulative cash need before G1)", 1500000, 1500000, 1500000, "₹", "recommended_strategy.md §5 T1 (up to ₹15L)", "[REC]", "rs", "plan")
 f("A-ECO-170", "Optional pro kit price to the student (itemised, near cost)", 25000, 20000, 18000, "₹", "positioning_and_segments.md §6: ₹18-25k", "[HYP]", "rs", "rate")
 f("A-BM-12a", "Living + travel for an out-of-town student on the 12-week Weekday format", 54000, 43500, 33000, "₹", "A-BM-12: ₹33-54k (PG ₹10-16k x 3 + travel)", "[EST]", "rs", "rate")
@@ -170,7 +173,7 @@ f("A-ECO-227", "Kit / product margin on retail sales to students & alumni, per c
 
 SELOPTS = {"staged": "=Assumptions!$D$5", "g1": "=Assumptions!$F$5", "pp": "=Assumptions!$H$5", "fp": "=Assumptions!$J$5"}
 STAGED_RUNS = [
-    ("Staged_G1M6", 2, 2, "STAGED PLAN (recommended), G1 at M6: Base team from M1; ₹10L-plan capex, studio stations and media ≤₹60k/month until G1; T2 (space move, 0.5 counsellor, pop-ups, hybrid build) from M7; two-step price (step 1 M7, step 2 M16); founder ≤40% at M12",
+    ("Staged_G1M6", 2, 2, "STAGED PLAN (recommended), G1 at M6: Base team from M1; ₹10L-plan capex, studio stations (+ weekend/evening slot from M5) and media ≤₹60k/month until G1; T2 (space move, 0.5 counsellor, pop-ups) from M7; recorded hybrid library deferred to T3 (Year 2); two-step price (step 1 M7, step 2 M16); founder ≤40% at M12",
      {"staged": 1, "g1": 6, "pp": 2, "fp": 2}),
     ("Staged_G1M9", 2, 2, "STAGED PLAN (recommended), G1 at M9 (latest decision): as Staged_G1M6 but T2, space move and price step 1 from M10",
      {"staged": 1, "g1": 9, "pp": 2, "fp": 2}),
@@ -317,7 +320,7 @@ def outlook(wb, name, A, rate_idx, plan_idx, label, flex=None):
     S.row("dem", "Career demand = seasonality x [today's engine x conv + new non-paid x conv x SLA + MIN(paid target, budget-bought x SLA)]",
           lambda m, c: f"{c}{S.R['sea']}*({c}{S.R['base']}*{conv}+({c}{S.R['npt']}-{c}{S.R['base']})*{conv}*{c}{S.R['sla']}+MIN({c}{S.R['pt']},{c}{S.R['ach']}*{c}{S.R['sla']}))", FMT_2DP, bold=True)
     S.row("stn", "Stations available", lambda m, c: f"IF({m}>={mv},{p('A-ECO-115')},{p('A-ECO-110')})", FMT_INT, total="last")
-    S.row("slt", "Batch slots per day", lambda m, c: f"IF({m}>={mv},{p('A-ECO-116')},{p('A-ECO-111')})", FMT_1DP, total="last")
+    S.row("slt", "Batch slots per day (Staged: studio weekend/evening slot from A-ECO-156)", lambda m, c: f"IF({m}>={mv},{p('A-ECO-116')},IF(AND({st}=1,{m}>={p('A-ECO-156')}),{p('A-ECO-155')},{p('A-ECO-111')}))", FMT_1DP, total="last")
     S.row("cap", "Usable seat capacity (stations x slots x max use)", lambda m, c: f"{c}{S.R['stn']}*{c}{S.R['slt']}*{p('A-ECO-117')}", FMT_1DP, total="last")
     S.row("dshare", "Destination/hybrid format share of new L3 (out-of-town students after launch)", lambda m, c: f"IF({m}>={p('A-ECO-128')},{p('A-GRO-37')},0)", FMT_PCT, total="last")
     # continuing occupancy from earlier months
@@ -416,7 +419,7 @@ def outlook(wb, name, A, rate_idx, plan_idx, label, flex=None):
     S.sec("H. Occupancy, marketing and overheads")
     S.row("rent", "Rent: today's academy share, or new space from move month",
           lambda m, c: f"IF({m}>={mv},{p('A-ECO-113')}*{p('A-ECO-114')},{p('A-ECO-118')})*{rentx}", FMT_INT)
-    S.row("util2", "Utilities, housekeeping, maintenance", lambda m, c: f"IF({m}>={mv},{p('A-ECO-113')}*{p('A-ECO-120')},{p('A-ECO-119')})", FMT_INT)
+    S.row("util2", "Utilities, housekeeping, maintenance (+ studio weekend/evening slot cost in the Staged Plan)", lambda m, c: f"IF({m}>={mv},{p('A-ECO-113')}*{p('A-ECO-120')},{p('A-ECO-119')}+IF(AND({st}=1,{m}>={p('A-ECO-156')}),{p('A-ECO-154')},0))", FMT_INT)
     S.row("tech", "Martech stack (A-GRO-42) + LMS after hybrid launch", lambda m, c: f"{p('A-GRO-42')}+IF({m}>={p('A-ECO-128')}-1,{p('A-ECO-127')},0)", FMT_INT)
     S.row("med", "Paid media (Growth budget)", lambda m, c: f"{c}{S.R['bud']}", FMT_INT)
     S.row("part", "Partnerships, PR / outcomes report, contingency (A-ECO-58)", lambda m, c: f"{p('A-ECO-58')}", FMT_INT)
@@ -434,8 +437,8 @@ def outlook(wb, name, A, rate_idx, plan_idx, label, flex=None):
     S.row("cstn", "Additional stations", lambda m, c: f"IF({m}={mv}-1,MAX(0,{p('A-ECO-115')}-{p('A-ECO-110')})*{p('A-ECO-122')},0)", FMT_INT)
     S.row("cdep", "Security deposit (refundable; cash out)", lambda m, c: f"IF({m}={mv}-1,{p('A-ECO-123')}*{p('A-ECO-113')}*{p('A-ECO-114')}*{rentx},0)", FMT_INT)
     S.row("ccrm", "CRM / WhatsApp BSP / GBP / photo-video proof kit (M1)", lambda m, c: f"IF({m}=1,{p('A-ECO-136')},0)", FMT_INT)
-    S.row("chyb", "Hybrid pre-work content + LMS (2 months before launch; Staged: basic recording M3 in T1, full build at G1+1 in T2)",
-          lambda m, c: f"IF({st}=1,IF({m}={g1}+1,{p('A-ECO-129')},0)+IF({m}=3,{p('A-ECO-152')},0),IF({m}={p('A-ECO-128')}-2,{p('A-ECO-129')},0))", FMT_INT)
+    S.row("chyb", "Hybrid pre-work content + LMS (2 months before launch; Staged: basic recording M3 in T1 only - recorded library deferred to T3 after G2, Year 2)",
+          lambda m, c: f"IF({st}=1,IF({m}=3,{p('A-ECO-152')},0),IF({m}={p('A-ECO-128')}-2,{p('A-ECO-129')},0))", FMT_INT)
     S.row("capex", "Total capex and deposits", lambda m, c: f"SUM({c}{S.R['cfit']}:{c}{S.R['chyb']})", FMT_INT, bold=True)
     pm = p("A-ECO-34")
     S.row("tim", "Instalment timing: career cash received later than booked (A-ECO-34 payment months)",
@@ -923,8 +926,9 @@ def build():
     tr("ebf", "Memo: EBITDA after a founder-role salary (A-ECO-138 x 12, wage escalation)",
        lambda si, y: f"{O(si, 'ebf')}/{L}" if y == 1 else f"{T_('ebitda', si, y)}-{P('A-ECO-138', si)}*12*(1+{P('A-ECO-218', si)})^{y - 1}/{L}", FMT_1DP, True)
     tr("ebfm", "Memo: EBITDA margin after founder-role salary", lambda si, y: f"IFERROR({T_('ebf', si, y)}/{T_('rev', si, y)},0)", FMT_PCT)
-    tr("capex", "Capex and deposits", lambda si, y: (f"{O(si, 'capex')}/{L}" if y == 1 else
-                                                f"({P('A-ECO-226a' if y == 2 else 'A-ECO-226b', si)}+MAX(0,{T_('stn', si, y)}-{T_('stn', si, y - 1)})*{P('A-ECO-122', si)}+IF({T_('sat', si, y)}>0,{P('A-ECO-216', si)},0))/{L}"))
+    tr("capex", "Capex and deposits (Staged: recorded hybrid library A-ECO-129 deferred to Year 2 / T3)", lambda si, y: (f"{O(si, 'capex')}/{L}" if y == 1 else
+                                                f"({P('A-ECO-226a' if y == 2 else 'A-ECO-226b', si)}+MAX(0,{T_('stn', si, y)}-{T_('stn', si, y - 1)})*{P('A-ECO-122', si)}+IF({T_('sat', si, y)}>0,{P('A-ECO-216', si)},0)"
+                                                + (f"+{P('A-ECO-129', si)}" if (si in (4, 5) and y == 2) else "") + f")/{L}"))
     tr("ncf", "Net cash flow (Y1 incl. instalment timing)", lambda si, y: (f"{onames[si]}!N{outs[onames[si]]['cum']}/{L}" if y == 1 else f"{T_('ebitda', si, y)}-{T_('capex', si, y)}"), bold=True)
     tr("cum", "Cumulative cash position", lambda si, y: f"{T_('ncf', si, 1)}" if y == 1 else f"{T_('cum', si, y - 1)}+{T_('ncf', si, y)}", bold=True)
     tr("peak", "Peak cash need to date (Y1 monthly peak; Y2-3 year-end)", lambda si, y: (f"{onames[si]}!O{outs[onames[si]]['peak']}/{L}" if y == 1 else

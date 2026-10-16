@@ -135,6 +135,9 @@
 | A-ECO-151 | Staged Plan: paid-media cap per month before G1 (T1 test level) | ₹60,000 | ₹60,000 | ₹60,000 | ₹/mo | recommended_strategy.md §5 T1 (≤₹60k/month) | [REC] | BF |
 | A-ECO-152 | Staged Plan: basic recording of theory modules in T1 (month 3) | ₹100,000 | ₹100,000 | ₹100,000 | ₹ | recommended_strategy.md §5 T1 (₹1L) | [REC] | BF |
 | A-ECO-153 | Tranche T1 cash cap (cumulative cash need before G1) | ₹1,500,000 | ₹1,500,000 | ₹1,500,000 | ₹ | recommended_strategy.md §5 T1 (up to ₹15L) | [REC] | BF |
+| A-ECO-154 | Staged Plan: running cost of the studio weekend/evening batch slot (utilities, housekeeping, weekend premium) | ₹10,000 | ₹8,000 | ₹6,000 | ₹/mo | recommended_strategy.md §5/§10 #16; judgement | [HYP] | BF |
+| A-ECO-155 | Staged Plan: studio batch slots per day once the weekend/evening slot is added (before the move) | 2.50 | 2.50 | 2.50 | slots | recommended_strategy.md §11.3 #2 (2.5 slots a day) | [HYP] | BF |
+| A-ECO-156 | Staged Plan: month the studio weekend/evening slot starts | 5 | 5 | 5 | month # | recommended_strategy.md §5 T1 (from M5) | [HYP] | BF |
 | A-ECO-160 | Price step 1 list fee (two-step path) | ₹75,000 | ₹75,000 | ₹75,000 | ₹ | recommended_strategy.md §7.2 (= A-GRO-06 low) | [HYP] | BF |
 | A-ECO-170 | Optional pro kit price to the student (itemised, near cost) | ₹25,000 | ₹20,000 | ₹18,000 | ₹ | positioning_and_segments.md §6: ₹18-25k | [HYP] | BF |
 | A-ECO-171 | Local commute per class day (tricity resident) | ₹150 | ₹120 | ₹100 | ₹/day | Judgement (auto/bus within tricity) | [HYP] | BF |

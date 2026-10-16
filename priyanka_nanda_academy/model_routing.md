@@ -25,4 +25,5 @@ Note: the brief suggests 3–5 concurrent agents. Competitive intelligence was s
 | 9b | Economics follow-up (Staged Plan, two-step price, founder 40%) | opus (resumed #9) | Gate D | economics/* | done — §1A Staged Plan; media aligned to channel plan |
 | 7b | Growth follow-up (canonical vocabulary alignment) | opus (resumed #7) | Gate D | own 5 files | done — media caps moved tests to Jan; 12m totals ₹9.6L/28.6L/48.1L |
 | 10b | Lead Strategist refresh (numbers + staging headroom) | fable (resumed #10) | Gate D | strategy/recommended_strategy.md, market_opportunity.md, final/executive_summary.md | done — ₹30L + ₹5L contingency; hybrid library to T3; G1 default M6 |
-| 9c | Economics rerun (hybrid library deferred, M5 slot) | opus (resumed #9) | Gate D | economics/* | dispatched |
+| 9c | Economics rerun (hybrid library deferred, M5 slot) | opus (resumed #9) | Gate D | economics/* | done — Staged Y1 ₹66.5L rev, +₹2.2L EBITDA, peak cash ₹25.6L |
+| 10c | Lead Strategist final number sync | fable (resumed #10) | Gate D | 3 strategy/summary files | dispatched |
