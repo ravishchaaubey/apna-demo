@@ -37,4 +37,5 @@ Note: the brief suggests 3–5 concurrent agents. Competitive intelligence was s
 | 14 | Executive Storyline (storyboard, deck sources, consistency table) | fable | Gate F | final/slide_storyboard.md, final/deck_sources.md | dispatched |
 | 12b | Independent Reviewer closure check (C1–C8) | fable (resumed #12) | Gate E | strategy/independent_review.md §8 | done — fit for founder; Criticals closed; residuals R-1–R-7 fixed by orchestrator (§10 row 33) |
 | 14 | (status) Executive Storyline | fable | Gate F | final/slide_storyboard.md, final/deck_sources.md | done — 24 core + 9 appendix; 60-figure consistency table |
-| 15 | Presentation Production — phase 2 (build, render, inspect, number check) | opus | Gate F | final/Priyanka_Nanda_Academy_Growth_Strategy.pptx, final/deck_quality_review.md | dispatched |
+| 15 | Presentation Production — phase 2 (build, render, inspect, number check) | opus | Gate F | final/Priyanka_Nanda_Academy_Growth_Strategy.pptx, final/deck_quality_review.md | done — 24 core + 9 appendix (35 pages); validate pass; 60/60 storyboard numbers; 6 QA rounds (resumed once after a usage-limit stop) |
+| 16 | Presentation QA (independent: deck vs upstream sources) | opus | Gate F | final/presentation_qa_independent.md | dispatched |
