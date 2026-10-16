@@ -21,9 +21,10 @@ Note: the brief suggests 3–5 concurrent agents. Competitive intelligence was s
 | 8 | Business Model & Expansion | opus | Gate B | strategy/business_model_evaluation.md, strategy/geographic_expansion.md | done — 15 follow-up searches used; Lakmé/Airblack/B&WSSC fees unpublished |
 | 9 | Economics & Market Sizing | opus | Gate C | economics/*.xlsx, economics/assumptions_and_methodology.md, assumptions_register.md (consolidation) | done — LibreOffice recalculation 0 formula errors; conflicts resolved (methodology §3) |
 | 10 | Lead Strategist — Gate D arbitration | fable | Gate D | strategy/recommended_strategy.md, strategy/market_opportunity.md, final/executive_summary.md | done — renamed model "Chandigarh Flagship"; staged ₹15L+₹15L; founder ≤40% at M12 |
-| 11 | Operations / Roadmap | opus | Gate D | execution/first_90_days.md, execution/twelve_month_roadmap.md, execution/kpi_framework.md | dispatched (parallel with #10; aligns to its vocabulary if available) |
+| 11 | Operations / Roadmap | opus | Gate D | execution/first_90_days.md, execution/twelve_month_roadmap.md, execution/kpi_framework.md | done — tied to §1A Staged Plan; unlinked items listed |
 | 9b | Economics follow-up (Staged Plan, two-step price, founder 40%) | opus (resumed #9) | Gate D | economics/* | done — §1A Staged Plan; media aligned to channel plan |
 | 7b | Growth follow-up (canonical vocabulary alignment) | opus (resumed #7) | Gate D | own 5 files | done — media caps moved tests to Jan; 12m totals ₹9.6L/28.6L/48.1L |
 | 10b | Lead Strategist refresh (numbers + staging headroom) | fable (resumed #10) | Gate D | strategy/recommended_strategy.md, market_opportunity.md, final/executive_summary.md | done — ₹30L + ₹5L contingency; hybrid library to T3; G1 default M6 |
 | 9c | Economics rerun (hybrid library deferred, M5 slot) | opus (resumed #9) | Gate D | economics/* | done — Staged Y1 ₹66.5L rev, +₹2.2L EBITDA, peak cash ₹25.6L |
 | 10c | Lead Strategist final number sync | fable (resumed #10) | Gate D | 3 strategy/summary files | done — contingency kept (expected undrawn); G1 M6 default kept |
+| 12 | Independent Strategy Reviewer (red team) | fable | Gate E | strategy/independent_review.md | dispatched |
