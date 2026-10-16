@@ -67,6 +67,20 @@ f("A-BM-10b", "Founder share of contact hours at M12", 0.40, 0.30, 0.25, "%", "A
 f("A-BM-10c", "Founder share of contact hours, Year 2 average", 0.20, 0.15, 0.12, "%", "A-BM-10 (≤15% M24)", "[HYP]", "pct", "plan")
 f("A-BM-10d", "Founder share of contact hours, Year 3 average", 0.12, 0.10, 0.08, "%", "A-BM-10 (≤10% M36)", "[HYP]", "pct", "plan")
 f("A-ECO-52", "Lead trainer hire month", 3, 2, 1, "month #", "BM §6.1: lead trainer M0-3 (shadowing)", "[HYP]", "int", "plan")
+f("A-ECO-106", "Proof gate 2 month: L3 list steps ₹75k -> ₹90k (two-step path; inside G2)", 99, 16, 13, "month #", "recommended_strategy.md §7.2: step 2 at G2 (M15-M18)", "[HYP]", "int", "rate")
+f("A-ECO-160", "Price step 1 list fee (two-step path)", 75000, 75000, 75000, "₹", "recommended_strategy.md §7.2 (= A-GRO-06 low)", "[HYP]", "rs", "rate")
+f("A-BM-10b-G", "Founder share of contact hours at M12 - Gate D path (≤40% M12, ≤30% M18)", 0.40, 0.40, 0.40, "%", "recommended_strategy.md §10 #2", "[REC]", "pct", "plan")
+f("A-BM-10c-G", "Founder share, Year 2 average - Gate D path (40% M12 -> 30% M18 -> 15% M24)", 0.29, 0.29, 0.29, "%", "Linear path average (35% M13-18, 22.5% M19-24)", "[EST]", "pct", "plan")
+f("A-BM-10d-G", "Founder share, Year 3 average - Gate D path (15% M24 -> 10% M36)", 0.125, 0.125, 0.125, "%", "Linear path average", "[EST]", "pct", "plan")
+f("A-ECO-151", "Staged Plan: paid-media cap per month before G1 (T1 test level)", 60000, 60000, 60000, "₹/mo", "recommended_strategy.md §5 T1 (≤₹60k/month)", "[REC]", "rs", "plan")
+f("A-ECO-152", "Staged Plan: basic recording of theory modules in T1 (month 3)", 100000, 100000, 100000, "₹", "recommended_strategy.md §5 T1 (₹1L)", "[REC]", "rs", "plan")
+f("A-ECO-153", "Tranche T1 cash cap (cumulative cash need before G1)", 1500000, 1500000, 1500000, "₹", "recommended_strategy.md §5 T1 (up to ₹15L)", "[REC]", "rs", "plan")
+f("A-ECO-170", "Optional pro kit price to the student (itemised, near cost)", 25000, 20000, 18000, "₹", "positioning_and_segments.md §6: ₹18-25k", "[HYP]", "rs", "rate")
+f("A-BM-12a", "Living + travel for an out-of-town student on the 12-week Weekday format", 54000, 43500, 33000, "₹", "A-BM-12: ₹33-54k (PG ₹10-16k x 3 + travel)", "[EST]", "rs", "rate")
+f("A-BM-12b", "Living + travel for the Destination format (5-6 weeks in Chandigarh)", 28000, 22500, 17000, "₹", "A-BM-12: ₹17-28k", "[EST]", "rs", "rate")
+f("A-ECO-171", "Local commute per class day (tricity resident)", 150, 120, 100, "₹/day", "Judgement (auto/bus within tricity)", "[HYP]", "rs", "rate")
+f("A-ECO-172a", "Class days: Weekday format (12 weeks x 5 days)", 60, 60, 60, "days", "§6.1 Weekday 12 weeks", "[EST]", "int", "rate")
+f("A-ECO-172b", "Class days: Flex format (~20 weeks x 3 days)", 60, 60, 60, "days", "§6.1 Flex ~20 weeks part-time", "[EST]", "int", "rate")
 f("A-ECO-52b", "Lead trainer FTE (0.5 = part-time senior trainer in the ₹10L plan)", 0.5, 1, 1, "FTE", "BM §6.5: ₹10L plan = part-time trainer", "[HYP]", "1dp", "plan")
 f("A-ECO-138", "Memo: market salary for the founder's ongoing role (brand face, curriculum, masterclasses, assessment)", 75000, 75000, 75000, "₹/mo", "BM quotes EBITDA after a founder-role salary; judgement", "[HYP]", "rs", "rate")
 f("A-ECO-53", "Counsellor #1 start month", 3, 1, 1, "month #", "Growth §10: C 1 FTE x10 mo; B/A from M1", "[EST]", "int", "plan")
@@ -153,6 +167,18 @@ f("A-ECO-226b", "Capex Y3 (content refresh, stations)", 200000, 300000, 400000, 
 f("A-ECO-227", "Kit / product margin on retail sales to students & alumni, per career student per year (post price-step)", 600, 960, 1400, "₹/student", "Same basis as A-ECO-37 (optional kit at near cost)", "[HYP]", "rs", "rate")
 
 
+SELOPTS = {"staged": "=Assumptions!$D$5", "g1": "=Assumptions!$F$5", "pp": "=Assumptions!$H$5", "fp": "=Assumptions!$J$5"}
+STAGED_RUNS = [
+    ("Staged_G1M6", 2, 2, "STAGED PLAN (recommended), G1 at M6: Base team from M1; ₹10L-plan capex, studio stations and media ≤₹60k/month until G1; T2 (space move, 0.5 counsellor, pop-ups, hybrid build) from M7; two-step price (step 1 M7, step 2 M16); founder ≤40% at M12",
+     {"staged": 1, "g1": 6, "pp": 2, "fp": 2}),
+    ("Staged_G1M9", 2, 2, "STAGED PLAN (recommended), G1 at M9 (latest decision): as Staged_G1M6 but T2, space move and price step 1 from M10",
+     {"staged": 1, "g1": 9, "pp": 2, "fp": 2}),
+    ("Base_TwoStep", 2, 2, "Base bundle with the two-step price path (₹75k list at M7, ₹90k list at M16; ~89% realisation)", {"pp": 2}),
+    ("Conservative_TwoStep", 1, 1, "Conservative bundle with the two-step price path (step 1 at M10; Conservative list stays ₹75k)", {"pp": 2}),
+    ("Base_Founder40", 2, 2, "Base bundle with founder share ≤40% at M12 (Gate D path) instead of ≤30%", {"fp": 2}),
+]
+
+
 def typ_of(aid):
     for x in F:
         if x[0] == aid:
@@ -237,6 +263,13 @@ def outlook(wb, name, A, rate_idx, plan_idx, label, flex=None):
         ws[lc].font = NOTE_FONT
         ws[vc] = val
         ws[vc].font = INPUT_FONT
+    opts = flex.get("opts", {})
+    for lc, lab, vc, key, dflt in [("P3", "Staged Plan? (1 = yes)", "Q3", "staged", 0), ("P4", "G1 month (Staged: move, step 1 and T2 follow at G1+1)", "Q4", "g1", 9),
+                                   ("R3", "Price path (1 single step / 2 two-step)", "S3", "pp", 1), ("R4", "Founder path (1 A-BM-10 / 2 Gate D ≤40% M12)", "S4", "fp", 1)]:
+        ws[lc] = lab
+        ws[lc].font = NOTE_FONT
+        ws[vc] = opts.get(key, dflt)
+        ws[vc].font = Font(bold=True, color="C00000")
     ws["G4"] = "GST incl.?"
     ws["G4"].font = NOTE_FONT
     S = Sheet(ws, A)
@@ -248,6 +281,12 @@ def outlook(wb, name, A, rate_idx, plan_idx, label, flex=None):
     S.r = 5
     p, cur, prev = S.p, S.cur, S.prev
     conv, fee, fill, cpl, var, rentx, budx, gstsw = "$F$3", "$H$3", "$J$3", "$L$3", "$N$3", "$F$4", "$J$4", "$H$4"
+    st, g1, pp, fp = "$Q$3", "$Q$4", "$S$3", "$S$4"
+    mv = f"IF({st}=1,{g1}+1,{p('A-ECO-112')})"          # move month (Staged: G1 + 1)
+    s1m = f"IF({st}=1,{g1}+1,{p('A-ECO-104')})"         # price step 1 / single step
+    s2m = f"IF({pp}=2,{p('A-ECO-106')},999)"             # price step 2 (two-step path only)
+    real = f"({p('A-BM-02')}/{p('A-GRO-06')})"           # realisation (~89% Base)
+    fm12 = f"IF({fp}=2,{p('A-BM-10b-G')},{p('A-BM-10b')})"
     gdiv = f"(1+{p('A-ECO-23')}*{gstsw})"
 
     S.sec("A. Timeline")
@@ -258,7 +297,7 @@ def outlook(wb, name, A, rate_idx, plan_idx, label, flex=None):
     S.row("sea", "Career-enquiry seasonality (A-GRO-40)", lambda m, c: f"INDEX(Assumptions!$D${s1}:$D${s1 + 11},{c}{S.R['cal']})", FMT_2DP, total="avg")
     S.row("sea5", "Self-makeup seasonality (A-ECO-60)", lambda m, c: f"INDEX(Assumptions!$D${s51}:$D${s51 + 11},{c}{S.R['cal']})", FMT_2DP, total="avg")
     S.row("fsh", "Founder share of contact hours (A-BM-10 path)",
-          lambda m, c: f"IF({m}<=6,1-(1-{p('A-BM-10a')})*{m}/6,{p('A-BM-10a')}-({p('A-BM-10a')}-{p('A-BM-10b')})*({m}-6)/6)", FMT_PCT, total="last")
+          lambda m, c: f"IF({m}<=6,1-(1-{p('A-BM-10a')})*{m}/6,{p('A-BM-10a')}-({p('A-BM-10a')}-{fm12})*({m}-6)/6)", FMT_PCT, total="last")
 
     S.sec("B. Career enrolments (L2 + L3) - demand, budget and capacity")
     S.row("base", "Today's career enrolments per month (CA-01 x A-ECO-101 / 12) - illustrative", lambda m, c: f"{p('CA-01')}*{p('A-ECO-101')}/12", FMT_2DP, total="sum")
@@ -269,15 +308,15 @@ def outlook(wb, name, A, rate_idx, plan_idx, label, flex=None):
           lambda m, c: f"{p('A-GRO-01')}*{paidmix}*MIN(1,({m}-1)/6)", FMT_2DP)
     S.row("tgt", "Plan target path (sum; reaches A-GRO-01 by month 7)", lambda m, c: f"{c}{S.R['npt']}+{c}{S.R['pt']}", FMT_2DP)
     bud1 = A.rows["A-GRO-BUD-01"]
-    S.row("bud", "Paid media budget (Growth ramp)", lambda m, c: f"INDEX(Assumptions!$C${bud1 + m - 1}:$E${bud1 + m - 1},$D$3)*{budx}", FMT_INT, notetxt="A-GRO-BUD-01..12")
+    S.row("bud", "Paid media budget (Growth ramp)", lambda m, c: f"IF(AND({st}=1,{m}<={g1}),MIN(INDEX(Assumptions!$C${bud1 + m - 1}:$E${bud1 + m - 1},$D$3),{p('A-ECO-151')}),INDEX(Assumptions!$C${bud1 + m - 1}:$E${bud1 + m - 1},$D$3))*{budx}", FMT_INT, notetxt="A-GRO-BUD-01..12; Staged: capped at A-ECO-151 until G1")
     S.row("ecac", "Effective paid CAC = funnel paid CAC x overhead factor x CPL flex / conversion flex", lambda m, c: f"{p('A-ECO-FUN-01')}*{p('A-ECO-51')}*{cpl}/{conv}", FMT_INT, total="avg")
     S.row("sla", "Speed-to-lead factor on new (incremental) leads: A-GRO-24 before the SLA month",
           lambda m, c: f"IF({m}>={p('A-ECO-105')},1,{p('A-GRO-24')})", FMT_2DP, total="avg")
     S.row("ach", "Paid career enrolments the budget can buy", lambda m, c: f"{c}{S.R['bud']}*{p('A-ECO-50')}/{c}{S.R['ecac']}", FMT_2DP)
     S.row("dem", "Career demand = seasonality x [today's engine x conv + new non-paid x conv x SLA + MIN(paid target, budget-bought x SLA)]",
           lambda m, c: f"{c}{S.R['sea']}*({c}{S.R['base']}*{conv}+({c}{S.R['npt']}-{c}{S.R['base']})*{conv}*{c}{S.R['sla']}+MIN({c}{S.R['pt']},{c}{S.R['ach']}*{c}{S.R['sla']}))", FMT_2DP, bold=True)
-    S.row("stn", "Stations available", lambda m, c: f"IF({m}>={p('A-ECO-112')},{p('A-ECO-115')},{p('A-ECO-110')})", FMT_INT, total="last")
-    S.row("slt", "Batch slots per day", lambda m, c: f"IF({m}>={p('A-ECO-112')},{p('A-ECO-116')},{p('A-ECO-111')})", FMT_1DP, total="last")
+    S.row("stn", "Stations available", lambda m, c: f"IF({m}>={mv},{p('A-ECO-115')},{p('A-ECO-110')})", FMT_INT, total="last")
+    S.row("slt", "Batch slots per day", lambda m, c: f"IF({m}>={mv},{p('A-ECO-116')},{p('A-ECO-111')})", FMT_1DP, total="last")
     S.row("cap", "Usable seat capacity (stations x slots x max use)", lambda m, c: f"{c}{S.R['stn']}*{c}{S.R['slt']}*{p('A-ECO-117')}", FMT_1DP, total="last")
     S.row("dshare", "Destination/hybrid format share of new L3 (out-of-town students after launch)", lambda m, c: f"IF({m}>={p('A-ECO-128')},{p('A-GRO-37')},0)", FMT_PCT, total="last")
     # continuing occupancy from earlier months
@@ -306,6 +345,7 @@ def outlook(wb, name, A, rate_idx, plan_idx, label, flex=None):
     ws.cell(row=S.R["fillf"], column=1, value="Share of demand that fits (capacity constraint)")
     ws.cell(row=S.R["fillf"], column=15, value=f"=MIN(C{S.R['fillf']}:N{S.R['fillf']})").number_format = FMT_PCT
     S.row("car", "Career enrolments (new students, L2 + L3)", lambda m, c: f"{c}{S.R['l3']}+{c}{S.R['l3d']}+{c}{S.R['l2']}", FMT_2DP, bold=True)
+    S.row("y2d", "Year-2 run-rate driver: pre-capacity demand in months before the space move, delivered enrolments after it", lambda m, c: f"IF({m}<{mv},{c}{S.R['dem']},{c}{S.R['car']})", FMT_2DP)
     S.row("oot", "  of which out-of-town (A-GRO-37)", lambda m, c: f"{c}{S.R['car']}*{p('A-GRO-37')}", FMT_2DP)
     S.row("occ", "Seats occupied", lambda m, c: f"{c}{S.R['cont']}+{c}{S.R['l3']}+{c}{S.R['upg']}+{c}{S.R['l2']}+1.25*{c}{S.R['l3d']}", FMT_1DP, total="avg")
     S.row("util", "Seat utilisation (occupied / stations x slots)", lambda m, c: f"{c}{S.R['occ']}/({c}{S.R['stn']}*{c}{S.R['slt']})", FMT_PCT, total="last", bold=True)
@@ -316,13 +356,14 @@ def outlook(wb, name, A, rate_idx, plan_idx, label, flex=None):
     S.row("sm", "L1-S5 self-makeup seats", lambda m, c: f"{p('A-ECO-133')}*{c}{S.R['sea5']}*MIN(1,{m}/3)*{conv}", FMT_1DP)
     S.row("tk", "L1 Career Taster tickets (taster-route enrolments / per-ticket conversion)",
           lambda m, c: f"{c}{S.R['dem']}*{p('A-GRO-03e')}/({p('A-GRO-22a')}*{p('A-GRO-22b')}*{p('A-GRO-22c')})", FMT_1DP)
-    S.row("pu", "Regional pop-up events", lambda m, c: f"IF({m}>={p('A-ECO-130')},MAX({p('A-ECO-33')},0.5),0)", FMT_2DP)
+    S.row("pu", "Regional pop-up events", lambda m, c: f"IF({m}>=IF({st}=1,MAX({p('A-ECO-130')},{g1}+1),{p('A-ECO-130')}),MAX({p('A-ECO-33')},0.5),0)", FMT_2DP)
     S.row("pua", "Pop-up paid attendees", lambda m, c: f"{c}{S.R['pu']}*{p('A-BM-06a')}*{conv}", FMT_1DP)
     S.row("pc", "L5 Pro Circle new paid members (S3 buyers; graduates free in year 1)", lambda m, c: f"{c}{S.R['mc']}*0.7*{p('A-GRO-36b')}", FMT_2DP)
 
     S.sec("D. Prices (incl. GST as quoted)")
-    S.row("fl3", "L3 realised fee (CA-02 until price step A-ECO-104, then A-BM-02)", lambda m, c: f"IF({m}>={p('A-ECO-104')},{p('A-BM-02')},{p('CA-02')})*{fee}", FMT_INT, total="avg")
-    S.row("kit", "Kit included in fee? (1 before step)", lambda m, c: f"IF({m}>={p('A-ECO-104')},0,1)", FMT_INT, total="last")
+    S.row("fl3", "L3 realised fee: CA-02 until step 1; single path -> A-BM-02; two-step path -> ₹75k list x realisation, then A-GRO-06 x realisation from step 2",
+          lambda m, c: f"IF({pp}=1,IF({m}>={s1m},{p('A-BM-02')},{p('CA-02')}),IF({m}>={s2m},{p('A-GRO-06')}*{real},IF({m}>={s1m},MIN({p('A-ECO-160')},{p('A-GRO-06')})*{real},{p('CA-02')})))*{fee}", FMT_INT, total="avg")
+    S.row("kit", "Kit included in fee? (1 before step 1)", lambda m, c: f"IF({m}>={s1m},0,1)", FMT_INT, total="last")
 
     S.sec("E. Revenue (ex-GST)")
     S.row("rl3", "L3 local formats", lambda m, c: f"{c}{S.R['l3']}*{c}{S.R['fl3']}/{gdiv}", FMT_INT)
@@ -364,17 +405,17 @@ def outlook(wb, name, A, rate_idx, plan_idx, label, flex=None):
     S.row("ast", "Assistants (FTE; 1 per 2 active batch-slots, practical ratio ≤1:6)", lambda m, c: f"ROUNDUP({c}{S.R['slots']}/2,0)", FMT_INT, total="max")
     S.row("ctr", "Trainer + assistant cost", lambda m, c: f"{c}{S.R['lead']}*{p('A-BM-04a')}+{c}{S.R['trn']}*{p('A-BM-04b')}+{c}{S.R['ast']}*{p('A-BM-04c')}", FMT_INT)
     S.row("csl", "Admissions counsellors (A-GRO-45 x FTE)",
-          lambda m, c: f"(IF({m}>={p('A-ECO-53')},1,0)+IF({m}>={p('A-ECO-55')},{p('A-ECO-54')},0))*{p('A-GRO-45')}", FMT_INT)
+          lambda m, c: f"(IF({m}>={p('A-ECO-53')},1,0)+IF({m}>=IF({st}=1,MAX({p('A-ECO-55')},{g1}+1),{p('A-ECO-55')}),{p('A-ECO-54')},0))*{p('A-GRO-45')}", FMT_INT)
     S.row("cmk", "Marketing/content team, shooter/editor, performance and SEO freelancers (Growth §10)",
           lambda m, c: f"IF({m}>={p('A-ECO-57a')},{p('A-GRO-46')},0)+{p('A-GRO-47')}+IF({m}>={p('A-ECO-57b')},{p('A-GRO-48')},0)+IF({m}>={p('A-ECO-57c')},{p('A-GRO-50')},0)", FMT_INT)
-    S.row("cfd", "Front-desk / operations coordinator (from move)", lambda m, c: f"IF({m}>={p('A-ECO-112')},{p('A-ECO-124')},0)", FMT_INT)
+    S.row("cfd", "Front-desk / operations coordinator (from move)", lambda m, c: f"IF({m}>={mv},{p('A-ECO-124')},0)", FMT_INT)
     S.row("cam", "Academy manager / admissions head", lambda m, c: f"IF({m}>={p('A-ECO-126')},{p('A-ECO-125')},0)", FMT_INT)
     S.row("ppl", "Total people cost (founder not charged - owner's return)", lambda m, c: f"SUM({c}{S.R['ctr']}:{c}{S.R['cam']})", FMT_INT, bold=True)
 
     S.sec("H. Occupancy, marketing and overheads")
     S.row("rent", "Rent: today's academy share, or new space from move month",
-          lambda m, c: f"IF({m}>={p('A-ECO-112')},{p('A-ECO-113')}*{p('A-ECO-114')},{p('A-ECO-118')})*{rentx}", FMT_INT)
-    S.row("util2", "Utilities, housekeeping, maintenance", lambda m, c: f"IF({m}>={p('A-ECO-112')},{p('A-ECO-113')}*{p('A-ECO-120')},{p('A-ECO-119')})", FMT_INT)
+          lambda m, c: f"IF({m}>={mv},{p('A-ECO-113')}*{p('A-ECO-114')},{p('A-ECO-118')})*{rentx}", FMT_INT)
+    S.row("util2", "Utilities, housekeeping, maintenance", lambda m, c: f"IF({m}>={mv},{p('A-ECO-113')}*{p('A-ECO-120')},{p('A-ECO-119')})", FMT_INT)
     S.row("tech", "Martech stack (A-GRO-42) + LMS after hybrid launch", lambda m, c: f"{p('A-GRO-42')}+IF({m}>={p('A-ECO-128')}-1,{p('A-ECO-127')},0)", FMT_INT)
     S.row("med", "Paid media (Growth budget)", lambda m, c: f"{c}{S.R['bud']}", FMT_INT)
     S.row("part", "Partnerships, PR / outcomes report, contingency (A-ECO-58)", lambda m, c: f"{p('A-ECO-58')}", FMT_INT)
@@ -388,12 +429,12 @@ def outlook(wb, name, A, rate_idx, plan_idx, label, flex=None):
     ws.cell(row=S.R["ebm"], column=15, value=f"=IFERROR(O{S.R['ebitda']}/O{S.R['rev']},0)").number_format = FMT_PCT
 
     S.sec("I. Capex, deposits and cash")
-    mv = p("A-ECO-112")
     S.row("cfit", "Fit-out of new space (month before move)", lambda m, c: f"IF({m}={mv}-1,{p('A-ECO-113')}*{p('A-ECO-121')},0)", FMT_INT)
     S.row("cstn", "Additional stations", lambda m, c: f"IF({m}={mv}-1,MAX(0,{p('A-ECO-115')}-{p('A-ECO-110')})*{p('A-ECO-122')},0)", FMT_INT)
     S.row("cdep", "Security deposit (refundable; cash out)", lambda m, c: f"IF({m}={mv}-1,{p('A-ECO-123')}*{p('A-ECO-113')}*{p('A-ECO-114')}*{rentx},0)", FMT_INT)
     S.row("ccrm", "CRM / WhatsApp BSP / GBP / photo-video proof kit (M1)", lambda m, c: f"IF({m}=1,{p('A-ECO-136')},0)", FMT_INT)
-    S.row("chyb", "Hybrid pre-work content + LMS set-up (2 months before launch)", lambda m, c: f"IF({m}={p('A-ECO-128')}-2,{p('A-ECO-129')},0)", FMT_INT)
+    S.row("chyb", "Hybrid pre-work content + LMS (2 months before launch; Staged: basic recording M3 in T1, full build at G1+1 in T2)",
+          lambda m, c: f"IF({st}=1,IF({m}={g1}+1,{p('A-ECO-129')},0)+IF({m}=3,{p('A-ECO-152')},0),IF({m}={p('A-ECO-128')}-2,{p('A-ECO-129')},0))", FMT_INT)
     S.row("capex", "Total capex and deposits", lambda m, c: f"SUM({c}{S.R['cfit']}:{c}{S.R['chyb']})", FMT_INT, bold=True)
     pm = p("A-ECO-34")
     S.row("tim", "Instalment timing: career cash received later than booked (A-ECO-34 payment months)",
@@ -402,6 +443,8 @@ def outlook(wb, name, A, rate_idx, plan_idx, label, flex=None):
     S.row("cum", "Cumulative cash position", lambda m, c: f"{prev('cum', m)}+{c}{S.R['ncf']}", FMT_INT, total="last", bold=True)
     S.row("peak", "Peak cash need to date", lambda m, c: f"-MIN(0,MIN($C${S.R['cum']}:{c}{S.R['cum']}))", FMT_INT, total="max", bold=True)
     S.row("pos", "EBITDA >= 0 flag", lambda m, c: f"IF({c}{S.R['ebitda']}>=0,1,0)", FMT_INT, total=None)
+    S.row("cap15", "Cash need >= T1 cap flag (A-ECO-153, ₹15L)", lambda m, c: f"IF({c}{S.R['peak']}>={p('A-ECO-153')},1,0)", FMT_INT, total=None)
+    S.row("cap10", "Cash need >= ₹10L flag", lambda m, c: f"IF({c}{S.R['peak']}>=1000000,1,0)", FMT_INT, total=None)
 
     # ---------------------------------------------------------------- KPIs block
     S.r += 2
@@ -437,6 +480,13 @@ def outlook(wb, name, A, rate_idx, plan_idx, label, flex=None):
         ("EBITDA, last quarter (Aug-Oct 2027)", f"=SUM(L{S.R['ebitda']}:N{S.R['ebitda']})", FMT_INT),
         ("First month with EBITDA >= 0", f"=IFERROR(MATCH(1,C{S.R['pos']}:N{S.R['pos']},0),\"not in Y1\")", FMT_GEN),
         ("Cash position, end of Year 1", f"=N{S.R['cum']}", FMT_INT),
+        ("First month cumulative cash need reaches the T1 cap (₹15L)", f"=IFERROR(MATCH(1,C{S.R['cap15']}:N{S.R['cap15']},0),\"not in Y1\")", FMT_GEN),
+        ("First month cumulative cash need reaches ₹10L", f"=IFERROR(MATCH(1,C{S.R['cap10']}:N{S.R['cap10']},0),\"not in Y1\")", FMT_GEN),
+        ("Peak cash need at the end of T1 (month before the G1 month in Q4; T2 capex follows G1)", f"=INDEX(C{S.R['peak']}:N{S.R['peak']},MAX(1,MIN(12,$Q$4-1)))", FMT_INT),
+        ("Trainer + assistant cost, Year 1", f"=O{S.R['ctr']}", FMT_INT),
+        ("L3 realised fee, month 12 (incl. GST)", f"=N{S.R['fl3']}", FMT_INT),
+        ("Space move month (99 = none in Year 1)", f"={mv}", FMT_GEN),
+        ("Price step 1 month", f"={s1m}", FMT_GEN),
     ]
     for i, (lab, form, fmt) in enumerate(kp):
         rr = k0 + i
@@ -481,6 +531,14 @@ def build():
         ws[f"{col}{rr}"] = cal
         ws[f"{col}{rr}"].number_format = FMT_2DP
     ws.column_dimensions["J"].width = 8
+    for col, lab, val in [("A", "Run options for Outlook_Selected:", None), ("C", "Staged (0/1)", 0), ("E", "G1 month", 9), ("G", "Price path (1/2)", 1), ("I", "Founder path (1/2)", 1)]:
+        ws[f"{col}5"] = lab
+        ws[f"{col}5"].font = NOTE_FONT if col != "A" else BOLD
+        if val is not None:
+            nxt = chr(ord(col) + 1)
+            ws[f"{nxt}5"] = val
+            ws[f"{nxt}5"].font = Font(bold=True, color="C00000")
+            ws[f"{nxt}5"].fill = KEY_FILL
 
     # ---------------------------------------------------------------- outlooks
     outs = {}
@@ -488,7 +546,10 @@ def build():
                             ("Outlook_Aggressive", 3, 3, "Aggressive (favourable rates, ₹50L plan)"),
                             ("Outlook_Selected", "=Assumptions!$C$4", "=Assumptions!$C$4", "scenario chosen on Assumptions!C3"),
                             ("Plan10L_BaseRates", 2, 1, "₹10L plan at Base rates (envelope test)"), ("Plan50L_BaseRates", 2, 3, "₹50L plan at Base rates (envelope test)")]:
-        w, R = outlook(wb, nm, A, ri, pi, lab)
+        w, R = outlook(wb, nm, A, ri, pi, lab, flex=({"opts": SELOPTS} if nm == "Outlook_Selected" else None))
+        outs[nm] = R
+    for nm, ri, pi, lab, opts in STAGED_RUNS:
+        w, R = outlook(wb, nm, A, ri, pi, lab, flex={"opts": opts})
         outs[nm] = R
     R = outs["Outlook_Base"]
     K = R["kpis"]
@@ -592,8 +653,8 @@ def build():
     title(wu, "Programme unit economics - per seat and per cohort (scenario = Assumptions!C3 selector)",
           "Ladder from positioning_and_segments.md §6 (Growth) with BM realised fees. Fees incl. GST as quoted; revenue ex-GST. Trainer cost is a standard cost (salary / slots / fill).")
     cols = ["Metric", "L1 Career Taster", "L1-S5 Self-makeup", "L2 Foundation", "L3 Pro - today's fee (CA-02, incl. kit)", "L3 Pro - after price step (A-BM-02)",
-            "L3 Destination / hybrid", "L4 Masterclass", "L5 Pro Circle (per yr)", "Notes"]
-    header(wu, 4, cols, widths=[50, 13, 13, 13, 16, 16, 16, 13, 13, 50])
+            "L3 Destination (price parity, step-2 fee)", "L4 Masterclass", "L5 Pro Circle (per yr)", "L3 Pro - price step 1 (₹75k list x realisation)", "Notes"]
+    header(wu, 4, cols, widths=[50, 13, 13, 13, 16, 16, 16, 13, 13, 16, 50])
     s = lambda aid: A.r(aid, "sel")
     gS = f"(1+{s('A-ECO-23')}*{s('A-ECO-24')})"
     tS = f"({s('A-BM-04b')}+{s('A-BM-04c')})/{s('A-ECO-46')}"  # trainer+assistant per slot-month
@@ -626,13 +687,15 @@ def build():
         ("cc14", "Cohort contribution at 14 students (cap raised; quality risk)", [f"14*({{c}}{{net}}-{{c}}{{var1}})-{{c}}{{cohf}}"] * 8, FMT_INT),
         ("bpy", "Batches per year per slot (12 / duration)", [f"IFERROR(12/{{c}}{{dur}},0)"] * 8, FMT_1DP),
     ]
+    s1fee = f"MIN({s('A-ECO-160')},{s('A-GRO-06')})*{s('A-BM-02')}/{s('A-GRO-06')}"
+    rows = [(key, lab, forms + [s1fee if key == "fee" else forms[4]], fmt) for (key, lab, forms, fmt) in rows]
     for i, (key, lab, forms, fmt) in enumerate(rows):
         U[key] = 5 + i
     for i, (key, lab, forms, fmt) in enumerate(rows):
         r_ = 5 + i
         wu.cell(row=r_, column=1, value=lab).font = BOLD if key in ("cps", "cac2", "bef") else Font()
         for j, fm in enumerate(forms):
-            c = "BCDEFGHI"[j]
+            c = "BCDEFGHIJ"[j]
             fm2 = fm.replace("{c}", c)
             for kk, vv in U.items():
                 fm2 = fm2.replace("{" + kk + "}", str(vv))
@@ -658,6 +721,33 @@ def build():
         c.number_format = fmt
     U["baseline_rev"] = r_ + 6
     note(wu, r_ + 11, "BM's '~₹0.3 crore today' is this same CA-01 x CA-02 arithmetic (50 x ₹60k), an estimate, not PNA's reported revenue.")
+    # ---- student all-in cost by format (Gate D §11.3 item 6)
+    ra = r_ + 13
+    section(wu, ra, "Student all-in cost by L3 format (₹, incl. GST as quoted): tuition + optional kit + living / travel - what parents compare", 10)
+    header(wu, ra + 1, ["Line", "Weekday - tricity resident", "Weekday - out-of-town (12-week stay)", "Flex - tricity resident", "Destination - out-of-town (5-6-week stay)"], widths=None)
+    liv = [f"{s('A-ECO-171')}*{s('A-ECO-172a')}", s("A-BM-12a"), f"{s('A-ECO-171')}*{s('A-ECO-172b')}", s("A-BM-12b")]
+    arow = [("Today's fee (CA-02; basic kit included)", [s("CA-02")] * 4),
+            ("L3 list fee at price step 1", [f"MIN({s('A-ECO-160')},{s('A-GRO-06')})"] * 4),
+            ("L3 list fee at price step 2", [s("A-GRO-06")] * 4),
+            ("Optional pro kit (itemised; never compulsory)", [s("A-ECO-170")] * 4),
+            ("Living + travel (A-BM-12a/b; local commute A-ECO-171 x class days)", liv),
+            ("All-in at today's fee (kit included)", ["{c}%d+{c}%d" % (ra + 2, ra + 6)] * 4),
+            ("All-in at step 1, without optional kit", ["{c}%d+{c}%d" % (ra + 3, ra + 6)] * 4),
+            ("All-in at step 1, with optional kit", ["{c}%d+{c}%d+{c}%d" % (ra + 3, ra + 5, ra + 6)] * 4),
+            ("All-in at step 2, without optional kit", ["{c}%d+{c}%d" % (ra + 4, ra + 6)] * 4),
+            ("All-in at step 2, with optional kit", ["{c}%d+{c}%d+{c}%d" % (ra + 4, ra + 5, ra + 6)] * 4),
+            ("Premium vs Weekday tricity resident (step 2, with kit)", ["{c}%d/$B$%d-1" % (ra + 11, ra + 11)] * 4)]
+    for i, (lab, forms) in enumerate(arow):
+        r2 = ra + 2 + i
+        wu.cell(row=r2, column=1, value=lab).font = BOLD if lab.startswith("All-in") else Font()
+        for j, fm in enumerate(forms):
+            c = "BCDE"[j]
+            cell = wu.cell(row=r2, column=2 + j, value="=" + fm.replace("{c}", c))
+            cell.number_format = FMT_PCT if lab.startswith("Premium") else FMT_RS
+            if lab.startswith("All-in"):
+                cell.fill = KEY_FILL
+    U["allin0"] = ra + 2
+    note(wu, ra + 14, "Living cost excludes refundable PG deposits. Destination = 4 weeks online pre-work at home + 5-6 weeks in Chandigarh (A-BM-12b); Weekday out-of-town = 12-week stay (A-BM-12a). Fees are the GST-inclusive numbers families see.")
 
     # ---------------------------------------------------------------- Capacity sheet
     wc = wb.create_sheet("Capacity", 4)
@@ -692,13 +782,17 @@ def build():
     w3 = wb.create_sheet("3yr_Scenarios", 4)
     title(w3, "Directional 3-year scenarios (₹ lakh, ex-GST) - Year 1 = 12-month outlook; Years 2-3 driver-based",
           "Layers: flagship (tricity + regional offline), destination/hybrid, CPD (masterclasses + Pro Circle), online, adjacents, and a partner-hosted satellite only if gate G3a is met (Aggressive Y3).")
+    GL = list(CASES) + ["Staged M7", "Staged M10"]
     hdr = ["Line (₹ lakh unless stated)"]
-    for sc in CASES:
+    for sc in GL:
         hdr += [f"{sc} Y1", f"{sc} Y2", f"{sc} Y3"]
     hdr += ["Basis"]
-    header(w3, 4, hdr, widths=[58] + [11] * 9 + [52])
+    header(w3, 4, hdr, widths=[58] + [11] * 15 + [52])
     T = {}
-    onames = {1: "Outlook_Conservative", 2: "Outlook_Base", 3: "Outlook_Aggressive"}
+    onames = {1: "Outlook_Conservative", 2: "Outlook_Base", 3: "Outlook_Aggressive", 4: "Staged_G1M6", 5: "Staged_G1M9"}
+    SI = {1: 1, 2: 2, 3: 3, 4: 2, 5: 2}      # rate/plan index per group (Staged = Base rates and plan)
+    FPG = {1: 1, 2: 1, 3: 1, 4: 2, 5: 2}     # founder path per group
+    PPG = {1: 1, 2: 1, 3: 1, 4: 2, 5: 2}     # price path per group
     rr = 5
 
     def ycol(si, y):  # si 1..3, y 1..3
@@ -708,7 +802,7 @@ def build():
         nonlocal rr
         T[key] = rr
         w3.cell(row=rr, column=1, value=label).font = BOLD if bold else Font()
-        for si in (1, 2, 3):
+        for si in (1, 2, 3, 4, 5):
             for y in (1, 2, 3):
                 v = fn(si, y)
                 c = w3.cell(row=rr, column=1 + (si - 1) * 3 + y, value=("=" + v) if v is not None else None)
@@ -716,15 +810,15 @@ def build():
                 if bold:
                     c.font = BOLD
                     c.fill = KEY_FILL
-        w3.cell(row=rr, column=11, value=basis).font = NOTE_FONT
+        w3.cell(row=rr, column=17, value=basis).font = NOTE_FONT
         rr += 1
 
     def sec3(text):
         nonlocal rr
-        section(w3, rr, text, 11)
+        section(w3, rr, text, 17)
         rr += 1
 
-    P = lambda aid, si: A.pick(aid, str(si))  # both rate & plan follow scenario
+    P = lambda aid, si: A.pick(aid, str(SI[si]))  # both rate & plan follow scenario (Staged groups = Base)
     O = lambda si, key: f"{onames[si]}!O{outs[onames[si]][key]}"
     OH2 = lambda si, key: f"SUM({onames[si]}!I{outs[onames[si]][key]}:{onames[si]}!N{outs[onames[si]][key]})"
     T_ = lambda key, si, y: f"{ycol(si, y)}{T[key]}"
@@ -733,8 +827,8 @@ def build():
 
     sec3("Volumes")
     tr("car", "Career enrolments, flagship (L2 + L3 new students)",
-       lambda si, y: O(si, "car") if y == 1 else (f"2*{OH2(si, 'car')}/({OH2(si, 'sea')}/6)*(1+{P('A-ECO-201', si)})" if y == 2 else f"{T_('car', si, 2)}*(1+{P('A-ECO-202', si)})"), FMT_INT,
-       basis="Y2 = 2 x Y1 H2 run-rate, de-seasonalised (May-Oct index), x (1+A-ECO-201); Y3 x (1+A-ECO-202); capacity-capped below")
+       lambda si, y: O(si, "car") if y == 1 else (f"2*{OH2(si, 'y2d')}/({OH2(si, 'sea')}/6)*(1+{P('A-ECO-201', si)})" if y == 2 else f"{T_('car', si, 2)}*(1+{P('A-ECO-202', si)})"), FMT_INT,
+       basis="Y2 = 2 x Y1 H2 run-rate (pre-move months use demand, not capacity-limited enrolments), de-seasonalised (May-Oct index), x (1+A-ECO-201); Y3 x (1+A-ECO-202); capacity-capped below")
     tr("l3sh", "L3 share of career enrolments", lambda si, y: P("A-GRO-02", si), FMT_PCT)
     tr("oots", "Out-of-town share of career enrolments", lambda si, y: P("A-GRO-37", si) if y == 1 else P("A-ECO-203a" if y == 2 else "A-ECO-203b", si), FMT_PCT)
     tr("dest", "Incremental destination/hybrid regional students (G2 engine)", lambda si, y: O(si, "l3d") + "*0" if y == 1 else P("A-ECO-204a" if y == 2 else "A-ECO-204b", si), FMT_INT,
@@ -757,10 +851,20 @@ def build():
     tr("pcm", "Pro Circle paid members (graduates after free year + S3 buyers)",
        lambda si, y: O(si, "pc") if y == 1 else f"{T_('carx', si, y - 1)}*{T_('l3sh', si, y - 1)}*{P('A-GRO-31', si)}*{P('A-GRO-36', si)}+{T_('mc', si, y)}*0.7*{P('A-GRO-36b', si)}", FMT_INT)
     tr("sat", "Partner-hosted satellite students (only if G3a met)", lambda si, y: "0" if y < 3 else P("A-ECO-214", si), FMT_INT)
-    tr("fsh", "Founder share of contact hours", lambda si, y: f"{onames[si]}!N{outs[onames[si]]['fsh']}" if y == 1 else P("A-BM-10c" if y == 2 else "A-BM-10d", si), FMT_PCT)
+    tr("fsh", "Founder share of contact hours (Staged: Gate D path)", lambda si, y: f"{onames[si]}!N{outs[onames[si]]['fsh']}" if y == 1 else P(("A-BM-10c" if y == 2 else "A-BM-10d") + ("-G" if FPG[si] == 2 else ""), si), FMT_PCT)
 
     sec3("Prices (incl. GST)")
-    tr("fl3", "L3 / destination realised fee", lambda si, y: f"{onames[si]}!N{outs[onames[si]]['fl3']}" if y == 1 else (P("A-BM-02", si) if y == 2 else f"{T_('fl3', si, 2)}*(1+{P('A-ECO-217', si)})"), FMT_INT)
+    def fl3fn(si, y):
+        if y == 1:
+            return f"{onames[si]}!N{outs[onames[si]]['fl3']}"
+        if PPG[si] == 1:
+            return P("A-BM-02", si) if y == 2 else f"{T_('fl3', si, 2)}*(1+{P('A-ECO-217', si)})"
+        s1r = f"MIN({P('A-ECO-160', si)},{P('A-GRO-06', si)})*{P('A-BM-02', si)}/{P('A-GRO-06', si)}"
+        start = 13 if y == 2 else 25
+        pre = f"MAX(0,MIN(12,{P('A-ECO-106', si)}-{start}))"
+        blend = f"({pre}*{s1r}+(12-{pre})*{P('A-BM-02', si)})/12"
+        return blend if y == 2 else f"{blend}*(1+{P('A-ECO-217', si)})"
+    tr("fl3", "L3 / destination realised fee (two-step path: months before step 2 at step-1 realised)", fl3fn, FMT_INT)
     tr("fl2", "L2 Foundation fee", lambda si, y: P("A-GRO-05", si) if y < 3 else f"{P('A-GRO-05', si)}*(1+{P('A-ECO-217', si)})", FMT_INT)
 
     sec3("Revenue (₹ lakh, ex-GST)")
@@ -812,6 +916,9 @@ def build():
     tr("cost", "Total costs", lambda si, y: f"SUM({ycol(si, y)}{T['cvar']}:{ycol(si, y)}{T['coth']})", bold=True)
     tr("ebitda", "EBITDA", lambda si, y: f"{T_('rev', si, y)}-{T_('cost', si, y)}", bold=True)
     tr("ebm", "EBITDA margin", lambda si, y: f"IFERROR({T_('ebitda', si, y)}/{T_('rev', si, y)},0)", FMT_PCT, True)
+    tr("ebf", "Memo: EBITDA after a founder-role salary (A-ECO-138 x 12, wage escalation)",
+       lambda si, y: f"{O(si, 'ebf')}/{L}" if y == 1 else f"{T_('ebitda', si, y)}-{P('A-ECO-138', si)}*12*(1+{P('A-ECO-218', si)})^{y - 1}/{L}", FMT_1DP, True)
+    tr("ebfm", "Memo: EBITDA margin after founder-role salary", lambda si, y: f"IFERROR({T_('ebf', si, y)}/{T_('rev', si, y)},0)", FMT_PCT)
     tr("capex", "Capex and deposits", lambda si, y: (f"{O(si, 'capex')}/{L}" if y == 1 else
                                                 f"({P('A-ECO-226a' if y == 2 else 'A-ECO-226b', si)}+MAX(0,{T_('stn', si, y)}-{T_('stn', si, y - 1)})*{P('A-ECO-122', si)}+IF({T_('sat', si, y)}>0,{P('A-ECO-216', si)},0))/{L}"))
     tr("ncf", "Net cash flow (Y1 incl. instalment timing)", lambda si, y: (f"{onames[si]}!N{outs[onames[si]]['cum']}/{L}" if y == 1 else f"{T_('ebitda', si, y)}-{T_('capex', si, y)}"), bold=True)
@@ -838,9 +945,10 @@ def build():
     # ---------------------------------------------------------------- Dashboard
     title(dash, "PNA business forecast - dashboard (₹ lakh unless stated; ex-GST; illustrative, assumption-driven)",
           "Scenario = rates + plan bundle. Conservative = adverse rates + ₹10L plan; Base = base rates + ₹30L plan; Aggressive = favourable rates + ₹50L plan. Cross runs show the ₹10L / ₹50L plans at Base rates.")
-    header(dash, 4, ["Year-1 (Nov-26 to Oct-27)", "Conservative", "Base", "Aggressive", "₹10L plan @ Base rates", "₹50L plan @ Base rates", "Note"],
-           widths=[62, 15, 15, 15, 17, 17, 40])
-    sheets = ["Outlook_Conservative", "Outlook_Base", "Outlook_Aggressive", "Plan10L_BaseRates", "Plan50L_BaseRates"]
+    header(dash, 4, ["Year-1 (Nov-26 to Oct-27)", "Conservative", "Base", "Aggressive", "₹10L plan @ Base rates", "₹50L plan @ Base rates",
+                     "STAGED PLAN G1 M6 / move M7 (recommended)", "STAGED PLAN G1 M9 / move M10", "Base + two-step price", "Conservative + two-step price", "Base + founder ≤40% M12"],
+           widths=[62, 14, 14, 14, 15, 15, 18, 18, 15, 15, 15])
+    sheets = ["Outlook_Conservative", "Outlook_Base", "Outlook_Aggressive", "Plan10L_BaseRates", "Plan50L_BaseRates"] + [x[0] for x in STAGED_RUNS]
     dk = [("Revenue, Year 1 (ex-GST)", 1e5, FMT_1DP), ("EBITDA, Year 1", 1e5, FMT_1DP), ("EBITDA margin, Year 1", None, FMT_PCT), ("Memo: Year-1 EBITDA after founder-role salary", 1e5, FMT_1DP),
           ("Capex and deposits, Year 1", 1e5, FMT_1DP), ("Peak cumulative cash need, Year 1", 1e5, FMT_1DP), ("Investment envelope for this plan (CA-03)", 1e5, FMT_1DP),
           ("Headroom: envelope - peak cash need", 1e5, FMT_1DP), ("Career enrolments, Year 1 (new students)", None, FMT_INT),
@@ -851,7 +959,10 @@ def build():
           ("Effective media CAC per paid career enrolment, months 7-12", "rs", FMT_RS), ("Effective media CAC as % of realised L3 fee (ex-GST)", None, FMT_PCT),
           ("Fully loaded acquisition cost / career revenue, months 7-12 (media + growth team + tools + rewards + EMI)", None, FMT_PCT),
           ("Career enrolments per month at which fully loaded acquisition = 25% of career revenue (month-12 cost and price)", None, FMT_1DP),
-          ("EBITDA, last quarter (Aug-Oct 2027)", 1e5, FMT_1DP), ("First month with EBITDA >= 0", None, FMT_GEN), ("Cash position, end of Year 1", 1e5, FMT_1DP)]
+          ("EBITDA, last quarter (Aug-Oct 2027)", 1e5, FMT_1DP), ("First month with EBITDA >= 0", None, FMT_GEN), ("Cash position, end of Year 1", 1e5, FMT_1DP),
+          ("First month cumulative cash need reaches the T1 cap (₹15L)", None, FMT_GEN), ("First month cumulative cash need reaches ₹10L", None, FMT_GEN),
+          ("Peak cash need at the end of T1 (month before the G1 month in Q4; T2 capex follows G1)", 1e5, FMT_1DP), ("Trainer + assistant cost, Year 1", 1e5, FMT_1DP),
+          ("L3 realised fee, month 12 (incl. GST)", "rs", FMT_RS), ("Space move month (99 = none in Year 1)", None, FMT_GEN), ("Price step 1 month", None, FMT_GEN)]
     D = {}
     for i, (lab, sc, fmt) in enumerate(dk):
         r_ = 5 + i
@@ -865,27 +976,27 @@ def build():
     r_ = 5 + len(dk) + 1
     section(dash, r_, "Directional 3-year view (₹ lakh)", 7)
     r_ += 1
-    header(dash, r_, ["Metric", "Conservative Y1 / Y2 / Y3", "", "", "Base Y1 / Y2 / Y3", "", "", ], widths=None)
+    header(dash, r_, ["Metric"], widths=None)
     r_ += 1
-    three = [("Total revenue", "rev"), ("EBITDA", "ebitda"), ("EBITDA margin", "ebm"), ("Career enrolments delivered", "carx"), ("Peak cash need to date", "peak")]
+    three = [("Total revenue", "rev"), ("EBITDA", "ebitda"), ("EBITDA margin", "ebm"), ("Memo: EBITDA after founder-role salary", "ebf"), ("Career enrolments delivered", "carx"), ("Peak cash need to date", "peak")]
     dash.cell(row=r_ - 1, column=2, value="Cons Y1")
     hdr3 = []
-    for si, sc in enumerate(CASES, 1):
+    for si, sc in enumerate(GL, 1):
         for y in (1, 2, 3):
-            hdr3.append(f"{sc[:4]} Y{y}")
+            hdr3.append(f"{sc[:10]} Y{y}")
     for j, h in enumerate(hdr3):
         c = dash.cell(row=r_ - 1, column=2 + j, value=h)
         c.fill = HDR_FILL
         c.font = HDR_FONT
     for i, (lab, key) in enumerate(three):
         dash.cell(row=r_ + i, column=1, value=lab)
-        for si in (1, 2, 3):
+        for si in (1, 2, 3, 4, 5):
             for y in (1, 2, 3):
                 c = dash.cell(row=r_ + i, column=2 + (si - 1) * 3 + (y - 1), value=f"='3yr_Scenarios'!{ycol(si, y)}{T[key]}")
                 c.number_format = FMT_PCT if key == "ebm" else (FMT_INT if key == "carx" else FMT_1DP)
     D3 = r_
-    for j in range(9):
-        dash.column_dimensions[CL(2 + j)].width = 13
+    for j in range(15):
+        dash.column_dimensions[CL(2 + j)].width = max(dash.column_dimensions[CL(2 + j)].width or 0, 13)
     r_ += len(three) + 1
     section(dash, r_, "Sensitivity (Base Year-1 EBITDA swing, ₹ lakh) - see Sensitivity sheet", 7)
     for i in range(nflex):
@@ -904,9 +1015,9 @@ def build():
         ck.append((f"{sh}: seat utilisation never above 100%", f"=MAX({sh}!C{Rk['util']}:{sh}!N{Rk['util']})<=1.0001"))
         ck.append((f"{sh}: revenue lines sum to total", f"=ABS(SUM({sh}!O{Rk['rl3']}:{sh}!O{Rk['rkit']})-{sh}!O{Rk['rev']})<1"))
         ck.append((f"{sh}: EBITDA = contribution - fixed", f"=ABS({sh}!O{Rk['ebitda']}-({sh}!O{Rk['cm']}-{sh}!O{Rk['fix']}))<1"))
-    for si in (1, 2, 3):
+    for si in (1, 2, 3, 4, 5):
         for y in (1, 2, 3):
-            ck.append((f"3yr {CASES[si - 1]} Y{y}: SOM layers reconcile", f"=ABS('3yr_Scenarios'!{ycol(si, y)}{T['chk']})<0.001"))
+            ck.append((f"3yr {GL[si - 1]} Y{y}: SOM layers reconcile", f"=ABS('3yr_Scenarios'!{ycol(si, y)}{T['chk']})<0.001"))
     ck.append(("Selected outlook equals Base when selector = Base", f"=IF(Assumptions!$C$3=\"Base\",ABS(Outlook_Selected!O{outs['Outlook_Selected']['ebitda']}-Outlook_Base!O{outs['Outlook_Base']['ebitda']})<1,TRUE)"))
     ck.append(("Calibration: Base month-12 paid demand is budget-limited exactly at target (A-ECO-51)",
                f"=ABS(Outlook_Base!N{outs['Outlook_Base']['ach']}-{A.r('A-GRO-01', 'base')}*({A.r('A-GRO-03a', 'base')}+{A.r('A-GRO-03b', 'base')}+{A.r('A-GRO-03e', 'base')}))<0.01"))
@@ -927,7 +1038,8 @@ def build():
         ("Enrolment engine", "Career demand = seasonality x [today's organic/referral engine (CA-01) + new non-paid enrolments x SLA factor + MIN(paid-route target, budget x career share / effective paid CAC x SLA factor)], then limited by seat capacity. Targets ramp to A-GRO-01 x route mix by month 7. Effective CAC = funnel paid-route CAC x overhead factor (A-ECO-51) calibrated so the Base budget buys the Base paid target at steady state."),
         ("GST", "18% GST on private non-recognised training (A-ECO-23, GST Council flyer). Base assumes quoted fees include GST (revenue = fee/1.18); Flex_gst_ontop shows charging it on top."),
         ("Cash", "Net cash flow = EBITDA + instalment timing (A-ECO-34) - capex/deposits. Excludes income tax, GST input/output timing and any founder draw. Peak cash need is compared with the plan envelope (CA-03)."),
-        ("Sheets", "Dashboard ; Assumptions ; Unit_Economics ; Capacity ; 3yr_Scenarios ; Sensitivity ; BM_Unit_Economics ; Outlook_* (x3 scenarios + Selected + 2 cross runs) ; Flex_* (sensitivity re-runs) ; Checks"),
+        ("Sheets", "Dashboard ; Assumptions ; Unit_Economics ; Capacity ; 3yr_Scenarios ; Sensitivity ; BM_Unit_Economics ; Outlook_* (x3 scenarios + Selected + 2 cross runs) ; Staged_G1M6 / Staged_G1M9 (STAGED PLAN, recommended) ; Base_TwoStep ; Conservative_TwoStep ; Base_Founder40 ; Flex_* (sensitivity re-runs) ; Checks"),
+        ("Run options", "Each outlook has run options in P3:S4 (Staged 0/1, G1 month, price path 1 single / 2 two-step, founder path 1 A-BM-10 / 2 Gate D). Outlook_Selected reads them from Assumptions!D5:J5. Defaults reproduce the original bundles."),
     ]
     for i, (k, v) in enumerate(lines):
         readme.cell(row=4 + i, column=1, value=k).font = BOLD

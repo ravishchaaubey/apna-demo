@@ -126,6 +126,7 @@
   "adj": 25,
   "base": 28,
   "baseSh": 29,
-  "mult": 30
+  "mult": 30,
+  "todaySh": 31
  }
 }

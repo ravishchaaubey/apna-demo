@@ -144,6 +144,7 @@ def build():
                            ("SOM-LRN-HYB", "Y3 incremental destination/hybrid learners", "lrn_hyb")]:
         vals = [fc[s]["y3_" + key] if fc else 0 for s in ("Conservative", "Base", "Aggressive")]
         A.add(sid, desc, *vals, "learners", "business_forecast.xlsx 3yr_Scenarios (linked by run_all.py)", "[EST] model output", FMT_INT)
+    A.add("CA-01", "PNA paying students per year today (all courses) - founder 'under 60'", 30, 50, 60, "students/yr", "Founder 2026-10-16 (canonical CA-01)", "[FOUNDER]", FMT_INT)
     A.add("SOM-BASELINE", "Illustrative PNA baseline revenue today (CA-01 x assumed fees; NOT actual revenue)",
           *[fc[s]["baseline_rev_lakh"] if fc else 0 for s in ("Conservative", "Base", "Aggressive")], "₹ lakh ex-GST",
           "business_forecast.xlsx Unit_Economics baseline (CA-01, CA-02)", "[HYP]", FMT_1DP)
@@ -433,6 +434,9 @@ def build():
     ol(r, "PNA illustrative baseline (₹ crore, quoted)", lambda j, c: f"{a('SOM-BASELINE', cs[j])}*{g(j)}/100", FMT_2DP, "CA-01 50 students x CA-02 fee mix", "base"); r += 1
     ol(r, "Implied baseline share of tricity SAM-1", lambda j, c: f"{c}{O['base']}/{SN}{c}{S['s1']}", FMT_PCT, "sanity: ~5-10% for an established founder-led studio-academy", "baseSh", True); r += 1
     ol(r, "Y3 SOM multiple of today", lambda j, c: f"IFERROR({c}{O['som']}/{c}{O['base']},0)", FMT_X, "", "mult"); r += 1
+    ol(r, "ILLUSTRATIVE: today's PNA share of tricity makeup-led learners (CA-01 / reconciled learners; Low = CA-01 low / market high, High = CA-01 high / market low)",
+       lambda j, c: [f"{a('CA-01', 'low')}/{TR}$E${T['recL']}", f"{a('CA-01', 'base')}/{TR}$D${T['recL']}", f"{a('CA-01', 'high')}/{TR}$C${T['recL']}"][j], FMT_PCT,
+       "All PNA students (career + short) over all makeup-led learners (incl. short-course). Not quoted as a fact until CA-01 is confirmed (V1)", "todaySh", True); r += 1
     note(wso, r + 1, "Share tests: a single centre at >25% of tricity, >30% of CPD or >5% of online would be a red flag (chandigarh_market_analysis §8.2; international_benchmarks §2).")
 
     # ------------------------------------------------------------------ Sizing_Tree
@@ -455,6 +459,7 @@ def build():
         ("  PNA learner share of tricity makeup-led learners (Y3)", "SOM_PNA!", O['lsh1'], FMT_PCT, "primary share test"),
         ("  SOM as % of TAM incl. online", "SOM_PNA!", O['somTam'], FMT_PCT2, ""),
         ("Today  PNA illustrative baseline (NOT actual revenue)", "SOM_PNA!", O['base'], FMT_2DP, "CA-01 x CA-02 assumptions"),
+        ("  Illustrative: today's PNA share of tricity makeup-led learners", "SOM_PNA!", O['todaySh'], FMT_PCT, "CA-01 / reconciled learners; to confirm with V1"),
         ("Learners: India makeup-led paid learners", TA, TAM['tamL'], FMT_INT, ""),
         ("Learners: tricity makeup-led (reconciled)", TR, T['recL'], FMT_INT, ""),
     ]

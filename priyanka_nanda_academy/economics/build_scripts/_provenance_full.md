@@ -1,6 +1,6 @@
 | ID | Assumption | Low / Cons. | Base | High / Aggr. | Unit | Source / rationale | Tag | Workbook(s) |
 |---|---|---|---|---|---|---|---|---|
-| CA-01 | PNA paying students per year today (all courses) | 30 | 50 | 60 | students/yr | Founder: 'under 60' (2026-10-16) | [FOUNDER] | FE, BF |
+| CA-01 | PNA paying students per year today (all courses) - founder 'under 60' | 30 | 50 | 60 | students/yr | Founder 2026-10-16 (canonical CA-01) | [FOUNDER] | MS, FE, BF |
 | CA-02 | Current flagship professional course fee (incl. kit) | ₹40,000 | ₹60,000 | ₹75,000 | ₹ | Not supplied; local diploma band ₹35-75k (S-LC §6) | [HYP] | FE, BF |
 | CA-03 | Growth investment envelope, 12 months | ₹1,000,000 | ₹3,000,000 | ₹5,000,000 | ₹ | Founder: moderate ₹10-50L | [FOUNDER] | FE, BF |
 | A-BM-02 | L3 realised fee after discounts/credits (after proof gate) | ₹65,000 | ₹80,000 | ₹100,000 | ₹ | A-BM-02 (list ₹90k-1.25L) | [HYP] | FE, BF |
@@ -16,8 +16,13 @@
 | A-BM-09c | Desk fee per referred booking (10-15% or flat ₹1-2.5k) | ₹1,500 | ₹1,750 | ₹2,000 | ₹ | A-BM-09 | [HYP] | BF |
 | A-BM-10a | Founder share of student contact hours at M6 | 60% | 50% | 45% | % | A-BM-10 path (≤50% M6) | [HYP] | BF |
 | A-BM-10b | Founder share of contact hours at M12 | 40% | 30% | 25% | % | A-BM-10 (≤30% M12) | [HYP] | BF |
+| A-BM-10b-G | Founder share of contact hours at M12 - Gate D path (≤40% M12, ≤30% M18) | 40% | 40% | 40% | % | recommended_strategy.md §10 #2 | [REC] | BF |
 | A-BM-10c | Founder share of contact hours, Year 2 average | 20% | 15% | 12% | % | A-BM-10 (≤15% M24) | [HYP] | BF |
+| A-BM-10c-G | Founder share, Year 2 average - Gate D path (40% M12 -> 30% M18 -> 15% M24) | 29% | 29% | 29% | % | Linear path average (35% M13-18, 22.5% M19-24) | [EST] | BF |
 | A-BM-10d | Founder share of contact hours, Year 3 average | 12% | 10% | 8% | % | A-BM-10 (≤10% M36) | [HYP] | BF |
+| A-BM-10d-G | Founder share, Year 3 average - Gate D path (15% M24 -> 10% M36) | 12.5% | 12.5% | 12.5% | % | Linear path average | [EST] | BF |
+| A-BM-12a | Living + travel for an out-of-town student on the 12-week Weekday format | ₹54,000 | ₹43,500 | ₹33,000 | ₹ | A-BM-12: ₹33-54k (PG ₹10-16k x 3 + travel) | [EST] | BF |
+| A-BM-12b | Living + travel for the Destination format (5-6 weeks in Chandigarh) | ₹28,000 | ₹22,500 | ₹17,000 | ₹ | A-BM-12: ₹17-28k | [EST] | BF |
 | A-BM-15 | Regional acquisition cost per incremental destination student | ₹15,000 | ₹12,500 | ₹10,000 | ₹/student | A-BM-15 out-of-town CAC ₹10-15k | [HYP] | BF |
 | A-BM-16 | L3 consumables / models per student (excl. kit) | ₹7,000 | ₹6,000 | ₹5,000 | ₹/student | A-BM-16 ₹5-7k | [HYP] | FE, BF |
 | A-BM-19 | Satellite host revenue share | 30% | 25% | 20% | % | A-BM-19: 20-30% | [HYP] | BF |
@@ -96,6 +101,7 @@
 | A-ECO-103 | Pro kit cost borne by PNA while fee includes kit (pre price-step) | ₹15,000 | ₹12,000 | ₹10,000 | ₹/student | Growth agent: optional kit ₹18-25k at near cost; basic included kit assumed cheaper | [HYP] | FE, BF |
 | A-ECO-104 | Month the L3 price steps from CA-02 to A-GRO-06/A-BM-02 (proof gate: outcomes report + >=30 reviews) | 10 | 7 | 5 | month # | Growth agent §6: hold current fee for next two batches (~6 months); Conservative clears the gate late (M10) | [HYP] | FE, BF |
 | A-ECO-105 | Month from which the <5-min speed-to-lead SLA is met (counsellor + CRM live) | 4 | 3 | 2 | month # | BM gate G0 by M3 | [HYP] | FE, BF |
+| A-ECO-106 | Proof gate 2 month: L3 list steps ₹75k -> ₹90k (two-step path; inside G2) | 99 | 16 | 13 | month # | recommended_strategy.md §7.2: step 2 at G2 (M15-M18) | [HYP] | BF |
 | A-ECO-110 | Stations in today's Sector 8 studio-academy | 8 | 8 | 8 | stations | Founder to confirm (BM: 8-12 needed) | [HYP] | BF |
 | A-ECO-111 | Batch slots per day in today's space (morning, afternoon) | 2 | 2 | 2 | slots | Weekends kept for masterclasses / studio bridal work | [HYP] | BF |
 | A-ECO-112 | Move to dedicated academy space in month (99 = no move in Year 1) | 99 | 7 | 4 | month # | BM §6.5: space only if studio cannot host 8-12 stations; capacity binds | [HYP] | BF |
@@ -125,6 +131,14 @@
 | A-ECO-136 | Capex month 1: CRM/WhatsApp BSP set-up, GBP, photo/video proof kit | ₹50,000 | ₹150,000 | ₹250,000 | ₹ | BM §6.5 CRM/website/proof ₹1.5L / 2-3L / 3-4L less website | [EST] | BF |
 | A-ECO-137 | Referral-route share of career enrolments (for rewards) | 20% | 20% | 20% | % | A-GRO-03d | [HYP] | BF |
 | A-ECO-138 | Memo: market salary for the founder's ongoing role (brand face, curriculum, masterclasses, assessment) | ₹75,000 | ₹75,000 | ₹75,000 | ₹/mo | BM quotes EBITDA after a founder-role salary; judgement | [HYP] | BF |
+| A-ECO-151 | Staged Plan: paid-media cap per month before G1 (T1 test level) | ₹60,000 | ₹60,000 | ₹60,000 | ₹/mo | recommended_strategy.md §5 T1 (≤₹60k/month) | [REC] | BF |
+| A-ECO-152 | Staged Plan: basic recording of theory modules in T1 (month 3) | ₹100,000 | ₹100,000 | ₹100,000 | ₹ | recommended_strategy.md §5 T1 (₹1L) | [REC] | BF |
+| A-ECO-153 | Tranche T1 cash cap (cumulative cash need before G1) | ₹1,500,000 | ₹1,500,000 | ₹1,500,000 | ₹ | recommended_strategy.md §5 T1 (up to ₹15L) | [REC] | BF |
+| A-ECO-160 | Price step 1 list fee (two-step path) | ₹75,000 | ₹75,000 | ₹75,000 | ₹ | recommended_strategy.md §7.2 (= A-GRO-06 low) | [HYP] | BF |
+| A-ECO-170 | Optional pro kit price to the student (itemised, near cost) | ₹25,000 | ₹20,000 | ₹18,000 | ₹ | positioning_and_segments.md §6: ₹18-25k | [HYP] | BF |
+| A-ECO-171 | Local commute per class day (tricity resident) | ₹150 | ₹120 | ₹100 | ₹/day | Judgement (auto/bus within tricity) | [HYP] | BF |
+| A-ECO-172a | Class days: Weekday format (12 weeks x 5 days) | 60 | 60 | 60 | days | §6.1 Weekday 12 weeks | [EST] | BF |
+| A-ECO-172b | Class days: Flex format (~20 weeks x 3 days) | 60 | 60 | 60 | days | §6.1 Flex ~20 weeks part-time | [EST] | BF |
 | A-ECO-201 | Career enrolment growth: Y2 vs annualised Y1 H2 run-rate | 5% | 10% | 15% | % | Directional | [HYP] | BF |
 | A-ECO-202 | Career enrolment growth: Y3 vs Y2 | 5% | 10% | 12% | % | Directional | [HYP] | BF |
 | A-ECO-203a | Out-of-town share of career enrolments, Y2 | 15% | 25% | 35% | % | A-GRO-37; BM A-BM-21 | [HYP] | BF |

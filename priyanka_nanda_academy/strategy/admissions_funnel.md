@@ -1,5 +1,7 @@
 # Admissions Funnel: Design, SLA, Counselling and Instrumented Model
 
+> **Aligned to recommended_strategy.md §6 on 2026-10-16.** Canonical vocabulary applied: segments S1–S8 and products L0–L5; L3 Pro formats Weekday / Flex / **Destination**; spend gates **SG1–SG5** (stage gates G0–G3b separate); forecast bundles Conservative / Base / Aggressive (the Low/Base/High columns in §9 are input magnitudes); Pro price path **current fee → ₹75k list (step 1) → ₹90k list (step 2), ₹80k realised = planning fee**; tricity market = ₹3.27 cr / ≈730 learners (CA-05 is an upper reference only); M1 = Nov 2026.
+
 **Client:** Priyanka Nanda Makeup Academy (PNA), Chandigarh · **Workstream:** Growth & MarTech · **Prepared:** 2026-10-16 · **Agent:** Growth and MarTech Agent (Opus)
 **Feeds:** `economics/funnel_economics.xlsx` (Economics agent). **§9 is the master assumption table (A-GRO-01..50).**
 **Builds on:** `research/customer_segments.md` §6–8, §11 (A-CUS-xx); `strategy/positioning_and_segments.md` (segments, course ladder L0–L5).
@@ -23,14 +25,14 @@
    | S1 | CTWA/Search → WhatsApp Flow → counsellor <5 min → **parent visit** → token → EMI |
    | S2 | **₹999 paid taster** (credited) → same-day counselling with spouse → EMI |
    | S3 | Content → WhatsApp Community → limited-seat launch → **self-serve payment** |
-   | S7 | Search/regional CTWA → **online parents' info session** → video counselling → Fast-track cohort + accommodation partner |
+   | S7 | Search/regional CTWA → **online parents' info session** → video counselling → **L3 Destination** format (4 weeks live-online pre-work + 5–6-week Chandigarh intensive) + accommodation partner |
    | S5 | Seasonal Reels/Search/vendor partners → **instant booking** |
 
 3. **Speed-to-lead and follow-up are the cheapest levers (H7).**
    - **SLA:** first human reply median <5 min and P90 <30 min in working hours; ≥5 touches in 14 days for every qualified lead (QL).
    - Without the SLA, the model applies a 0.67× penalty to Lead→QL (A-GRO-24).
-4. **Base monthly target (steady state, months 7–12): 10 career enrolments** (6 Pro + 4 Foundation). Today PNA makes under 60 enrolments a year across all courses (CA-01). The target needs about **143 career leads, 66 QLs, 38 counselled/taster attendees and 12 applications a month**. Base media cost is **≈₹35k/month**, which is **≈₹5.9k media CAC per paid enrolment**.
-5. **The cost uncertainty is about 9× wide.** For the same 10 enrolments, the conservative case (low conversion, high CPL) needs about **257 leads and ≈₹1.1L of media** (≈₹18.5k per paid enrolment). The optimistic case needs about 89 leads and ≈₹12.5k. This spread is why spend must not scale until the gates in `growth_marketing_strategy.md` §9 are passed.
+4. **Base monthly target (steady state, months 7–12): 10 career enrolments** (6 Pro + 4 Foundation). This is a **gated plan target, not a forecast**; the fallback is the ₹10L-Plan trajectory of about 52 career students a year (recommended_strategy §5, §10 #14). Today PNA makes under 60 enrolments a year across all courses (CA-01). The target needs about **143 career leads, 66 QLs, 38 counselled/taster attendees and 12 applications a month**. Base media cost is **≈₹35k/month**, which is **≈₹5.9k media CAC per paid enrolment**.
+5. **The cost uncertainty is about 9× wide.** For the same 10 enrolments, the conservative case (low conversion, high CPL) needs about **257 leads and ≈₹1.1L of media** (≈₹18.5k per paid enrolment). The Aggressive (favourable-rate) case needs about 89 leads and ≈₹12.5k. This spread is why spend must not scale until spend gates **SG1–SG5** are green (and, above ₹60k/month, stage gate G1), per `growth_marketing_strategy.md` §9.
 
 ---
 
@@ -55,7 +57,7 @@
 |---|---|---|---|---|---|---|---|---|
 | **S1 → L3 Pro (or L2)** | Meta CTWA (tricity), Google Search, organic Reels, GBP, referrals | WhatsApp (CTWA / site click-to-chat) with source code | WhatsApp Flow: course, start month, city, parent involved, age (A-GRO-18 rates) | Counsellor call/voice note <5 min; send student portfolio PDF + fee sheet | **Campus visit with parent** (Sat/Sun slots); meet trainer; see live class; founder escalation if needed | Token ₹5,000 → instalments / no-cost EMI | Onboarding group; portfolio day; review + referral ask | QL→enrol %; median first response |
 | **S2 → L1 Taster → L3 Flex / L2** | Meta (women 25–40, tricity), Facebook, society WhatsApp groups, referrals | Booking page / CTWA → payment link | Ticket purchase = QL | **Taster attended** (3 h, do one look) | Same-day 1:1 counselling (spouse welcome); taster fee credited for 30 days | EMI / instalments | As S1 | Taster → enrol % within 60 days |
-| **S7 → L3 Fast-track** | Google Search (city + "Chandigarh"), regional CTWA (Punjabi/Hindi), YouTube, regional alumni | WhatsApp | Flow + city ≠ tricity → S7 tag | **Online Parents & Students Info Session** (monthly, Sunday 7 pm) → video counselling with parents | Accommodation partner intro; optional regional pop-up taster; campus visit on arrival | Token + EMI | Local-guardian form; weekly parent updates | Out-of-town enrolments; % enquiries from outside tricity |
+| **S7 → L3 Destination** | Google Search (city + "Chandigarh"), regional CTWA (Punjabi/Hindi), YouTube, regional alumni | WhatsApp | Flow + city ≠ tricity → S7 tag | **Online Parents & Students Info Session** (monthly, Sunday 7 pm) → video counselling with parents | Accommodation partner intro; optional regional pop-up taster; campus visit on arrival | Token + EMI | Local-guardian form; weekly parent updates | Out-of-town enrolments; % enquiries from outside tricity |
 | **S3 → L4 Masterclass → L5** | Founder and academy Reels, WhatsApp Community/Channel, retargeting, peer referral, salon owners | Waitlist via WhatsApp keyword ("AIRBRUSH") | Self-qualified | Launch sequence: announce → 72-h early-bird → "last 3 seats" (only if true) | Self-serve payment link | Full payment (UPI/card) | Upsell next L4 + Pro Circle | Sell-through %; repeat rate |
 | **S5 → L1-S5 Self-Makeup** | Seasonal Reels, Search ("self makeup class Chandigarh"), bridal vendor partners (boutiques, photographers) | Landing page with dates | — | — | Instant booking; group/bridal-party booking | Full payment | Review; 1–5% career upgrade (A-GRO-30) | Seats filled; cost per booking |
 | **S6 → L4 Camera Makeup** | Direct creator outreach | DM | Fit check (audience in target geos) | Barter/discount seat for content | Collab Reel with tracked code | — | Referral code | Leads per collab |
@@ -154,14 +156,14 @@ Adopted from S-CUS §8.1 and refined for PNA. One CRM status per stage. Entry ev
 
 | # | Objection | Likely segment | Response principle | Proof asset | Fallback offer |
 |---|---|---|---|---|---|
-| 1 | "Fee is too high" | S1, S2 | Unpack value per hour; compare like-for-like (hours, batch size, live models, kit) | "What ₹90,000 buys" sheet; competitor-agnostic checklist "12 questions to ask any academy" | EMI from ₹15,000/month (6 × ₹15k) [HYP]; start with L2 Foundation (credited) |
+| 1 | "Fee is too high" | S1, S2 | Unpack value per hour; compare like-for-like (hours, batch size, live models, kit) | "What the Pro fee buys" sheet; competitor-agnostic checklist "12 questions to ask any academy" | EMI from ₹12,500/month (6 × ₹12.5k at the ₹75k step-1 list) [HYP]; start with L2 Foundation (credited) |
 | 2 | "Another academy offers 50% off" | S1 | Ask what is included (hours, batch, kit, certificate); no price-matching | Checklist; published fee policy | Taster to compare teaching quality |
 | 3 | "I can learn from YouTube" | S1, S2 | YouTube teaches looks; a course gives corrected practice on live faces + portfolio + network | Week-1 vs week-10 portfolios; practice-hours count | ₹999 taster |
 | 4 | "My parents say it's not a real career" | S1 | Bring the parent; give honest earnings ranges | Parent pack; outcomes report | Parent visit / online parents' session |
 | 5 | "Will I get clients?" | S1, S2, S7 | Explain the booking-support system; no guarantees | Studio assisting count; salon partner list; Business of Bridal module | Alumni call |
 | 6 | "Is the certificate recognised?" | S1, S7, S8 | Explain exactly what it is and is not | Certificate page; (if D9) registry link | — |
 | 7 | "Will Priyanka teach me herself?" | S1, S3 | State founder hours honestly; introduce the certified educators | Hours table; trainer portfolios | Founder masterclass (L4) |
-| 8 | "Safety / where will I stay?" | S7 | Written protocol; vetted partners; local guardian | Accommodation partner list; parent testimonial | Fast-track format (shorter stay) |
+| 8 | "Safety / where will I stay?" | S7 | Written protocol; vetted partners; local guardian | Accommodation partner list; parent testimonial | Destination format (4 weeks of pre-work online shortens the Chandigarh stay) |
 | 9 | "Timing clashes with college / kids' school" | S1, S2 | Offer the Flex format | Timetables | Next batch hold with token |
 | 10 | "I already know basics" | S3, S2 | Skip-level assessment | Skills check during taster | L4 masterclass instead of L3 |
 | 11 | "I'm too old to start" | S2 | Same-life-stage alumni stories | S2 alumni Reels | Taster |
@@ -189,7 +191,7 @@ Adopted from S-CUS §8.1 and refined for PNA. One CRM status per stage. Entry ev
 | In-house instalments | Token + 2–3 instalments (before start, week 4, week 8); payment links/auto-reminders | PNA (credit risk) | Precedent: YMCA two instalments (S-IND-25) |
 | **No-cost EMI via partner** | 3–9 months via GrayQuest / Propelld / Bajaj Finserv / gateway cardless EMI | **PNA subvention 3–7% [HYP] (A-GRO-35b)**; get quotes | Peers: Orane 0% EMI via Bajaj/LoanTap/SaveIN; Zuri Bajaj 0% EMI; Pearl GrayQuest (S-LC-08/13, S-CUS-36/37). GrayQuest offers 4–12 EMIs with no processing fee at one university [CLAIM, S-GRO-13]; gateway cardless EMI ≈3% + GST [CLAIM, S-GRO-09] |
 
-**Display:** "₹90,000 or from ₹15,000/month (6 months, no-cost EMI*)" on every Pro page. Lender terms are disclosed [REC].
+**Display:** one GST-inclusive fee plus EMI, e.g., at price step 1: "₹75,000 or from ₹12,500/month (6 months, no-cost EMI*)" on every Pro page (₹90,000 / ₹15,000 after step 2). Lender terms are disclosed [REC].
 
 **Refund/transfer policy [HYP, counsel to review]:**
 - Token refundable until 14 days before the start date.
@@ -202,20 +204,21 @@ Adopted from S-CUS §8.1 and refined for PNA. One CRM status per stage. Entry ev
 ## 9. Master assumption table (A-GRO-xx): for `economics/funnel_economics.xlsx`
 
 **Conventions for the Economics agent:**
-- **Low/Base/High are values, not quality labels.** For cost lines (CPL, salaries, subvention) "High" is the **conservative** case. For conversion lines "Low" is the conservative case.
-- Stage rates within a route are designed as **scenario sets**. Multiplying the Low set gives the conservative overall rate, the Base set the base rate, and the High set the optimistic rate. Do not mix Low and High within one route except in explicit sensitivity runs.
+- **Vocabulary (recommended_strategy §6.3):** the forecast bundles are **Conservative / Base / Aggressive** (rate set + ₹10L / ₹30L / ₹50L Plan). The **Low/Base/High columns below are input magnitudes**, not bundle names. For cost lines (CPL, salaries, subvention) "High" feeds the **Conservative** bundle. For conversion lines "Low" feeds the Conservative bundle.
+- **Prices** (A-GRO-04..09) are customer-facing list fees, one GST-inclusive number; model revenue is ex-GST (fee ÷ 1.18) and always on **realised**, not list (recommended_strategy §6.1).
+- Stage rates within a route are designed as **scenario sets**. Multiplying the Low set gives the Conservative-bundle overall rate, the Base set the Base rate, and the High set the Aggressive (favourable) rate. Do not mix Low and High within one route except in explicit sensitivity runs.
 - Base rates **assume the SLA in §5 is met** (A-GRO-24 applies otherwise).
 
 ### 9.1 Targets, mix and prices
 
 | ID | Assumption | Low | Base | High | Unit | Rationale / anchor | Source | Tag | Validate by |
 |---|---|---|---|---|---|---|---|---|---|
-| A-GRO-01 | Career-programme enrolments (L2+L3) per month, steady state (months 7–12) | 6 | 10 | 15 | enrol/mo | Today <60/yr all courses (CA-01, ≈≤5/mo). Base 120/yr ≈ 10% of tricity base market 1,256 (CA-05; S-CHD §8.2). High = S-CUS §8.3 worked example | CA-01, CA-05 | [HYP] | V1 + months 4–6 actuals |
+| A-GRO-01 | Career-programme enrolments (L2+L3) per month, steady state (months 7–12) | 6 | 10 | 15 | enrol/mo | Today <60/yr all courses (CA-01, ≈≤5/mo). Base 120/yr is ≈16% of the reconciled tricity makeup-led market of ≈730 learners/yr (₹3.27 cr; some PNA enrolments will be out-of-town); CA-05 (1,256, makeup + beauty-artistry) is an upper reference only. **Gated plan target, not a forecast**; ₹10L-Plan fallback ≈52 career students/yr. High = S-CUS §8.3 worked example | CA-01; recommended_strategy §5, §6.4, §10 #14 | [HYP] | V1 + months 4–6 actuals |
 | A-GRO-02 | Pro (L3) share of career enrolments | 50% | 60% | 70% | % | Flagship-led positioning; Foundation as lower-risk entry | — | [HYP] | V1 |
 | A-GRO-03 | Route mix of career enrolments | — | CTWA 30% · Paid Search 20% · Organic (IG/site/GBP/SEO) 20% · Referral/walk-in 20% · Taster 10% | — | % | Referral reportedly today's engine (S-CUS §2); Search high-intent (S-CUS §6f) | — | [HYP] | V1, V6 |
 | A-GRO-04 | L1 Taster ticket price | ₹499 | ₹999 | ₹1,999 | ₹ | Orane ₹499 (S-NC-17); Airblack from ₹150 (S-CUS-33); local free demos (S-LC-13/23) | S-NC-17 | [HYP] | T3 |
 | A-GRO-05 | L2 Foundation fee | ₹30,000 | ₹39,900 | ₹50,000 | ₹ | Zuri cert from ₹25k (S-LC-13); JH ₹35k (S-NC-31); Lakmé 64 h from ₹47k (S-NC-01) | as listed | [HYP] | V3, V5 |
-| A-GRO-06 | L3 Pro tuition (excl. optional kit) | ₹75,000 | ₹90,000 | ₹1,20,000 | ₹ | Local diploma ₹35–75k; Zuri adv ₹80k–1.2L; Lakmé ₹1.3–1.5L (S-LC §6, S-NC-02); A-CUS-06. **Current fee CA-02 ₹40k/60k/75k; price step gated on proof** | CA-02, A-CUS-06 | [HYP] | V1, V3, V5, T5 |
+| A-GRO-06 | L3 Pro list fee (GST-inclusive; excl. optional kit) | ₹75,000 (step-1 list) | ₹90,000 (step-2 list) | ₹1,20,000 | ₹ | Local diploma ₹35–75k; Zuri adv ₹80k–1.2L; Lakmé ₹1.3–1.5L (S-LC §6, S-NC-02); A-CUS-06. **Two-step path (recommended_strategy §7.2): current fee (CA-02 ₹40k/60k/75k) → ₹75k list at proof gate 1 → ₹90k list at proof gate 2; ₹80k realised is the planning fee** | CA-02, A-CUS-06, recommended_strategy §6.1/§7.2 | [HYP] | V1, V3, V5, T5 |
 | A-GRO-07 | L4 masterclass average ticket | ₹5,000 | ₹10,000 | ₹18,000 | ₹ | Airblack ₹4,999 (S-CUS-34); Nykaaland ₹12,500 (S-CUS-54); Zuri HD/Airbrush ₹12k+ (S-LC-13); A-CUS-07 | as listed | [HYP] | V6 |
 | A-GRO-08 | L1-S5 Self-makeup workshop price | ₹3,000 | ₹4,999 | ₹8,000 | ₹ | YMCA ₹7,080 (S-CUS-38); Nav Brar ₹15k 4-day (S-LC-28); A-CUS-08 | as listed | [HYP] | V6 |
 | A-GRO-09 | L5 Pro Circle membership | ₹4,999 | ₹9,999 | ₹14,999 | ₹/yr | No paid Indian anchor; Kryolan PRO CARD discount model (S-INT-49) | S-INT-49 | [HYP] | Pilot |
@@ -309,17 +312,17 @@ Volumes are per month, computed from A-GRO-03 (mix), A-GRO-18..22 (rates), A-GRO
 
 **Arithmetic check (CTWA):** 3.0 ÷ 5.28% = 56.8 leads; × 40% = 22.7 QL; × 55% = 12.5 counselled; × 30% = 3.75 applied; × 80% = 3.0 enrolled; 56.8 × ₹300 = ₹17,045.
 
-### 10.2 Same target under conservative / optimistic assumptions
+### 10.2 Same target under Conservative / Base / Aggressive rate sets
 
 | Scenario (all routes) | Conversion set | CPL set | Leads needed | Media cost / mo | Media CAC per paid enrolment (6) | Blended CAC incl. rewards (÷10) | Tag |
 |---|---|---|---|---|---|---|---|
 | Conservative | Low | High (₹600 / ₹800 / ₹700 ticket) | **≈257** | **≈₹1,10,700** | **≈₹18,450** | ≈₹12,070 | [EST] |
 | Base | Base | Base | **143** | **≈₹35,300** | **≈₹5,880** | ≈₹4,130 | [EST] |
-| Optimistic | High | Low (₹150 / ₹300 / ₹200 ticket) | **≈89** | **≈₹12,500** | **≈₹2,080** | ≈₹1,650 | [EST] |
+| Aggressive (favourable rates) | High | Low (₹150 / ₹300 / ₹200 ticket) | **≈89** | **≈₹12,500** | **≈₹2,080** | ≈₹1,650 | [EST] |
 
 **Read-out:**
-- CAC moves ~9× between scenarios. At base, media CAC is ≈6.5% of a ₹90k Pro fee. In the conservative case it is ≈20%.
-- Weighted career fee at base ≈ ₹70k [EST: 60% × ₹90k + 40% × ₹39.9k]. The conservative CAC is therefore ≈26% of it, which is why gate **G4** exists (`growth_marketing_strategy.md` §9).
+- CAC moves ~9× between rate sets. At Base, media CAC is ≈7% of the ₹80k realised planning fee. In the Conservative case it is ≈23%.
+- Weighted career fee at Base ≈ ₹64k [EST: 60% × ₹80k realised + 40% × ₹39.9k]. Against spend gate **SG4** (Economics thresholds, recommended_strategy §7.1: media CAC per paid career enrolment ≤₹9k green, ₹9–12k amber, >₹12k red), the Base case (≈₹5.9k) is green and the Conservative case (≈₹18.5k) is red (`growth_marketing_strategy.md` §9).
 
 ### 10.3 Other products, base month (steady state, season-averaged)
 
@@ -350,7 +353,7 @@ Volumes are per month, computed from A-GRO-03 (mix), A-GRO-18..22 (rates), A-GRO
 3. Treat taster ticket revenue (A-GRO-04) as an offset to taster media, and taster credits as a reduction in L2/L3 realised fee.
 4. Include EMI subvention (A-GRO-35 × A-GRO-35b), gateway fees (A-GRO-41) and referral rewards (A-GRO-34) in CAC/contribution.
 5. Growth-team costs (A-GRO-45..50) may overlap the Operations agent's org design. Reconcile and do not double count.
-6. Current fee is CA-02 (₹40k/60k/75k). A-GRO-06 is the **target** Pro price after the proof gate. Model a price-step scenario rather than assuming ₹90k from month 1.
+6. Current fee is CA-02 (₹40k/60k/75k). Model the **two-step price path** (recommended_strategy §7.2, §11.3): ₹75k list at proof gate 1, ₹90k list at proof gate 2, with **₹80k realised** as the planning fee; never assume ₹90k from month 1.
 
 ---
 

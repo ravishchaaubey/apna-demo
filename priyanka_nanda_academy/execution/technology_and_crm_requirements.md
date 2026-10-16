@@ -1,7 +1,9 @@
 # Technology and CRM Requirements: Minimum Viable Growth Stack
 
+> **Aligned to recommended_strategy.md §6 on 2026-10-16.** Canonical vocabulary applied: spend gates SG1–SG5 (stage gates G0–G3b are separate); L3 Pro formats Weekday / Flex / **Destination**; Meta campaigns MC1–MC6, Google campaigns GC1–GC4; ₹10L / ₹30L / ₹50L Plans; recorded pre-work and LMS after stage gate G1 (Tranche 2).
+
 **Client:** Priyanka Nanda Makeup Academy (PNA), Chandigarh · **Workstream:** Growth & MarTech · **Prepared:** 2026-10-16 · **Agent:** Growth and MarTech Agent (Opus)
-**Serves:** `strategy/admissions_funnel.md` (stages, SLA, automations), `strategy/growth_marketing_strategy.md` (gates G1–G2 depend on this stack), `execution/marketing_channel_plan.md`.
+**Serves:** `strategy/admissions_funnel.md` (stages, SLA, automations), `strategy/growth_marketing_strategy.md` (spend gates SG1–SG2 depend on this stack), `execution/marketing_channel_plan.md`.
 
 **Tags:** [FACT] · [CLAIM] · [EST] · [HYP] · [REC].
 **Cost caveat:** vendor prices come from vendor pages or third-party comparisons fetched on 2026-10-16. **Several conflict, and all exclude 18% GST unless stated.** Treat every price as **[CLAIM]/[EST]** and get written quotes before contracting. Sources are listed at the end (S-GRO-xx).
@@ -10,7 +12,7 @@
 
 ## 1. Summary and recommended stack
 
-**Design principle:** a small academy needs **one WhatsApp-centred inbox, one lead record per person, enforced SLA timers, and conversion feedback to ad platforms**. It does not need an enterprise CRM. Buy only what gates G1 (tracking) and G2 (follow-up discipline) require. Add an LMS only when the hybrid business case is approved.
+**Design principle:** a small academy needs **one WhatsApp-centred inbox, one lead record per person, enforced SLA timers, and conversion feedback to ad platforms**. It does not need an enterprise CRM. Buy only what spend gates SG1 (tracking) and SG2 (follow-up discipline) require. Add an LMS only after stage gate G1 (Flagship proven) releases the recorded pre-work build in Tranche 2 (recommended_strategy §5). The Destination pilot cohort (Jun–Jul 2027) runs its pre-work live-online without an LMS.
 
 | Layer | Phase 0 (weeks 1–4; ≈₹3–5k/mo) | **MVP (from week 5; ≈₹18k/mo base)** | Scale (multi-counsellor / regional / hybrid; ≈₹30–40k/mo) |
 |---|---|---|---|
@@ -21,9 +23,9 @@
 | Analytics | GA4 + GTM + Meta Pixel + Google Ads conversions | + Meta CAPI for business messaging (CTWA events) + Google offline conversion import + Looker Studio dashboard + Clarity | + server-side tagging (optional) |
 | Payments | Razorpay payment links | + payment pages (taster, masterclass), instalment links, **EMI partner** | + subscriptions (Pro Circle) |
 | Booking | WhatsApp Flow / manual | Booking tool (visits, tasters) | Same |
-| LMS | — | — | Graphy / Exly / similar **only for the hybrid pilot** |
+| LMS | — | — (Destination pilot pre-work runs live-online: Zoom/Meet + WhatsApp + Drive) | Graphy / Exly / similar **only after stage gate G1** (Tranche 2 recorded pre-work) |
 
-**Indicative run-rate (A-GRO-42):** ≈₹8k (C) / ≈₹18–20k (B) / ≈₹30–40k (A) per month incl. GST and WhatsApp message fees [EST], built up in §4.
+**Indicative run-rate (A-GRO-42):** ≈₹8k (₹10L Plan) / ≈₹18–20k (₹30L Plan) / ≈₹30–40k (₹50L Plan, reference only) per month incl. GST and WhatsApp message fees [EST], built up in §4.
 
 ---
 
@@ -33,19 +35,19 @@
 
 | ID | Requirement | Priority | Supports |
 |---|---|---|---|
-| FR-01 | Capture every lead from CTWA, click-to-chat, website form, Meta lead form, calls, IG DM, walk-in, referral, events into **one record keyed on phone (E.164)** with duplicate merge | Must | G1 |
-| FR-02 | Store **first-touch and last-touch source** (channel, source, medium, campaign, ad id, `ctwa_clid`, `gclid`, entry code, landing page) | Must | G1, CAC by route |
+| FR-01 | Capture every lead from CTWA, click-to-chat, website form, Meta lead form, calls, IG DM, walk-in, referral, events into **one record keyed on phone (E.164)** with duplicate merge | Must | SG1 |
+| FR-02 | Store **first-touch and last-touch source** (channel, source, medium, campaign, ad id, `ctwa_clid`, `gclid`, entry code, landing page) | Must | SG1, CAC by route |
 | FR-03 | WhatsApp **Flows** for qualification (course, start month, city, parent involved, age band) written to CRM fields | Must | Lead→QL, SLA |
-| FR-04 | Multi-agent shared inbox with auto-assignment (round-robin, by product/geo/language), internal notes and labels | Must | G2 |
-| FR-05 | **SLA timers**: first-response clock, escalation at 5 min / 30 min, breach reporting (median, P90) | Must | G2 |
-| FR-06 | Task cadence (D0–D14) with reminders; templated nudges when the 24-h window has closed | Must | G2 |
-| FR-07 | Pipeline stages = funnel stages (`admissions_funnel.md` §4) with mandatory lost/disqualify reason | Must | G1, G2 |
+| FR-04 | Multi-agent shared inbox with auto-assignment (round-robin, by product/geo/language), internal notes and labels | Must | SG2 |
+| FR-05 | **SLA timers**: first-response clock, escalation at 5 min / 30 min, breach reporting (median, P90) | Must | SG2 |
+| FR-06 | Task cadence (D0–D14) with reminders; templated nudges when the 24-h window has closed | Must | SG2 |
+| FR-07 | Pipeline stages = funnel stages (`admissions_funnel.md` §4) with mandatory lost/disqualify reason | Must | SG1, SG2 |
 | FR-08 | Visit/taster booking with reminders (24 h, 2 h) and location pin | Must | QL→counselled |
 | FR-09 | Payment links (token, instalments, workshops) with status written back to CRM | Must | Applied/Enrolled |
-| FR-10 | **Conversion feedback:** QL and Enrolled events to Meta (CAPI, CTWA attribution) and Google (offline conversions) | Must (before scale) | G1, paid optimisation |
-| FR-11 | Call logging (inbound/outbound, duration, recording where lawful) linked to the lead | Should | G2 |
+| FR-10 | **Conversion feedback:** QL and Enrolled events to Meta (CAPI, CTWA attribution) and Google (offline conversions) | Must (before scale) | SG1, paid optimisation |
+| FR-11 | Call logging (inbound/outbound, duration, recording where lawful) linked to the lead | Should | SG2 |
 | FR-12 | Broadcasts/campaigns to opted-in segments with opt-out handling | Must | Nurture, S3 launches |
-| FR-13 | Alumni object: completion, portfolio link, outcome survey answers (30/90/180/365 days), referral code, Pro Circle status | Should (month 3) | G5, referral |
+| FR-13 | Alumni object: completion, portfolio link, outcome survey answers (30/90/180/365 days), referral code, Pro Circle status | Should (month 3) | SG5, referral |
 | FR-14 | Weekly dashboard (§9) refreshed automatically | Must | Governance |
 | FR-15 | Founder-touch flag and counsellor attribution on each opportunity | Must | H3 measurement (A-GRO-25) |
 | FR-16 | Role-based access, export controls, consent records | Must | Compliance (§10) |
@@ -169,15 +171,15 @@ Sources: TeleCRM (S-GRO-05), Zoho CRM (S-GRO-06), LeadSquared (S-GRO-07), Privyr
 - Refund flow documented.
 - EMI lender terms shown to students before they apply.
 
-### 3.8 LMS for the hybrid layer (later; only after the hybrid business case is approved)
+### 3.8 LMS for Destination pre-work and the hybrid layer (after stage gate G1; Tranche 2)
 
 | Option | Indicative cost | Fit | Source |
 |---|---|---|---|
-| **Pilot first:** YouTube unlisted + Google Classroom/Drive + WhatsApp group + Zoom/Meet | ₹0–1.5k/mo [EST] | Test demand and completion for online pre-work with 1–2 cohorts | — |
+| **Destination pilot cohort (Jun–Jul 2027; the G2 pilot):** live-online pre-work via Zoom/Meet + WhatsApp group + Google Drive/Classroom; no LMS purchase | ₹0–1.5k/mo [EST] | Tests pre-work completion (KT-7: revert to Weekday if <70%) | recommended_strategy §7.3 |
 | Graphy | US$49–399/mo (plan names and fees conflict across reviews); INR plans exist but were not verified | Cohort courses, live classes, payments, white-label app (higher tiers) | S-GRO-10 [CLAIM] |
 | Exly | Pricing not found | Creator platform: courses, live workshops, bookings, payments, built-in CRM | S-GRO-17 [CLAIM] |
 
-**LMS requirements for hybrid [REC]:**
+**LMS requirements for the recorded pre-work library (after G1) [REC]:**
 - Cohort scheduling and live classes.
 - **Photo/video assignment submission with trainer feedback** (makeup is visual).
 - Completion tracking feeding the CRM.
@@ -200,7 +202,7 @@ Sources: TeleCRM (S-GRO-05), Zoho CRM (S-GRO-06), LeadSquared (S-GRO-07), Privyr
 
 ## 4. Indicative monthly run-rate (incl. 18% GST where applicable) [EST]
 
-| Item | C (≈₹8k) | B (≈₹18–20k) | A (≈₹30–40k) | Basis |
+| Item | ₹10L Plan (≈₹8k) | ₹30L Plan (≈₹18–20k) | ₹50L Plan (≈₹30–40k; not authorised for Year 1) | Basis |
 |---|---|---|---|---|
 | WhatsApp BSP plan | AiSensy Basic ₹1,500 → ₹1,770 | AiSensy Pro ₹3,200 → ₹3,776 (+ chatbot add-on ≈₹2,500 → ₹2,950) | AiSensy Premium ₹9,100 → ₹10,738 | S-GRO-02 |
 | WhatsApp message fees | ≈₹1,500 | ≈₹3,000 | ≈₹6,000 | ≈1,500–6,000 marketing/utility templates × ₹0.12–1.09 (S-GRO-02/04) |
@@ -248,7 +250,7 @@ Partner (salon, college, vendor, creator, accommodation; code; agreement)
 | `phone_e164` | Text | Lead | +91XXXXXXXXXX (unique) | Dedupe, WhatsApp |
 | `name` | Text | Lead | — | — |
 | `created_at` | Timestamp | Lead | Auto | SLA |
-| `first_response_at` / `first_human_response_at` | Timestamp | Auto | — | **SLA (G2)** |
+| `first_response_at` / `first_human_response_at` | Timestamp | Auto | — | **SLA (SG2)** |
 | `owner` | User | Lead | Counsellor | Accountability |
 | `channel_group_first` / `_last` | Picklist | Lead | paid_social, paid_search, organic_social, organic_search, gbp, referral, partner, event, walk_in, direct, whatsapp_channel, other | CAC by route |
 | `source_first` / `_last` | Picklist | Lead | instagram, facebook, google, youtube, website, gbp, justdial, sulekha, urbanpro, wedmegood, alumni, salon, college, creator, popup, press, other | — |
@@ -259,7 +261,7 @@ Partner (salon, college, vendor, creator, accommodation; code; agreement)
 | `landing_page` | URL | Auto (web) | — | CRO |
 | `self_reported_source` | Picklist | QL | "How did you hear about us?" | Cross-check |
 | `product_interest` | Picklist | Lead (Flow) | L1 Taster, L1-S5 Self-makeup, L2 Foundation, L3 Pro, L4 [name], L5 Pro Circle, Studio service, Job enquiry, Other | Routing |
-| `format_pref` | Picklist | QL | Weekday, Flex, Fast-track, Online/hybrid (later) | Batch planning |
+| `format_pref` | Picklist | QL | Weekday, Flex, Destination | Batch planning (canonical L3 formats, recommended_strategy §6.1) |
 | `segment` | Picklist | QL | S1, S2, S3, S5, S6, S7-overlay flag, S8 flag | Reporting |
 | `age_band` | Picklist | Lead (Flow) | <17, 17, 18–20, 21–25, 26–30, 31–40, 40+ | QL rule; **DPDP child-consent flag if <18** |
 | `city` / `is_tricity` | Picklist / Bool | Lead (Flow) | Chandigarh, Mohali, Panchkula, Zirakpur, Kharar, Ludhiana, Jalandhar, Amritsar, Patiala, Ambala, Karnal, Shimla, Solan, Jammu, Delhi, Other | S7 routing |
@@ -270,7 +272,7 @@ Partner (salon, college, vendor, creator, accommodation; code; agreement)
 | `ql_flag` / `ql_at` | Bool / Timestamp | QL | — | Stage |
 | `counselled_at`, `visit_at`, `parent_met_at`, `taster_attended_at` | Timestamps | Stage 4 | — | Stage |
 | `founder_touch` | Bool | Stage 4–5 | — | **H3 (A-GRO-25)** |
-| `touches_14d` | Number | Auto | — | G2 (≥5) |
+| `touches_14d` | Number | Auto | — | SG2 (≥5) |
 | `stage` | Picklist | Always | §5.4 | Funnel |
 | `lost_reason` / `disqualify_reason` | Picklist | On close | §5.4 | Lost-reason Pareto |
 | `competitor_chosen` | Picklist | If lost to competitor | Orane, Lakmé, VLCC, Zuri, Cassia, Nav Brar, Tanvi KG, Headmasters, Knuckout, online, other | Positioning |
@@ -331,7 +333,7 @@ Partner (salon, college, vendor, creator, accommodation; code; agreement)
 |---|---|---|---|---|
 | A1 | New inbound WhatsApp / form / call ≥30 s | Instant acknowledgement + 4-question **Flow**; create/merge lead; set source fields | Service (free) / utility template if form-originated | First response |
 | A2 | Flow completed | Send fee sheet + brochure for the chosen product; set QL candidate flags | Service | Lead→QL |
-| A3 | Lead created | Assign owner (RT-01..06); start SLA clock; escalate at 5/30 min | Internal | G2 |
+| A3 | Lead created | Assign owner (RT-01..06); start SLA clock; escalate at 5/30 min | Internal | SG2 |
 | A4 | No reply / not counselled | Counsellor tasks D0, D1, D3, D7, D14; templated nudge if the 24-h window has closed | Marketing/utility template | ≥5 touches |
 | A5 | Visit/taster/session booked | Confirmation + location pin + reminders at 24 h and 2 h; parent invite link | Utility | Show-up |
 | A6 | No-show | Rebook offer ×2, then Nurture | Utility | QL→counselled |
@@ -339,11 +341,11 @@ Partner (salon, college, vendor, creator, accommodation; code; agreement)
 | A8 | Enrolment confirmed | Welcome pack, kit list, timetable, batch group add, consent forms (image, parental if <18) | Utility | Applied→enrolled |
 | A9 | Weekly during course (opt-in) | Attendance update to parent | Utility | Completion; parent trust |
 | A10 | Portfolio day / graduation | Google review link; testimonial consent; issue referral code; Pro Circle activation | Utility | Review rate, referrals |
-| A11 | Completion + 30/90/180/365 days | Alumni outcome survey (time to first paid booking, bookings, prices) | Utility | **G5, outcomes report** |
+| A11 | Completion + 30/90/180/365 days | Alumni outcome survey (time to first paid booking, bookings, prices) | Utility | **SG5, outcomes report** |
 | A12 | Pro Circle day 330/350/365 | Renewal reminders + payment link | Utility | Pro Circle retention |
 | A13 | Masterclass launch | Waitlist → early access (72 h) → open → last call (only true seat counts) to opted-in S3 list | Marketing | Sell-through |
 | A14 | 30 days before each batch | Reactivate Nurture + Lost (timing) leads | Marketing | Reactivation ≥5% |
-| A15 | Stage → QL / Enrolled | **Send events to Meta CAPI (business messaging, with `ctwa_clid`) and Google offline conversions (gclid/hashed phone)** | System | G1; paid optimisation |
+| A15 | Stage → QL / Enrolled | **Send events to Meta CAPI (business messaging, with `ctwa_clid`) and Google offline conversions (gclid/hashed phone)** | System | SG1; paid optimisation |
 | A16 | Every Monday 09:00 | Refresh dashboard; send SLA breach and funnel summary to the growth lead | Internal | Governance |
 
 ---
@@ -367,7 +369,7 @@ Partner (salon, college, vendor, creator, accommodation; code; agreement)
 - **Last touch before QL** drives optimisation.
 - **Self-reported** source is the cross-check for organic and word of mouth.
 - Paid platforms are optimised on **QL and Enrolled** events, not leads, once volumes allow.
-- Platform-reported conversions are never the source of truth. The CRM is (G1: CRM enrolments must reconcile with accounts within ±5%).
+- Platform-reported conversions are never the source of truth. The CRM is (SG1: CRM enrolments must reconcile with accounts within ±5%).
 
 ---
 
@@ -389,7 +391,8 @@ Partner (salon, college, vendor, creator, accommodation; code; agreement)
 | Batch fill vs capacity (next 2 batches) | Enrolled ÷ seats |
 | Masterclass sell-through; self-makeup seats | — |
 | Reviews this week; average rating | GBP |
-| **Gate status G1–G5** (green/amber/red) | Per `growth_marketing_strategy.md` §9 |
+| **Spend-gate status SG1–SG5** (green/amber/red) | Per `growth_marketing_strategy.md` §9 |
+| Stage-gate status G0 / G1 (green/amber/red) | Per `recommended_strategy.md` §7.1 (G0 target M3, G1 window M6–M9) |
 
 ### 9.2 Monthly
 - CAC by route (media and fully loaded)
@@ -426,10 +429,10 @@ Partner (salon, college, vendor, creator, accommodation; code; agreement)
 | 2 | BSP onboarding: number migration or new number, display name approval, Business Manager verification; message templates submitted | Growth lead + founder | Templates approved |
 | 2–3 | **CTWA attribution test** (§3.3); CRM configured (fields §5.2, stages §5.4, routing §6); Flow built | Integration freelancer | Test lead shows `ctwa_clid` + CAPI event received in Events Manager |
 | 3 | SLA timers, cadences, dashboard v1; counsellor training | Growth lead | First weekly dashboard |
-| 4 | Website: GTM/GA4 events, Meta Pixel/CAPI (web), Google Ads conversions + offline import; hidden fields; WhatsApp pre-fill script; Clarity | Web freelancer | G1 checklist items ticked |
+| 4 | Website: GTM/GA4 events, Meta Pixel/CAPI (web), Google Ads conversions + offline import; hidden fields; WhatsApp pre-fill script; Clarity | Web freelancer | SG1 checklist items ticked |
 | 4–5 | Payments: Razorpay links/pages for taster, self-makeup, token; EMI partner application | Founder + finance | First token taken via link |
-| 6–8 | Automations A5–A11, A13–A16 live; alumni object; consent library | Growth lead | Gate G1 green for the first week |
-| Month 6+ | Review scale needs: second counsellor seat, Zoho Professional, server-side tagging, LMS pilot (only if the hybrid case is approved) | Growth lead | Gate review |
+| 6–8 | Automations A5–A11, A13–A16 live; alumni object; consent library | Growth lead | Spend gate SG1 green for the first week |
+| After G1 (M6–M9) | Review scale needs: second counsellor seat (0.5 FTE, Tranche 2), Zoho Professional, server-side tagging, LMS for recorded pre-work (only after stage gate G1) | Growth lead | Gate review |
 
 ---
 
