@@ -33,21 +33,21 @@ At a 15–25% share, the tricity alone supports a ₹0.5–0.8 cr single-centre 
 
 | Metric | Year 1 (Nov 2026–Oct 2027) | Year 2 | Year 3 |
 |---|---|---|---|
-| Revenue, ex-GST | ₹65.9L (₹17.6L) | ₹116.0L (₹26.6L) | ₹165.5L (₹36.7L) |
-| EBITDA before any founder salary | +₹1.9L (−₹13.0L) | +₹13.8L (−₹7.2L) | +₹43.6L (−₹9.6L) |
-| EBITDA after a ₹75k/month founder-role salary (+8% a year) | −₹7.1L (−₹22.0L) | +₹4.1L (−₹17.1L) | +₹33.1L (−₹20.5L) |
-| Career enrolments (new students, L2+L3) | 89 (33) | — | — |
-| Cash used before G1 / peak cash need | ₹10.9L / ₹28.8L vs ₹30L (Conservative: ₹14.9L by month 12 vs ₹10L, **over by ₹4.9L**) | — | — |
+| Revenue, ex-GST | ₹66.5L (₹17.6L) | ₹115.8L (₹26.6L) | ₹165.3L (₹36.7L) |
+| EBITDA before any founder salary | +₹2.2L (−₹13.0L) | +₹13.7L (−₹7.2L) | +₹43.5L (−₹9.6L) |
+| EBITDA after a ₹75k/month founder-role salary (+8% a year) | −₹6.9L (−₹22.0L) | +₹4.0L (−₹17.1L) | +₹33.0L (−₹20.5L) |
+| Career enrolments (new students, L2+L3) | 91 (33) | — | — |
+| Cash used before G1 / peak cash need | ₹11.0L / ₹25.6L vs ₹30L (Conservative: ₹14.9L by month 12 vs ₹10L, **over by ₹4.9L**) | — | — |
 
-If G1 only arrives at month 9, Year 1 is ₹57.3L revenue and −₹1.8L EBITDA (about 15 enrolments and ₹4L of profit lost to the later move); Years 2–3 converge on the same run-rate. For reference, the unstaged ₹30L plan earns +₹6.8L on ₹71.0L in Year 1 with a ₹24.6L peak cash need; the staging and two-step price cost about ₹4.9L of Year-1 profit and ₹4.3L of extra peak cash, in exchange for capping money at risk before proof at about ₹11L.
+If G1 only arrives at month 9, Year 1 is ₹59.9L revenue and −₹0.4L EBITDA (about 11 enrolments and ₹2.6L of profit lost to the later move); Years 2–3 converge on the same run-rate. For reference, the unstaged ₹30L plan earns +₹6.8L on ₹71.0L in Year 1 with a ₹24.6L peak cash need; the staging and two-step price cost about ₹4.9L of Year-1 profit and about ₹1L of extra peak cash, in exchange for capping money at risk before proof at about ₹11L.
 
 Unit economics at the full price: an L3 seat contributes ₹50.4k before acquisition cost and a 12-seat batch breaks even at 3.6 students; at the step-1 price ₹39.6k and 38% of a batch; at today's assumed fee ₹22.2k and 8 students [EST]. The business breaks even at about 6.5 career enrolments a month at the month-12 cost base on the step-1 fee (5.5 at the full fee) [EST]. The founder's unpaid teaching is today's margin: replacing it costs about ₹10L in Year 1 and ₹17–19L a year thereafter, plus about ₹8L a year for an academy manager from Year 2 [EST]. GST treatment is worth about ₹12.7L a year and needs a chartered accountant's opinion.
 
 ## Investment: ₹30 lakh planned, ₹35 lakh authorised, released in two tranches [REC]
 
-- **Tranche 1, authorise now: up to ₹15L** (expected use about ₹10.9L). Admissions counsellor (month 1), lead trainer (month 2–3), content and video, CRM/WhatsApp, website, legal/accounting/B&WSSC, test-level advertising (≤₹60k/month), basic recording of theory (₹1L), a weekend/evening batch slot in the studio from month 5. No new premises. A Conservative trajectory uses ₹13.4L by month 9, so the Tranche-1 review is held no later than month 9.
+- **Tranche 1, authorise now: up to ₹15L** (expected use about ₹11L). Admissions counsellor (month 1), lead trainer (month 2–3), content and video, CRM/WhatsApp, website, legal/accounting/B&WSSC, test-level advertising (≤₹60k/month), basic recording of theory (₹1L), a weekend/evening batch slot in the studio from month 5 (it moves the capacity squeeze from month 6 to month 8). No new premises. A Conservative trajectory uses ₹13.4L by month 9, so the Tranche-1 review is held no later than month 9.
 - **Tranche 2, release at gate G1 (decide at month 6; month 9 at the latest): up to ₹15L more.** Dedicated ~1,300 sq ft space the month after G1 (fit-out ₹10.4L, deposit ₹3.1L, stations ₹1.2L), second trainer, advertising to ₹1.0L/month, two regional pop-up pilots, price step 1.
-- **Contingency: ₹5L above the ₹30L**, because the Staged Plan's peak cash of ₹28.8L leaves only ₹1.2L of headroom and the model's cash excludes tax, GST timing and any founder draw. It is drawn only on the founder's sign-off, only for timing slippage, never for new scope. The recorded hybrid pre-work library (₹3.5L) is deferred to Year 2; the Destination pilot runs on live-online pre-work.
+- **Contingency: ₹5L above the ₹30L, expected to go undrawn.** With the recorded hybrid pre-work library (₹3.5L) deferred to Year 2 and the studio slot added, the plan's own peak cash is ₹25.6L, ₹4.4L inside ₹30L. The contingency exists because the model's cash excludes income tax, GST timing, working capital and any founder draw. It is drawn only on the founder's sign-off, only for timing slippage, never for new scope. The Destination pilot runs on live-online pre-work.
 - **The ₹35–50L band is not a Year-1 budget.** It is reserved for the regional engine in Year 2 (₹4–10L) and released only at gate G2. The ₹50L plan is rejected for Year 1: at Base rates it yields EBITDA of −₹3.0L and a ₹44.2L cash need [EST].
 - **If G1 is missed,** spending stops at Tranche 1 and PNA runs as a profitable boutique (₹10L plan at Base rates: +₹10.8L EBITDA on ₹39.8L revenue, about 52 career students a year) while the cause is fixed. If G1 is still missed at month 12, the step-back timeline is abandoned and the regional engine is dropped.
 
@@ -62,7 +62,7 @@ Unit economics at the full price: an L3 seat contributes ₹50.4k before acquisi
 
 ## The biggest risks
 
-Price realisation (proof arrives late or weak, and the family's all-in cost rises by about 45% at the full price); the founder step-back hurting conversion or quality; cash against the ₹30L line (₹1.2L of headroom; Conservative needs ₹14.9L against ₹10L); optimistic funnel benchmarks (the cost range for the same enrolments is ~9x wide, none of it makeup-specific, and the plan already runs amber on acquisition cost); capacity binding before demand (seats bind at month 6 in every run; today's space holds about 58 flagship starts a year against a plan needing 153%); GST; an out-of-town safety incident; and misleading-claim exposure if "100% placement"-style promises creep in.
+Price realisation (proof arrives late or weak, and the family's all-in cost rises by about 45% at the full price); the founder step-back hurting conversion or quality; cash against the ₹30L line (₹4.4L of headroom on the plan's own numbers, which exclude tax, GST timing and founder draw; Conservative needs ₹14.9L against ₹10L); optimistic funnel benchmarks (the cost range for the same enrolments is ~9x wide, none of it makeup-specific, and the plan already runs amber on acquisition cost); capacity binding before demand (seats bind at month 8 even with the extra studio slot; today's space holds about 58 flagship starts a year against a plan needing 153%); GST; an out-of-town safety incident; and misleading-claim exposure if "100% placement"-style promises creep in.
 
 ## Decisions needed from the founder now
 

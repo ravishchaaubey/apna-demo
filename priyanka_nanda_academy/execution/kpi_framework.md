@@ -2,7 +2,7 @@
 
 **Client:** Priyanka Nanda Makeup Academy (PNA), Chandigarh · **Workstream:** Operations / Roadmap · **Prepared:** 2026-10-16 · **Agent:** Operations / Roadmap Agent (Opus)
 **Companion files:** `execution/first_90_days.md` · `execution/twelve_month_roadmap.md`.
-**Governing strategy:** `strategy/recommended_strategy.md` (Gate D): gates G0–G3b, spend gates SG1–SG5 and kill/pivot triggers KT-1…KT-10 (§7) are the decision rules this framework feeds.
+**Governing strategy:** `strategy/recommended_strategy.md` (Gate D): gates G0–G3b, spend gates SG1–SG5 and kill/pivot triggers KT-1…KT-11 (§7) are the decision rules this framework feeds.
 **Targets come from:** `economics/business_forecast.xlsx` sheet **`Staged_G1M6`** (Staged Plan, planning case: G1 at M6, move M7; `economics/assumptions_and_methodology.md` §1A), with `Staged_G1M9` (late case), `Outlook_*` and `economics/funnel_economics.xlsx` (`Funnel_Base`, `Summary`) for rates. Funnel rates and gate thresholds come from `strategy/admissions_funnel.md` §4 and §9, `strategy/growth_marketing_strategy.md` §9 and `execution/technology_and_crm_requirements.md` §5 and §9.
 
 **Tags:** [FACT] sourced · [CLAIM] first-party or unverified · [EST] our estimate (model cell or arithmetic shown) · [HYP] to validate · [REC] recommendation.
@@ -18,11 +18,11 @@
 
 ## 0. Summary
 
-1. **North star (Year 1): career enrolments a month (new L2 + L3 students).** It is the economic hinge (break-even is 6.5 a month at the M12 cost base on the step-1 fee) and the volume every gate, hire and space decision depends on. Plan: 8.0 / 17.3 / 33.8 / 30.3 a quarter, **89 in Year 1** [EST, `Staged_G1M6`].
+1. **North star (Year 1): career enrolments a month (new L2 + L3 students).** It is the economic hinge (break-even is 6.5 a month at the M12 cost base on the step-1 fee) and the volume every gate, hire and space decision depends on. Plan: 8.0 / 18.7 / 33.4 / 30.5 a quarter, **91 in Year 1** [EST, `Staged_G1M6`; methodology §1A].
 2. **Four guardrails** stop growth that is not worth having: **quality** (completion ≥85%, NPS ≥50), **acquisition efficiency** (media CAC per paid career enrolment ≤₹9k), **founder independence** (share of contact hours on the ≤50% M6 / ≤40% M12 path, with trainer parity) and **outcomes** (% of graduates with a paid booking within 90 days). The outcomes measure becomes the **Year-2 north star** once the January baseline exists.
 3. **Five KPI families, 63 measures** (§2): funnel (FUN), delivery (DEL), outcomes (OUT), finance (FIN) and founder dependency (FDR). Each has a definition, formula, data source, owner, cadence, quarterly target and RAG thresholds.
 4. **One weekly one-page dashboard** (§5) refreshed every Monday at 09:00 from the CRM, WhatsApp BSP, ad platforms, GA4, GBP, the timetable and accounts. **One 90-minute monthly business review** (§6). **Gate packs** for G0, the SG review, G1 and the Year-1 review (§7).
-5. **Where the plan already sits in amber [EST, `Dashboard`]:** media CAC per paid career enrolment ₹10.6k in M7–M12 (green ≤₹9k) and fully loaded acquisition at 49% of career revenue (Year-1 threshold ≤40%). These are the first numbers to improve with real data.
+5. **Where the plan already sits in amber [EST, `Dashboard`]:** media CAC per paid career enrolment ₹10.6k in M7–M12 (green ≤₹9k) and fully loaded acquisition at 49% of career revenue (green ≤40%, amber 40–50%). These are the first numbers to improve with real data. In the late case (G1 at M9) fully loaded acquisition is 55%, which is red.
 
 ---
 
@@ -30,7 +30,7 @@
 
 | Element | Measure | Plan (Q1 / Q2 / Q3 / Q4) | Why it matters | Gate link |
 |---|---|---|---|---|
-| **North star** | **Career enrolments a month** (new L2 + L3 students; upgrades excluded) | 2.7 / 5.8 / 11.3 / 10.1 a month (8.0 / 17.3 / 33.8 / 30.3 a quarter) [EST, row 33] | Drives revenue, trainer load, seats and the break-even (6.5 a month at the M12 cost base, `Dashboard`) | G1 ("2 cohorts ≥75% full"); FIN-02 |
+| **North star** | **Career enrolments a month** (new L2 + L3 students; upgrades excluded) | 2.7 / 6.2 / 11.1 / 10.2 a month (8.0 / 18.7 / 33.4 / 30.5 a quarter) [EST, row 33] | Drives revenue, trainer load, seats and the break-even (6.5 a month at the M12 cost base, `Dashboard`) | G1 ("2 cohorts ≥75% full"); FIN-02 |
 | Guardrail: quality | Completion ≥85% and NPS ≥50 per cohort | From the first completed cohort (Mar 2027) | Growth bought with weak delivery destroys the proof flywheel | SG5; G1 |
 | Guardrail: efficiency | Media CAC per paid career enrolment ≤₹9k | Test level to G1; plan ₹10.6k in M7–M12 (amber) | Above ₹12k, LTV/CAC falls to about 3 at today's fee (methodology §3 #4) | SG4 |
 | Guardrail: independence | Founder share of contact hours on the Gate D path, with trainer-led satisfaction within 0.3/5 and team-led conversion ≥75% of founder-led | 75% / 50% / 45% / 40% at quarter-end (row 11) | The founder's goal (CA-04) and the price step both depend on trainers matching her | G1; KT-3 |
@@ -65,12 +65,12 @@ Stage definitions follow `admissions_funnel.md` §4: Lead (identifiable contact 
 | FUN-13 | Cost per QL, by paid cell | Spend ÷ QLs, per campaign cell | Ads platforms + CRM | PM | Weekly | MC1 ≤₹750 · GC2 ≤₹1,111 | G ≤ target · A ≤2× target · R >2× after minimum spend (≥3× target and ≥7 days), or 0 QLs after ₹5,000 | **KT-4** (kill the cell) | channel plan rows 8, 14 |
 | FUN-14 | **Media CAC per paid career enrolment** | Career-attributable paid media (70% of the budget, A-ECO-50) ÷ paid-route career enrolments (MC1 + GC2 + taster), trailing 8 weeks with ≥12 paid enrolments | Ads + CRM | GL | Weekly from Feb | Test level in Q1–Q2; plan ₹10.6k in M7–M12 | **G ≤₹9k · A ₹9–12k · R >₹12k** | **SG4**; G1 (green or amber) | methodology §3 #4; `Dashboard` |
 | FUN-15 | Route-level CAC | Media, reward or content cost ÷ enrolments, per route | Ads + CRM + accounts | GL | Monthly | CTWA ₹5.4k · Search ₹7.2k · Referral ₹3.0k (reward) · Taster ≤₹0 net · Organic ₹17.5k (content cost) | G ≤ target · A ≤2× · R >2× [REC] | BM G1: route CAC ≤12% of realised fee | funnel `Summary` (Base) |
-| FUN-16 | Fully loaded acquisition ÷ career revenue | (Media + growth team + tools + referral rewards + EMI subvention) ÷ career revenue booked | Accounts + CRM | GL | Monthly | Year 1 ≤40% (plan 49% in M7–M12); Year 2 ≤30% | G ≤40% · A 40–55% · R >55% [REC for A/R] | SG4 | methodology §3 #4; `Dashboard` |
+| FUN-16 | Fully loaded acquisition ÷ career revenue | (Media + growth team + tools + referral rewards + EMI subvention) ÷ career revenue booked | Accounts + CRM | GL | Monthly | Year 1 ≤40% (plan 49% in M7–M12; late case 55%); Year 2 ≤30% | G ≤40% · A 40–50% · R >50% | SG4 (`recommended_strategy.md` §7.1) | methodology §3 #4; `Dashboard` |
 | FUN-17 | CAC payback | Route CAC ÷ (first-course contribution ÷ payment months) | Model method on actuals | GL | Quarterly | ≤3 months (plan 0.3 route-level) | G ≤3 · A 3–6 · R >6 months for 2 quarters | G1; **KT-4** (cut the channel) | funnel `Summary`; A-ECO-34 |
 | FUN-18 | Taster conversion | Ticket → attend; attendee → enrolled ≤60 days | CRM + attendance | LT, C | Monthly | ≥82%; ≥13% | G ≥ target · A ≥75% / ≥10% · R below | — | A-GRO-22a–c (0.65 × 0.20) |
 | FUN-19 | Parent present at S1 counselling | S1 counselled with parent present ÷ S1 counselled | CRM | C | Monthly | ≥60% | G ≥60% · A 45–60% · R <45% [REC for A/R] | — | `admissions_funnel.md` §4 |
 | FUN-20 | Counsellor load | Conversations a day per counsellor | CRM | C | Weekly | ≤30 | G ≤30 · A 30–35 · R >35 [REC for A/R] | SG3 (hold spend above 30) | A-GRO-38 |
-| FUN-21 | Out-of-town share | Out-of-town QLs ÷ QLs; out-of-town enrolments ÷ career enrolments | CRM city field | GL | Monthly | Enrolments 25% (2.0 / 4.3 / 8.4 / 7.6 a quarter) | G ≥25% · A 15–25% · R <15% | G2: ≥20% of QLs and ≥15% of enrolments | A-GRO-37; row 35 |
+| FUN-21 | Out-of-town share | Out-of-town QLs ÷ QLs; out-of-town enrolments ÷ career enrolments | CRM city field | GL | Monthly | Enrolments 25% (2.0 / 4.7 / 8.3 / 7.6 a quarter) | G ≥25% · A 15–25% · R <15% | G2: ≥20% of QLs and ≥15% of enrolments | A-GRO-37; row 35 |
 | FUN-22 | Referral share | Referral-route career enrolments ÷ career enrolments | CRM entry codes | C | Monthly | ≥20% | G ≥20% · A 10–20% · R <10% [REC for A/R] | — | A-GRO-03d |
 | FUN-23 | Masterclass sell-through and seats | Seats sold ÷ seats offered; seats a quarter | Payment gateway | CE | Per launch | ≥80%; 3.4 / 30.6 / 57.8 / 61.2 seats | G ≥80% · A 65–80% · R <65% [REC for A/R] | Raise launch frequency only after two ≥80% launches | channel plan row 11; row 40 |
 | FUN-24 | Self-makeup seats | Seats sold a quarter | Payment gateway | C | Monthly | 37 / 45 / 28.5 / 49.5 | G ≥90% · A 70–90% · R <70% of target [REC] | — | row 41 |
@@ -80,7 +80,7 @@ Stage definitions follow `admissions_funnel.md` §4: Lead (identifiable contact 
 | ID | KPI | Definition / formula | Data source | Owner | Cadence | Target | G / A / R | Gate / trigger | Trace |
 |---|---|---|---|---|---|---|---|---|---|
 | DEL-01 | **Cohort fill** | Students enrolled at start ÷ 12 (batch cap) | CRM + timetable | LT | Per cohort | ≥75%; model assumes 10 of 12 (83%) | G ≥75% · A 50–75% · R <50% | **G1: 2 consecutive L3 cohorts ≥75%**; **KT-2:** <50% for 2 consecutive cohorts → freeze new fixed costs | A-BM-01; A-ECO-47 |
-| DEL-02 | Seat utilisation | Seats occupied ÷ (stations × slots), monthly average | Timetable | LT | Monthly | 42% / 90% / 90% / 83% (end of quarter) | G ≥ plan −5 pts · A −5 to −15 pts · R >15 pts below [REC]; **capacity flag** if waitlist ≥15% of seats | G2 ≥75% for 2 quarters; G3a ≥85% for 6 months | row 37; `geographic_expansion.md` §6 |
+| DEL-02 | Seat utilisation | Seats occupied ÷ (stations × slots), monthly average | Timetable | LT | Monthly | 42% / 80% / 90% / 84% (end of quarter) | G ≥ plan −5 pts · A −5 to −15 pts · R >15 pts below [REC]; **capacity flag** if waitlist ≥15% of seats | G2 ≥75% for 2 quarters; G3a ≥85% for 6 months | row 37; `geographic_expansion.md` §6 |
 | DEL-03 | Delivery-standard compliance | Batches ≤12; live-model sessions with students ≤ stations; practical ratio ≤1:6 | Timetable + audit | LT | Weekly | 100% | G 100% · R any breach | SG3 | `twelve_month_roadmap.md` §11.1 |
 | DEL-04 | **Completion** | Students with ≥80% attendance + assessment passed + ≥8-look portfolio ÷ students started | Attendance + assessment records | LT | Per cohort | ≥85% (model assumes 90%) | G ≥90% · A 85–90% · R <85% | G1; SG5; G2 (Destination ≥85%) | A-GRO-31 |
 | DEL-05 | **NPS** | End-of-course survey: % promoters − % detractors | Survey | LT | Per cohort | ≥50 | G ≥50 · A 35–50 · R <35 [REC for A/R] | G1; SG5 | `geographic_expansion.md` §6 |
@@ -109,12 +109,12 @@ Stage definitions follow `admissions_funnel.md` §4: Lead (identifiable contact 
 
 | ID | KPI | Definition / formula | Data source | Owner | Cadence | Target | G / A / R | Gate / trigger | Trace |
 |---|---|---|---|---|---|---|---|---|---|
-| FIN-01 | **Revenue (ex-GST)** | Fees booked ÷ 1.18 (GST-inclusive quotes), all products | Accounts | AC | Monthly | ₹5.53L / ₹12.72L / ₹23.85L / ₹23.79L (Year 1 ₹65.88L) | G ≥95% of plan · A 85–95% · R <85% [REC] | — | row 60 |
+| FIN-01 | **Revenue (ex-GST)** | Fees booked ÷ 1.18 (GST-inclusive quotes), all products | Accounts | AC | Monthly | ₹5.53L / ₹13.37L / ₹23.69L / ₹23.92L (Year 1 ₹66.51L) | G ≥95% of plan · A 85–95% · R <85% [REC] | — | row 60 |
 | FIN-02 | Career enrolments vs break-even | Career enrolments a month vs break-even at the current cost base | CRM + model | GL | Monthly | ≥6.5 a month from May (M7) | G ≥ plan · A between break-even and plan · R < break-even for 2 months | G1 (added check, `twelve_month_roadmap.md` §3) | `Dashboard` (step-1 fee) |
 | FIN-03 | L3 price realisation | Average realised L3 fee ÷ list fee | Accounts | AC | Monthly | Today's fee until step 1; then ₹66.7k realised on ₹75k list (≈89%) | G ≥89% · A 80–89% · R <80% [REC for A/R] | **KT-5** if conversion falls >20% after a step | A-ECO-160; row 47 |
 | FIN-04 | Contribution per career enrolment | (Career revenue − career variable cost) ÷ career enrolments | Accounts + CRM | AC | Monthly | ₹42.4k at M12 (step-1 fee); ₹50.2k after step 2 (Base) | G ≥₹42k · A ₹35–42k · R <₹35k (Conservative M12 ₹34.9k) | — | `Dashboard` |
-| FIN-05 | **EBITDA** | Revenue − variable cost − fixed opex (founder not charged; memo after ₹75k founder-role salary) | Accounts | AC | Monthly | −₹6.22L / −₹0.79L / +₹4.89L / +₹4.01L (Year 1 +₹1.89L; −₹7.11L after founder salary); first positive month May | G ≥ plan · A up to ₹1L below plan · R >₹1L below, or negative for 2 consecutive months from July [REC] | G2: flagship EBITDA-positive 2 quarters | row 95; A-ECO-138 |
-| FIN-06 | **Cumulative cash need vs tranche** | −(minimum cumulative cash position to date) vs the released tranche | Accounts | F, AC | Monthly | Tranche T1 ≤₹15L (plan ₹10.9L to M5); cumulative ≤₹30L (plan peak ₹28.8L; ≈₹25.6L with the July hybrid build) | G ≤ plan · A between plan and cap · R above the cap → stop spend | G1 ("cash within T1 cap"); T1 cash-cap review by M9 | rows 107–108; A-ECO-153 |
+| FIN-05 | **EBITDA** | Revenue − variable cost − fixed opex (founder not charged; memo after ₹75k founder-role salary) | Accounts | AC | Monthly | −₹6.22L / −₹0.50L / +₹4.75L / +₹4.13L (Year 1 +₹2.15L; −₹6.85L after founder salary); first positive month April | G ≥ plan · A up to ₹1L below plan · R >₹1L below, or negative for 2 consecutive months from July [REC] | G2: flagship EBITDA-positive 2 quarters | row 95; A-ECO-138 |
+| FIN-06 | **Cumulative cash need vs tranche** | −(minimum cumulative cash position to date) vs the released tranche | Accounts | F, AC | Monthly | Tranche T1 ≤₹15L (plan ₹11.0L to M5); cumulative ≤₹30L planned (plan peak ₹25.6L at end-April); ₹5L timing-only contingency on top (₹35L authorised) | G ≤ plan · A between plan and ₹28L · **R ≥₹28L (within ₹2L of the ₹30L line) → KT-11**: freeze discretionary spend; founder decides on the contingency. Read against actual cash (the model excludes tax, GST timing, working capital and founder draw) | G1 ("cash within T1 cap"); T1 cash-cap review by M9; **KT-11** | rows 107–108; A-ECO-153 |
 | FIN-07 | Variable cost per L3 student | Consumables/models + kit (before step 1) + gateway/EMI | Accounts | AC | Quarterly | ₹6k consumables; ₹12k kit before step 1 | G ≤ plan · A +10–25% · R >25% over [REC] (Sensitivity: variable cost ×1.25 tested) | — | A-BM-16; A-ECO-103 |
 | FIN-08 | CRM–accounts reconciliation | (CRM enrolments − accounts enrolments) ÷ accounts | CRM + accounts | AC | Monthly | Within ±5% | G ≤5% · A 5–10% · R >10% [REC for A/R] | SG1 | Growth §9 |
 | FIN-09 | EMI uptake and subvention | L3 enrolments on no-cost EMI ÷ L3 enrolments; subvention paid ÷ L3 revenue | Lender + accounts | AC | Monthly | 35%; 5% subvention | Track vs plan [REC] | — | A-GRO-35, -35b |
@@ -140,24 +140,24 @@ Stage definitions follow `admissions_funnel.md` §4: Lead (identifiable contact 
 
 | KPI | Q1 Nov–Jan | Q2 Feb–Apr | Q3 May–Jul | Q4 Aug–Oct | Year 1 | Late case (G1 at M9) | Source |
 |---|---|---|---|---|---|---|---|
-| **Career enrolments** (north star) | 8.0 | 17.3 | 33.8 | 30.3 | **89.3** | Q3 17.8; Q4 31.5; Year 74.5 | row 33 |
+| **Career enrolments** (north star) | 8.0 | 18.7 | 33.4 | 30.5 | **90.6** | Q3 21.9; Q4 31.5; Year 80.1 | row 33 |
 | Career leads a month [EST] | 54 | 107 | 143 | 143 | — | same | FUN-01 |
 | Median first reply | ≤15 min at G0; ≤5 from Jan | ≤5 min | ≤5 min | ≤5 min | — | same | SG2 |
 | Paid media a month | ₹15k / ₹15k / ₹40k | ₹50k / ₹60k / ₹60k | ₹80k / ₹1.0L / ₹1.0L | ₹1.0L | ₹8.2L | ₹60k to Jul; ₹1.0L from Aug (₹7.2L) | A-GRO-BUD; A-ECO-151 |
-| Media CAC per paid career enrolment | test | test | ≤₹9k (plan ₹10.6k) | ≤₹9k | — | plan ₹11.4k | `Dashboard` |
-| Fully loaded acquisition ÷ career revenue (M7–M12) | — | — | ≤40% (plan 49%) | ≤40% | — | plan 59% | `Dashboard` |
+| Media CAC per paid career enrolment | test | test | ≤₹9k (plan ₹10.6k) | ≤₹9k | — | plan ₹10.5k | `Dashboard` |
+| Fully loaded acquisition ÷ career revenue (M7–M12) | — | — | ≤40% (plan 49%, amber) | ≤40% | — | plan 55% (red) | `Dashboard` |
 | Masterclass seats | 3.4 | 30.6 | 57.8 | 61.2 | 153 | same | row 40 |
 | Self-makeup seats | 37 | 45 | 28.5 | 49.5 | 160 | same | row 41 |
 | Cohort fill | ≥75% | ≥75% | ≥75% | ≥75% | — | same | DEL-01 |
-| Seat utilisation (end of quarter) | 42% | 90% | 90% | 83% | — | Q3 90% in the studio (55–65% of demand fits) | row 37 |
+| Seat utilisation (end of quarter) | 42% | 80% | 90% | 84% | — | Q3 90% in the studio (67–78% of demand fits) | row 37 |
 | Completion / NPS | baseline | ≥85% / ≥50 | ≥85% / ≥50 | ≥85% / ≥50 | — | same | DEL-04/05 |
 | Google reviews | ≥15 | ≥30 at ≥4.5 | ≥40% of completers | ≥40% of completers | — | same | OUT-03 |
 | Founder share (end of quarter) | 75% | 50% | 45% | 40% | — | same | row 11 |
 | Certified educators (excl. founder) | 0 | 1 | 1 | 1–2 | — | same | FDR-07 |
 | L3 list / realised fee | today's fee (₹60k modelled) | today's fee | ₹75k / ₹66.7k | ₹75k / ₹66.7k | — | step 1 from Aug | row 47 |
-| Revenue (₹L) | 5.53 | 12.72 | 23.85 | 23.79 | **65.88** | Q3 14.70; Q4 24.35; Year 57.30 | row 60 |
-| EBITDA (₹L) | −6.22 | −0.79 | +4.89 | +4.01 | **+1.89** | Q3 +0.70; Q4 +4.50; Year −1.81 | row 95 |
-| Cumulative cash (₹L, end of quarter) | −9.52 | −25.58 | −25.06 | −21.34 | peak −28.84 (May) | −9.52 / −10.86 / −24.93 / −25.04; peak −28.24 (Aug) | row 107 |
+| Revenue (₹L) | 5.53 | 13.37 | 23.69 | 23.92 | **66.51** | Q3 16.63; Q4 24.38; Year 59.91 | row 60 |
+| EBITDA (₹L) | −6.22 | −0.50 | +4.75 | +4.13 | **+2.15** | Q3 +1.77; Q4 +4.52; Year −0.43 | row 95 |
+| Cumulative cash (₹L, end of quarter) | −9.52 | −25.62 | −21.50 | −17.58 | peak −25.62 (Apr) | −9.52 / −10.90 / −23.83 / −20.17; peak −23.83 (Jul) | row 107 |
 
 **Stop-loss reference (KT-10 / G1 red):** the ₹10L-plan cost base at Base rates delivers about 52 career enrolments, ₹39.8L revenue and +₹10.8L EBITDA a year (`Plan10L_BaseRates`). A Conservative trajectory (≈33 career enrolments, −₹13.0L EBITDA, ₹14.9L cash need) is the warning pattern to catch by M9 (methodology §1C #7).
 
@@ -168,7 +168,7 @@ Stage definitions follow `admissions_funnel.md` §4: Lead (identifiable contact 
 1. **Weekly:** any red on FUN-02 to FUN-06 (tracking and follow-up) **freezes media increases** that week (SG1/SG2). Any red on FUN-13 kills the paid cell (KT-4).
 2. **Spend gates:** SG1–SG5 are green only when all their KPIs are green for **4 consecutive weekly reviews**. Amber freezes media increases; red rolls media back to the last green level (`recommended_strategy.md` §7.1).
 3. **Stage gates:** the gate packs (§7) use the thresholds in the "Gate / trigger" column. A gate passes only if every listed criterion is green, except SG4, which may be amber at G1.
-4. **Kill/pivot triggers:** KT-1 (G0 by M4), KT-2 (DEL-01), KT-3 (DEL-06, FDR-04), KT-4 (FUN-13, FUN-17), KT-5 (FIN-03 with FUN-07/FUN-10), KT-6 (pop-ups), KT-7 (DEL-07, DEL-11), KT-8 (DEL-12), KT-10 (G1 red at M12) are checked at the monthly review and written into the decisions log.
+4. **Kill/pivot triggers:** KT-1 (G0 by M4), KT-2 (DEL-01), KT-3 (DEL-06, FDR-04), KT-4 (FUN-13, FUN-17), KT-5 (FIN-03 with FUN-07/FUN-10), KT-6 (pop-ups), KT-7 (DEL-07, DEL-11), KT-8 (DEL-12), KT-10 (G1 red at M12) and **KT-11 (FIN-06 cash warning)** are checked at the monthly review and written into the decisions log.
 5. **Re-basing:** in February the Growth Lead replaces the funnel priors (FUN-07 to FUN-11) with eight weeks of PNA data; the founder approves the new targets. Gate thresholds do not change without a decision recorded at a gate review.
 
 ---
