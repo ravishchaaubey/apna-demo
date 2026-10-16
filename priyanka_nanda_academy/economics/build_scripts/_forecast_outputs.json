@@ -1,0 +1,38 @@
+{
+ "Conservative": {
+  "y3_tri": 19.51,
+  "y3_reg": 3.4,
+  "y3_hyb": 4.63,
+  "y3_cpd": 5.84,
+  "y3_onl": 1.27,
+  "y3_adj": 2.0,
+  "y3_lrn_tri": 33.6,
+  "y3_lrn_reg": 7.4,
+  "y3_lrn_hyb": 8.0,
+  "baseline_rev_lakh": 6.71
+ },
+ "Base": {
+  "y3_tri": 70.9,
+  "y3_reg": 24.45,
+  "y3_hyb": 25.15,
+  "y3_cpd": 27.04,
+  "y3_onl": 11.43,
+  "y3_adj": 6.54,
+  "y3_lrn_tri": 92.3,
+  "y3_lrn_reg": 39.6,
+  "y3_lrn_hyb": 35.0,
+  "baseline_rev_lakh": 16.61
+ },
+ "Aggressive": {
+  "y3_tri": 104.57,
+  "y3_reg": 75.56,
+  "y3_hyb": 49.35,
+  "y3_cpd": 61.15,
+  "y3_onl": 33.88,
+  "y3_adj": 10.13,
+  "y3_lrn_tri": 97.5,
+  "y3_lrn_reg": 95.0,
+  "y3_lrn_hyb": 53.9,
+  "baseline_rev_lakh": 24.92
+ }
+}
