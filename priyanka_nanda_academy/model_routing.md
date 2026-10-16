@@ -18,5 +18,5 @@
 
 Note: the brief suggests 3–5 concurrent agents. Competitive intelligence was split into national and local because the local scan (incl. the client's own public footprint) is a distinct, large evidence task; six bounded agents avoids one overloaded agent rather than adding redundancy.
 | 7 | Growth & MarTech (positioning, funnel, channels, CRM) | opus | Gate B/C | strategy/positioning_and_segments.md, strategy/admissions_funnel.md, strategy/growth_marketing_strategy.md, execution/marketing_channel_plan.md, execution/technology_and_crm_requirements.md | dispatched |
-| 8 | Business Model & Expansion | opus | Gate B | strategy/business_model_evaluation.md, strategy/geographic_expansion.md | dispatched |
+| 8 | Business Model & Expansion | opus | Gate B | strategy/business_model_evaluation.md, strategy/geographic_expansion.md | done — 15 follow-up searches used; Lakmé/Airblack/B&WSSC fees unpublished |
 | 9 | Economics & Market Sizing | opus | Gate C | economics/*.xlsx, economics/assumptions_and_methodology.md, assumptions_register.md (consolidation) | dispatched |
