@@ -35,3 +35,4 @@ Note: the brief suggests 3–5 concurrent agents. Competitive intelligence was s
 | 9e | Economics final runs (CutM5_Deep, G1 pass month) | opus (resumed #9) | Gate E | economics/* | done — ₹25.4L deep-cut loss; G1 passable M7/M8 |
 | 11b | Roadmap Gate E re-base (G1@M9, ops lead owner, defects) | opus (resumed #11) | Gate E | execution/first_90_days.md, twelve_month_roadmap.md, kpi_framework.md | done — 8-weekly calendar adopted; strategy synced (§10 row 32) |
 | 14 | Executive Storyline (storyboard, deck sources, consistency table) | fable | Gate F | final/slide_storyboard.md, final/deck_sources.md | dispatched |
+| 12b | Independent Reviewer closure check (C1–C8) | fable (resumed #12) | Gate E | strategy/independent_review.md §8 | dispatched |
