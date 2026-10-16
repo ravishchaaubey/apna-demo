@@ -198,7 +198,7 @@ function defineLayouts(pres) {
         fontSize: 9, bold: true, charSpacing: 1.5, color: col("muted"), align: "right", valign: "middle",
         objectName: "Brand label" } } },
       { placeholder: { options: {
-        name: "title", type: "title", x: GRID.ML, y: GRID.titleY, w: GRID.CW, h: GRID.titleH,
+        name: "title", type: "title", objectName: "Title", x: GRID.ML, y: GRID.titleY, w: GRID.CW, h: GRID.titleH,
         fontSize: TYPE.title.size, color: col("aubergine"), valign: "top", align: "left", margin: 0 },
         text: "" } },
     ],
@@ -206,7 +206,7 @@ function defineLayouts(pres) {
       fontSize: TYPE.footer, color: col("muted"), align: "right", valign: "bottom", margin: 0 },
   });
 
-  // Section divider: aubergine, big numeral, title, optional subtitle.
+  // Section divider: aubergine, big numeral, title (subtitle is added under it by the deck builder).
   pres.defineSlideMaster({
     title: LAYOUT.section,
     background: { color: col("aubergine") },
@@ -216,17 +216,14 @@ function defineLayouts(pres) {
         x: GRID.ML, y: 0.5, w: 6, h: 0.3, margin: 0, fontSize: 10, bold: true, charSpacing: 2,
         color: hex("roseLight"), valign: "middle", objectName: "Brand label" } } },
       { placeholder: { options: {
-        name: "sectionNum", type: "body", x: GRID.ML, y: 2.05, w: 3, h: 1.0, margin: 0,
+        name: "sectionNum", type: "body", objectName: "Section number", x: GRID.ML, y: 2.05, w: 3, h: 1.0, margin: 0,
         fontFace: TYPE.head, fontSize: 54, color: hex("roseLight"), valign: "bottom", align: "left" },
         text: "" } },
       { placeholder: { options: {
-        name: "title", type: "title", x: GRID.ML, y: 3.2, w: 8.2, h: 1.5, margin: 0,
+        name: "title", type: "title", objectName: "Title", x: GRID.ML, y: 3.2, w: 8.2, h: 1.5, margin: 0,
         fontSize: TYPE.divider.size, color: col("paper"), valign: "top", align: "left" },
         text: "" } },
-      { placeholder: { options: {
-        name: "subtitle", type: "body", x: GRID.ML, y: 4.85, w: 7.6, h: 1.0, margin: 0,
-        fontSize: 16, color: hex("onDarkMuted"), valign: "top", align: "left" },
-        text: "" } },
+      // The divider subtitle is a text box placed under the title's last line (components.sectionDivider).
     ],
     slideNumber: { x: GRID.W - GRID.MR - 0.6, y: GRID.footerY + GRID.footerH - 0.26, w: 0.6, h: 0.26,
       fontSize: TYPE.footer, color: hex("onDarkMuted"), align: "right", valign: "bottom", margin: 0 },
@@ -242,15 +239,15 @@ function defineLayouts(pres) {
         x: GRID.ML, y: 0.6, w: 7, h: 0.32, margin: 0, fontSize: 11, bold: true, charSpacing: 2.5,
         color: hex("roseLight"), valign: "middle", objectName: "Brand label" } } },
       { placeholder: { options: {
-        name: "title", type: "title", x: GRID.ML, y: 2.0, w: 8.4, h: 2.2, margin: 0,
+        name: "title", type: "title", objectName: "Title", x: GRID.ML, y: 2.0, w: 8.4, h: 2.2, margin: 0,
         fontSize: TYPE.cover.size, color: col("paper"), valign: "bottom", align: "left" },
         text: "" } },
       { placeholder: { options: {
-        name: "subtitle", type: "body", x: GRID.ML, y: 4.4, w: 7.8, h: 0.9, margin: 0,
+        name: "subtitle", type: "body", objectName: "Subtitle", x: GRID.ML, y: 4.4, w: 7.8, h: 0.9, margin: 0,
         fontSize: 18, color: hex("roseLight"), valign: "top", align: "left" },
         text: "" } },
       { placeholder: { options: {
-        name: "meta", type: "body", x: GRID.ML, y: 6.2, w: 7.8, h: 0.6, margin: 0,
+        name: "meta", type: "body", objectName: "Cover meta", x: GRID.ML, y: 6.2, w: 7.8, h: 0.6, margin: 0,
         fontSize: 12, color: hex("onDarkMuted"), valign: "bottom", align: "left" },
         text: "" } },
     ],

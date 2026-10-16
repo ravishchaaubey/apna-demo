@@ -9,7 +9,7 @@
 
 const M = require("./font_metrics.js");
 
-const WIDTH_SLACK = 0.95; // wrap a little early: guards against kerning/rounding differences
+const WIDTH_SLACK = 0.97; // wrap a little early: guards against kerning/rounding differences
 const DEFAULT_W = 560; //    per-1000 width for characters missing from the table
 
 const LOG = [];
@@ -48,7 +48,7 @@ function lineHeight(size, font = "Calibri", bold = false, spacing = 1) {
 
 // Greedy word wrap, the way PowerPoint wraps. Returns the lines.
 function wrap(text, opts) {
-  const width = opts.width * WIDTH_SLACK;
+  const width = opts.width * (opts.slack || WIDTH_SLACK);
   const lines = [];
   for (const para of String(text).split("\n")) {
     const words = para.split(/ +/).filter((w, i, a) => w.length || a.length === 1);
@@ -90,8 +90,10 @@ function hasBrokenWord(text, opts) {
 /**
  * Largest size in [min, max] at which `text` fits a box.
  * @param {string} text
- * @param {object} o  { font, bold, w, h, max, min, step, spacing, charSpacing, maxLines, padX, padY }
+ * @param {object} o  { font, bold, w, h, max, min, step, spacing, charSpacing, maxLines, padX, padY, stable }
  *                     w/h are the box size in inches; padX/padY are the internal margins (each side).
+ *                     stable: skip sizes where the line count is borderline (differs between a tight and a
+ *                     loose wrap), so layouts that stack things under the text (titles) get a reliable count.
  * @returns {{size:number, lines:string[], height:number, fits:boolean}}
  */
 function fitText(text, o) {
@@ -101,6 +103,7 @@ function fitText(text, o) {
   const innerW = o.w - 2 * padX;
   const innerH = o.h - 2 * padY;
   let last = null;
+  let firstFit = null;
   for (let s = o.max; s >= o.min - 1e-9; s -= step) {
     const size = Math.round(s * 2) / 2;
     const m = { font: o.font, bold: o.bold, size, charSpacing: o.charSpacing || 0, width: innerW };
@@ -111,9 +114,13 @@ function fitText(text, o) {
     if (height > innerH + 1e-6) continue;
     if (hasBrokenWord(text, m)) continue;
     last.fits = true;
+    if (o.stable && wrap(text, { ...m, slack: 1.0 }).length !== wrap(text, { ...m, slack: 0.93 }).length) {
+      firstFit = firstFit || last;
+      continue;
+    }
     return last;
   }
-  return last;
+  return firstFit || last;
 }
 
 /**

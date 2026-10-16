@@ -31,7 +31,7 @@ Note: the brief suggests 3–5 concurrent agents. Competitive intelligence was s
 | 9d | Economics Gate E fixes (C1, C2, C3 cost, C4, C5) | opus (resumed #9) | Gate E | economics/* | done — planning case G1@M9; downside, payback/IRR, tornado on Staged; 92 checks pass |
 | 7c | Growth Gate E fixes (C6, C7, defects) | opus (resumed #7) | Gate E | own 5 files | done — Destination pilot Aug–Sep 2027; media ≈₹27.0L total (₹30L plan) |
 | 10d | Lead Strategist Gate E re-decision | fable (resumed #10) | Gate E | 3 strategy/summary files | done — plan ₹25.2L, authorise ₹35L, KT-1a March cut; G1 restated as station test |
-| 13 | Presentation Production — phase 1 (design system + component library) | opus | Gate F prep | final/presentation_source/{theme,components,demo_build}.js, README.md | dispatched (parallel with #10d; no content/numbers) |
+| 13 | Presentation Production — phase 1 (design system + component library) | opus | Gate F prep | final/presentation_source/{theme,components,demo_build}.js, README.md | done — 14 components, validate.py pass, 21 demo slides inspected |
 | 9e | Economics final runs (CutM5_Deep, G1 pass month) | opus (resumed #9) | Gate E | economics/* | done — ₹25.4L deep-cut loss; G1 passable M7/M8 |
 | 11b | Roadmap Gate E re-base (G1@M9, ops lead owner, defects) | opus (resumed #11) | Gate E | execution/first_90_days.md, twelve_month_roadmap.md, kpi_framework.md | dispatched |
 | 14 | Executive Storyline (storyboard, deck sources, consistency table) | fable | Gate F | final/slide_storyboard.md, final/deck_sources.md | dispatched |
