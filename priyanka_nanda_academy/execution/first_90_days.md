@@ -9,7 +9,7 @@
 
 **How to read this plan**
 - **Day 0 = Monday 19 Oct 2026 (M0). Day 90 = Sunday 17 Jan 2027.** Weeks run Monday to Sunday. Model months: M1 = Nov 2026, M2 = Dec 2026, M3 = Jan 2027.
-- **Costs are the Staged Plan run `Staged_G1M6`** (Base rates; Base-plan team from M1; ₹10L-plan capex and studio stations only until G1; paid media capped at ₹60k a month until G1, A-ECO-151). In M1–M3 it equals the Base plan plus ₹1.0L of basic theory recording in January (A-ECO-152). Spend in the last two weeks of October is booked to M1. Every ₹ figure cites a model line or an assumption ID; all figures are ex-GST.
+- **Costs are the Staged Plan run `Staged_G1M6`** (`economics/assumptions_and_methodology.md` §1A: Base rates; Base-plan team from M1; ₹10L-plan capex and studio stations only until G1; paid media ≤₹15k a month until G0 and ≤₹60k until G1, A-ECO-151). In M1–M3 it equals the Base plan plus ₹1.0L of basic theory recording in January (A-ECO-152). Spend in the last two weeks of October is booked to M1. Every ₹ figure cites a model line or an assumption ID; all figures are ex-GST.
 - **Canonical vocabulary** (`recommended_strategy.md` §6): ladder **L0–L5**; flagship **L3 Pro** (Professional Bridal Makeup Artist Programme) in **Weekday / Flex / Destination** formats; stage gates **G0, G1, G2, G3a, G3b**; spend gates **SG1–SG5**; kill/pivot triggers **KT-1…KT-10**; tranches **Tranche T1 Prove / T2 Build / T3 Extend / T4 Site**; paid tests **test T1–T8**; Meta campaigns **MC1–MC6**; Google campaigns **GC1–GC4**; roles Founder, Lead Trainer, Trainer, Assistant, Admissions Counsellor, Growth Lead, Content Executive, Academy Manager.
 - PNA's own numbers (enrolments, fees, space, enquiries) are **not yet known**. Every target is a planning prior until the founder data pull (D1) replaces it.
 
@@ -17,14 +17,14 @@
 
 ## 0. Summary
 
-1. **The 90 days build the machine; they do not buy growth.** The job is to see the funnel, answer every enquiry in minutes, publish fees and proof, start the first structured cohort and begin handing teaching to a Lead Trainer, all inside the Nov–Feb wedding season when the founder is busiest. Paid media stays at test level: ₹15k / ₹40k / ₹50k in Nov / Dec / Jan (A-GRO-BUD-01..03).
+1. **The 90 days build the machine; they do not buy growth.** The job is to see the funnel, answer every enquiry in minutes, publish fees and proof, start the first structured cohort and begin handing teaching to a Lead Trainer, all inside the Nov–Feb wedding season when the founder is busiest. Paid media stays at ≤₹15k a month until G0 (₹15k in Nov and Dec), then ₹40k in January when the paid tests start (A-GRO-BUD-01..03; channel plan §3.2 caps).
 2. **Top five priorities, in order** [REC]:
    1. **Founder decisions D1–D10 and the data pull** (days 0–14). Nothing can be calibrated without them (§1).
    2. **Admissions desk live:** Admissions Counsellor + WhatsApp Business API + CRM + SLA timers by day 20, so the <5-minute first reply holds from January (A-ECO-105 = M3). Missing it costs about +₹32k of media a month for the same enrolments [EST, funnel `Speed_to_Lead`].
    3. **Visibility and proof:** Google Business Profile verified (day 14); fee ladder at today's fee plus five core pages (L3, L2, Fees & EMI, For Parents, Student Work) by day 27; alumni survey out by day 20; first Alumni Outcomes Report published Sun 31 Jan.
    4. **Teaching hand-over begins:** Lead Trainer starts Tue 1 Dec (A-ECO-52 = M2); **first structured 12-week L3 Weekday cohort starts Mon 4 Jan**; PNA Method v1 signed off by day 88; founder share of contact hours falls from about 92% to 75% (`Staged_G1M6` row 11).
-   5. **Learn cheaply:** tests T1–T3 and T5, mystery shopping of 10 competitors, 15–20 interviews, the S5 self-makeup season and Masterclass #1 in January.
-3. **Cost (Staged Plan, M1–M3) [EST, `Staged_G1M6`]:** ₹11.6L of new growth spend (people ₹4.34L, media ₹1.05L, martech ₹0.54L, one-offs ₹2.70L, set-up and recording capex ₹2.50L, partnerships/PR/contingency ₹0.47L) plus ₹3.2L of running costs. Against ₹5.7L of revenue, the **net cash need to end-January is ₹9.97L**, inside **Tranche T1 (up to ₹15L, D3)**. The model's T1 cash need peaks at ₹11.4L in March, before G1.
+   5. **Learn cheaply:** a ₹5k click-to-WhatsApp plumbing test and brand search in November, test T3 (paid taster vs free session) from December, tests T1/T2 the week after G0, mystery shopping of 10 competitors, 15–20 interviews, the S5 self-makeup season and Masterclass #1 in January.
+3. **Cost (Staged Plan, M1–M3) [EST, `Staged_G1M6`; methodology §1A]:** ₹11.1L of new growth spend (people ₹4.14L, media ₹0.70L, martech ₹0.54L, one-offs ₹2.70L, set-up and recording capex ₹2.50L, partnerships/PR/contingency ₹0.47L) plus ₹3.2L of running costs. Against ₹5.5L of revenue, the **net cash need to end-January is ₹9.5L**, inside **Tranche T1 (up to ₹15L, D3)**. The model's cash need before G1 peaks at ₹10.9L in March (M5).
 4. **Exit test = G0 review on Friday 15 Jan 2027 (day 88)** (§7). G0 releases Tranche-T1 spend beyond foundations. If G0 is still red at end-February, KT-1 applies.
 5. **Not in the 90 days, and not before G1:** dedicated academy space, media above ₹60k a month, the second counsellor, the full hybrid content build, regional pop-ups. These are **Tranche T2 items** released only at G1 (window M6–M9, Apr–Jul 2027), prepared but not committed now (§5.3).
 
@@ -60,7 +60,7 @@ D-codes follow `recommended_strategy.md` §9.1; "a"-items are the operating deta
 | Admissions Counsellor | Consultative selling in Hindi/Punjabi/English; WhatsApp etiquette; CRM hygiene; parent handling | Mon 2 Nov (M1) | ₹25k incl. incentive | A-GRO-45, A-ECO-53 | Inbox, SLA, GBP posting and review replies, referral codes |
 | Assistant #1 | Studio assistant; hygiene; model co-ordination | Nov (M1) | ₹18k | A-BM-04c | Practical ratio ≤1:6; consumables; portfolio-day set-up |
 | Lead Trainer (academic head) | Senior bridal MUA with teaching experience; Hinglish delivery | Tue 1 Dec (M2) | ₹60k | A-BM-04a, A-ECO-52 | Shadow → co-teach; PNA Method write-up; taster delivery |
-| Video shooter/editor (freelance) | Short-form editing; before/after lighting; YouTube | Nov (M1) | ₹20k | A-GRO-47 | Proof library; portfolio-day shoots; theory recordings |
+| Video shooter/editor (freelance) | Short-form editing; before/after lighting; YouTube | Dec (M2); November shoots use the proof kit (A-ECO-136) | ₹20k | A-GRO-47, A-ECO-57d | Proof library; portfolio-day shoots; theory recordings |
 | Content Executive | Reels, Hinglish copy, community, consent handling, website copy | Dec (M2) | ₹35k | A-GRO-46, A-ECO-57a | Academy Instagram; SEO page drafts; Outcomes Report layout |
 | Performance-marketing freelancer | Meta CTWA + Flows, CAPI, Google Search, offline conversion import, test design; retainer, not % of spend | Dec (M2) | ₹20k | A-GRO-48, A-ECO-57b | Tracking (SG1); tests T1–T5; cost per QL |
 | SEO content freelancer | Hinglish SEO writing; schema | Jan (M3) | ₹15k | A-GRO-50, A-ECO-57c | SEO pages after the first four |
@@ -84,12 +84,12 @@ Type: **E** immediate experiment · **I** infrastructure · **S** scale-investme
 | W7 | Student / alumni interviews (15–20) | E | Growth Lead (interviewer); counsellor (scheduling) | ₹0 incremental (thank-you masterclass credit; delivery ≈₹1k/seat, A-ECO-42, inside A-ECO-58) | D1, D9 | Wave 1 (8–10) days 21–41; wave 2 (7–10) days 63–76; synthesis day 84 | 15–20 to quota; L3 willingness to pay asked at ₹75k and ₹90k list in every career interview | **Generates evidence:** all segment and funnel priors are [HYP] |
 | W8 | Curriculum codification: PNA Method v1 (+ basic theory recordings) | I | Founder (method owner, 40–60 h [EST]); Lead Trainer (write-up); shooter (technique clips) | **₹1.0L** basic recording of theory modules in January (A-ECO-152, Tranche T1) | D4, D6a, W9 | Module map + 8–12 named techniques day 34; v0.5 (core bridal modules: lesson plans + draft rubric) day 55; **v1 signed off day 88** | v1 covers all L2/L3 modules; founder and Lead Trainer rubric scores agree within one point on 10 sample looks [REC] | **Medium:** international founder-academy cases (S-INT-01/05/41) [CLAIM]; H3 [HYP] |
 | W9 | Trainer recruitment & train-the-trainer | I | Founder (selection, certification); Growth Lead (sourcing) | **₹1.74L** = Lead Trainer ₹60k × 2 (A-BM-04a) + Assistant ₹18k × 3 (A-BM-04c) | D5, W8 | Offer accepted day 34; **Lead Trainer starts Tue 1 Dec**; co-teaches from the 4 Jan cohort; teach-back assessment day 84 | Founder share ≤75% in January (model path); Lead Trainer passes teach-back on 6 core techniques [REC] | **Weak-medium:** trainer pay unsourced (A-BM-04 [HYP]); step-back is founder-stated (CA-04) |
-| W10 | Paid tests at ₹40–60k/month, behind spend gates | E | Performance freelancer; counsellor (follow-up quality) | **₹1.45L** = media ₹15k + ₹40k + ₹50k (A-GRO-BUD-01..03) + freelancer ₹20k × 2 (A-GRO-48) | W2 (SG1 green), W4, W13 creative | GC1 brand search day 28; tests T1/T2 in MC1 from Mon 23 Nov; T3 from day 49; T1 read-out day 84 | Cost per QL: MC1 CTWA ≤₹750, GC2 Search ≤₹1,111; kill at >2× target after minimum spend (KT-4); ≥150 leads or ≥40 QLs per T1 arm | **Weak:** CPL and conversion priors are vendor/US benchmarks (A-GRO [HYP]), which is why we test |
+| W10 | Paid tests behind spend gates: ≤₹15k/month to G0, then the ₹40–60k test level | E | Performance freelancer; counsellor (follow-up quality) | **₹1.10L** = media ₹15k + ₹15k + ₹40k (A-GRO-BUD-01..03) + freelancer ₹20k × 2 (A-GRO-48) | W2 (SG1 green), W4, W13 creative | GC1 brand search and ₹5k MC1 plumbing test from day 28; MC3 S5 campaign from day 35; test T3 from day 49; **tests T1/T2 in MC1 from Mon 18 Jan, the week after G0** (read-out early March) | Attribution verified on the plumbing test; cost per QL: MC1 CTWA ≤₹750, GC2 Search ≤₹1,111; kill at >2× target after minimum spend (KT-4); ≥150 leads or ≥40 QLs per T1 arm | **Weak:** CPL and conversion priors are vendor/US benchmarks (A-GRO [HYP]), which is why we test |
 | W11 | First Alumni Outcomes Report | I | Content Executive (survey, layout); Growth Lead (analysis); counsel review of claims | ₹0 incremental (outcomes/PR inside A-ECO-58) | D1, D9 | Survey out day 20; ≥30 responses day 70; draft day 88; **published Sun 31 Jan** | n ≥30 (≥30% response); n, dates and medians stated; zero income/placement promises | **Medium:** no player publishes cohort outcomes (S-NC §1) [FACT of absence]; it is half of proof gate 1 |
 | W12 | Credential exploration (B&WSSC) + legal + GST | I | Founder; chartered accountant; counsel | **₹1.5L** one-off (A-ECO-135, M3: B&WSSC alignment, legal for fee/refund/claims, accounting set-up) | D7, D8 | CA opinion day 21; refund/transfer policy and consent forms in use day 27; **B&WSSC enquiry lodged** (info@bwssc.in + Skill India portal) by day 76; decision memo by G1 | Enquiry lodged and consent forms in use (both G0 criteria) | **Medium:** fee-based route exists (S-BM-12, High) but fees are unpublished (S-BM-13) |
-| W13 | Founder content system | I | Content Executive + shooter; founder on camera | **₹1.30L** = shooter ₹20k × 3 (A-GRO-47) + Content Executive ₹35k × 2 (A-GRO-46) | D6a, D9 | Academy Instagram live day 34 with 15 Reels banked (G0 criterion); weekly founder recording block from day 14; YouTube live day 76 | Academy 5 Reels/week, founder 3/week, ≥2 Collab posts/week (channel plan rows 4–5); every asset carries a consent ID | **Medium:** founder brand is the conversion asset (H3; A-CUS-30 [HYP]) |
+| W13 | Founder content system | I | Content Executive + shooter; founder on camera | **₹1.10L** = shooter ₹20k × 2 (A-GRO-47, from M2, A-ECO-57d) + Content Executive ₹35k × 2 (A-GRO-46) | D6a, D9 | Academy Instagram live day 34 with 15 Reels banked (G0 criterion); weekly founder recording block from day 14; YouTube live day 76 | Academy 5 Reels/week, founder 3/week, ≥2 Collab posts/week (channel plan rows 4–5); every asset carries a consent ID | **Medium:** founder brand is the conversion asset (H3; A-CUS-30 [HYP]) |
 | — | Partnerships, PR, contingency | — | Growth Lead | ₹0.47L (₹15.8k × 3, A-ECO-58) | — | Referral codes live day 41 | Referral share of career enrolments tracked from day 41 | — |
-| | **Total new growth spend, M1–M3** | | | **₹11.6L** [EST: rows above; reconciles to `Staged_G1M6` M1–M3 people ₹4.34L + media ₹1.05L + martech ₹0.54L + A-ECO-58 ₹0.47L + one-offs ₹2.70L + capex ₹2.50L] | | | | |
+| | **Total new growth spend, M1–M3** | | | **₹11.06L** [EST: rows above; reconciles to `Staged_G1M6` M1–M3 people ₹4.14L + media ₹0.70L + martech ₹0.54L + A-ECO-58 ₹0.47L + one-offs ₹2.70L + capex ₹2.50L] | | | | |
 
 ---
 
@@ -103,15 +103,15 @@ Owners: **F** founder · **GL** Growth Lead · **C** Admissions Counsellor · **
 | 2 | 26 Oct–1 Nov (7–13) | GBP claim and verification; citations audit (Justdial, Sulekha, UrbanPro, WedMeGood, Lyfskills). Enquiry-log audit V2 begins. Consent forms drafted (DPDP notice, image consent). BSP onboarding: number, display name, templates submitted. Counsellor interviews; Lead Trainer interviews include a live practical on a model. Web developer briefed. Studio audit (D1 studio facts). | GL, IF, WD | D1 data received (day 10); templates submitted |
 | 3 | 2–8 Nov (14–20) | **Counsellor starts (Mon 2 Nov).** CRM configured (fields incl. city, format preference Weekday / Flex / Destination, founder-touch flag; stages; lost reasons; routing); 4-question WhatsApp Flow; SLA timers (5-min / 30-min escalation); CTWA attribution test; UTM and entry codes; counsellor trained (`admissions_funnel.md` §6–7). **GBP verified (day 14).** Alumni survey V4 and current-student NPS survey sent, with review ask. Mystery shopping starts (W6). Module map drafted with the Lead Trainer candidate. | IF, C, GL, CE | **CRM + Flow + SLA live (day 20)**; survey in field |
 | 4 | 9–15 Nov (21–27) | Website quick wins: WhatsApp sticky bar; **Fees & EMI page; L3, L2, For Parents and Student Work pages**; GA4/GTM events; Meta Pixel/CAPI; Google Ads conversions + offline import. Razorpay links (taster, self-makeup, ₹5,000 token); EMI partner application. CA opinion on GST (D8); refund/transfer policy to counsel; fee ladder signed (D7). Baseline sheet v1 (W1). Interview wave 1 begins. | WD, PM, F, CA, GL | **5 core pages live (day 27)**; baseline v1 |
-| 5 | 16–22 Nov (28–34) | **Academy Instagram live** (Highlights: Fees, Student Work, Parents, Visit); founder Collab posts; first portfolio-day shoot with a standard lighting rig; 15 Reels banked. GC1 brand search on. **SG1 tracking check**: a test lead shows `ctwa_clid` and a CAPI event; GA4 and offline import firing. This is the G0 instrumentation subset that must hold before media exceeds ₹15k a month. Lead Trainer offer accepted. Module map + 8–12 named techniques agreed. Mystery-shop fieldwork ends. | CE, SH, PM, F | Instagram live; **SG1 green → test budget released** |
-| 6 | 23–29 Nov (35–41) | **Phase 1 Test & Prove starts (Mon 23 Nov):** test T1 (CTWA + Flow vs instant form, ₹25k per arm over 4–5 weeks) and T2 (creatives) in MC1 tricity; MC3 S5 self-makeup campaign for the wedding season; GC2 course-intent Search (₹15k). Referral programme launched (codes to alumni; ₹3,000 per enrolled referee, A-GRO-34). Mystery-shop report. Citations consistent on ≥8 directories. | PM, C, GL | First cost-per-QL read; **mystery-shop report (day 41)** |
-| 7 | 30 Nov–6 Dec (42–48) | **Lead Trainer starts (Tue 1 Dec):** induction; observes every founder-taught session; writes up techniques with the founder (two 3-hour codification blocks a week, scheduled around bridal bookings). Content Executive and performance freelancer start (M2). Test T5 starts on Search traffic. First weekly dashboard published. **Intake calendar for Jan–Apr published** on the Fees page. | LT, F, CE, PM | Dashboard v1; T5 live; intake calendar |
+| 5 | 16–22 Nov (28–34) | **Academy Instagram live** (Highlights: Fees, Student Work, Parents, Visit); founder Collab posts; first portfolio-day shoot with the proof-kit lighting rig; 15 Reels banked. GC1 brand search on; ₹5k MC1 click-to-WhatsApp plumbing test. **SG1 tracking check**: the test lead shows `ctwa_clid` and a CAPI event; GA4 and offline import firing. Lead Trainer offer accepted. Module map + 8–12 named techniques agreed. Mystery-shop fieldwork ends. | CE, F, PM | Instagram live; **SG1 green; attribution verified** |
+| 6 | 23–29 Nov (35–41) | **Phase 1 Test & Prove starts (Mon 23 Nov) at ≤₹15k a month (pre-G0):** MC3 S5 self-makeup campaign for the wedding season; GC1 brand plus a small GC2 course-intent Search read. Referral programme launched (codes to alumni; ₹3,000 per enrolled referee, A-GRO-34). Mystery-shop report. Citations consistent on ≥8 directories. | PM, C, GL | First cost-per-lead read; **mystery-shop report (day 41)** |
+| 7 | 30 Nov–6 Dec (42–48) | **Lead Trainer starts (Tue 1 Dec):** induction; observes every founder-taught session; writes up techniques with the founder (two 3-hour codification blocks a week, scheduled around bridal bookings). Content Executive, shooter/editor and performance freelancer start (M2). Test T5 (fee shown vs gated) starts on GC2 traffic. First weekly dashboard published. **Intake calendar for Jan–Apr published** on the Fees & EMI page. | LT, F, CE, SH, PM | Dashboard v1; T5 live; intake calendar |
 | 8 | 7–13 Dec (49–55) | **First ₹999 Career Taster** (test T3 arm A; LT delivers with founder present) and first **online Parents & Students Info Session** (T3 arm B, Sunday 19:00). Interview wave 1 ends. **PNA Method v0.5** (core bridal modules). SG2 discipline check (median and P90 first reply; ≥5 touches in 14 days). | LT, C, F, GL | **v0.5 (day 55)**; T3 data starts |
 | 9 | 14–20 Dec (56–62) | **4 SEO pages** live (fees guide; "12 questions to ask any academy"; for parents; the PNA Method). Survey reminders. Masterclass #1 waitlist opens (WhatsApp keyword). Enrolment push for the 4 Jan L3 cohort and January L2 intake. Second taster. | CE, WD, C, LT | **4 SEO pages (day 62)** |
 | 10 | 21–27 Dec (63–69) | Interview wave 2 (parents, S2 career-switchers, S3 working artists, out-of-town, non-converters), using the vacation. YouTube channel set up. Space scan (preparation only, no commitment): 3 candidate premises against S-CHD-22 rent bands. | GL, CE, F | Wave 2 under way |
 | 11 | 28 Dec–3 Jan (70–76) | YouTube live with 2 long-form videos. **B&WSSC enquiry lodged.** Survey closes (≥30 responses). Cohort onboarding: welcome pack, batch WhatsApp group, kit list (optional). | CE, F, C | **B&WSSC enquiry (G0 item)** |
-| 12 | 4–10 Jan (77–83) | **First structured 12-week L3 Weekday cohort starts (Mon 4 Jan)**; LT co-teaches. **Masterclass #1** (January lean month; founder-led; 12–14 seats; self-serve payment). Basic theory recordings (₹1.0L, A-ECO-152) shot alongside v1. Survey analysis → Outcomes Report draft; counsel review. Test T1 read-out (keep CTWA + Flow unless the form wins by ≥20% on cost per QL). | F, LT, SH, CE, PM | Cohort 1 live; Masterclass #1 delivered; T1 decision |
-| 13 | 11–17 Jan (84–90) | **PNA Method v1 signed off**; LT teach-back against the rubric; G0 evidence pack; **G0 review Fri 15 Jan**; Feb–Apr plan (`twelve_month_roadmap.md` Q2). Outcomes Report final layout (publish Sun 31 Jan). | F, LT, GL | **G0 decision (day 88)**; PNA Method v1 |
+| 12 | 4–10 Jan (77–83) | **First structured 12-week L3 Weekday cohort starts (Mon 4 Jan)**; LT co-teaches. **Masterclass #1** (January lean month; founder-led; 12–14 seats; MC4 launch; self-serve payment). Basic theory recordings (₹1.0L, A-ECO-152) shot alongside v1. Survey analysis → Outcomes Report draft; counsel review. Test T1/T2 creative and Flow set-up ready to launch. | F, LT, SH, CE, PM | Cohort 1 live; Masterclass #1 delivered |
+| 13 | 11–17 Jan (84–90) | **PNA Method v1 signed off**; LT teach-back against the rubric; G0 evidence pack; **G0 review Fri 15 Jan**; if green, **tests T1 (CTWA + Flow vs instant form, ₹25k per arm) and T2 (creatives) go live in MC1 on Mon 18 Jan** at the January–February test budget (₹40k, ₹50k). Feb–Apr plan (`twelve_month_roadmap.md` Q2). Outcomes Report final layout (publish Sun 31 Jan). | F, LT, GL, PM | **G0 decision (day 88)**; PNA Method v1; T1/T2 live |
 
 **Cadence from week 3:** daily 10-minute counsellor huddle · Monday 30-minute funnel review (Growth Lead chairs, founder attends) · Friday 45-minute plan review (founder chairs; workstream RAG; decisions log). See `execution/kpi_framework.md` §5–6.
 
@@ -123,8 +123,9 @@ Owners: **F** founder · **GL** Growth Lead · **C** Admissions Counsellor · **
 
 | Experiment | Decision it informs | Cost | Read-out | Decision rule |
 |---|---|---|---|---|
-| Test T1: CTWA + Flow vs instant form → WhatsApp (H6) | Primary capture route | ₹25k per arm inside media (A-GRO-BUD-02/03) | Day 84 | Winner needs ≥20% lower cost per QL with QL→counselled no worse than −10 pts; else keep CTWA (`growth_marketing_strategy.md` §6.5) |
-| Test T2: proof vs founder vs fee-transparency vs "Day 1" creative | Creative for scale | ₹4–6k per creative inside media | Rolling | Pause at <50% of median CTR after 3,000 impressions, or cost per QL >₹1,500 after ₹3k |
+| Test T1: CTWA + Flow vs instant form → WhatsApp (H6) | Primary capture route | ₹25k per arm inside media (A-GRO-BUD-03/04), from Mon 18 Jan after G0 | Early March | Winner needs ≥20% lower cost per QL with QL→counselled no worse than −10 pts; else keep CTWA (`growth_marketing_strategy.md` §6.5) |
+| Test T2: proof vs founder vs fee-transparency vs "Day 1" creative | Creative for scale | ₹4–6k per creative inside media, from 18 Jan | Rolling | Pause at <50% of median CTR after 3,000 impressions, or cost per QL >₹1,500 after ₹3k |
+| MC1 plumbing test (₹5k) + GC1 brand search | Attribution works end to end before any test is trusted | ₹5k inside November media | Day 34 | SG1 green before any further MC1 spend |
 | Test T3: ₹999 Taster vs free online session | Route for S2 and undecided S1 | ₹15k per arm over 8 weeks | 60-day enrolments, end-Feb | Keep the arm with lower cost per enrolment; tie → taster |
 | Test T5: fee shown vs fee on WhatsApp | Fee-page policy | Inside Search media | ≥80 leads per arm, about 6 weeks | Keep "fee shown" unless cost per QL is >20% worse |
 | V7 SLA pilot (4 weeks of <5-min SLA + 5-touch cadence vs the V2 baseline) | Size of H7 | ₹0 | Day 62 | Staff to the SLA; feeds the A-GRO-24 penalty |
@@ -145,10 +146,10 @@ W1 baseline · W2 CRM, WhatsApp API, tracking, SLA · W3 GBP · W4 website and c
 
 | Investment | Staged-Plan timing (`Staged_G1M6`; late case `Staged_G1M9`) | Cost | Prepared in the 90 days | Released by |
 |---|---|---|---|---|
-| Media above ₹60k a month (to ₹1.0L) | From M7 May (late: M10 Aug); capped at ₹60k before G1 (A-ECO-151) | ₹1.0L/month (A-GRO-BUD-07..12) | Tests T1–T5; tracking | G1, with SG1–SG5 green |
+| Media above ₹60k a month | ₹80k in May, ₹1.0L from June (late case: ₹1.0L from Aug); capped at ₹60k before G1 (A-ECO-151) | A-GRO-BUD-07..12 | Tests T1–T5; tracking | G1, with SG1–SG5 green |
 | Dedicated academy space (~1,300 sq ft, 12 stations) | Fit-out in the G1 month, move at G1+1: Apr / May (late: Jul / Aug) | ₹14.72L: fit-out ₹10.40L (A-ECO-113 × A-ECO-121), 4 extra stations ₹1.20L (A-ECO-122), deposit ₹3.12L (A-ECO-123) | Studio facts (D1); premises long-list only | G1 |
 | Admissions Counsellor #2 (0.5 FTE), Assistant #2, front-desk coordinator | M7 (late: M10) | ₹12.5k + ₹18k + ₹18k a month (A-ECO-54, A-BM-04c, A-ECO-124) | SLA and load data | G1 |
-| Full hybrid pre-work content build + LMS | M7 in the model (late: M10); we recommend July (`twelve_month_roadmap.md` §4.3) | ₹3.5L (A-ECO-129); LMS ₹5k/month (A-ECO-127) | Basic recordings (₹1.0L, in T1) | G1 |
+| Full hybrid pre-work content build + LMS | M7 in the model (late: M10); we recommend July, after the first post-move cohorts pay in (`twelve_month_roadmap.md` §4.3; methodology §1A reading 3) | ₹3.5L (A-ECO-129); LMS ₹5k/month (A-ECO-127) | Basic recordings (₹1.0L, in T1) | G1 |
 | Regional pop-up pilots (2) | Jul and Sep (late: from Aug) | ₹52k per event (A-BM-06c); ≤₹2L in total | — | G1 |
 | Trainer #2 | Released at G1; hire timed to load (we recommend Aug 2027) | ₹38k/month (A-BM-04b) | — | G1 |
 | Academy Manager | Nov 2027 (M13) | ₹65k/month (A-ECO-125/126) | — | Year-2 plan |
@@ -163,29 +164,31 @@ W1 baseline · W2 CRM, WhatsApp API, tracking, SLA · W3 GBP · W4 website and c
 |---|---|---|---|---|---|
 | Trainers + assistant | 0.18 | 0.78 | 0.78 | 1.74 | A-BM-04a/c, A-ECO-52 |
 | Admissions Counsellor | 0.25 | 0.25 | 0.25 | 0.75 | A-GRO-45 |
-| Growth team and freelancers | 0.20 | 0.75 | 0.90 | 1.85 | A-GRO-46/47/48/50 |
-| Paid media | 0.15 | 0.40 | 0.50 | 1.05 | A-GRO-BUD-01..03 |
+| Growth team and freelancers (shooter, Content Executive and performance from Dec; SEO from Jan) | 0 | 0.75 | 0.90 | 1.65 | A-GRO-46/47/48/50; A-ECO-57a–d |
+| Paid media (≤₹15k until G0) | 0.15 | 0.15 | 0.40 | 0.70 | A-GRO-BUD-01..03 |
 | Martech stack | 0.18 | 0.18 | 0.18 | 0.54 | A-GRO-42 |
 | Partnerships, PR, contingency | 0.16 | 0.16 | 0.16 | 0.47 | A-ECO-58 |
 | One-offs: website (Nov); B&WSSC/legal/accounting (Jan) | 1.20 | 0 | 1.50 | 2.70 | A-GRO-49, A-ECO-135 |
 | Capex: CRM/BSP/GBP/proof kit (Nov); basic theory recording (Jan) | 1.50 | 0 | 1.00 | 2.50 | A-ECO-136, A-ECO-152 |
-| **New growth spend** | **3.82** | **2.52** | **5.27** | **11.61** | |
-| Running costs: academy rent share ₹35k, utilities ₹10k, admin ₹15k, delivery consumables and kits | 0.92 | 1.07 | 1.25 | 3.23 | A-ECO-118/119/134; row 71 |
-| Revenue (existing courses + S5 season + Masterclass #1) | 1.19 | 1.78 | 2.69 | 5.66 | row 60 |
-| EBITDA (capex excluded) | −2.04 | −1.80 | −2.83 | −6.68 | row 95 |
-| Instalment timing (fees received after booking) | −0.44 | −0.19 | −0.17 | −0.80 | row 105; A-ECO-34 |
-| **Net cash flow** | **−3.98** | **−1.99** | **−4.00** | **−9.97** | row 106 |
-| Cumulative cash vs Tranche T1 cap (₹15L) | −3.98 | −5.97 | −9.97 | headroom ₹5.0L | row 107 |
+| **New growth spend** | **3.62** | **2.27** | **5.17** | **11.06** | |
+| Running costs: academy rent share ₹35k, utilities ₹10k, admin ₹15k, delivery consumables and kits | 0.92 | 1.02 | 1.25 | 3.19 | A-ECO-118/119/134; `Staged_G1M6` row 71 |
+| Revenue (existing courses + S5 season + Masterclass #1) | 1.19 | 1.65 | 2.69 | 5.53 | row 60 |
+| EBITDA (capex excluded) | −1.84 | −1.64 | −2.73 | −6.22 | row 95 |
+| Instalment timing (fees received after booking) | −0.44 | −0.12 | −0.24 | −0.80 | row 105; A-ECO-34 |
+| **Net cash flow** | **−3.78** | **−1.76** | **−3.97** | **−9.52** | row 106 |
+| Cumulative cash vs Tranche T1 cap (₹15L, A-ECO-153) | −3.78 | −5.55 | −9.52 | headroom ₹5.5L | row 107 |
+
+The model's cumulative cash need before G1 reaches its T1 high of **₹10.88L in March (M5)**, ₹4.1L inside the ₹15L Tranche-T1 authorisation (methodology §1A).
 
 **Variants (same window, ₹ lakh) [EST, `Outlook_*`, `Plan10L_BaseRates`, `Staged_*`]**
 
 | Run | What differs in the 90 days | Opex + capex M1–M3 | Net cash M1–M3 |
 |---|---|---|---|
-| **Staged Plan** (`Staged_G1M6` and `Staged_G1M9` are identical to M5) | As above | 14.84 | −9.97 |
-| Base ₹30L plan, unstaged (reference) | No ₹1.0L recording in January | 13.84 | −8.97 |
-| ₹10L plan at Base rates (the KT-10 stop-loss cost base) | Counsellor from Jan at ₹20k; Lead Trainer 0.5 FTE from Jan; shooter only (₹12k); media ₹10k/₹25k/₹30k; set-up ₹0.5L; one-offs ₹1.0L | 6.75 | −2.97 |
-| Conservative (adverse rates + ₹10L plan) | As the ₹10L plan, with adverse rates | 6.88 | −5.36 |
-| Aggressive (favourable rates + ₹50L plan; **₹50L plan rejected for Year 1** at Gate D) | Space fit-out in January (₹19.0L incl. 8 stations and deposit) | 38.56 | −28.55 |
+| **Staged Plan** (`Staged_G1M6`; `Staged_G1M9` is identical to M5) | As above | 14.25 | −9.52 |
+| Base ₹30L plan, unstaged (reference) | No ₹1.0L recording in January | 13.25 | −8.52 |
+| ₹10L plan at Base rates (the KT-10 stop-loss cost base) | Counsellor from Jan at ₹20k; Lead Trainer 0.5 FTE from Jan; shooter only (₹12k); media ₹10k/₹15k/₹30k; set-up ₹0.5L; one-offs ₹1.0L | 6.65 | −2.87 |
+| Conservative (adverse rates + ₹10L plan) | As the ₹10L plan, with adverse rates | 6.77 | −5.27 |
+| Aggressive (favourable rates + ₹50L plan; **₹50L plan rejected for Year 1** at Gate D) | Space fit-out in January (₹19.0L incl. 8 stations and deposit) | 38.11 | −28.10 |
 
 ---
 
@@ -204,9 +207,9 @@ Criteria from `recommended_strategy.md` §7.1 (G0) with SG1–SG2 detail from `g
 | 7 | B&WSSC enquiry lodged; CA opinion on GST obtained | Done | Email/portal record; opinion letter | F |
 | 8 | Consent forms in use; alumni survey sent | In use / sent | Consent library; survey log | CE |
 
-**Also reported (not gating):** PNA Method v1; Outcomes Report draft (n ≥30); reviews (target ≥15); founder share (path 75% in January); test T1 read-out; mystery-shop and interview findings; cash vs Tranche T1 (model: ₹9.97L).
+**Also reported (not gating):** PNA Method v1; Outcomes Report draft (n ≥30); reviews (target ≥15); founder share (path 75% in January); plumbing-test and test-T3 read-outs; mystery-shop and interview findings; cash vs Tranche T1 (model: ₹9.5L at end-January).
 
-**If G0 passes:** Tranche-T1 spend beyond foundations continues: February media at ₹60k (A-GRO-BUD-04), the next L3 intake in the afternoon slot from March, monthly masterclasses.
+**If G0 passes:** tests T1/T2 go live in MC1 on Mon 18 Jan; Tranche-T1 spend beyond foundations continues: media ₹50k in February and ₹60k in March–April (A-GRO-BUD-04..06, the T1 cap), the next L3 intake in the afternoon slot from March, monthly masterclasses.
 **If G0 fails** (strategy rule): paid media held at ≤₹15k a month; no further hiring until the data pull and CRM exist; weekly review until green; re-review Fri 29 Jan. **KT-1:** if G0 is still not met by end-February (M4), the founder data pull becomes the only priority.
 
 ---

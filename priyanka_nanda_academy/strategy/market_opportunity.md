@@ -8,7 +8,7 @@
 
 ## 1. The one-paragraph answer
 
-India's paid, makeup-led training market is worth about **₹388 cr a year** at base (range ₹80–1,373 cr) [EST], serving roughly 56,800 learners. No published figure for this market exists; the number is our own bottom-up build and its width reflects unobserved fee mix and the share of beauty learners who choose makeup. The tricity (Chandigarh, Mohali, Panchkula) is about **₹3.27 cr and ≈730 learners** a year [EST], 0.84% of India. The market a Chandigarh-led academy can realistically serve without opening a second site, the **SAM core**, is about **₹7.8 cr** (tricity + regional students who travel + hybrid-willing students + working-artist refresher training), with a further **₹7.9 cr online layer** that is not in the plan. PNA's planned Year-3 training revenue, the **SOM**, is **₹1.89 cr incl. GST** at base (range ₹0.41–3.83 cr) [EST]: 23% of the SAM core and 13% of tricity makeup-led learners. The strategic reading: the tricity alone supports a ₹0.5–0.8 cr single-centre academy; anything larger must pull students from Punjab, Haryana, HP and J&K and sell repeat training to working artists.
+India's paid, makeup-led training market is worth about **₹388 cr a year** at base (range ₹80–1,373 cr) [EST], serving roughly 56,800 learners. No published figure for this market exists; the number is our own bottom-up build and its width reflects unobserved fee mix and the share of beauty learners who choose makeup. The tricity (Chandigarh, Mohali, Panchkula) is about **₹3.27 cr and ≈730 learners** a year [EST], 0.84% of India. The market a Chandigarh-led academy can realistically serve without opening a second site, the **SAM core**, is about **₹7.8 cr** (tricity + regional students who travel + hybrid-willing students + working-artist refresher training), with a further **₹7.9 cr online layer** that is not in the plan. PNA's planned Year-3 training revenue, the **SOM**, is **₹1.88 cr incl. GST** at base (range ₹0.41–3.83 cr) [EST]: 22% of the SAM core and 13% of tricity makeup-led learners. The strategic reading: the tricity alone supports a ₹0.5–0.8 cr single-centre academy; anything larger must pull students from Punjab, Haryana, HP and J&K and sell repeat training to working artists.
 
 ---
 
@@ -23,8 +23,9 @@ India's paid, makeup-led training market is worth about **₹388 cr a year** at 
 | 5 | Tricity as share of India base TAM | % | 0.37% | **0.84%** | 1.36% | [EST] |
 | 6 | **SAM core** (tricity + regional destination + hybrid + working-artist CPD) | ₹ cr/yr | 2.3 | **7.8** | 24.2 | [EST] |
 | 7 | SAM online layer (North-reachable) | ₹ cr/yr | 0.75 | **7.9** | 54 | [EST] |
-| 8 | **SOM:** PNA Year-3 training revenue (quoted incl. GST) | ₹ cr, FY ending Oct 2029 | 0.41 | **1.89** | 3.83 | [EST] |
-| 9 | SOM as % of SAM core; PNA share of tricity makeup-led learners (Year 3) | % | 17%; 7% | **23%; 13%** | 14%; 11% | [EST] |
+| 8 | **SOM:** PNA Year-3 training revenue (quoted incl. GST) | ₹ cr, FY ending Oct 2029 | 0.41 | **1.88** | 3.83 | [EST] |
+| 9 | SOM as % of SAM core; PNA share of tricity makeup-led learners (Year 3) | % | 17%; 7% | **22%; 13%** | 14%; 11% | [EST] |
+| — | Memo: PNA share of tricity makeup-led learners **today** (CA-01 ÷ reconciled learners; illustrative until the founder data pull) | % | 3% | **about 7%** | 12% | [EST] |
 
 Market sizes use quoted fees (GST-inclusive where the market quotes them that way). PNA's forecasts are ex-GST in the business forecast and grossed up by 18% for the SOM so that it is comparable with the market.
 
@@ -42,7 +43,7 @@ TAM   India paid makeup-led training tuition .............. ₹388 cr   (80–1,
           │   ├─ SAM-3 Hybrid beyond reach .............. ₹1.4 cr   (0.2–5.8)    8% hybrid-willing
           │   └─ SAM-4 Working-artist CPD ............... ₹1.2 cr   (0.4–2.5)    4,000 artists × 30% × ₹10k; scope extension (repeat buyers)
           └─ SAM-5 Online layer (North-reachable) ....... ₹7.9 cr   (0.8–54)
-               └─ SOM  PNA Year-3 training revenue ...... ₹1.89 cr  (0.41–3.83)  = 23% of SAM core; 13% of tricity learners
+               └─ SOM  PNA Year-3 training revenue ...... ₹1.88 cr  (0.41–3.83)  = 22% of SAM core; 13% of tricity learners
                     Today (illustrative, NOT actual) .... ₹0.20 cr
 ```
 
@@ -117,7 +118,7 @@ Each method's own compounded extremes for the tricity run from about 100 to 1,78
 2. **The regional layers are where growth lives, and they are the least evidenced.** SAM-2 to SAM-4 add ₹4.5 cr at base to the ₹3.3 cr tricity, on reach and participation shares that are hypotheses. They are therefore tested with CRM city tags, two pop-up pilots and one Destination pilot cohort before any regional spend (gate G2).
 3. **Delhi NCR is not in the SAM.** It has 7.4x the tricity's women aged 17–35 and 2.43x India's income, but rent is 3.5x, premium competitors publish ₹2.25–5.95L prices, and bridal prices (₹25k median) are no higher than Chandigarh's, so a graduate earns no more there. It is a Stage-3 online/hybrid market at most.
 4. **The online layer is real but not for now.** ₹7.9 cr of North-reachable online demand sits behind tiny tickets (₹499–2,999) and a cold national audience; PNA has no verified Instagram or YouTube presence. It becomes relevant when the owned audience exceeds ~50k engaged followers (gate condition).
-5. **SOM is a plan, not a prophecy.** ₹1.89 cr incl. GST in Year 3 assumes the enrolment target is hit, the price step lands and capacity is added at G1. The Conservative outcome is ₹0.41 cr. The gates in `strategy/recommended_strategy.md` §7 decide which path PNA is on by month 9.
+5. **SOM is a plan, not a prophecy.** ₹1.88 cr incl. GST in Year 3 assumes the enrolment target is hit, both price steps land and capacity is added the month after G1. The Staged Plan (G1 at M6), now the primary financial view, reaches the same Year-3 revenue as the unstaged Base bundle (₹165.5L ex-GST) while giving up about ₹4.9L of Year-1 EBITDA to the two-step price. The Conservative outcome is ₹0.41 cr. The gates in `strategy/recommended_strategy.md` §7 decide which path PNA is on by month 9.
 
 ---
 
@@ -128,6 +129,6 @@ Each method's own compounded extremes for the tricity run from about 100 to 1,78
 | "Tricity market ₹5.7 cr / 1,256 students" (CA-05) as the makeup market | ₹3.27 cr base (₹1.45–5.28), ≈730 learners, makeup-led |
 | "India market ₹800–1,500 cr" (chat-stage desk estimate) | ₹388 cr base (₹80–1,373 cr), CA-06 |
 | "PNA revenue about ₹0.3 cr today" | "Illustrative ₹19.6L quoted (₹16.6L ex-GST), not reported revenue" |
-| "PNA has 4% share today" | Not quoted until CA-01 is confirmed; Year-3 plan share 13% of tricity makeup-led learners |
+| "PNA has 4% share today" (CA-01 ÷ CA-05) | "About 7% of tricity makeup-led learners, illustrative (3–12%), until the founder's enrolment records are in"; Year-3 plan share 13% |
 | Beauty & Salon ₹76,141 cr, makeup products USD 1.5 bn, salon services USD 12.6 bn, wedding spend ₹6.5 lakh cr as "the market" | Context only, with the 0.5% note |
 | "3 crore jobs by 2030" | KPMG 26.3M total workforce by 2030 (model), 5.44M incremental training need 2022–30 |
