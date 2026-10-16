@@ -23,9 +23,12 @@ India's paid, makeup-led training market is worth about **₹388 cr a year** at 
 | 5 | Tricity as share of India base TAM | % | 0.37% | **0.84%** | 1.36% | [EST] |
 | 6 | **SAM core** (tricity + regional destination + hybrid + working-artist CPD) | ₹ cr/yr | 2.3 | **7.8** | 24.2 | [EST] |
 | 7 | SAM online layer (North-reachable) | ₹ cr/yr | 0.75 | **7.9** | 54 | [EST] |
-| 8 | **SOM:** PNA Year-3 training revenue (quoted incl. GST) | ₹ cr, FY ending Oct 2029 | 0.41 | **1.88** | 3.83 | [EST] |
+| 8 | **SOM:** PNA Year-3 training revenue (quoted incl. GST; all gates passed) | ₹ cr, FY ending Oct 2029 | 0.41 | **1.88** | 3.83 | [EST] |
 | 9 | SOM as % of SAM core; PNA share of tricity makeup-led learners (Year 3) | % | 17%; 7% | **22%; 13%** | 14%; 11% | [EST] |
+| — | Memo: Year-3 share of the **professional-programme tier only** (the tier PNA competes in; about 60% of learners by the A-IND-05 mix) | % | — | **about 20%** | — | [EST, reviewer; model line requested] |
 | — | Memo: PNA share of tricity makeup-led learners **today** (CA-01 ÷ reconciled learners; illustrative until the founder data pull) | % | 3% | **about 7%** | 12% | [EST] |
+
+Note on row 9's High column: the share falls (14%; 11%) because the High SAM and High tricity market grow faster than the High SOM, not because PNA shrinks. The Year-3 SOM is the planning case with all gates passed; without price step 2 and the gated layers it would be ₹108.8L ex-GST (`recommended_strategy.md` §3 Q7).
 
 Market sizes use quoted fees (GST-inclusive where the market quotes them that way). PNA's forecasts are ex-GST in the business forecast and grossed up by 18% for the SOM so that it is comparable with the market.
 
@@ -114,11 +117,11 @@ Each method's own compounded extremes for the tricity run from about 100 to 1,78
 
 ## 7. What the numbers mean for the strategy
 
-1. **The tricity is enough to start and not enough to finish.** At a 15–25% share, tricity tuition supports roughly ₹0.5–0.8 cr for one centre. PNA's Base plan reaches 13% of tricity makeup-led learners by Year 3 and a 26% revenue share, because its realised fee is about 1.8x the tricity average. Hypothesis H1 is supported at the ceiling, but capacity, visibility and founder hours bind first.
+1. **The tricity is enough to start and not enough to finish.** At a 15–25% share, tricity tuition supports roughly ₹0.5–0.8 cr for one centre. PNA's plan reaches 13% of all tricity makeup-led learners by Year 3 and a 26% revenue share, because its realised fee is about 1.8x the tricity average; against the professional-programme tier it actually competes in, the share is about 20% [EST, reviewer], at the top of the 10–30% single-centre band. **H1 binds at the plan's fee by Year 3 unless the out-of-town share is delivered.** For the first 12–18 months, capacity, visibility, founder hours and execution bind first.
 2. **The regional layers are where growth lives, and they are the least evidenced.** SAM-2 to SAM-4 add ₹4.5 cr at base to the ₹3.3 cr tricity, on reach and participation shares that are hypotheses. They are therefore tested with CRM city tags, two pop-up pilots and one Destination pilot cohort before any regional spend (gate G2).
 3. **Delhi NCR is not in the SAM.** It has 7.4x the tricity's women aged 17–35 and 2.43x India's income, but rent is 3.5x, premium competitors publish ₹2.25–5.95L prices, and bridal prices (₹25k median) are no higher than Chandigarh's, so a graduate earns no more there. It is a Stage-3 online/hybrid market at most.
 4. **The online layer is real but not for now.** ₹7.9 cr of North-reachable online demand sits behind tiny tickets (₹499–2,999) and a cold national audience; PNA has no verified Instagram or YouTube presence. It becomes relevant when the owned audience exceeds ~50k engaged followers (gate condition).
-5. **SOM is a plan, not a prophecy.** ₹1.88 cr incl. GST in Year 3 assumes the enrolment target is hit, both price steps land and capacity is added the month after G1. The Staged Plan (G1 at M6), now the primary financial view, reaches almost the same Year-3 revenue as the unstaged Base bundle (₹165.3L vs ₹165.5L ex-GST) while giving up about ₹4.9L of Year-1 EBITDA to the two-step price. The Conservative outcome is ₹0.41 cr. The gates in `strategy/recommended_strategy.md` §7 decide which path PNA is on by month 9.
+5. **SOM is a plan, not a prophecy.** ₹1.88 cr incl. GST in Year 3 assumes the enrolment target is hit, both price steps land, the regional engine passes G2 and capacity is added after G1. The planning case (G1 at M9) reaches ₹162.9L ex-GST in Year 3 with all gates passed; ₹54.1L of that (33%) sits behind price step 2 and the gated layers, and the base business without them is ₹108.8L at roughly zero EBITDA. The Conservative outcome is ₹0.41 cr. The gates in `strategy/recommended_strategy.md` §7 decide which path PNA is on by month 9.
 
 ---
 
