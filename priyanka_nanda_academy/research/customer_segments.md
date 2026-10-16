@@ -189,7 +189,7 @@ All inputs are [HYP] (A-CUS-01…04); arithmetic is [EST].
 | Trigger | Results/vacation, wedding-season exposure, peer success on Instagram | Instagram, word of mouth | Student | [HYP] | Always-on Reels of student transformations; seasonal campaigns May–Jul and Aug–Oct |
 | Explore | Follows MUAs/academies; watches tutorials; DMs "fees?" | Instagram, YouTube | Student | Instagram ad reach 414M; YouTube 491M [FACT, S-CUS-18] | Pin "Fees & batches" highlight; auto-reply that moves DM to WhatsApp |
 | Shortlist | Googles "makeup academy Chandigarh"; checks Maps reviews; compares 3–5 academies | Google Search/Maps, Instagram | Student (+ sibling) | 88% of Google users read reviews; only 3% trust them highly [FACT, S-CUS-43] | Google Business Profile with photos of student work, video reviews, fee range, WhatsApp button |
-| Validate | Asks fee, duration, kit, certificate, batch size, placement; wants to *see* work | **WhatsApp chat / call**, walk-in | Student + **parent** | >70% prefer messaging a business [FACT, S-CUS-14] | Fast human reply (<5 min); structured qualifying (Flows); send portfolio PDF and alumni proof |
+| Validate | Asks fee, duration, kit, certificate, batch size, placement; wants to *see* work | **WhatsApp chat / call**, walk-in | Student + **parent** | >70% prefer messaging a business [CLAIM, Meta-commissioned survey] | Fast human reply (<5 min); structured qualifying (Flows); send portfolio PDF and alumni proof |
 | Decide | Campus visit or demo; parents meet founder/trainer; safety and accommodation questions | Walk-in, demo/trial, video call | **Parents decide** | 35% rely on parents as main source [FACT, S-CUS-45] | "Parent visit" slot; parent info session online for S7; founder or senior trainer present |
 | Pay | Token or seat-hold, then fee or EMI | UPI, EMI partner | Parents | No-cost EMI offered by peers (Pearl/GrayQuest) [FACT, S-CUS-36/37] | Token amount, EMI options, transparent refund policy |
 | Onboard → Complete → Advocate | Kit, practice, portfolio shoot, first bookings | WhatsApp group, Instagram | Student | Nielsen: 88% trust recommendations from people they know [FACT, S-CUS-42] | Structured review and referral ask at portfolio day; alumni booking tracker |
@@ -197,7 +197,7 @@ All inputs are [HYP] (A-CUS-01…04); arithmetic is [EST].
 ### 5.2 Key insights with evidence
 
 1. **Messaging-first behaviour.**
-   - 86% of online Indians message a business weekly (global 66%). More than 70% prefer messaging to emailing, calling or visiting a website. 72% message businesses more since the pandemic [FACT – Kantar for Meta, 2022, S-CUS-14].
+   - 86% of online Indians message a business weekly (global 66%). More than 70% prefer messaging to emailing, calling or visiting a website. 72% message businesses more since the pandemic [CLAIM, Meta-commissioned survey].
    - More than 60% of WhatsApp users in India message a business each week, and click-to-message ad revenue in India doubled year-on-year [FACT – Meta Q3-2023 earnings call, S-CUS-15].
    - **Implication:** WhatsApp is where the counselling and the conversion happen. Website forms are a secondary capture path [EST]. This supports H6 directionally.
 2. **WhatsApp economics** [FACT, S-CUS-16]:
@@ -247,7 +247,7 @@ All inputs are [HYP] (A-CUS-01…04); arithmetic is [EST].
 | Google Search – Education & Instruction | CTR 7.56%, CPC $4.81, **CVR 13.14%, CPL $77.48** (all-industry CPL $66.69; Beauty CPL $39.25) | LocaliQ/WordStream, mostly US; updated 1 Jun 2026 | [FACT – Medium] | S-CUS-25 |
 | Landing-page conversion (median, all industries) | 6.6% | Unbounce 2024; 41k pages, 57M conversions | [FACT – Medium] | S-CUS-27 |
 | Webinar registrant → attendee | 55% (35% live + 24% on demand) | ON24 2022, B2B | [FACT – Medium] | S-CUS-23 |
-| Speed-to-lead (5 vs 30 min) | 21× qualification odds; 100× contact odds | US, 2007, 6 firms | [FACT – Medium] | S-CUS-20 |
+| Speed-to-lead (5 vs 30 min) | 21× qualification odds; 100× contact odds | US, 2007, 6 firms | [CLAIM, 2007 vendor study, US-only] | S-CUS-20 |
 
 **Caution.** The India figures are internally consistent with each other, with Meta CPL at roughly ₹150–800 and lead-to-enrolment at 3–12%. However, they all come from agencies and vendors with undisclosed methods. Use them only as **priors for [HYP] ranges**, and replace them with PNA's own data within 6–8 weeks of instrumenting.
 

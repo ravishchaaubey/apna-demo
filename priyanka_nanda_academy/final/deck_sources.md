@@ -229,3 +229,144 @@ No numbers. Status line: RS header; IR §1 (verdict). Tag legend: RS "Tags" line
 | Batch cap | ≤12; ≤1:6 practicals | A-BM-01; POS §5 D2 [HYP] |
 | "Contestable in a week" | judgement | RS §3 Q3 |
 | What PNA must not do | discounting, credential claims, placement promises | POS §3.2; S-NC-04/31 |
+
+### Slide 10 · Options scorecard with explicit "why not"
+
+| Number | Value | Source |
+|---|---|---|
+| Scorecard totals (Base / Growth / Founder weights) | Integrated 3.85/3.90/3.85; G 3.55/3.70/3.55; A 3.75/3.65/3.80; D 3.70/3.75/3.70; F1 4.10/3.80/4.15; Baseline 2.95/2.60/2.90 (KO-2); B4 2.60/2.80/2.55; C 2.55/2.75/2.50; H 2.45/2.55/2.40 (KO-1); B1 2.40/2.35/2.45; B2 2.25/2.45/2.15; I 1.90/2.00/1.90; B3 1.70/2.40/1.40 (KO-1/2); E 1.65/1.90/1.60 (KO-1/2) | BM §4 weighted scorecard (weights BM §2); knock-outs renamed KO-1/KO-2 in RS §6.2 |
+| Owned Ludhiana centre | ≈₹29L fixed/yr; −₹7.4L at 46 students; break-even 62; 11–21% of local paid learners | BF `BM_Unit_Economics` (B1); ECO §3 #9; A-BM-13; RS §3 Q4, §4.4; GEO §4.1 (local learner base 307–512) |
+| Marketplace | −₹932 per booking; LTV/CAC 0.35 | BF `BM_Unit_Economics` (E); ECO §5 #8 |
+| Franchise per unit | ≈₹2L/yr after support | BF `BM_Unit_Economics` (B3); RS §3 Q4 |
+| Urban Company | ~10 years to positive adjusted EBITDA; 22.75% of services revenue on onboarding | S-INT-12 (incorporated Dec 2014; FY25 +₹12 cr adj. EBITDA); S-INT-11 (onboarding ₹158 cr = 22.75%) |
+| Blow LTD | liquidated 2024, dissolved Jan 2026 | S-INT-25 |
+| Delhi NCR rent vs Chandigarh | ₹167 vs ₹47/sq ft (3.5x) | S-CHD-22 |
+| Bridal median NCR = Chandigarh | ₹25k | S-CHD-12/13 |
+| Chain franchisee | ₹30–60L; 15%+ royalty | S-NC-07; S-BM-08 |
+| ₹50L plan at Base rates | ₹99.3L; −₹3.0L; ₹44.2L | BF `Plan50L_BaseRates`; ECO §1B row 21 |
+| Conversion ±20% worth | ₹12.6L | BF `Flex_conv_*` on `Staged_G1M9`; ECO §1A.5 |
+| Government scheme | ≈₹8k per candidate; makeup-QF placement "NA" | S-CHD-25; S-CUS-10/11; BM §6.4 |
+
+### Slide 11 · Recommended model
+
+| Number | Value | Source |
+|---|---|---|
+| Flagship components | ladder, PNA Method, counsellor funnel + EMI, studio practicum, ≤12, published outcomes | RS §4.1; POS §4.2, §6 |
+| Destination format | 4 weeks live-online + 5–6 weeks in Chandigarh; price parity | RS §4.2, §6.1; ECO §3 #2 |
+| Pilot | 6 students, Aug–Sep 2027 | A-ECO-161; ECO §1A |
+| Living-cost saving | ₹33–54k → ₹17–28k | A-BM-12; GEO §4.2; RS §4.2 |
+| Founder share path | ≤50% M6, ≤40% M12, ≤30% M18, ≤15% M24, ≤10% M36 | A-BM-10b/c/d-G (Gate D founder path); RS §1 (6), §9.1 D6 |
+| Brand architecture | masterbrand, Method, Certified Educator, Alumni, Pro Circle, Studio | POS §4.2; RS §6.4 |
+| Pro Circle paid conversion threshold | ≥150 active alumni | RS §4.3, §6.1 |
+
+### Slide 12 · Geographic sequence and gates
+
+| Number | Value | Source |
+|---|---|---|
+| Stage windows | Stage 1 M0–18; G1 end-Jul 2027; G2 Jan–Apr 2028; G3a ≥M24; G3b ≥M30–36 | GEO §1; RS §6.2 |
+| Gate thresholds (headline) | as listed | RS §7.1; GEO §6 |
+| Indifference rules | owned beats destination only >69 local when 10 travel; partner needs >2.4x N_dest | ECO §3 #9 (vs GEO §4.1 55 / 1.7x, superseded) |
+| Owned Ludhiana | ≈₹29L fixed; −₹7.4L at 46; break-even 62 | A-BM-13; BF `BM_Unit_Economics`; RS §3 Q4 |
+| Delhi NCR pool and income | 7.4x tricity pool (3,464k vs 471k women 17–35); 2.43x income | S-CHD-01 (pool est.); S-CHD-06; GEO §2 |
+| NCR rent | 3.5x (₹167 vs ₹47) | S-CHD-22 |
+| Bridal medians | Chd ₹25k; Mohali ₹20k; Ludhiana ₹21k; Amritsar ₹25k; Patiala ₹15k; Shimla ₹15k | S-CHD-12/13 |
+| Travel times | Ludhiana ~2 h; Jalandhar 2.5–3 h; Amritsar 4–4.5 h; Patiala ~1.5 h; Ambala ~1 h; Shimla ~3 h 15; Jammu 6–7 h; NCR 4–5 h | GEO §2 (S-CHD §4; [FACT] where marked) |
+| City pools | Ludhiana ~256k; Jalandhar ~138k; Amritsar ~184k; Patiala ~64k; Jammu ~126k (unverified A-BM-14) | GEO §2 |
+| Mao Geping | 9 campuses in 24 years | S-INT-01 |
+| Aveda | moved to licensed-operator model | S-INT-32 |
+| Partner-site capex / revenue share | ₹2–5L per site; 20–30% | GEO §1, §4.1; A-BM-19 |
+
+### Slide 13 · Programme ladder and positioning
+
+| Number | Value | Source |
+|---|---|---|
+| L1 Career Taster | ₹999, 3 h, credited 100% within 30 days | A-GRO-04; RS §6.1 |
+| L1-S5 Self-Makeup | ₹4,999, 2 × 3 h | A-GRO-08; RS §6.1 |
+| L2 Foundation | ₹39,900, 4 weeks ~80 h, credited 100% to L3 within 6 months | A-GRO-05; RS §6.1 |
+| L3 Pro | ~280–300 h; Weekday 12 w / Flex ~20 w / Destination 4 + 5–6 w; today's fee → ₹75,000 list (M10) → ₹90,000 list (M16); ₹80k realised | A-GRO-06; A-ECO-160; A-ECO-106 (step 2 month); A-BM-02; RS §6.1, §7.2 |
+| Optional kit | ₹18–25k (A-ECO-170 ₹25k) | A-ECO-170; RS §6.1 |
+| L4 Masterclasses | ₹4,999–19,999, avg ₹10,000; 12–16 seats | A-GRO-07; RS §6.1; POS §6 |
+| L5 Pro Circle | ₹9,999/yr; free first year for L3 graduates | A-GRO-09; RS §6.1 |
+| Intake dates 2027 | 4 Jan, 1 Mar, 12 Apr, 24 May, 5 Jul, 16 Aug, 27 Sep (6-weekly); post-move 8-weekly | A-ECO-164/165; RS §6.1, §7.1 |
+| All-in cost | today ₹0.67L; step 1 ₹0.82L; step 2 ₹0.97L / ₹1.17L; Destination ₹1.13L / ₹1.33L | BF `Unit_Economics` all-in block; ECO §1C #6; A-BM-12a/b; A-ECO-171/172 |
+| Price anchors | local ₹35–75k; Zuri advanced ₹80k–1.2L; AAFT ₹80k; Lakmé ₹1.3–1.5L | S-LC §6; S-LC-13; S-NC-42; S-NC-02 |
+| Step-1 / step-2 evidence conditions | Outcomes Report n≥30; ≥30 reviews ≥4.5; gallery; hours; step-1 conversion within −15% | RS §7.2 |
+| Rollback trigger | >20% fall in QL rate or counselled→applied | RS §7.3 KT-5 |
+
+### Slide 14 · Admissions funnel
+
+| Number | Value | Source |
+|---|---|---|
+| Stage volumes, Base month | 143 → 65.9 → 37.8 → 12.2 → 10.0 → 9.0 completed; ≈4.1 reviews | FE `Funnel_Base`; AF §10.1 (rates A-GRO-18..22, mix A-GRO-03, completion A-GRO-31 90%, reviews A-GRO-32 45%) |
+| Route leads | CTWA 56.8; Search 28.9; Organic 39.9; Referral 8.0; Taster 9.4 tickets | FE `Funnel_Base`; AF §10.1 |
+| Media and rewards | ₹35,265 + ₹6,000 | AF §10.1 |
+| SLA | auto-reply ≤1 min; median <5 min; P90 <30 min; ≥90% in 1 h; ≥5 touches/14 days; counselling within 48 h | AF §5.1–5.2; GMS §9 SG2 |
+| Parent present | ≥60% of S1 visits | AF §4 stage 4 |
+| Token | ₹5,000 | A-GRO-39; AF §8.2 |
+| EMI subvention | 3–7% | A-GRO-35b [HYP]; AF §8.2 |
+| Speed-to-lead cost | +₹32k/month or −2.3 enrolments | FE `Speed_to_Lead`; ECO §1B row 25; A-GRO-24 (0.67 factor) |
+| Speed-to-lead evidence | 21x at 5 vs 30 min (2007 vendor study, US) | S-CUS-20 [CLAIM]; S-CUS-22 |
+| Messaging preference | >70% prefer messaging (Meta-commissioned) | S-CUS-14 [CLAIM] |
+| CTWA free window | 72 h | S-CUS-16 |
+| Flows case | 4x QLs, −31% cost per QL (vendor case) | S-CUS-17 |
+| Refund policy | token refundable to 14 days before start; one transfer; pro-rata week 1 | AF §8.2 [HYP, counsel to review] |
+
+### Slide 15 · Growth engine
+
+| Number | Value | Source |
+|---|---|---|
+| Phases and dates | 0: 19 Oct–22 Nov 2026; 1: to 28 Feb 2027; 2: Mar–Jul; 3: Aug–Oct | GMS §1.1; RS §6.3 |
+| Media caps | ≤₹15k to G0; ≤₹60k to G1 | A-ECO-151; RS §5, §7.1 |
+| Media ramp | 15·15·40·50·60·60·60·60·60·80·100·100 ₹k = ₹7.0L | MCP §3.2 row B; A-GRO-BUD-01..12; BF `Staged_G1M9`; ECO §1A |
+| Spend gates | SG1–SG5, four green weeks | GMS §9; RS §7.1 |
+| Route mix target | CTWA 30 · Search 20 · Organic 20 · Referral 20 · Taster 10% | RS §3 Q6 [HYP]; A-GRO-03 |
+| Seasonality index | 0.80·0.75·0.70·0.80·0.90·1.00·1.30·1.35·1.25·1.10·1.05·1.00 | A-GRO-40 / A-CUS-29; GMS §1.2 |
+| Wedding-season dates | 1 Nov–14 Dec 2025 (CAIT) | S-CUS-13; S-IND-10 |
+| Pop-up pilots; online masterclass pilot | ≤₹2L; ≤₹1L | RS §4.2, §4.3 (caps are decisions) |
+| Outcomes Report date | 31 Jan 2027 | GMS §1.1; F90 W11 |
+
+### Slide 16 · Website, CRM and analytics blueprint
+
+| Number | Value | Source |
+|---|---|---|
+| Stack layers | website, BSP, CRM 3 seats, telephony, analytics, payments, booking, no LMS | TECH §1 |
+| Run-rate | ≈₹8,000 / ≈₹19,800 / ≈₹35,900 per month incl. GST | TECH §4; A-GRO-42 |
+| Component prices | AiSensy Basic ₹1,500 / Pro ₹3,200 / Premium ₹9,100; TeleCRM ₹599/user; Zoho Professional ₹1,400/user; MyOperator ₹1,249–1,250; hosting ≈₹650 | S-GRO-02; S-GRO-05; S-GRO-06; S-GRO-08; S-GRO-12 |
+| Message fees | ₹0.86–1.09 marketing; ₹0.115–0.145 utility | S-GRO-02/04 |
+| Website rebuild | ₹1.2L | A-GRO-49; F90 W4 |
+| Integration set-up | ₹15–40k | TECH §4 one-offs |
+| Gateway cost | 2% + GST; cardless EMI ≈3% + GST | S-GRO-09; A-GRO-41 |
+| SG1 thresholds | ≥95% source tags; CRM vs accounts ±5% | GMS §9 SG1; TECH §8 |
+| Attribution rules | first touch for CAC; last touch before QL for optimisation | TECH §8 |
+| Weekly one-pager widgets | as listed | TECH §9.1 |
+| Five core pages | L3, L2, Fees & EMI, For Parents, Student Work | F90 W4; RS §9.2 |
+
+### Slide 17 · Channel funnel economics
+
+| Number | Value | Source |
+|---|---|---|
+| Route table (leads, cost per QL, media CAC) | CTWA 56.8 / ₹750 / ₹5,682; Search 28.9 / ₹1,111 / ₹7,234; Organic 39.9 / — / ₹0; Referral 8.0 / — / ₹3,000; Taster 9.4 / ₹400 / ₹3,752 (≈−₹5.6k net); total ₹5,878 (6 paid) | FE `Funnel_Base`; AF §10.1 (A-GRO-10/12/13/14/15 CPLs; A-GRO-34 reward ₹3,000) |
+| Rate-set comparison | Conservative ≈257 leads, ≈₹1,10,700, ≈₹18,450; Base 143, ≈₹35,300, ≈₹5,880; Aggressive ≈89, ≈₹12,500, ≈₹2,080 | FE `Summary` / `Funnel_Conservative` / `_Aggressive`; AF §10.2 |
+| Route-level career media needed | ₹37.6k/month | ECO §1A.7, §3 #7 |
+| Calibration factor | A-ECO-51 = 2.42 (= ₹70,000 ÷ ₹28,956) | ECO §1A.7 |
+| Effective media CAC M7–12 | ₹11.7k planning; ₹11.1k upside; ₹10.7k Base; ₹34.3k Conservative | BF `Staged_G1M9` row 134 (corrected KPI), `Dashboard` rows 23–24; ECO §1A.7 |
+| Fully loaded acquisition M7–12 | 53% planning (red); 49% upside; 42% Base | BF `Dashboard` row 25; ECO §1A, §3 #4 |
+| SG4 thresholds | ≤₹9k / ₹9–12k / >₹12k; ≤40% / 40–50% / >50% | RS §7.1; ECO §3 #4 |
+| ₹70k/month option | −7.1 enrolments; −₹0.5L EBITDA | BF `Flex_media_lo` (×0.7); ECO §1A.7 |
+| Steady-state ₹1.0L split | 32 / 15 / 8 / 18 / 22 / 5 ₹k | MCP §1 (3), §2 rows 8–15, §3.1 |
+| Growth team + martech ≈1.5x media | ₹9.75L + ₹2.36L vs ₹8.2L (M6 case) | IR RT-07; RS §3 Q6 ("about 1.5x") |
+
+### Slide 18 · Programme unit economics
+
+| Number | Value | Source |
+|---|---|---|
+| L3 at today's fee | ₹60k incl. kit; ₹22.2k (44%); break-even 67% (8 of 12) | BF `Unit_Economics`; ECO §1B rows 11–12; CA-02; A-ECO-103 (kit cost ₹15k pre-step) |
+| L3 at step 1 | ₹75k list, ₹66.7k realised; ₹39.6k / ₹32.0k; 38% | BF `Unit_Economics` column J; ECO §1C #2; A-ECO-160 |
+| L3 at step 2 | ₹80k realised (₹67.8k ex-GST); ₹50.4k (74%) / ₹42.8k; 30% (3.6 of 12) | BF `Unit_Economics`; ECO §1B rows 10, 12; A-BM-02 |
+| Variable cost inputs | consumables ₹7,000 (A-BM-16 Base); kit; trainer standard cost; gateway; EMI subvention | ECO §4.2; A-BM-16; A-GRO-35b/41 |
+| Career student funnel view | ₹41.8k / ₹50.5k / ₹6.3k / 8.0x (Base); Cons ₹7.9k / ₹10.9k / ₹13.1k / 0.8x; Aggr ₹59.9k / ₹78.1k / ₹2.8k / 27.6x | FE `Summary`; ECO §1B row 13 |
+| Break-even career enrolments | 7.8/month (94/yr) planning; 5.5 (66) Base; 4.4 (52) Conservative | BF `Staged_G1M9` / `Outlook_*` KPI rows; ECO §1A, §1B row 14 |
+| GST swing | ₹10.9L planning; ₹12.7L Base | BF `Flex_gst_*`, `Sensitivity`; ECO §1A.5, §5 #2 |
+| GST status | no exemption for private non-recognised training; ₹20L registration threshold | ECO §5 #2 (GST Council flyer [FACT]; statute not re-verified) |
+| Founder teaching replacement cost | ≈₹10L Y1; ₹17–19L/yr Y2–3; ≈₹8L/yr academy manager | ECO §5 #6; A-ECO-125 (₹65k/month), A-ECO-218 |
+| Step-back affordability | ≈5.5+/month after full step; 7.8 at step-1 fee on M12 base | ECO §5 #6, §1A |
