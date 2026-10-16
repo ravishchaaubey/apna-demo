@@ -262,17 +262,20 @@ def outlook(wb, name, A, rate_idx, plan_idx, label, flex=None):
 
     S.sec("B. Career enrolments (L2 + L3) - demand, budget and capacity")
     S.row("base", "Today's career enrolments per month (CA-01 x A-ECO-101 / 12) - illustrative", lambda m, c: f"{p('CA-01')}*{p('A-ECO-101')}/12", FMT_2DP, total="sum")
-    S.row("tgt", "Plan target path (ramps to A-GRO-01 by month 7)", lambda m, c: f"{c}{S.R['base']}+({p('A-GRO-01')}-{c}{S.R['base']})*MIN(1,({m}-1)/6)", FMT_2DP)
+    paidmix = f"({p('A-GRO-03a')}+{p('A-GRO-03b')}+{p('A-GRO-03e')})"
+    S.row("npt", "Non-paid enrolment path (organic + referral): today's engine ramping to A-GRO-01 x non-paid mix by M7",
+          lambda m, c: f"{c}{S.R['base']}+({p('A-GRO-01')}*(1-{paidmix})-{c}{S.R['base']})*MIN(1,({m}-1)/6)", FMT_2DP)
+    S.row("pt", "Paid-route enrolment target path (CTWA + Search + Taster; 0 today -> A-GRO-01 x paid mix by M7)",
+          lambda m, c: f"{p('A-GRO-01')}*{paidmix}*MIN(1,({m}-1)/6)", FMT_2DP)
+    S.row("tgt", "Plan target path (sum; reaches A-GRO-01 by month 7)", lambda m, c: f"{c}{S.R['npt']}+{c}{S.R['pt']}", FMT_2DP)
     bud1 = A.rows["A-GRO-BUD-01"]
     S.row("bud", "Paid media budget (Growth ramp)", lambda m, c: f"INDEX(Assumptions!$C${bud1 + m - 1}:$E${bud1 + m - 1},$D$3)*{budx}", FMT_INT, notetxt="A-GRO-BUD-01..12")
     S.row("ecac", "Effective paid CAC = funnel paid CAC x overhead factor x CPL flex / conversion flex", lambda m, c: f"{p('A-ECO-FUN-01')}*{p('A-ECO-51')}*{cpl}/{conv}", FMT_INT, total="avg")
-    paidmix = f"({p('A-GRO-03a')}+{p('A-GRO-03b')}+{p('A-GRO-03e')})"
-    leadmix = f"({p('A-GRO-03a')}+{p('A-GRO-03b')}+{p('A-GRO-03c')})"
-    S.row("sla", "Speed-to-lead factor (A-GRO-24 on CTWA/Search/Organic before SLA month)",
-          lambda m, c: f"IF({m}>={p('A-ECO-105')},1,1-{leadmix}*(1-{p('A-GRO-24')}))", FMT_2DP, total="avg")
+    S.row("sla", "Speed-to-lead factor on new (incremental) leads: A-GRO-24 before the SLA month",
+          lambda m, c: f"IF({m}>={p('A-ECO-105')},1,{p('A-GRO-24')})", FMT_2DP, total="avg")
     S.row("ach", "Paid career enrolments the budget can buy", lambda m, c: f"{c}{S.R['bud']}*{p('A-ECO-50')}/{c}{S.R['ecac']}", FMT_2DP)
-    S.row("dem", "Career demand = seasonality x SLA x (non-paid share x target x conv + MIN(paid share x target, budget-bought))",
-          lambda m, c: f"{c}{S.R['sea']}*{c}{S.R['sla']}*((1-{paidmix})*{c}{S.R['tgt']}*{conv}+MIN({paidmix}*{c}{S.R['tgt']},{c}{S.R['ach']}))", FMT_2DP, bold=True)
+    S.row("dem", "Career demand = seasonality x [today's engine x conv + new non-paid x conv x SLA + MIN(paid target, budget-bought x SLA)]",
+          lambda m, c: f"{c}{S.R['sea']}*({c}{S.R['base']}*{conv}+({c}{S.R['npt']}-{c}{S.R['base']})*{conv}*{c}{S.R['sla']}+MIN({c}{S.R['pt']},{c}{S.R['ach']}*{c}{S.R['sla']}))", FMT_2DP, bold=True)
     S.row("stn", "Stations available", lambda m, c: f"IF({m}>={p('A-ECO-112')},{p('A-ECO-115')},{p('A-ECO-110')})", FMT_INT, total="last")
     S.row("slt", "Batch slots per day", lambda m, c: f"IF({m}>={p('A-ECO-112')},{p('A-ECO-116')},{p('A-ECO-111')})", FMT_1DP, total="last")
     S.row("cap", "Usable seat capacity (stations x slots x max use)", lambda m, c: f"{c}{S.R['stn']}*{c}{S.R['slt']}*{p('A-ECO-117')}", FMT_1DP, total="last")
@@ -494,7 +497,7 @@ def build():
     flexes = [("conv", "Conversion (all routes; low = founder step-back ÷1.25)", 0.8, 1.2), ("fee", "Fees (all products)", 0.8, 1.15),
               ("fill", "Cohort fill (students per batch 8 vs 12)", 0.8, 1.2), ("cpl", "CPL / CAC (paid routes)", 1.3, 0.7),
               ("var", "Variable delivery cost (kit, consumables)", 1.25, 0.75), ("rent", "Rent (₹130 vs ₹47 per sq ft vs ₹80)", 1.625, 0.5875),
-              ("budget", "Paid-media budget (holding the target)", 0.7, 1.3)]
+              ("budget", "Paid-media budget ±30% (target held: extra budget cannot exceed target/capacity)", 0.7, 1.3)]
     flex_sheets = []
     for key, lab, lo, hi in flexes:
         for tag, val in (("lo", lo), ("hi", hi)):
@@ -921,7 +924,7 @@ def build():
         ("Scenarios", "Conservative = adverse rates + ₹10L plan; Base = base rates + ₹30L plan; Aggressive = favourable rates + ₹50L plan. Rates vs plan are typed in Assumptions column J; Plan10L_BaseRates and Plan50L_BaseRates isolate the envelope choice (BM stress test 7)."),
         ("Alignment", "Growth agent: ladder L1-L5, A-GRO-01..50, paid-media ramp and team lines (growth_marketing_strategy.md §10). BM agent: realised L3 fee A-BM-02 (₹65k/80k/1.0L), batch cap 12, trainer pay A-BM-04, founder path A-BM-10, pop-ups A-BM-06, gates G0-G3b."),
         ("Price", "L3 list ₹90k (A-GRO-06) vs realised ₹80k (A-BM-02): revenue uses realised. Until the proof gate (A-ECO-104: M7 base, M5 aggressive, not in Y1 conservative) PNA charges today's fee CA-02 (₹40k/60k/75k) incl. kit."),
-        ("Enrolment engine", "Career demand = seasonality x speed-to-lead factor x [non-paid share x plan target + MIN(paid share x target, budget x career share / effective paid CAC)], then limited by seat capacity. Effective CAC = funnel paid-route CAC x overhead factor calibrated so the Base budget buys the Base target."),
+        ("Enrolment engine", "Career demand = seasonality x [today's organic/referral engine (CA-01) + new non-paid enrolments x SLA factor + MIN(paid-route target, budget x career share / effective paid CAC x SLA factor)], then limited by seat capacity. Targets ramp to A-GRO-01 x route mix by month 7. Effective CAC = funnel paid-route CAC x overhead factor (A-ECO-51) calibrated so the Base budget buys the Base paid target at steady state."),
         ("GST", "18% GST on private non-recognised training (A-ECO-23, GST Council flyer). Base assumes quoted fees include GST (revenue = fee/1.18); Flex_gst_ontop shows charging it on top."),
         ("Cash", "Net cash flow = EBITDA + instalment timing (A-ECO-34) - capex/deposits. Excludes income tax, GST input/output timing and any founder draw. Peak cash need is compared with the plan envelope (CA-03)."),
         ("Sheets", "Dashboard ; Assumptions ; Unit_Economics ; Capacity ; 3yr_Scenarios ; Sensitivity ; BM_Unit_Economics ; Outlook_* (x3 scenarios + Selected + 2 cross runs) ; Flex_* (sensitivity re-runs) ; Checks"),
