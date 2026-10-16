@@ -1,6 +1,8 @@
 # Growth Marketing Strategy: Flagship-First Growth Engine
 
-> **Aligned to recommended_strategy.md §6 on 2026-10-16.** Canonical vocabulary applied: **spend gates SG1–SG5** (separate from stage gates G0 Instrumented baseline, G1 Flagship proven, G2 Regional engine); Meta campaigns **MC1–MC6**; Google campaigns **GC1–GC4**; keyword clusters K1–K10; segments S1–S8; products L0–L5; L3 Pro formats Weekday / Flex / **Destination**; spend scenarios **₹10L / ₹30L / ₹50L Plans** (₹30L adopted and staged T1 ≤₹15L / T2 ≤₹15L; ₹50L not authorised for Year 1); Pro price path current fee → ₹75k list → ₹90k list (₹80k realised planning fee); SG4 thresholds per Economics; recorded hybrid pre-work after G1; M1 = Nov 2026.
+> **Aligned to recommended_strategy.md §6 on 2026-10-16.** Canonical vocabulary applied: **spend gates SG1–SG5** (separate from stage gates G0 Instrumented baseline, G1 Flagship proven, G2 Regional engine); Meta campaigns **MC1–MC6**; Google campaigns **GC1–GC4**; keyword clusters K1–K10; segments S1–S8; products L0–L5; L3 Pro formats Weekday / Flex / **Destination**; spend scenarios **₹10L / ₹30L / ₹50L Plans** (₹30L adopted and staged T1 ≤₹15L / T2 ≤₹15L; ₹50L not authorised for Year 1); Pro price path current fee → ₹75k list → ₹90k list (₹80k realised planning fee); SG4 thresholds per Economics; recorded hybrid pre-work library in Year 2 / Tranche 3; M1 = Nov 2026.
+>
+> **Gate E changes (2026-10-16, independent_review.md RT-07/08/09/13/15, §4 defects 7–10):** (1) SG4 fully loaded acquisition: ≤40% green; **40–50% amber = founder review, not a pass**; the Year-1 plan runs at ≈49% on the step-1 fee (accepted Year-1 inefficiency; green is a Year-2 expectation). (2) Search-visibility claims restated as tool-limited and to be verified manually. (3) S-CUS-14/-20 retagged [CLAIM]; H7 = plausible, untested. (4) Non-paid engine uplift (+60%) labelled an unevidenced [HYP]. (5) Recorded library moved from Tranche 2 to Year 2 / Tranche 3. (6) **G1 planning case = M9 (Jul 2027), M6 = upside**: the ₹30L-Plan media ramp now starts at M10, cutting Year-1 paid media to ≈₹7.0L and the 12-month total to ≈₹27.0L (₹8.2L / ₹28.6L if G1 lands at M6). **Media timing depends on the Economics re-run of the M9 case.** (7) Destination pilot moved to Aug–Sep 2027 (M10–M11).
 
 **Client:** Priyanka Nanda Makeup Academy (PNA), Chandigarh · **Workstream:** Growth & MarTech · **Prepared:** 2026-10-16 · **Agent:** Growth and MarTech Agent (Opus)
 **Companion files:** `strategy/positioning_and_segments.md` (segments, ladder, message house) · `strategy/admissions_funnel.md` (funnel, SLA, **A-GRO-xx master table**) · `execution/marketing_channel_plan.md` (channel-by-channel plan and budgets) · `execution/technology_and_crm_requirements.md` (stack, data model, automations).
@@ -11,11 +13,9 @@
 
 ## 0. Summary
 
-1. **Start point:** PNA has a website and nothing else we could verify:
-   - no Google Business Profile, Instagram, reviews or published proof was found
-   - it is invisible for every non-branded search tested (CA-07; S-LC §2, §5)
+1. **Start point (to be verified):** PNA did not appear in our tool-limited, US-based searches; Instagram, Maps and Justdial were blocked. To be verified manually with the founder before the founder meeting (CA-07; S-LC §2, §5). Only the website could be confirmed; no Google Business Profile, Instagram, reviews or published proof could be verified.
 
-   Competitors win with keyword-specific course pages, fee pages, WhatsApp, demos and EMI (S-LC §7). **The first ₹ goes into visibility, proof and response discipline, not ads.**
+   Competitors win with keyword-specific course pages, fee pages, WhatsApp, demos and EMI (S-LC §7). **If the manual check confirms the gap, the first ₹ goes into visibility, proof and response discipline, not ads.**
 2. **The engine is a proof flywheel [REC]:**
    - Student work and alumni outcomes become content.
    - Content (organic plus a small paid push) brings WhatsApp leads.
@@ -31,20 +31,20 @@
    - **SG4 Unit economics**
    - **SG5 Product proof**
 
-   Two stage gates also cap spend (recommended_strategy §5, §7.1): ≤₹15k/month until **G0 Instrumented baseline** (target M3, Jan 2027), and ≤₹60k/month until **G1 Flagship proven** (window M6–M9, decision by M9). Until then the job is learning, not volume. The CAC range for the same target is ~9× wide (`admissions_funnel.md` §10.2).
+   Two stage gates also cap spend (recommended_strategy §5, §7.1): ≤₹15k/month until **G0 Instrumented baseline** (target M3, Jan 2027), and ≤₹60k/month until **G1 Flagship proven** (planning case M9 = Jul 2027; M6 = upside). Until then the job is learning, not volume. **SG4 note:** the Year-1 plan runs at about 49% fully loaded acquisition on the step-1 fee. That is amber (founder review), not a pass: an accepted Year-1 inefficiency while proof is built. The CAC range for the same target is ~9× wide (`admissions_funnel.md` §10.2).
 5. **12-month gross growth spend by plan [EST]** (opex largely funded by course revenue; the founder's cash envelope is governed by peak cash and the tranche caps in recommended_strategy §5, not by this gross figure):
 
    | Plan | 12-month total | Paid media after G1 | Target |
    |---|---|---|---|
    | ₹10L Plan (stop-loss state) | **≈₹9.6L** | ₹40k/month | About 52 career students a year (recommended_strategy §5) |
-   | **₹30L Plan (adopted)** | **≈₹28.6L** | ₹1.0L/month (from G1; assumed M7) | About 10/month: a **gated plan target, not a forecast** (A-GRO-01) |
+   | **₹30L Plan (adopted)** | **≈₹27.0L** planning case (G1 at M9); ≈₹28.6L if G1 at M6 | ₹80k at M10, ₹1.0L/month from M11 (from M7–M8 if G1 at M6); pending the Economics re-run | About 10/month after G1: a **gated plan target, not a forecast** (A-GRO-01) |
    | ₹50L Plan (reference only; not authorised for Year 1) | **≈₹48.1L** | ₹2.0L/month | About 15/month + regional cohorts |
 
    Team and production are the biggest non-media lines (§10).
 6. **Timing matters.** It is 16 Oct 2026, so the wedding season (Nov–Feb; CAIT peak 1 Nov–14 Dec, S-CUS-13) starts now and fills the founder's calendar:
    - Use Nov–Feb to **fix foundations, capture real-bride content, sell S5 self-makeup and run S3 masterclasses in the Jan–Feb lean months**.
    - Run the **matched-budget paid tests Jan–Mar**, once G0 is green (target M3); Nov–Dec paid stays ≤₹15k/month.
-   - **Scale into the S1 peak (May–Jul 2027) from stage gate G1** (window M6–M9) (A-GRO-40).
+   - **Scale from stage gate G1.** In the planning case (G1 at M9, Jul 2027) the ramp lands on the Aug–Oct pre-season window and the May–Jul S1 peak runs at test-level media. If G1 comes at M6 (upside), the ramp catches the S1 peak (A-GRO-40).
 
 ---
 
@@ -56,8 +56,8 @@
 |---|---|---|---|---|
 | **0. Foundations ("fix the leaks")** | 19 Oct – 22 Nov 2026 | Founder data pull (V1), enquiry-log audit (V2), GBP claimed and optimised, academy Instagram set up, WhatsApp BSP + CRM + tracking live, SLA and scripts, fee page and course pages, consent forms, alumni survey launched (V4) | ₹0–15k (brand search + plumbing test) | Tracking checklist complete; counsellor trained; 5 core pages live |
 | **1. Test and prove** | 23 Nov 2026 – 28 Feb 2027 | Paid tests T1–T8 (§6.5) from G0; S5 self-makeup season; S3 masterclass launches (Jan–Feb); first portfolio days; **first Alumni Outcomes Report (by 31 Jan)**; 12 SEO pages; referral programme live | ≤₹15k until G0 (target M3, Jan 2027); then ₹40–60k | First formal spend-gate review (SG1–SG5) in the first week of Mar 2027 (M5) |
-| **2. Scale the flagship** | Mar – Jul 2027 | Ramp the winning routes for the S1 peak (board results in May); Flex batch for S2; review velocity | ≤₹60k until stage gate G1 (M6–M9); then ₹80k → ₹1.0L (₹30L Plan) | Spend gates stay green; CAC within SG4 |
-| **3. Extend** | Jun – Oct 2027 | **Destination pilot cohort for S7** (Jun–Jul vacation; live-online pre-work; the stage-gate G2 pilot); two regional pop-up pilots after G1 (≤₹2L); S3 pre-season masterclasses (Aug–Oct); ≤₹1L online masterclass pilot for S3; recorded pre-work library build after G1 (Tranche 2) | ₹1.0L (₹30L Plan, after G1); regional media scales only after G2 | Destination pilot meets G2 pilot thresholds (completion ≥85%; practical pass within 5 points of Weekday; realised price ≥90% of Weekday); out-of-town ≥20% of QLs and ≥15% of enrolments before regional spend (G2, M15–M18) |
+| **2. Scale the flagship** | Mar – Jul 2027 | Ramp the winning routes for the S1 peak (board results in May); Flex batch for S2; review velocity | ≤₹60k until stage gate G1 (planning case M9; upside M6); then ₹80k → ₹1.0L from G1 + 1 (₹30L Plan) | Spend gates stay green; CAC within SG4 |
+| **3. Extend** | Jun – Oct 2027 | **Destination pilot cohort for S7, Aug–Sep 2027 (M10–M11)** (live-online pre-work; the stage-gate G2 pilot; moved from Jun–Jul per Gate E RT-15 to match the model's Destination launch at M10 and avoid the Jun–Jul seat bind); two regional pop-up pilots after G1 (≤₹2L); S3 pre-season masterclasses (Aug–Oct); ≤₹1L online masterclass pilot for S3. The recorded pre-work library is deferred to Year 2 / Tranche 3 (G2; or from M10 on cash evidence) | ₹80k at M10, ₹1.0L from M11 (₹30L Plan, planning case); regional media scales only after G2 | Destination pilot meets G2 pilot thresholds (completion ≥85%; practical pass within 5 points of Weekday; realised price ≥90% of Weekday); out-of-town ≥20% of QLs and ≥15% of enrolments before regional spend (G2, M15–M18) |
 
 ### 1.2 Seasonal calendar (Nov 2026 – Oct 2027) [HYP, from A-CUS-29 / A-GRO-40]
 
@@ -68,12 +68,12 @@
 | Jan 2027 | 0.70 | **High** (lean month) | Medium (Lohri, Jan–Feb weddings) | — | Medium | Masterclass launches; outcomes report; **G0 review (M3)** → T1–T2 start |
 | Feb | 0.80 | High | Medium | — | Medium | Tests T1–T5 running |
 | Mar | 0.90 | Medium | Low | — | High | **Spend-gate review (SG1–SG5)**; scale prep |
-| Apr | 1.00 | Medium | Low | — | High | G1 window opens (M6); S2 Flex |
+| Apr | 1.00 | Medium | Low | — | High | G1 upside decision (M6); S2 Flex |
 | May | **1.30** | Low | Low | Rising | High | Board results → S1 peak campaigns; parents' sessions |
-| Jun | **1.35** | Low | Low | **Destination pilot cohort** | High | S7 pilot cohort; regional pop-up pilots (if G1 green) |
-| Jul | 1.25 | Medium (lean) | Teej | Destination pilot | High | S1; masterclass |
-| Aug | 1.10 | **High (pre-season)** | Rising | — | Medium | Pre-season S3 launches; "assist this season" S1 message |
-| Sep | 1.05 | High | Rising | — | Medium | S3; S5 pre-season |
+| Jun | **1.35** | Low | Low | Rising | High | S1 peak at test-level media (planning case) |
+| Jul | 1.25 | Medium (lean) | Teej | Destination pilot recruitment | High | **G1 planning-case decision (M9)**; S1; masterclass |
+| Aug | 1.10 | **High (pre-season)** | Rising | **Destination pilot cohort** | Medium | Media ramp from G1 + 1 (M10); pre-season S3 launches; "assist this season" S1 message; regional pop-up pilots |
+| Sep | 1.05 | High | Rising | Destination pilot cohort | Medium | S3; S5 pre-season |
 | Oct 2027 | 1.00 | Medium | **Peak** (Karwa Chauth, Diwali) | — | Low | S5; next-year planning |
 
 ---
@@ -86,7 +86,7 @@
 |---|---|---|---|
 | **Instagram: academy account** (new or existing; handle unknown, CA-07) | Primary acquisition and proof channel. Reels, Stories, Highlights; DMs auto-routed to WhatsApp | Instagram ad reach 414M in India; buyers explore and DM academies on Instagram (S-CUS-18, §5.1) | **High** |
 | **Instagram: founder account** | Halo: bridal work, teaching moments, founder POV; Collab posts with the academy account | Founder is the conversion asset in the short term (H3, A-CUS-30) | High |
-| **WhatsApp** (Channel + Community + Business API) | Conversion rail, nurture, alumni and S3 community | >70% prefer messaging a business (S-CUS-14) | **High** |
+| **WhatsApp** (Channel + Community + Business API) | Conversion rail, nurture, alumni and S3 community | >70% prefer messaging a business (S-CUS-14) [CLAIM, Meta-commissioned survey] | **High** |
 | **YouTube** (Shorts + long-form) | Search engine for tutorials and career questions; Hindi long-form; parents watch here | YouTube ad reach 491M (S-CUS-18) | Medium (from month 2) |
 | **Facebook** | Ad delivery to women 25–40 (S2) and parents; auto cross-posting; community groups | Facebook ad reach 384M (S-CUS-18) | Low (paid mainly) |
 | Pinterest, LinkedIn, X, Snapchat | Not used | Low fit with segments and budget | — |
@@ -349,8 +349,8 @@ City pages (K5) follow in months 3–6, once at least one alumna or alumnus from
 |---|---|---|---|---|
 | 0 Foundations (≈5 weeks) | ₹5k | ₹15k | ₹15k | GC1 brand search; ₹5–10k plumbing test of CTWA |
 | 1 Test (Dec–Feb) | ≤₹15k until G0; then ₹30–35k/mo | **≤₹15k until G0 (target M3); then ₹40–50k/mo** | ≤₹15k until G0; then ₹50–60k/mo | T1 ₹25k (2 arms), T2 creative, T3 taster, S5 season ₹10k, GC2 Search ₹15k |
-| 2 Scale (Mar–Jul) | ₹40k/mo | ≤₹60k/mo until G1 (M6–M9); then ₹80k–1.0L/mo | ₹60k until G1; then ₹1.2–2.0L/mo | MC1 ₹20k · MC2 ₹5k (Destination pilot recruitment) · MC3 ₹15k (S5 + taster) · MC4 ₹7k · MC5/MC6 ₹20k · GC1+GC2 ₹18k · test reserve ₹10k |
-| 3 Extend (Jun–Oct) | ₹40k/mo | ₹1.0L/mo (after G1) | ₹2.0L/mo | Regional MC2/GC3 limited to the Destination pilot and T6 until G2; S3 pre-season launches Aug–Oct |
+| 2 Scale (Mar–Jul) | ₹40k/mo | ≤₹60k/mo until G1 (planning case M9; upside M6); then ₹80k–1.0L/mo | ₹60k until G1; then ₹1.2–2.0L/mo | MC1 ₹20k · MC2 ₹5k (Destination pilot recruitment) · MC3 ₹15k (S5 + taster) · MC4 ₹7k · MC5/MC6 ₹20k · GC1+GC2 ₹18k · test reserve ₹10k |
+| 3 Extend (Jun–Oct) | ₹40k/mo | ₹60k until G1, then ₹80k (M10) → ₹1.0L (M11–M12) in the planning case | ₹2.0L/mo | Regional MC2/GC3 limited to the Destination pilot and T6 until G2; S3 pre-season launches Aug–Oct |
 
 The base steady-state need of ≈₹35k/month for the career funnel (`admissions_funnel.md` §10.1) plus masterclass, self-makeup, awareness and retargeting gives ≈₹0.9–1.0L/month [EST]. Detail by channel is in `execution/marketing_channel_plan.md`.
 
@@ -414,14 +414,14 @@ Full requirements, data model, routing and automations are in `execution/technol
 
 ## 9. Spend gates SG1–SG5: **do not scale spend until all five are green**
 
-Paid media stays at **test level (₹40–60k/month)** until every spend gate is green for **4 consecutive weekly reviews**, and in any case at ≤₹60k/month until stage gate **G1 Flagship proven** (M6–M9) and ≤₹15k/month until **G0 Instrumented baseline** (target M3) (recommended_strategy §5, §7.1). SG4 uses the Economics thresholds adopted in recommended_strategy §7.1; other thresholds are **[HYP]**.
+Paid media stays at **test level (₹40–60k/month)** until every spend gate is green for **4 consecutive weekly reviews**, and in any case at ≤₹60k/month until stage gate **G1 Flagship proven** (planning case M9; upside M6) and ≤₹15k/month until **G0 Instrumented baseline** (target M3) (recommended_strategy §5, §7.1). SG4 uses the Economics thresholds adopted in recommended_strategy §7.1; other thresholds are **[HYP]**.
 
 | Gate | What it validates | Metric and threshold | Data source | If not met |
 |---|---|---|---|---|
 | **SG1 Tracking** | We can see the funnel | ≥95% of leads carry a source tag; CTWA referral/click ID captured; GA4 + Meta (CAPI) + Google offline conversions firing for Lead, QL, Enrolled; **CRM enrolments reconcile with accounts within ±5%**; dashboard published 4 weeks running | CRM, GA4, Events Manager, accounts | Fix before any test result is trusted |
 | **SG2 Follow-up discipline** | Leads are worked fast and fully | **Median first response <5 min, P90 <30 min** (working hours); ≥90% of leads human-contacted within 1 working hour; ≥90% of open QLs with ≥5 touches in 14 days; lost reason recorded for ≥90% of closed leads | CRM timestamps | Coach and re-staff; A-GRO-24 penalty applies to forecasts |
 | **SG3 Capacity** | Enrolments can be delivered well | Next two batches scheduled with seats ≥ forecast enrolments; trainer ratio ≤1:12 (≤1:6 practicals); live-model supply booked; counsellor load ≤30 conversations/day; **founder hours within the agreed budget** (CA-04) | Batch calendar, CRM | Add a batch/trainer first, or cap spend at fill rate |
-| **SG4 Unit economics** | Growth is profitable | Trailing 8 weeks with ≥12 paid career enrolments: **media CAC per paid career enrolment ≤₹9k green, ₹9–12k amber, >₹12k red**; **fully loaded acquisition cost** (media + growth team + tools + rewards + EMI subvention) **≤40% of career revenue in Year 1, ≤30% from Year 2**; each route's lead→enrol ≥ its Low rate (A-GRO-18..22). Thresholds per Economics (recommended_strategy §7.1, §10 #4) | CRM + accounts | Cut to test level; diagnose by route (lead quality vs counselling vs offer) |
+| **SG4 Unit economics** | Growth is profitable | Trailing 8 weeks with ≥12 paid career enrolments: **media CAC per paid career enrolment ≤₹9k green, ₹9–12k amber, >₹12k red**; **fully loaded acquisition cost** (media + growth team + tools + rewards + EMI subvention): **≤40% of career revenue = green**; **40–50% = amber, which requires a founder review and is not a pass**; >50% = red; ≤30% from Year 2. **The Year-1 plan runs at about 49% on the step-1 fee** because the growth team is hired ahead of volume while proof is built. This is an accepted Year-1 inefficiency, stated openly; SG4 green is a Year-2 expectation. Each route's lead→enrol ≥ its Low rate (A-GRO-18..22). Thresholds per Economics (recommended_strategy §7.1) | CRM + accounts | Cut to test level; diagnose by route (lead quality vs counselling vs offer) |
 | **SG5 Product proof** | We are amplifying a good product | Completion ≥85% (A-GRO-31); NPS ≥50; ≥30 Google reviews at ≥4.5 average; first Alumni Outcomes Report published (n ≥30); refunds/drops <10% | Academic records, GBP, survey | Fix delivery before buying more demand |
 
 **Scale protocol once green [REC]:**
@@ -437,9 +437,9 @@ Inputs are A-GRO-42, 45–50 and the media ramp in §6.4. This covers **growth-t
 
 | Line | ₹10L Plan | **₹30L Plan (adopted)** | ₹50L Plan (reference; not authorised for Year 1) | Notes |
 |---|---|---|---|---|
-| Paid media | ₹4.1L (M1–M4: ₹10k, 15k, 30k, 35k; M5–M12: ₹40k ×8) | **₹8.2L** (M1–M6: ₹15k, 15k, 40k, 50k, 60k, 60k; M7 ₹80k; M8–M12 ₹1.0L ×5; assumes G1 green at M7) | ₹14.9L (M1–M5: ₹15k, 15k, 50k, 60k, 60k; M6 ₹1.2L; M7 ₹1.7L; M8–M12 ₹2.0L ×5) | ≤₹15k until G0; ≤₹60k until G1; above that only with SG1–SG5 green |
+| Paid media | ₹4.1L (M1–M4: ₹10k, 15k, 30k, 35k; M5–M12: ₹40k ×8) | **₹7.0L** planning case (M1–M9: ₹15k, 15k, 40k, 50k, 60k ×5; M10 ₹80k; M11–M12 ₹1.0L ×2; G1 at M9). Upside ₹8.2L if G1 at M6 (ramp from M7) | ₹14.9L (M1–M5: ₹15k, 15k, 50k, 60k, 60k; M6 ₹1.2L; M7 ₹1.7L; M8–M12 ₹2.0L ×5) | ≤₹15k until G0; ≤₹60k until G1; above that only with SG1–SG5 green |
 | Performance marketing freelancer/agency (A-GRO-48) | — (growth lead runs it) | ₹2.2L (₹20k ×11) | ₹3.85L (₹35k ×11) | |
-| Admissions counsellors (A-GRO-45) | ₹2.0L (1 FTE ×10 mo at ₹20k) | ₹3.75L (1 FTE ×12 + 0.5 FTE ×6 after G1) | ₹5.25L (1 FTE ×12 + 1 FTE ×9) | Capacity per A-GRO-38 |
+| Admissions counsellors (A-GRO-45) | ₹2.0L (1 FTE ×10 mo at ₹20k) | ₹3.38L (1 FTE ×12 + 0.5 FTE ×3 after G1 at M9; ₹3.75L if G1 at M6) | ₹5.25L (1 FTE ×12 + 1 FTE ×9) | Capacity per A-GRO-38 |
 | Marketing / content executive (A-GRO-46) | — | ₹3.85L (₹35k ×11) | ₹7.95L (manager ₹45k ×11 + creator ₹30k ×10) | |
 | Video shooter/editor (A-GRO-47) | ₹1.44L (₹12k ×12) | ₹2.2L (₹20k ×11, from M2) | ₹3.0L (₹25k ×12) | |
 | Website rebuild + SEO content (A-GRO-49/50) | ₹0.5L (rebuild only) | ₹2.7L (₹1.2L + ₹15k ×10) | ₹5.0L (₹2.5L + ₹25k ×10) | |
@@ -447,11 +447,11 @@ Inputs are A-GRO-42, 45–50 and the media ramp in §6.4. This covers **growth-t
 | Referral rewards, partnerships, events, pop-ups | ₹0.4L | ₹2.0L | ₹3.0L | Rewards also counted in CAC |
 | Outcomes report, PR, print | ₹0.2L | ₹0.5L | ₹0.5L | |
 | Contingency / testing | — | ₹1.0L | ₹1.0L | |
-| **Total (12 months)** | **≈₹9.6L** | **≈₹28.6L** | **≈₹48.1L** | Gross growth opex; see envelope note above |
+| **Total (12 months)** | **≈₹9.6L** | **≈₹27.0L** planning case (≈₹28.6L if G1 at M6) | **≈₹48.1L** (assumes G1 at M6) | Gross growth opex; see envelope note above. **Media timing depends on the Economics re-run:** the workbook's marketing totals (₹28.5L / ₹8.2L, independent_review §4) reflect the M6 case |
 
 **What each buys [HYP]:**
 - **₹10L Plan:** the foundations plus a slow test-and-learn; about 52 career students a year (recommended_strategy §5). This is also the stop-loss state if G1 is missed.
-- **₹30L Plan:** ~10/month from G1 (A-GRO-01 base), presented as a gated plan target, not a forecast.
+- **₹30L Plan:** ~10/month after G1 (A-GRO-01 base; planning case from M10), presented as a gated plan target, not a forecast. About 40% of it relies on the organic and referral engine growing from ≈2.5 to 4.0 enrolments/month, an unevidenced [HYP] to be re-based at the February (M4) review (`admissions_funnel.md` §10.1, RT-08).
 - **₹50L Plan:** ~15/month plus regional cohorts; needs a second counsellor and batch capacity (SG3). Reference only; not authorised for Year 1.
 
 ---

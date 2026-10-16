@@ -1,6 +1,8 @@
 # Marketing Channel Plan
 
-> **Aligned to recommended_strategy.md §6 on 2026-10-16.** Canonical vocabulary applied: spend gates **SG1–SG5** (stage gates G0–G3b are separate); Meta campaigns **MC1–MC6**; Google campaigns **GC1–GC4**; L3 Pro formats Weekday / Flex / **Destination**; spend scenarios = **₹10L / ₹30L / ₹50L Plans** (₹30L Plan adopted, staged T1 ≤₹15L / T2 ≤₹15L; ₹50L Plan not authorised for Year 1); M1 = Nov 2026. Media caps from recommended_strategy §5/§7: ≤₹15k/month until G0 (target M3, Jan 2027); ≤₹60k/month (test level) until stage gate G1 (M6–M9); regional media scales only after G2.
+> **Aligned to recommended_strategy.md §6 on 2026-10-16.** Canonical vocabulary applied: spend gates **SG1–SG5** (stage gates G0–G3b are separate); Meta campaigns **MC1–MC6**; Google campaigns **GC1–GC4**; L3 Pro formats Weekday / Flex / **Destination**; spend scenarios = **₹10L / ₹30L / ₹50L Plans** (₹30L Plan adopted, staged T1 ≤₹15L / T2 ≤₹15L; ₹50L Plan not authorised for Year 1); M1 = Nov 2026. Media caps from recommended_strategy §5/§7: ≤₹15k/month until G0 (target M3, Jan 2027); ≤₹60k/month (test level) until stage gate G1 (planning case M9; upside M6); regional media scales only after G2.
+>
+> **Gate E changes (2026-10-16, independent_review.md RT-08/09, §4 defects 9–10):** G1 planning case = **M9 (Jul 2027), M6 = upside**. The ₹30L-Plan media ramp now starts at M10 (≈₹7.0L Year-1 paid media; ≈₹8.2L if G1 at M6). **Media timing depends on the Economics re-run of the M9 case.** Search-visibility claim restated as tool-limited and to be verified manually. The organic-lead KPI is flagged as part of the unevidenced +60% non-paid uplift [HYP].
 
 **Client:** Priyanka Nanda Makeup Academy (PNA), Chandigarh · **Workstream:** Growth & MarTech · **Prepared:** 2026-10-16 · **Agent:** Growth and MarTech Agent (Opus)
 **Strategy source:** `strategy/growth_marketing_strategy.md` (workstreams, tests T1–T8, spend gates SG1–SG5, 12-month budget) · **Assumptions:** `strategy/admissions_funnel.md` §9 (A-GRO-xx).
@@ -8,7 +10,7 @@
 **Tags:** [FACT] · [CLAIM] · [EST] · [HYP] · [REC]. All budgets are **[EST]** and all KPI targets are **[HYP]** until replaced with PNA data.
 
 **How to read the budgets:**
-- Monthly budgets are **steady-state (after stage gate G1; the ₹30L Plan assumes G1 green at M7 = May 2027, full rate Jun–Oct 2027)** in three spend columns:
+- Monthly budgets are **steady-state (after stage gate G1; planning case G1 at M9 = Jul 2027, so the ₹30L Plan reaches full rate in M11–M12 = Sep–Oct 2027; if G1 comes at M6, full rate runs Jun–Oct)** in three spend columns:
   - **C** = **₹10L Plan** (stop-loss state), ≈₹40k media/month
   - **B** = **₹30L Plan** (adopted Year-1 envelope), ≈₹1.0L after G1
   - **A** = **₹50L Plan**, ≈₹2.0L: **reference only, not authorised for Year 1** (recommended_strategy §5), and in any case only with spend gates SG1–SG5 green
@@ -19,7 +21,7 @@
 
 ## 1. Summary
 
-1. **Owned and earned channels come first** because they are cheap and PNA is invisible today (CA-07): Google Business Profile, website/SEO, the academy Instagram account, WhatsApp and referral.
+1. **Owned and earned channels come first** because they are cheap and PNA did not appear in our tool-limited, US-based searches; Instagram, Maps and Justdial were blocked. To be verified manually with the founder before the founder meeting (CA-07). The channels are: Google Business Profile, website/SEO, the academy Instagram account, WhatsApp and referral.
 2. **Paid channels are tests until the gates pass** (G0 for tests above ₹15k/month; stage gate G1 and spend gates SG1–SG5 for anything above ₹60k/month). These are Meta CTWA, Google Search and workshop campaigns. Each has explicit test → scale criteria.
 3. **Base steady-state media of ₹1.0L/month splits roughly:**
 
@@ -42,7 +44,7 @@
 |---|---|---|---|---|---|---|---|---|
 | 1 | **Google Business Profile + citations** (Justdial, Sulekha, UrbanPro, Lyfskills, WedMeGood for the studio) | Get found in the Maps/local pack for course searches; collect reviews | Tricity searchers (S1, S2, S5, parents) | Fees on GBP services; weekly student-work photos; "Book a visit" | Profile verified (wk 2); **≥30 reviews at ≥4.5 by month 6**; GBP calls + website clicks +50% quarter on quarter; NAP consistent on ≥8 directories | ₹0 media / ₹0 / ₹0 (team) | n/a: always on. Review velocity is part of SG5 | Counsellor trained in GBP posting + review replies; growth lead QA |
 | 2 | **Website + CRO** | Trust hub; convert sessions to WhatsApp/visit; SEO/AI-search base | All segments + parents | Course pages with fees, student work, outcomes; sticky WhatsApp/Call/Visit | Session → WhatsApp click ≥4% on course pages [HYP]; Lead→QL from site ≥33% (A-GRO-20); mobile LCP <2.5 s | Build ₹0.5L / ₹1.2L / ₹2.5L one-off (A-GRO-49); hosting in tech stack | CRO tests (CRO-1..4) only after SG1 is green | Web freelancer (WordPress/Wix, schema, GTM); growth lead for copy |
-| 3 | **SEO content** (course, fees, guides, city pages; English + Hindi) | Rank for non-branded course intent (K1–K10) | S1, S7, parents, S5 | Answer-shaped pages with real numbers; checklist; career guide | 12 pages live by day 90; top-10 for ≥5 K1–K3 terms by month 6 (India-IP check); organic career leads 25 / 40 / 60 per month by months 7–12 (A-GRO-43) | ₹0 / ₹15k / ₹25k (A-GRO-50) | Add city pages (K5) when ≥1 alumna per city or real stay/travel content exists | SEO writer (Hinglish), founder/trainer review for accuracy |
+| 3 | **SEO content** (course, fees, guides, city pages; English + Hindi) | Rank for non-branded course intent (K1–K10) | S1, S7, parents, S5 | Answer-shaped pages with real numbers; checklist; career guide | 12 pages live by day 90; top-10 for ≥5 K1–K3 terms by month 6 (India-IP check); organic career leads 25 / 40 / 60 per month after G1 (A-GRO-43; part of the unevidenced +60% non-paid uplift [HYP]; re-base at M4) | ₹0 / ₹15k / ₹25k (A-GRO-50) | Add city pages (K5) when ≥1 alumna per city or real stay/travel content exists | SEO writer (Hinglish), founder/trainer review for accuracy |
 | 4 | **Instagram organic: academy account** | Primary proof and lead channel | Women 17–35 tricity + regional; S3 artists | R1–R12 creative set (`growth_marketing_strategy.md` §2.3); comment keyword → DM → WhatsApp | 5 Reels/week; tracked IG leads ≥40% of organic leads; save + share rate trending up; **≥60% of organic leads from academy account by month 12** | ₹0 media / team (A-GRO-46/47) | n/a. Winning organic posts feed M5 paid | Content creator (shoot/edit Reels, Hinglish captions); trainers on camera |
 | 5 | **Instagram organic: founder account** | Halo; S3 pull; trust transfer via Collab posts | Followers of the founder; S3; brides (studio) | Signature looks; teaching moments; "Ask Priyanka" Lives | 3 Reels/week; ≥2 Collab posts/week with academy | ₹0 | n/a | Founder + content creator |
 | 6 | **YouTube organic** (Shorts + Hindi long-form) | Search discovery; parent trust | S1, S7, parents | Full bridal look; "fees explained"; career guide; day in a batch | 3 Shorts/week; 2 long-form/month; YouTube → WhatsApp leads tracked (UTM link in description) | ₹0 media / team | Scale long-form if ≥10 tracked leads/month by month 6 | Video editor; founder/trainer presenters |
@@ -70,7 +72,7 @@
 
 ## 3. Budget roll-up
 
-### 3.1 Steady-state monthly (after G1; Jun–Oct 2027 in the ₹30L Plan) [EST]
+### 3.1 Steady-state monthly (after G1; Sep–Oct 2027 in the planning case, Jun–Oct if G1 at M6) [EST]
 
 | Bucket | C (₹10L Plan) | B (₹30L Plan) | A (₹50L Plan, reference) |
 |---|---|---|---|
@@ -86,19 +88,20 @@
 | Martech stack (A-GRO-42) | ₹8k | ₹18k | ₹30k |
 | **Monthly total (steady state)** | **≈₹85k** | **≈₹2.7L** | **≈₹4.9L** |
 
-**Reconciliation to the 12-month totals** (`growth_marketing_strategy.md` §10: ≈₹9.6L / ₹28.6L / ₹48.1L): the earlier months run below steady state (test-level media, team ramp). The rewards, partnerships and events line here (B ₹22k/month in steady state) is higher than the 12-month average implied by §10 (₹2.0L/yr), because partnerships start from month 3–6 and pop-ups only in Phase 3. The Economics agent should model by month using §3.2.
+**Reconciliation to the 12-month totals** (`growth_marketing_strategy.md` §10: ≈₹9.6L / ₹27.0L planning case (₹28.6L if G1 at M6) / ₹48.1L): the earlier months run below steady state (test-level media, team ramp). The rewards, partnerships and events line here (B ₹22k/month in steady state) is higher than the 12-month average implied by §10 (₹2.0L/yr), because partnerships start from month 3–6 and pop-ups only in Phase 3. The Economics agent should model by month using §3.2.
 
 ### 3.2 Paid media ramp by month [EST]
 
 | Month | Nov 26 | Dec | Jan 27 | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct 27 | 12-mo total |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Month code | M1 | M2 | M3 | M4 | M5 | M6 | M7 | M8 | M9 | M10 | M11 | M12 | |
-| Phase | 0 | 1 | 1 (G0 target) | 1 | SG review → 2 | 2 (G1 window opens) | 2 | 2/3 | 2/3 | 3 | 3 | 3 | |
+| Phase | 0 | 1 | 1 (G0 target) | 1 | SG review → 2 | 2 (G1 upside) | 2 | 2/3 | 2/3 (G1 planning case) | 3 | 3 | 3 | |
 | C (₹10L Plan) | ₹10k | ₹15k | ₹30k | ₹35k | ₹40k | ₹40k | ₹40k | ₹40k | ₹40k | ₹40k | ₹40k | ₹40k | **₹4.1L** |
-| B (₹30L Plan; G1 green at M7) | ₹15k | ₹15k | ₹40k | ₹50k | ₹60k | ₹60k | ₹80k | ₹1.0L | ₹1.0L | ₹1.0L | ₹1.0L | ₹1.0L | **₹8.2L** |
+| **B (₹30L Plan; planning case, G1 at M9)** | ₹15k | ₹15k | ₹40k | ₹50k | ₹60k | ₹60k | ₹60k | ₹60k | ₹60k | ₹80k | ₹1.0L | ₹1.0L | **₹7.0L** |
+| B upside (G1 at M6; ramp from M7) | ₹15k | ₹15k | ₹40k | ₹50k | ₹60k | ₹60k | ₹80k | ₹1.0L | ₹1.0L | ₹1.0L | ₹1.0L | ₹1.0L | **₹8.2L** |
 | A (₹50L Plan, reference; G1 at M6) | ₹15k | ₹15k | ₹50k | ₹60k | ₹60k | ₹1.2L | ₹1.7L | ₹2.0L | ₹2.0L | ₹2.0L | ₹2.0L | ₹2.0L | **₹14.9L** |
 
-Caps (recommended_strategy §5, §7): ≤₹15k/month until G0 (target M3); ≤₹60k/month until stage gate G1 (decision by M9); above that only with SG1–SG5 green for 4 consecutive weeks. If G1 slips (e.g., to M10), the B column stays at ₹60k until G1 and the unspent amount is retained. Amber on any spend gate freezes increases; red rolls spend back to the last green level.
+Caps (recommended_strategy §5, §7): ≤₹15k/month until G0 (target M3); ≤₹60k/month until stage gate G1 (planning case M9; upside M6); above that only with SG1–SG5 green for 4 consecutive weeks. If G1 comes later than M9, B stays at ₹60k until G1 and the unspent amount is retained. **Media timing depends on the Economics re-run of the M9 planning case**; the current workbook totals (₹8.2L media) reflect the M6 upside. Amber on any spend gate freezes increases; red rolls spend back to the last green level.
 
 ---
 
@@ -119,7 +122,7 @@ Caps (recommended_strategy §5, §7): ≤₹15k/month until G0 (target M3); ≤�
 **Following milestones:**
 - 31 Jan: Outcomes Report published.
 - Jan–Mar: T1–T5 run (T1 read-out by early March); college/school outreach for Class 12 career days. KT-1 applies if G0 is not met by M4 (Feb 2027).
-- **First week of March (M5): first formal spend-gate review (SG1–SG5).** Media stays capped at ≤₹60k/month until stage gate **G1 (Flagship proven), window M6–M9, decision by M9**.
+- **First week of March (M5): first formal spend-gate review (SG1–SG5).** Media stays capped at ≤₹60k/month until stage gate **G1 (Flagship proven): planning case M9 (Jul 2027), M6 upside**.
 
 ---
 

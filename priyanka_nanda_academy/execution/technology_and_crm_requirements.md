@@ -1,6 +1,8 @@
 # Technology and CRM Requirements: Minimum Viable Growth Stack
 
-> **Aligned to recommended_strategy.md §6 on 2026-10-16.** Canonical vocabulary applied: spend gates SG1–SG5 (stage gates G0–G3b are separate); L3 Pro formats Weekday / Flex / **Destination**; Meta campaigns MC1–MC6, Google campaigns GC1–GC4; ₹10L / ₹30L / ₹50L Plans; recorded pre-work and LMS after stage gate G1 (Tranche 2).
+> **Aligned to recommended_strategy.md §6 on 2026-10-16.** Canonical vocabulary applied: spend gates SG1–SG5 (stage gates G0–G3b are separate); L3 Pro formats Weekday / Flex / **Destination**; Meta campaigns MC1–MC6, Google campaigns GC1–GC4; ₹10L / ₹30L / ₹50L Plans; recorded pre-work library and LMS in Year 2 / Tranche 3.
+>
+> **Gate E changes (2026-10-16, independent_review.md RT-15, §4 defects 7–8):** the recorded pre-work library and LMS moved from Tranche 2 to **Year 2 / Tranche 3 (G2), or from M10 on cash evidence**; the Destination pilot cohort moved from Jun–Jul to **Aug–Sep 2027 (M10–M11)** to match the model's Destination launch at M10 (Strategy/Roadmap to mirror); G1 planning case = M9 (Jul 2027), M6 = upside.
 
 **Client:** Priyanka Nanda Makeup Academy (PNA), Chandigarh · **Workstream:** Growth & MarTech · **Prepared:** 2026-10-16 · **Agent:** Growth and MarTech Agent (Opus)
 **Serves:** `strategy/admissions_funnel.md` (stages, SLA, automations), `strategy/growth_marketing_strategy.md` (spend gates SG1–SG2 depend on this stack), `execution/marketing_channel_plan.md`.
@@ -12,7 +14,7 @@
 
 ## 1. Summary and recommended stack
 
-**Design principle:** a small academy needs **one WhatsApp-centred inbox, one lead record per person, enforced SLA timers, and conversion feedback to ad platforms**. It does not need an enterprise CRM. Buy only what spend gates SG1 (tracking) and SG2 (follow-up discipline) require. Add an LMS only after stage gate G1 (Flagship proven) releases the recorded pre-work build in Tranche 2 (recommended_strategy §5). The Destination pilot cohort (Jun–Jul 2027) runs its pre-work live-online without an LMS.
+**Design principle:** a small academy needs **one WhatsApp-centred inbox, one lead record per person, enforced SLA timers, and conversion feedback to ad platforms**. It does not need an enterprise CRM. Buy only what spend gates SG1 (tracking) and SG2 (follow-up discipline) require. Add an LMS only when the recorded pre-work library is released in Year 2 (Tranche 3, at G2; or from M10 on cash evidence if the first two post-move cohorts fill ≥75%; recommended_strategy §4.3, §5). The Destination pilot cohort (Aug–Sep 2027, M10–M11) runs its pre-work live-online without an LMS.
 
 | Layer | Phase 0 (weeks 1–4; ≈₹3–5k/mo) | **MVP (from week 5; ≈₹18k/mo base)** | Scale (multi-counsellor / regional / hybrid; ≈₹30–40k/mo) |
 |---|---|---|---|
@@ -23,7 +25,7 @@
 | Analytics | GA4 + GTM + Meta Pixel + Google Ads conversions | + Meta CAPI for business messaging (CTWA events) + Google offline conversion import + Looker Studio dashboard + Clarity | + server-side tagging (optional) |
 | Payments | Razorpay payment links | + payment pages (taster, masterclass), instalment links, **EMI partner** | + subscriptions (Pro Circle) |
 | Booking | WhatsApp Flow / manual | Booking tool (visits, tasters) | Same |
-| LMS | — | — (Destination pilot pre-work runs live-online: Zoom/Meet + WhatsApp + Drive) | Graphy / Exly / similar **only after stage gate G1** (Tranche 2 recorded pre-work) |
+| LMS | — | — (Destination pilot pre-work runs live-online: Zoom/Meet + WhatsApp + Drive) | Graphy / Exly / similar **only in Year 2 / Tranche 3** (recorded pre-work library) |
 
 **Indicative run-rate (A-GRO-42):** ≈₹8k (₹10L Plan) / ≈₹18–20k (₹30L Plan) / ≈₹30–40k (₹50L Plan, reference only) per month incl. GST and WhatsApp message fees [EST], built up in §4.
 
@@ -171,15 +173,15 @@ Sources: TeleCRM (S-GRO-05), Zoho CRM (S-GRO-06), LeadSquared (S-GRO-07), Privyr
 - Refund flow documented.
 - EMI lender terms shown to students before they apply.
 
-### 3.8 LMS for Destination pre-work and the hybrid layer (after stage gate G1; Tranche 2)
+### 3.8 LMS for Destination pre-work and the hybrid layer (Year 2 / Tranche 3)
 
 | Option | Indicative cost | Fit | Source |
 |---|---|---|---|
-| **Destination pilot cohort (Jun–Jul 2027; the G2 pilot):** live-online pre-work via Zoom/Meet + WhatsApp group + Google Drive/Classroom; no LMS purchase | ₹0–1.5k/mo [EST] | Tests pre-work completion (KT-7: revert to Weekday if <70%) | recommended_strategy §7.3 |
+| **Destination pilot cohort (Aug–Sep 2027, M10–M11; the G2 pilot):** live-online pre-work via Zoom/Meet + WhatsApp group + Google Drive/Classroom; no LMS purchase | ₹0–1.5k/mo [EST] | Tests pre-work completion (KT-7: revert to Weekday if <70%) | recommended_strategy §7.3 |
 | Graphy | US$49–399/mo (plan names and fees conflict across reviews); INR plans exist but were not verified | Cohort courses, live classes, payments, white-label app (higher tiers) | S-GRO-10 [CLAIM] |
 | Exly | Pricing not found | Creator platform: courses, live workshops, bookings, payments, built-in CRM | S-GRO-17 [CLAIM] |
 
-**LMS requirements for the recorded pre-work library (after G1) [REC]:**
+**LMS requirements for the recorded pre-work library (Year 2 / Tranche 3) [REC]:**
 - Cohort scheduling and live classes.
 - **Photo/video assignment submission with trainer feedback** (makeup is visual).
 - Completion tracking feeding the CRM.
@@ -392,7 +394,7 @@ Partner (salon, college, vendor, creator, accommodation; code; agreement)
 | Masterclass sell-through; self-makeup seats | — |
 | Reviews this week; average rating | GBP |
 | **Spend-gate status SG1–SG5** (green/amber/red) | Per `growth_marketing_strategy.md` §9 |
-| Stage-gate status G0 / G1 (green/amber/red) | Per `recommended_strategy.md` §7.1 (G0 target M3, G1 window M6–M9) |
+| Stage-gate status G0 / G1 (green/amber/red) | Per `recommended_strategy.md` §7.1 (G0 target M3; G1 planning case M9, upside M6) |
 
 ### 9.2 Monthly
 - CAC by route (media and fully loaded)
@@ -432,7 +434,7 @@ Partner (salon, college, vendor, creator, accommodation; code; agreement)
 | 4 | Website: GTM/GA4 events, Meta Pixel/CAPI (web), Google Ads conversions + offline import; hidden fields; WhatsApp pre-fill script; Clarity | Web freelancer | SG1 checklist items ticked |
 | 4–5 | Payments: Razorpay links/pages for taster, self-makeup, token; EMI partner application | Founder + finance | First token taken via link |
 | 6–8 | Automations A5–A11, A13–A16 live; alumni object; consent library | Growth lead | Spend gate SG1 green for the first week |
-| After G1 (M6–M9) | Review scale needs: second counsellor seat (0.5 FTE, Tranche 2), Zoho Professional, server-side tagging, LMS for recorded pre-work (only after stage gate G1) | Growth lead | Gate review |
+| After G1 (planning case M9; upside M6) | Review scale needs: second counsellor seat (0.5 FTE, Tranche 2), Zoho Professional, server-side tagging. LMS for recorded pre-work only in Year 2 / Tranche 3 | Growth lead | Gate review |
 
 ---
 

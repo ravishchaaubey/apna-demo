@@ -1,6 +1,8 @@
 # Admissions Funnel: Design, SLA, Counselling and Instrumented Model
 
 > **Aligned to recommended_strategy.md §6 on 2026-10-16.** Canonical vocabulary applied: segments S1–S8 and products L0–L5; L3 Pro formats Weekday / Flex / **Destination**; spend gates **SG1–SG5** (stage gates G0–G3b separate); forecast bundles Conservative / Base / Aggressive (the Low/Base/High columns in §9 are input magnitudes); Pro price path **current fee → ₹75k list (step 1) → ₹90k list (step 2), ₹80k realised = planning fee**; tricity market = ₹3.27 cr / ≈730 learners (CA-05 is an upper reference only); M1 = Nov 2026.
+>
+> **Gate E changes (2026-10-16, independent_review.md RT-07/08/09/13, §4):** SG4 fully loaded acquisition: ≤40% green; 40–50% amber (founder review, **not a pass**); the Year-1 plan runs at ≈49% on the step-1 fee. Search-visibility claims restated as tool-limited and to be verified manually. S-CUS-14 and S-CUS-20 retagged [CLAIM]; H7 = plausible, untested. The non-paid engine uplift (organic + referral 2.5 → 4.0 enrolments/month, +60%) is labelled an unevidenced [HYP] with its validation test. G1 planning case = M9 (Jul 2027), M6 = upside; "steady state" now means after G1.
 
 **Client:** Priyanka Nanda Makeup Academy (PNA), Chandigarh · **Workstream:** Growth & MarTech · **Prepared:** 2026-10-16 · **Agent:** Growth and MarTech Agent (Opus)
 **Feeds:** `economics/funnel_economics.xlsx` (Economics agent). **§9 is the master assumption table (A-GRO-01..50).**
@@ -17,7 +19,7 @@
    - For career programmes the sale is closed at a **campus visit or paid taster with the parent or spouse present**.
    - For masterclasses and self-makeup, counselling is *friction*. Those should be self-serve.
    - The website is the **trust hub** that every route passes through, and the capture surface for Search and AI-search. It is not the closer.
-   - Most important: **a funnel choice is second-order until PNA has visibility, proof and response discipline.** Today PNA has no Google Business Profile we could find, no Instagram we could find and no published proof (CA-07). Fix those first.
+   - Most important: **a funnel choice is second-order until PNA has visibility, proof and response discipline.** PNA did not appear in our tool-limited, US-based searches; Instagram, Maps and Justdial were blocked. To be verified manually with the founder before the founder meeting (CA-07). No Google Business Profile, Instagram or published proof could be verified; if the manual check confirms the gap, fix it first.
 2. **Recommended funnel by segment [REC]:**
 
    | Segment | Funnel |
@@ -28,10 +30,10 @@
    | S7 | Search/regional CTWA → **online parents' info session** → video counselling → **L3 Destination** format (4 weeks live-online pre-work + 5–6-week Chandigarh intensive) + accommodation partner |
    | S5 | Seasonal Reels/Search/vendor partners → **instant booking** |
 
-3. **Speed-to-lead and follow-up are the cheapest levers (H7).**
+3. **Speed-to-lead and follow-up are plausibly the cheapest levers (H7: plausible, untested; the V7 SLA pilot decides).** The supporting evidence is US-only vendor data [CLAIM].
    - **SLA:** first human reply median <5 min and P90 <30 min in working hours; ≥5 touches in 14 days for every qualified lead (QL).
    - Without the SLA, the model applies a 0.67× penalty to Lead→QL (A-GRO-24).
-4. **Base monthly target (steady state, months 7–12): 10 career enrolments** (6 Pro + 4 Foundation). This is a **gated plan target, not a forecast**; the fallback is the ₹10L-Plan trajectory of about 52 career students a year (recommended_strategy §5, §10 #14). Today PNA makes under 60 enrolments a year across all courses (CA-01). The target needs about **143 career leads, 66 QLs, 38 counselled/taster attendees and 12 applications a month**. Base media cost is **≈₹35k/month**, which is **≈₹5.9k media CAC per paid enrolment**.
+4. **Base monthly target (steady state after G1: months 10–12 in the M9 planning case, 7–12 if G1 comes at M6): 10 career enrolments** (6 Pro + 4 Foundation). This is a **gated plan target, not a forecast**; the fallback is the ₹10L-Plan trajectory of about 52 career students a year (recommended_strategy §5, §10 #14). Today PNA makes under 60 enrolments a year across all courses (CA-01). The target needs about **143 career leads, 66 QLs, 38 counselled/taster attendees and 12 applications a month**. Base media cost is **≈₹35k/month**, which is **≈₹5.9k media CAC per paid enrolment**.
 5. **The cost uncertainty is about 9× wide.** For the same 10 enrolments, the conservative case (low conversion, high CPL) needs about **257 leads and ≈₹1.1L of media** (≈₹18.5k per paid enrolment). The Aggressive (favourable-rate) case needs about 89 leads and ≈₹12.5k. This spread is why spend must not scale until spend gates **SG1–SG5** are green (and, above ₹60k/month, stage gate G1), per `growth_marketing_strategy.md` §9.
 
 ---
@@ -41,7 +43,7 @@
 | Funnel option | Case for | Challenge / failure mode | Verdict [REC] | Where it wins | How we test |
 |---|---|---|---|---|---|
 | **(a) Website-first** (ad/SEO → landing page → form → callback) | PNA's only verified asset is its website (CA-07); Search and AI answers draw on websites; parents validate on the site | Forms → callbacks go cold: only 37% of US firms respond within 1 h (S-CUS-22); median landing-page conversion 6.6% (S-CUS-27); faceless, and parents' questions are not answered | **Trust hub + SEO/AI-search capture + fallback.** Every CTA opens WhatsApp with a pre-filled, source-coded message. Forms trigger an instant WhatsApp template | S7 research, parent validation, Search | T5 (fee shown vs gated); T1 (instant form arm) |
-| **(b) WhatsApp-first** (CTWA / click-to-chat → counselling) | >70% of online Indians prefer messaging a business (S-CUS-14); CTWA opens a 72-h free window (S-CUS-16, S-GRO-01); Flows qualification case: 4× QLs, −31% cost per QL (S-CUS-17, vendor case) | WhatsApp is a channel, not a sale. Risks: freebie "fees?" chats overload counsellors; **founder voice-note dependency** (conflicts with CA-04); weak attribution without CRM/CAPI | **Primary capture and nurture rail for all segments.** Add a 4-question Flow, a counsellor (not the founder) as inbox owner, CRM tagging and CAPI | S1, S2, S7, S3 | T1 CTWA+Flow vs instant form → WhatsApp |
+| **(b) WhatsApp-first** (CTWA / click-to-chat → counselling) | >70% of online Indians prefer messaging a business (S-CUS-14) [CLAIM, Meta-commissioned survey]; CTWA opens a 72-h free window (S-CUS-16, S-GRO-01); Flows qualification case: 4× QLs, −31% cost per QL (S-CUS-17, vendor case) | WhatsApp is a channel, not a sale. Risks: freebie "fees?" chats overload counsellors; **founder voice-note dependency** (conflicts with CA-04); weak attribution without CRM/CAPI | **Primary capture and nurture rail for all segments.** Add a 4-question Flow, a counsellor (not the founder) as inbox owner, CRM tagging and CAPI | S1, S2, S7, S3 | T1 CTWA+Flow vs instant form → WhatsApp |
 | **(c) Counselling-first** (every lead gets a call/visit) | High-ticket offline course, and parents decide (A-CUS-27) | Friction and cost for S3/S5. Founder-led counselling does not scale (A-CUS-30 premium is real but finite) | **Mandatory for career programmes only.** Team-led, with founder escalation slots. Never for L4/L1-S5 | S1, S7, S2 | Founder-touch flag; counselled→applied by counsellor |
 | **(d) Paid trial workshop** (₹999 taster, credited) | Self-selects intent; lets teaching quality sell; works without the founder; Airblack used a low-ticket → upsell design (S-CUS-33/34) | Local rivals offer *free* demos (S-LC-13/23), so price is an objection; risk of cannibalisation; trainer time | **Primary for S2 and undecided S1; regional pop-ups for S7.** Test as an alternative primary for S1 | S2, S7 pop-ups | T3 ₹999 taster vs free online session; T4 taster vs counselling for S1 |
 | **(e) Webinar / Instagram Live** | Cheap reach for remote families | Free consumer events: registrant→attendee 25–45% (A-CUS-17); an online demo cannot prove hands-on quality | **Secondary.** Monthly online **Parents & Students Info Session** for S7 and parents; fortnightly founder Live for community | S7 parents | Registrant→counselled rate (A-GRO-26) |
@@ -92,8 +94,8 @@ Adopted from S-CUS §8.1 and refined for PNA. One CRM status per stage. Entry ev
 | Item | Standard | Rationale |
 |---|---|---|
 | Working hours | Mon–Sat 10:00–19:30; **Sun 11:00–17:00** (parents are free at weekends) | Coverage when families decide [HYP] |
-| Instant acknowledgement | 24/7 auto-reply ≤1 min with WhatsApp Flow (4 questions) + fee range + "a counsellor will message you by HH:MM" | Speed-to-lead odds fall >6× within the first hour (S-CUS-20) |
-| First human reply (working hours) | **Median <5 min; P90 <30 min** | 5 vs 30 min = 21× qualification odds (US data, S-CUS-20); we model only 1.3–2.0× (A-CUS-16) |
+| Instant acknowledgement | 24/7 auto-reply ≤1 min with WhatsApp Flow (4 questions) + fee range + "a counsellor will message you by HH:MM" | Speed-to-lead odds fall >6× within the first hour (S-CUS-20) [CLAIM, 2007 vendor study, US-only] |
+| First human reply (working hours) | **Median <5 min; P90 <30 min** | 5 vs 30 min = 21× qualification odds (S-CUS-20) [CLAIM, 2007 vendor study, US-only]; we model only 1.3–2.0× (A-CUS-16) [HYP] |
 | After-hours leads | Human reply by 10:30 next working day; first in queue | — |
 | QL call / voice note | Within 1 working hour of qualification | — |
 | Counselling or visit booked | Within 48 h of QL; held within 7 days | Momentum before competitor demos |
@@ -213,9 +215,9 @@ Adopted from S-CUS §8.1 and refined for PNA. One CRM status per stage. Entry ev
 
 | ID | Assumption | Low | Base | High | Unit | Rationale / anchor | Source | Tag | Validate by |
 |---|---|---|---|---|---|---|---|---|---|
-| A-GRO-01 | Career-programme enrolments (L2+L3) per month, steady state (months 7–12) | 6 | 10 | 15 | enrol/mo | Today <60/yr all courses (CA-01, ≈≤5/mo). Base 120/yr is ≈16% of the reconciled tricity makeup-led market of ≈730 learners/yr (₹3.27 cr; some PNA enrolments will be out-of-town); CA-05 (1,256, makeup + beauty-artistry) is an upper reference only. **Gated plan target, not a forecast**; ₹10L-Plan fallback ≈52 career students/yr. High = S-CUS §8.3 worked example | CA-01; recommended_strategy §5, §6.4, §10 #14 | [HYP] | V1 + months 4–6 actuals |
+| A-GRO-01 | Career-programme enrolments (L2+L3) per month, steady state after G1 (planning case M10–M12; M7–M12 if G1 at M6) | 6 | 10 | 15 | enrol/mo | Today <60/yr all courses (CA-01, ≈≤5/mo). Base 120/yr is ≈16% of the reconciled tricity makeup-led market of ≈730 learners/yr (₹3.27 cr; some PNA enrolments will be out-of-town); CA-05 (1,256, makeup + beauty-artistry) is an upper reference only. **Gated plan target, not a forecast**; ₹10L-Plan fallback ≈52 career students/yr. High = S-CUS §8.3 worked example | CA-01; recommended_strategy §5, §6.4, §10 #14 | [HYP] | V1 + months 4–6 actuals |
 | A-GRO-02 | Pro (L3) share of career enrolments | 50% | 60% | 70% | % | Flagship-led positioning; Foundation as lower-risk entry | — | [HYP] | V1 |
-| A-GRO-03 | Route mix of career enrolments | — | CTWA 30% · Paid Search 20% · Organic (IG/site/GBP/SEO) 20% · Referral/walk-in 20% · Taster 10% | — | % | Referral reportedly today's engine (S-CUS §2); Search high-intent (S-CUS §6f) | — | [HYP] | V1, V6 |
+| A-GRO-03 | Route mix of career enrolments | — | CTWA 30% · Paid Search 20% · Organic (IG/site/GBP/SEO) 20% · Referral/walk-in 20% · Taster 10% | — | % | Referral reportedly today's engine (S-CUS §2); Search high-intent (S-CUS §6f). Organic + referral = 40% (4.0 enrolments/month at base vs ≈2.5 today): **unevidenced +60% uplift [HYP]**, see A-GRO-43/44 (RT-08) | — | [HYP] | V1, V6; re-base at M4 |
 | A-GRO-04 | L1 Taster ticket price | ₹499 | ₹999 | ₹1,999 | ₹ | Orane ₹499 (S-NC-17); Airblack from ₹150 (S-CUS-33); local free demos (S-LC-13/23) | S-NC-17 | [HYP] | T3 |
 | A-GRO-05 | L2 Foundation fee | ₹30,000 | ₹39,900 | ₹50,000 | ₹ | Zuri cert from ₹25k (S-LC-13); JH ₹35k (S-NC-31); Lakmé 64 h from ₹47k (S-NC-01) | as listed | [HYP] | V3, V5 |
 | A-GRO-06 | L3 Pro list fee (GST-inclusive; excl. optional kit) | ₹75,000 (step-1 list) | ₹90,000 (step-2 list) | ₹1,20,000 | ₹ | Local diploma ₹35–75k; Zuri adv ₹80k–1.2L; Lakmé ₹1.3–1.5L (S-LC §6, S-NC-02); A-CUS-06. **Two-step path (recommended_strategy §7.2): current fee (CA-02 ₹40k/60k/75k) → ₹75k list at proof gate 1 → ₹90k list at proof gate 2; ₹80k realised is the planning fee** | CA-02, A-CUS-06, recommended_strategy §6.1/§7.2 | [HYP] | V1, V3, V5, T5 |
@@ -252,7 +254,7 @@ Adopted from S-CUS §8.1 and refined for PNA. One CRM status per stage. Entry ev
 | ID | Assumption | Low | Base | High | Unit | Rationale / anchor | Source | Tag | Validate by |
 |---|---|---|---|---|---|---|---|---|---|
 | A-GRO-23 | Applied (token) share refunded/lost before start | 15% | 20% | 25% | % | Complement of applied→enrolled | A-CUS-14 | [HYP] | V1 |
-| A-GRO-24 | Lead→QL multiplier **if SLA not met** (median >1 h) | 0.50× | 0.67× | 0.77× | × | Inverse of A-CUS-16 1.3–2.0× uplift; far below MIT/HBR odds | S-CUS-20/22 | [HYP] | V2, V7 |
+| A-GRO-24 | Lead→QL multiplier **if SLA not met** (median >1 h) | 0.50× | 0.67× | 0.77× | × | Inverse of A-CUS-16 1.3–2.0× uplift; far below MIT/HBR odds (US-only [CLAIM]); H7 plausible, untested | S-CUS-20/22 | [HYP] | V2, V7 |
 | A-GRO-25 | Founder-touch multiplier on counselled→applied | 1.0× | 1.25× | 1.5× | × | A-CUS-30; base rates assume ~50% founder touch in year 1, falling to ≤30% by month 18 | A-CUS-30 | [HYP] | CRM flag |
 | A-GRO-26 | Online parents' session: registrant→attendee / attendee→counselling booked | 25% / 20% | 35% / 30% | 45% / 40% | % | A-CUS-17 (ON24 B2B 55% is ceiling) | S-CUS-23 | [HYP] | Months 3–6 |
 | A-GRO-27 | Masterclass lead→purchase | 15% | 25% | 35% | % | A-CUS-20 | — | [HYP] | Launches |
@@ -272,8 +274,8 @@ Adopted from S-CUS §8.1 and refined for PNA. One CRM status per stage. Entry ev
 | A-GRO-40 | S1 career-enquiry seasonality index (Jan…Dec) | — | 0.70, 0.80, 0.90, 1.00, 1.30, 1.35, 1.25, 1.10, 1.05, 1.00, 0.80, 0.75 (sums to 12.0) | — | index | A-CUS-29 (peaks May–Jul, Aug–Oct); wedding season Nov–Feb (S-CUS-13) | S-CUS-13 | [HYP] | V1 |
 | A-GRO-41 | Payment gateway fee | 1.8% | 2.0% | 2.4% | % + GST | Razorpay standard 2% + GST [CLAIM] | S-GRO-09 | [CLAIM] | Contract |
 | A-GRO-42 | Martech stack run-rate (BSP + CRM + telephony + tools) | ₹8,000 | ₹18,000 | ₹40,000 | ₹/mo | Built up in `technology_and_crm_requirements.md` §4 | S-GRO-02..12 | [EST] | Quotes |
-| A-GRO-43 | Organic career leads per month (IG/site/GBP/SEO), months 7–12 | 25 | 40 | 60 | leads/mo | Needed for base: 2 enrol ÷ 5.0% = 40 [EST]; PNA baseline unknown (V1) | — | [HYP] | V1, GA4 |
-| A-GRO-44 | Referral + walk-in career leads per month, months 7–12 | 5 | 8 | 12 | leads/mo | Needed for base: 2 ÷ 25.1% = 8 [EST]; plausibility: ~120 alumni × 0.4 ÷ 12 ≈ 4 + walk-ins | A-GRO-33 | [HYP] | V1 |
+| A-GRO-43 | Organic career leads per month (IG/site/GBP/SEO), after G1 | 25 | 40 | 60 | leads/mo | Needed for base: 2 enrol ÷ 5.0% = 40 [EST]; PNA baseline unknown (V1); the academy Instagram account is new. **Part of the non-paid engine uplift (2.5 → 4.0 enrolments/month, +60%): unevidenced [HYP]** (RT-08) | — | [HYP, unevidenced] | V1 baseline + CRM organic lead counts M1–M4; re-base at the Feb (M4) review; fallback: hold non-paid flat at ≈2.5 enrolments/month |
+| A-GRO-44 | Referral + walk-in career leads per month, after G1 | 5 | 8 | 12 | leads/mo | Needed for base: 2 ÷ 25.1% = 8 [EST]; supply check: ~120 alumni × 0.4 ÷ 12 ≈ 4 referral leads + walk-ins, i.e. **about half of what the base needs. Part of the unevidenced +60% non-paid uplift [HYP]** (RT-08) | A-GRO-33 | [HYP, unevidenced] | V1 alumni-list size and consent rate (founder decision D1/D9); CRM referral counts M1–M4; re-base at M4 |
 
 ### 9.5 Growth-team and production cost assumptions (reconcile with Operations agent)
 
@@ -293,6 +295,8 @@ Adopted from S-CUS §8.1 and refined for PNA. One CRM status per stage. Entry ev
 ### 10.1 Base case: 10 career enrolments/month (A-GRO-01 base), base rates and base CPL
 
 Volumes are per month, computed from A-GRO-03 (mix), A-GRO-18..22 (rates), A-GRO-10/12/13/14/15 (cost) **[EST, arithmetic from HYP inputs]**.
+
+**Caution (RT-08):** the organic and referral columns (4.0 enrolments/month together, against ≈2.5/month today per the Economics baseline) assume a **+60% non-paid uplift at zero media cost. This is an unevidenced [HYP].** It is validated by the V1 founder data pull (current organic/referral baseline, alumni-list size and consent rate) and by CRM organic/referral lead counts in M1–M4, re-based at the February (M4) review. If the uplift does not appear, hold the non-paid engine flat at ≈2.5/month and either accept fewer enrolments or buy the gap at the paid-route CAC.
 
 | Stage | Meta CTWA | Paid Search | Organic | Referral / walk-in | Taster route | **Total** | Tag |
 |---|---|---|---|---|---|---|---|
@@ -323,6 +327,7 @@ Volumes are per month, computed from A-GRO-03 (mix), A-GRO-18..22 (rates), A-GRO
 **Read-out:**
 - CAC moves ~9× between rate sets. At Base, media CAC is ≈7% of the ₹80k realised planning fee. In the Conservative case it is ≈23%.
 - Weighted career fee at Base ≈ ₹64k [EST: 60% × ₹80k realised + 40% × ₹39.9k]. Against spend gate **SG4** (Economics thresholds, recommended_strategy §7.1: media CAC per paid career enrolment ≤₹9k green, ₹9–12k amber, >₹12k red), the Base case (≈₹5.9k) is green and the Conservative case (≈₹18.5k) is red (`growth_marketing_strategy.md` §9).
+- SG4 also tests **fully loaded acquisition** (media + growth team + tools + rewards + EMI subvention) as a share of career revenue: **≤40% is green; 40–50% is amber, which requires a founder review and is not a pass; >50% is red.** The Year-1 plan runs at about **49% on the step-1 fee**, because the growth team is hired ahead of volume while proof is built. This is an accepted Year-1 inefficiency; SG4 green is a Year-2 expectation (≤30% from Year 2).
 
 ### 10.3 Other products, base month (steady state, season-averaged)
 
@@ -343,7 +348,7 @@ Volumes are per month, computed from A-GRO-03 (mix), A-GRO-18..22 (rates), A-GRO
 | Counsellors needed (A-GRO-38 base 30/day) | **1 FTE + backup** | **1–2 FTE** |
 | At A-GRO-01 high (15/mo, base rates) | ≈215 career leads → ≈26/day → **1 FTE at limit; hire 2nd** | — |
 
-**Implication (H7):** the binding constraint is **counselling discipline and who counsels**, not lead volume. The founder cannot be the inbox (CA-04).
+**Implication (H7, plausible but untested until the V7 pilot):** the binding constraint is **counselling discipline and who counsels**, not lead volume. The founder cannot be the inbox (CA-04).
 
 ---
 
