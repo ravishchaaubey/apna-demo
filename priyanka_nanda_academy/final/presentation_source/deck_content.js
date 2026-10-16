@@ -618,12 +618,12 @@ Step 1: ₹39.6k before CAC, ₹32.0k after; break-even 38%. Step 2 (₹80k real
         { value: -30, label: `₹30L planned` },
         { value: -35, label: `₹35L authorised` },
       ],
-      caption: `Peak ₹25.2L in Jul (M9, fit-out). Headroom ₹4.8L / ₹9.8L vs ₹30L / ₹35L. If the academy pays the founder, peak cash is ₹32.6L (M10) and the contingency is consumed.`,
+      caption: `Peak ₹25.2L in Jul (M9, fit-out). Headroom ₹4.8L / ₹9.8L vs ₹30L / ₹35L. If the academy pays the founder ₹75k/month, peak cash is ₹32.6L (M10) and the contingency is consumed.`,
     },
     tranches: [
-      { code: `T1 Prove`, when: `M1 → end M9`, text: `Up to ₹15L; planning use ₹11.8L by M8` },
-      { code: `T2 Build`, when: `M10 → M12`, text: `Up to ₹15L more; ₹14.7L of space committed in the G1 month (fit-out ₹10.4L, deposit ₹3.1L, stations ₹1.2L)` },
-      { code: `Contingency`, when: `₹35L authorised`, text: `₹5L above the ₹30L plan` },
+      { code: `T1 Prove`, when: `M1 → end M9`, text: `up to ₹15L; planning use ₹11.8L by M8` },
+      { code: `T2 Build`, when: `M10 → M12`, text: `up to ₹15L more; ₹14.7L of space committed in the G1 month (fit-out ₹10.4L, deposit ₹3.1L, stations ₹1.2L)` },
+      { code: `Contingency`, when: ``, text: `₹5L (₹35L authorised)` },
       { code: `T3 Extend`, when: `G2, Year 2`, text: `₹4–10L` },
       { code: `T4 Site`, when: `G3a`, text: `₹2–5L per partner site` },
     ],
@@ -658,7 +658,7 @@ Planning case: ₹60.6L revenue, −₹2.8L EBITDA, 81 enrolments, peak cash ₹
       { label: `Year-3 EBITDA, all gates`, value: `₹39.3L`, sub: `₹28.8L after salary` },
     ],
     table: {
-      columns: [{ header: `₹ lakh`, w: 2.25, bold: true }, { header: `Y1`, w: 0.9, align: `right` }, { header: `Y2`, w: 0.9, align: `right` }, { header: `Y3`, w: 0.9, align: `right` }],
+      columns: [{ header: `₹ lakh`, w: 2.9, bold: true }, { header: `Y1`, w: 0.75, align: `right` }, { header: `Y2`, w: 0.75, align: `right` }, { header: `Y3`, w: 0.75, align: `right` }],
       rows: [
         [`Revenue`, `60.6`, `113.7`, `162.9`],
         [`EBITDA before founder salary`, `−2.8`, `16.3`, `39.3`],

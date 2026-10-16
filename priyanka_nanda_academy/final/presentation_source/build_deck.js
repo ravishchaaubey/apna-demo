@@ -268,7 +268,8 @@ function barChart(slide, area, o) {
     barGapWidthPct: o.gap === undefined ? 60 : o.gap,
     ...(o.overlap !== undefined ? { barOverlapPct: o.overlap } : {}),
     chartColors: colors,
-    dataLabelPosition: o.stacked ? "ctr" : "outEnd",
+    dataLabelPosition: o.labelPos || (o.stacked ? "ctr" : "outEnd"),
+    ...(o.labelColor ? { dataLabelColor: o.labelColor } : {}),
     catAxisOrientation: o.dir === "bar" ? "maxMin" : "minMax",
     valAxisMaxVal: o.max === undefined ? r.max : o.max,
     valAxisMinVal: o.min === undefined ? r.min : o.min,
@@ -338,6 +339,20 @@ function table(slide, o) {
     objectName: oname(slide, o.name || "Table"),
   });
   return { size, height: g.height };
+}
+
+/** Grid label on a background-coloured box sized to the wrapped text (marker lines pass behind it). */
+function gridLabel(slide, text, o) {
+  const f = fitText(text, { w: o.w, h: o.h, max: 10, min: 10 });
+  const tw = Math.min(o.w, Math.max(...f.lines.map((ln) => textWidth(ln, { size: 10, bold: !!o.bold }))) / 0.97 + 0.06);
+  const th = Math.min(o.h, f.lines.length * lineHeight(10) + 0.03);
+  const x = o.align === "right" ? o.x + o.w - tw : o.x;
+  slide.addText(text, {
+    isTextBox: true, x, y: o.y + (o.h - th) / 2, w: tw, h: th, margin: 0, fill: { color: col("porcelain") },
+    fontSize: 10, bold: !!o.bold, color: o.color ? col(o.color) : col("ink"), align: o.align || "left", valign: "middle",
+    objectName: oname(slide, o.name || "Grid label"),
+  });
+  return f;
 }
 
 // =============================================================================================
@@ -434,7 +449,7 @@ function timeGrid(slide, o) {
             const avail = lim - (bx + bw) - 0.1;
             const f = fitText(b.label, { w: avail, h: rh - 0.04, max: 10, min: 10, maxLines: 2 });
             if (!f.fits) warn(`Grid bar "${short(b.label)}"`, "label fits neither inside nor after the bar");
-            tb(slide, b.label, { x: bx + bw + 0.06, y: ry + 0.02, w: Math.max(avail, 0.3), h: rh - 0.04, size: 10, min: 10, valign: "middle", name: "Grid bar label", quiet: true });
+            gridLabel(slide, b.label, { x: bx + bw + 0.06, y: ry + 0.02, w: Math.max(avail, 0.3), h: rh - 0.04, name: "Grid bar label" });
           }
         }
       });
@@ -456,13 +471,13 @@ function timeGrid(slide, o) {
         const avail = px - d / 2 - 0.06 - lim - 0.06;
         const f = fitText(p.label, { w: avail, h: rh - 0.04, max: 10, min: 10, maxLines: 2 });
         if (!f.fits) warn(`Grid point "${short(p.label)}"`, `label does not fit (${avail.toFixed(2)}")`);
-        tb(slide, p.label, { x: px - d / 2 - 0.06 - avail, y: ry + 0.02, w: avail, h: rh - 0.04, size: 10, min: 10, align: "right", valign: "middle", name: "Grid point label", quiet: true });
+        gridLabel(slide, p.label, { x: px - d / 2 - 0.06 - avail, y: ry + 0.02, w: avail, h: rh - 0.04, align: "right", name: "Grid point label" });
       } else {
         const lim = freeRight(px + 0.02, allItems, p);
         const avail = lim - px - d / 2 - 0.06 - 0.04;
         const f = fitText(p.label, { w: avail, h: rh - 0.04, max: 10, min: 10 });
         if (!f.fits) warn(`Grid point "${short(p.label)}"`, `label does not fit (${avail.toFixed(2)}")`);
-        tb(slide, p.label, { x: px + d / 2 + 0.06, y: ry + 0.02, w: Math.max(avail, 0.3), h: rh - 0.04, size: 10, min: 10, valign: "middle", name: "Grid point label", quiet: true });
+        gridLabel(slide, p.label, { x: px + d / 2 + 0.06, y: ry + 0.02, w: Math.max(avail, 0.3), h: rh - 0.04, name: "Grid point label" });
       }
     });
     (r.text || []).forEach((t) => {
@@ -470,7 +485,7 @@ function timeGrid(slide, o) {
       const avail = gx + gw - tx - 0.04;
       const f = fitText(t.label, { w: avail, h: rh - 0.04, max: 10, min: 10, maxLines: 2 });
       if (!f.fits) warn(`Grid text "${short(t.label)}"`, "does not fit");
-      tb(slide, t.label, { x: tx, y: ry + 0.02, w: avail, h: rh - 0.04, size: 10, min: 10, bold: true, color: "roseDark", valign: "middle", name: "Grid text", quiet: true });
+      gridLabel(slide, t.label, { x: tx, y: ry + 0.02, w: avail, h: rh - 0.04, bold: true, color: "roseDark", name: "Grid text" });
     });
     if (r.kind === "values") {
       r.values.forEach((v, k) => {
@@ -1137,7 +1152,7 @@ L.growth = (deck, d) => {
   const colors = d.media.map((_, i) => (i >= d.rampFrom ? HEX.rose : HEX.plum));
   barChart(s, { x: geom.gx, y: chY, w: geom.gw, h: chH }, {
     categories: MONTHS, series: [{ name: "Paid-media cap", values: d.media }], colors, fmt: NF0, catHidden: true, gap: 45,
-    max: 150, min: 0, layout: { x: 0, y: 0.02, w: 1, h: 0.96 }, labelSize: 10.5, name: "Media cap chart",
+    max: 175, min: 0, layout: { x: 0, y: 0.02, w: 1, h: 0.96 }, labelSize: 10.5, name: "Media cap chart",
   });
   const g = timeGrid(s, {
     x: tx, y: chY + chH + 0.02, w: tw, labelW, periods: MONTHS, groups: null,
@@ -1286,12 +1301,12 @@ L.unitEcon = (deck, d) => {
 L.scenarios = (deck, d) => {
   const s = contentSlide(deck, d);
   const top = d.top || TOP;
-  const r1h = 2.2;
+  const r1h = 2.42;
   const lw = 6.35;
   // Scenario chart
   const capH = needH(d.scen.caption, lw - 0.36, 10);
   const a1 = chartCard(s, { x: X0, y: top, w: lw, h: r1h, title: d.scen.title, badges: ["estimate"], footH: capH + 0.04, pad: 0.16 });
-  barChart(s, a1, { categories: d.scen.categories, series: d.scen.series, colors: [HEX.plum, HEX.rose, HEX.mauve], fmt: NF1, legend: true, gap: 55, labelSize: 10, catSize: 10, min: -20, max: 85, name: "Scenario chart" });
+  barChart(s, a1, { categories: d.scen.categories, series: d.scen.series, colors: [HEX.plum, HEX.rose, HEX.mauve], fmt: NF1, legend: true, legendPos: "b", gap: 50, labelSize: 10, catSize: 10, min: -20, max: 80, name: "Scenario chart" });
   tb(s, d.scen.caption, { x: a1.innerX, y: a1.y + a1.h + 0.01, w: a1.innerW, h: capH + 0.02, size: 10, min: 10, color: "muted", name: "Scenario caption" });
   // Cash line with reference lines
   const cx = X0 + lw + 0.25;
@@ -1323,15 +1338,15 @@ L.scenarios = (deck, d) => {
   tb(s, d.cash.caption, { x: a2.innerX, y: a2.y + a2.h + 0.01, w: a2.innerW, h: cap2H + 0.02, size: 10, min: 10, color: "muted", name: "Cash caption" });
   // Tranches
   const ty = top + r1h + 0.12;
-  const th = 0.74;
-  const ws = [2.1, 4.1, 1.9, 1.7, CW - 2.1 - 4.1 - 1.9 - 1.7 - 4 * 0.09];
+  const th = 0.52;
+  const ws = [2.3, 4.55, 2.05, 1.27, CW - 2.3 - 4.55 - 2.05 - 1.27 - 4 * 0.09];
   let x = X0;
   d.tranches.forEach((t, i) => {
     const w = ws[i];
     const fill = i === 0 ? "aubergine" : i === 1 ? "plum" : i === 2 ? "amberTint" : "sand";
     const dark = i < 2;
     card(s, { x, y: ty, w, h: th, fill, line: null, radius: 0.06, name: "Tranche" });
-    tb(s, [{ text: `**${t.code}**  ${t.when}`, color: dark ? "roseLight" : "roseDark", gapAfter: 1 }, { text: t.text, color: dark ? "paper" : "ink" }], { x: x + 0.12, y: ty + 0.06, w: w - 0.24, h: th - 0.1, size: 10.5, min: 10, valign: "middle", name: "Tranche text" });
+    tb(s, `**${t.code}**${t.when ? ` (${t.when})` : ""}: ${t.text}`, { x: x + 0.12, y: ty + 0.04, w: w - 0.24, h: th - 0.08, size: 10.5, min: 10, color: dark ? "paper" : "ink", valign: "middle", name: "Tranche text" });
     x += w + 0.09;
   });
   // Losses and rules
@@ -1372,7 +1387,7 @@ L.threeYear = (deck, d) => {
   const s = contentSlide(deck, d);
   const bottomH = 0.56;
   const by = BOT - bottomH;
-  const lw = 4.6;
+  const lw = 4.3;
   // Year-3 revenue decomposition
   const cmpH = 0.72;
   const a1 = chartCard(s, { x: X0, y: TOP, w: lw, h: by - 0.14 - TOP, title: d.rev.title, unit: d.rev.unit, badges: ["estimate"], footH: cmpH + 0.05 });
@@ -1386,11 +1401,11 @@ L.threeYear = (deck, d) => {
   });
   // Middle: cash chart, then the three-year table
   const mx = X0 + lw + 0.25;
-  const mw = 4.45;
-  const tblH = 1.7;
+  const mw = 4.95;
+  const tblH = 1.52;
   const markH = 0.4;
   const a2 = chartCard(s, { x: mx, y: TOP, w: mw, h: by - 0.14 - TOP - tblH - 0.14, title: d.cash.title, badges: ["estimate"], footH: markH });
-  barChart(s, a2, { categories: d.cash.categories, series: [{ name: "Cumulative cash", values: d.cash.values }], colors: [HEX.mauve, HEX.mauve, HEX.plum], fmt: NF1, gap: 90, min: -32, max: 32, name: "Cumulative cash chart" });
+  barChart(s, a2, { categories: d.cash.categories, series: [{ name: "Cumulative cash", values: d.cash.values }], colors: [HEX.mauve, HEX.mauve, HEX.plum], fmt: NF1, gap: 70, min: -35, max: 35, name: "Cumulative cash chart" });
   tb(s, d.cash.marks.map((m, i) => ({ text: m, bold: i === 0, color: i === 0 ? "roseDark" : "muted" })), { x: a2.innerX, y: a2.y + a2.h + 0.01, w: a2.innerW, h: markH - 0.03, size: 10, min: 10, paraGap: 1, name: "Payback marks" });
   table(s, { x: mx, y: by - 0.14 - tblH, w: mw, h: tblH, columns: d.table.columns, rows: d.table.rows, max: 11, min: 10, name: "Three-year table" });
   // Right: IRR tiles
@@ -1488,7 +1503,7 @@ L.risks = (deck, d) => {
 L.decisions = (deck, d) => {
   const s = contentSlide(deck, d);
   const lw = 8.15;
-  const cols = [0.95, 4.45, 0.95, lw - 0.95 - 4.45 - 0.95];
+  const cols = [0.95, 4.3, 1.12, lw - 0.95 - 4.3 - 1.12];
   const xs = cols.reduce((a, w, i) => [...a, i ? a[i - 1] + cols[i - 1] : X0], []);
   const headH = 0.26;
   ["Decision", "", "By", "Default if undecided"].forEach((h, i) => h && label(s, h, { x: xs[i] + (i === 0 ? 0 : 0.06), y: TOP, w: cols[i] + (i === 0 ? cols[1] : 0), size: 10 }));
@@ -1611,7 +1626,7 @@ L.a7 = (deck, d) => {
   const area = chartCard(s, { x: X0, y: TOP, w: lw, h: BOT - TOP, title: c.title, badges: ["estimate"], footH: keyH });
   const vmax = 12;
   const lay = { x: 0.05, y: 0.1, w: 0.93, h: 0.72 };
-  barChart(s, area, { categories: c.categories, series: c.series, colors: [HEX.plum, HEX.mauve], fmt: NF1Z, legend: true, legendPos: "b", gap: 40, overlap: 0, max: vmax, min: 0, catSize: 10, labelSize: 10, layout: lay, name: "Cohort chart" });
+  barChart(s, area, { categories: c.categories, series: c.series, colors: [HEX.plum, HEX.mauve], fmt: NF1Z, legend: true, legendPos: "b", gap: 30, overlap: 0, max: vmax, min: 0, catSize: 10, labelSize: 10, labelPos: "inEnd", labelColor: HEX.paper, layout: lay, name: "Cohort chart" });
   // Reference lines over the plot (exact positions from the manual plot layout)
   const ncat = c.categories.length;
   const px = (t) => area.x + (lay.x + (t / ncat) * lay.w) * area.w;
@@ -1624,17 +1639,17 @@ L.a7 = (deck, d) => {
   rule(s, { x: gxL, y: py(vmax), h: py(0) - py(vmax), color: "aubergine", width: 1.25, dash: "sysDot", name: "G1 marker" });
   pill(s, "G1 26 Jul", { x: gxL, y: py(vmax) - 0.27, h: 0.24, size: 9, fill: "aubergine", color: "paper", align: "center", name: "G1 chip" });
   // Key for the overlays, under the chart
-  const ky = area.y + area.h + 0.06;
+  let ky = area.y + area.h + 0.04;
   let kx = area.innerX;
   [[c.studioTest.label, tones[0]], [c.moveTest.label, tones[1]], [c.g1.label, ["aubergine", "aubergine"]]].forEach(([t, tone], i) => {
-    rule(s, { x: kx, y: ky + 0.11, w: 0.3, color: tone[0], width: 1.75, dash: i === 2 ? "sysDot" : "dash", name: "Key line" });
-    const w = textWidth(t, { size: 10 }) + 0.08;
-    const wrapW = Math.min(w, area.innerX + area.innerW - kx - 0.36);
-    tb(s, t, { x: kx + 0.36, y: ky, w: wrapW, h: 0.22, size: 10, min: 10, color: tone[1], valign: "middle", name: "Key text" });
-    kx += 0.36 + wrapW + 0.2;
-    if (i === 1) {
+    if (i === 2) {
       kx = area.innerX;
+      ky += 0.23;
     }
+    rule(s, { x: kx, y: ky + 0.11, w: 0.3, color: tone[0], width: 1.75, dash: i === 2 ? "sysDot" : "dash", name: "Key line" });
+    const w = textWidth(t, { size: 10 }) * 1.04 + 0.1;
+    tb(s, t, { x: kx + 0.36, y: ky, w, h: 0.22, size: 10, min: 10, color: tone[1], valign: "middle", name: "Key text" });
+    kx += 0.36 + w + 0.25;
   });
   // Side: table, tally, decision, caveat, evenly spaced
   const rx = X0 + lw + GAP;

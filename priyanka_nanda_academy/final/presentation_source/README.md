@@ -23,6 +23,10 @@ node demo_build.js                      # build the demo; prints any text-fit wa
 ./qa.sh _component_demo.pptx            # validate.py, then soffice -> PDF -> PNG at 60 dpi
 ./qa.sh ../Priyanka_Nanda_Academy_Growth_Strategy.pptx   # same QA for the final deck
 markitdown _component_demo.pptx         # text dump for content QA
+
+node build_deck.js                      # final deck from deck_content.js (text and numbers live there)
+./qa.sh ../Priyanka_Nanda_Academy_Growth_Strategy.pptx _render/deck 90
+python3 tools/number_check.py ../slide_storyboard.md ../Priyanka_Nanda_Academy_Growth_Strategy.pptx
 ```
 
 `qa.sh` wraps the pptx skill's scripts:
