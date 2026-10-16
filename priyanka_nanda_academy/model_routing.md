@@ -14,6 +14,6 @@
 | 3 | National Competitive Intelligence | sonnet | Gate A | research/national_competitors.md | done — shared WebSearch budget exhausted before gap-fill; Instagram 429, Orane/Lakmé sites blocked |
 | 4 | Local Competitive Intelligence (+ PNA public footprint) | sonnet | Gate A | research/chandigarh_competitors.md | done — PNA site blocked by proxy; 4 queries unrun (search budget) |
 | 5 | International Benchmarks | sonnet | Gate A | research/international_benchmarks.md | dispatched |
-| 6 | Customer & Admissions | opus | Gate A | research/customer_segments.md | dispatched |
+| 6 | Customer & Admissions | opus | Gate A | research/customer_segments.md | done — 27 sources snippet-only (search quota); 33 labelled assumptions |
 
 Note: the brief suggests 3–5 concurrent agents. Competitive intelligence was split into national and local because the local scan (incl. the client's own public footprint) is a distinct, large evidence task; six bounded agents avoids one overloaded agent rather than adding redundancy.

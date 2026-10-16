@@ -11,14 +11,14 @@
 
 ## 1. Executive summary
 
-1. **[FACT] Tricity is a small slice of the northern market.** Chandigarh UT is projected at about 1.27 million in March 2026 (+20% on Census 2011). Adding all of SAS Nagar (Mohali) and Panchkula districts gives about 3.2 million [EST] (S-CHD-01, 03, 04; A-CHD-01). Women aged 17-35 in that catchment number about **0.47 million [EST]**. That is roughly **2.9% of the 16.1 million women aged 17-35 in Punjab, Haryana, HP, J&K, Chandigarh and Delhi** [EST].
+1. **[FACT] Tricity is a small slice of the northern market.** Chandigarh UT is projected at about 1.27 million in March 2026 (+20% on Census 2011). Adding all of SAS Nagar (Mohali) and Panchkula districts gives about 3.2 million [EST] (S-CHD-01, 03, 04; A-CHD-01). Women aged 17-35 in that catchment number about **0.47 million [EST]**. That is roughly **2.9% of the 16.3 million women aged 17-35 in Punjab, Haryana, HP, J&K, Chandigarh and Delhi** [EST].
 2. **[FACT] Affluence is high in the city and mixed around it.** Per-capita NSDP 2023-24 (current prices): Chandigarh ₹4.30 lakh (2.28x India), Delhi ₹4.59 lakh (2.43x), Haryana ₹3.19 lakh (1.69x), HP ₹2.35 lakh (1.24x), **Punjab ₹1.95 lakh (1.03x, about the India average)**, J&K ₹1.40 lakh (0.74x) (S-CHD-06). Punjab is not a rich feeder market on this measure.
 3. **[FACT] Chandigarh is an education destination, but beauty-specific origin data does not exist.** Chandigarh's higher-education GER is 64.8 (female 75.4) against 28.4 (female 28.5) for India (S-CHD-11). A Tribune report said "nearly one lakh students from across the region" study in Chandigarh, "particularly from Punjab, Haryana and Himachal Pradesh" (S-CHD-17, 2010, old). [HYP] This supports destination learning. No source gives the origin of makeup or beauty students.
 4. **[FACT] Bridal makeup price levels are similar across North India.** Median "per function" price among the top-ranked ~20 WedMeGood listings: Chandigarh ₹25,000, Mohali ₹20,000, Ludhiana ₹21,000, Amritsar ₹25,000, Delhi-NCR ₹25,000 (S-CHD-12, 13). Chandigarh has no price premium over Punjab cities or Delhi on this sample.
 5. **[CLAIM] Local supply is dense.** WedMeGood claims 600+ bridal makeup professionals for Chandigarh (about 127 per 100k women aged 17-35, against about 87 for Delhi on the same platform's "3,000+" claim). UrbanPro lists 111 makeup-class listings in Chandigarh (mostly individual tutors) and 1,438+ in Delhi (S-CHD-12, 15). Counts are platform-specific and not comparable to institute counts.
 6. **[EST] Demand estimate.** Tricity paid makeup/beauty-artistry training is about **1,250 students and ₹5.7 crore a year in the base case** (low about 600 students and ₹1.8 crore; high about 2,200 students and ₹13.4 crore). **The prior desk estimate (₹4-10 crore, 500-1,500 students) is confirmed for the base case. Its range is widened on both sides.** Tricity equals about 0.5% of India by our population-and-affluence method (range 0.35-0.75%), consistent with the prior 0.4-0.8% share.
 7. **[EST] A single centre has a hard ceiling in tricity.** A 10% share of the base market is about 125 students and ₹0.57 crore. A 30% share is about 375 students and ₹1.7 crore. A ₹5 crore training-revenue ambition would need about 88% of the base market.
-8. **[FACT] Rents are moderate outside the prime sectors.** Non-prime Chandigarh retail/showroom asking rents are about ₹47/sq ft/month (median, n=14), Mohali about ₹62, Zirakpur about ₹57. The one Sector 17 showroom listing is ₹192, and Sector 34 showrooms are ₹112-130. Delhi's median is about ₹167, Gurgaon ₹105 and Noida ₹94 (S-CHD-22; asking rents from one portal, low-to-medium reliability).
+8. **[FACT] Rents are moderate outside the prime sectors.** Chandigarh city-wide retail/showroom asking rents have a median of about ₹47/sq ft/month (n=14), Mohali about ₹62, Zirakpur about ₹57. The one Sector 17 showroom listing is ₹192, and Sector 34 showrooms are ₹112-130. Delhi's median is about ₹167, Gurgaon ₹105 and Noida ₹94 (S-CHD-22; asking rents from one portal, low-to-medium reliability).
 9. **[FACT/EST] Outstation students face real costs and safety concerns.** PG rooms run ₹8,000-17,500 a month (Aug 2026). Only 1 of 11 sampled listings was girls-only. A 2020 Tribune letters page described "thousands of PGs" with only 25 licensed, and a fatal PG fire (S-CHD-18, 20). A two-to-three-month residential course adds roughly ₹20-50k of living cost [EST].
 10. **Verdict on H1: SUPPORTED for any training-revenue ambition above about ₹2 crore a year.** Tricity is a strong, affluent base and a plausible destination hub. It is too small to be the whole growth story for a single centre. The founder's ambition figure is still needed to give a hard yes or no.
 
@@ -48,7 +48,7 @@ This ignores mortality and net migration after the base date (mortality is small
 | Himachal Pradesh | 6,865 | 7,579 | 0.66% | 3,737 | 1,097 | 2,34,782 (1.24x) | 2,57,212 | 62.2% | 49.7 |
 | J&K (UT, excl. Ladakh) | 12,267 | 13,896 | 0.83% | 6,640 | 2,377 | 1,39,880 (0.74x) | 1,54,703 | 49.6% | 27.2 |
 | Delhi NCT | 16,788 | 22,540 | 1.98% | 10,570 | 3,464 | 4,59,408 (2.43x) | n/a in RBI | 12.2% | 49.7 |
-| Uttarakhand (extended ring) | 10,086 | 11,993 | 1.15% | 5,841 | 1,976 | 2,46,178 (1.30x) | 2,74,064 | n/a | 41.8 (overall) |
+| Uttarakhand (extended ring) | 10,086 | 11,993 | 1.16% | 5,841 | 1,976 | 2,46,178 (1.30x) | 2,74,064 | n/a | 43.7 |
 | India | 1,210,855 | 1,423,435 | 1.08% | 693,831 | 222,944 | 1,88,892 (1.00x) | 2,05,324 | 38.8% | 28.5 |
 
 Sources: population S-CHD-01 (Tables 8, 20, 21) and S-CHD-03/04 for district census; per-capita income S-CHD-06 (RBI Handbook Table 9, current prices; 2024-25 is not published for Chandigarh and Delhi); WPR S-CHD-09; GER S-CHD-11 (Table 19). Ratios are our arithmetic. Female WPR is the worker population ratio, not the labour force participation rate, because the state-wise official female LFPR table was not retrieved. The all-India female LFPR for 2025 is 40.0% (S-CHD-09).
@@ -94,10 +94,10 @@ Sources: population S-CHD-01 (Tables 8, 20, 21) and S-CHD-03/04 for district cen
 | WedMeGood Patiala | 19 | 15,000 | 15,632 | 7,000-30,000 | |
 | WedMeGood Delhi-NCR | 20 | 25,000 | 27,100 | 14,000-55,000 | |
 | WedMeGood Gurgaon / Noida | 20 / 20 | 20,000 / 18,000 | 20,250 / 20,150 | 10,000-50,000 | |
-| WedMeGood Dehradun / Shimla | 20 / 19 | 16,000 / 15,000 | 17,825 / 14,395 | 8,500-35,000 | |
+| WedMeGood Dehradun / Shimla | 20 / 19 | 16,000 / 15,000 | 17,825 / 14,395 | 8,500-35,000 / 500-25,000 | Shimla minimum of ₹500 looks like a data error |
 | WeddingWire Chandigarh (page 1, "from" price) | 36 | 18,000 | 20,500 | 5,000-52,500 | Includes Mohali, Zirakpur and Panchkula artists; WeddingWire FAQ range ₹5,000-40,000 |
 
-Sources: S-CHD-12, 13, 14. Each sample is the top ~20 default-ranked listings, so it is biased toward established artists. Prices are artist-stated and may be undated. One WeddingWire card (₹500, Shimla) looks like a data error but was left in.
+Sources: S-CHD-12, 13, 14. Each sample is the top ~20 default-ranked listings, so it is biased toward established artists. Prices are artist-stated and may be undated.
 
 **Implications.**
 
@@ -213,7 +213,7 @@ Sources: S-CHD-12, 13, 15.
 |---|---|---|---|---|---|
 | Chandigarh city (all sectors incl. New Chandigarh/Mullanpur) | 14 | **47** | 33-91 | 24-192 | Sector 17 showroom, 2,600 sq ft, first floor, ₹5.0 lakh = **₹192**. Sector 34 showrooms: 2,000 sq ft ₹2.6 lakh = **₹130**; 4,000 sq ft ₹4.5 lakh = **₹113**. Sector 21: 1,000 sq ft ₹80k = **₹80**. Sector 47: 1,100 sq ft ₹60k = **₹55**. Manimajra 500 sq ft ₹40k = **₹80**. New Chandigarh/Mullanpur: **₹24-95**, mostly ₹28-40 |
 | Sector 22 and Sector 35 | none | n/a | | | Sector pages returned the city-wide list; no sector-specific listings. **Not verifiable** |
-| Mohali (Phase 3B2 / Phase 7 not separable) | 21 | **62.5** | 45-86 | 11.5-136 | Sector 79 ₹136, Sector 68 ₹135, Phase 5 shop 1,089 sq ft ₹115, Sector 82 IT City ₹50-79, Sector 61 ₹65. The ₹11.5 and ₹2.9 minima are very large units. Phase 7 shop listings state 128 sq ft at ₹45k (unreliable) |
+| Mohali (Phase 3B2 / Phase 7 not separable) | 21 | **62.5** | 45-86 | 11.5-136 | Sector 79 ₹136, Sector 68 ₹135, Phase 5 shop 1,089 sq ft ₹115, Sector 82 IT City ₹50-79, Sector 61 ₹65. The low end includes very large units (4,500 and 35,328 sq ft at ₹13-14) and a 1,300 sq ft Aerocity unit at ₹11.5; a 17,000 sq ft unit at ₹2.9 was dropped as an outlier. Phase 7 shop listings state 128 sq ft at ₹45k (unreliable) |
 | Zirakpur | 15 | **57** | 43-69 | 31-96 | Ambala Highway, Airport Road, Bhabat |
 | Panchkula | 3 | n/a (too few) | | 42-1,071 | One outlier at ₹1,071 |
 | Ludhiana | 7 | **50.5** | 43.5-62.4 | 36-104 | Comparison only |
@@ -225,7 +225,7 @@ Sources: S-CHD-22 (all values are our arithmetic from listing cards).
 
 **What a 1,000-1,500 sq ft academy space costs per month [EST]:**
 
-- Chandigarh, non-prime: 1,200 sq ft x ₹47 = about ₹56,000.
+- Chandigarh, city-wide median: 1,200 sq ft x ₹47 = about ₹56,000.
 - Chandigarh, Sector 34 grade: 1,200 x ₹113-130 = ₹1.4-1.6 lakh.
 - Chandigarh, Sector 17 grade: 1,200 x ₹192 = about ₹2.3 lakh.
 - Mohali: 1,200 x ₹62 = about ₹75,000.
