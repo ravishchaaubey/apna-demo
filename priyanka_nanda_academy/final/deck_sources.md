@@ -163,7 +163,7 @@ No numbers. Status line: RS header; IR §1 (verdict). Tag legend: RS "Tags" line
 | SAM total | ₹15.7 cr (₹3.0–78) | MO §3 tree |
 | SOM | ₹1.88 cr (₹0.41–3.83) incl. GST, FY to Oct 2029 | MS `SOM_PNA`; ECO §1B row 8 |
 | SOM shares | 22% of SAM core; 13% of tricity learners | MS `SOM_PNA` row 17; ECO §1B row 9 |
-| Professional-tier share | ≈20% | IR RT-12 [EST, reviewer]; MO §2 memo; A-IND-05 tier mix |
+| Professional-tier share | ≈20% (reviewer estimate; model line pending) | IR RT-12 [EST, reviewer]; MO §2 memo; A-IND-05 tier mix; pending `SOM_PNA` line: ECO §1A.8 / RS §11.3 item 5 |
 | Today, illustrative | ≈₹0.20 cr | MO §3 tree (= ₹19.6L quoted) |
 | Beauty & Salon sector | ₹76,141 cr (2025P) | S-IND-01; MO §5 |
 | North five-state slice | ₹30 cr (7.65%) | S-IND-01 Table 5; MO §3 |
@@ -175,7 +175,7 @@ No numbers. Status line: RS header; IR §1 (verdict). Tag legend: RS "Tags" line
 |---|---|---|
 | Tricity market and range | ₹3.27 cr; ₹1.45–5.28 cr; ≈730 | ECO §1B row 4 |
 | One-centre take | 15–25% ≈ ₹0.5–0.8 cr | ECO §2; RS §3 Q2; MO §7 (1) |
-| Year-3 shares | 13% of learners; ≈20% of pro tier; ≈1.8x tricity average fee | MS `SOM_PNA`; IR RT-12; MO §7 (1) |
+| Year-3 shares | 13% of learners; ≈20% of pro tier (reviewer estimate; model line pending); ≈1.8x tricity average fee | MS `SOM_PNA`; IR RT-12; MO §7 (1); RS §10 row 33 |
 | Female higher-education GER | 75.4 vs 28.5 | S-CHD-11 |
 | Four-state pool vs tricity | 26x (12.4M vs 0.47M women 17–35) | S-CHD-01; `chandigarh_market_analysis.md` §8.3; BM §0 (3) |
 | Per-capita NSDP multiples | Chandigarh 2.28x; Haryana 1.69x; HP 1.24x; Punjab 1.03x; J&K 0.74x | S-CHD-06 |
@@ -287,7 +287,7 @@ No numbers. Status line: RS header; IR §1 (verdict). Tag legend: RS "Tags" line
 | Optional kit | ₹18–25k (A-ECO-170 ₹25k) | A-ECO-170; RS §6.1 |
 | L4 Masterclasses | ₹4,999–19,999, avg ₹10,000; 12–16 seats | A-GRO-07; RS §6.1; POS §6 |
 | L5 Pro Circle | ₹9,999/yr; free first year for L3 graduates | A-GRO-09; RS §6.1 |
-| Intake dates 2027 | 4 Jan, 1 Mar, 12 Apr, 24 May, 5 Jul, 16 Aug, 27 Sep (6-weekly); post-move 8-weekly | A-ECO-164/165; RS §6.1, §7.1 |
+| Intake dates 2027 | 4 Jan, 1 Mar, then 8-weekly: 26 Apr, 21 Jun, 16 Aug, 11 Oct (adopted); 6-weekly alternative 12 Apr, 24 May, 5 Jul, 27 Sep | A-ECO-165 (adopted) / A-ECO-164 (alternative); RS §7.1, §10 row 32; RM §3.1, §6 |
 | All-in cost | today ₹0.67L; step 1 ₹0.82L; step 2 ₹0.97L / ₹1.17L; Destination ₹1.13L / ₹1.33L | BF `Unit_Economics` all-in block; ECO §1C #6; A-BM-12a/b; A-ECO-171/172 |
 | Price anchors | local ₹35–75k; Zuri advanced ₹80k–1.2L; AAFT ₹80k; Lakmé ₹1.3–1.5L | S-LC §6; S-LC-13; S-NC-42; S-NC-02 |
 | Step-1 / step-2 evidence conditions | Outcomes Report n≥30; ≥30 reviews ≥4.5; gallery; hours; step-1 conversion within −15% | RS §7.2 |
@@ -324,6 +324,7 @@ No numbers. Status line: RS header; IR §1 (verdict). Tag legend: RS "Tags" line
 | Wedding-season dates | 1 Nov–14 Dec 2025 (CAIT) | S-CUS-13; S-IND-10 |
 | Pop-up pilots; online masterclass pilot | ≤₹2L; ≤₹1L | RS §4.2, §4.3 (caps are decisions) |
 | Outcomes Report date | 31 Jan 2027 | GMS §1.1; F90 W11 |
+| Q4 media ramp status | not pre-approved; at G1 the founder accepts the 53% (red) reading or takes the ₹70k/month option | RS §10 row 32; ECO §1A.7 |
 
 ### Slide 16 · Website, CRM and analytics blueprint
 
@@ -353,6 +354,7 @@ No numbers. Status line: RS header; IR §1 (verdict). Tag legend: RS "Tags" line
 | Fully loaded acquisition M7–12 | 53% planning (red); 49% upside; 42% Base | BF `Dashboard` row 25; ECO §1A, §3 #4 |
 | SG4 thresholds | ≤₹9k / ₹9–12k / >₹12k; ≤40% / 40–50% / >50% | RS §7.1; ECO §3 #4 |
 | ₹70k/month option | −7.1 enrolments; −₹0.5L EBITDA | BF `Flex_media_lo` (×0.7); ECO §1A.7 |
+| Founder decision at G1 on the Q4 ramp | accept 53% or take ₹70k/month | RS §10 row 32 |
 | Steady-state ₹1.0L split | 32 / 15 / 8 / 18 / 22 / 5 ₹k | MCP §1 (3), §2 rows 8–15, §3.1 |
 | Growth team + martech ≈1.5x media | ₹9.75L + ₹2.36L vs ₹8.2L (M6 case) | IR RT-07; RS §3 Q6 ("about 1.5x") |
 
@@ -370,3 +372,196 @@ No numbers. Status line: RS header; IR §1 (verdict). Tag legend: RS "Tags" line
 | GST status | no exemption for private non-recognised training; ₹20L registration threshold | ECO §5 #2 (GST Council flyer [FACT]; statute not re-verified) |
 | Founder teaching replacement cost | ≈₹10L Y1; ₹17–19L/yr Y2–3; ≈₹8L/yr academy manager | ECO §5 #6; A-ECO-125 (₹65k/month), A-ECO-218 |
 | Step-back affordability | ≈5.5+/month after full step; 7.8 at step-1 fee on M12 base | ECO §5 #6, §1A |
+
+### Slide 19 · 12-month scenarios, cash and investment staging
+
+| Number | Value | Source |
+|---|---|---|
+| Planning case Year 1 | ₹60.6L; −₹2.8L; 81; peak ₹25.2L (M9) | BF `Staged_G1M9` rows 66, 103, 38, 116; ECO §1A |
+| Upside | ₹66.7L; −₹0.8L; 91; ₹26.5L (M6) | BF `Staged_G1M6`; ECO §1A |
+| Base bundle / Conservative | ₹71.0L, +₹6.8L, 89, ₹24.6L / ₹17.6L, −₹13.0L, 33, ₹14.9L | BF `Outlook_Base`, `Outlook_Conservative`, `Dashboard`; ECO §1B rows 15–20 |
+| Waiting to M9 vs M6 | ≈10 enrolments; ₹6.2L revenue; ₹2.1L EBITDA; peak cash −₹1.3L | ECO §1A reading 3; RM §3 |
+| T1 cap; planning use | ₹15L; ₹11.8L (high in April, held to M8) | A-ECO-153; BF `Staged_G1M9` row 115; ECO §1A; RM §4.3 |
+| T2 space commitment | ₹14.7L = fit-out ₹10.4L (1,300 sq ft × ₹800) + deposit ₹3.1L (3 × ₹1.04L) + stations ₹1.2L (4 × ₹30k) | A-ECO-113/114/121/122/123; RM §4.1 capex detail; ECO §1B row 19 |
+| Contingency | ₹5L (₹35L authorised) | A-ECO-167; RS §5 |
+| T3 / T4 | ₹4–10L; ₹2–5L per partner site | GEO §1, §4.1; RS §5 |
+| Monthly cumulative cash | −3.93 … −25.18 (Jul) … −22.54 | BF `Staged_G1M9` row 115; RM §4.3 |
+| KT-11 warning line | ₹28L | RS §7.3 KT-11 (decision) |
+| After-draw peak | ₹32.6L (M10) | BF `Payback_IRR`; ECO §1A reading 5 |
+| D6b rule | T1 cap / KT-1a / KT-11 read before any founder draw; studio pays by default | RM §4.3 (D6b and the cash rules); RS §9.1 D6b, §10 row 32 |
+| Downside: no cut | ₹36.2L (M12), rising ≈₹2.3L/month; visible M4; EBITDA −₹32.1L | BF `Staged_Cons`; ECO §1A.2; RM §4.2 |
+| Downside: KT-1a deep cut (adopted) | ₹25.4L (M12), still ≈₹0.9L/month; EBITDA −₹22.2L; notice ₹1.3L | BF `Staged_Cons_CutM5_Deep`; ECO §1A.2; RS §5, §10 row 31; RM §4.2 |
+| Downside: shallow cut / M10 cut | ₹28.7L (≈₹1.3L/month) / ₹33.9L | BF `Staged_Cons_CutM5`, `_CutM10`; ECO §1A.2 |
+| Downside: false-positive G1 | ₹32.7L (M12), flat after exit; visible M11; exit ₹4.9L (₹3.1L + ₹1.8L); ₹11.6L sunk; ₹3.1L recoverable; upside timing ₹32.4L, visible M8, exit ₹4.6L | BF `Staged_FalsePos`, `_M6`; A-ECO-158/159/162; ECO §1A.2 |
+| Three hard rules | KT-1a; pre-lease rule; KT-10 | RS §1 (4), §5, §7.3 |
+
+### Slide 20 · Three-year directional view
+
+| Number | Value | Source |
+|---|---|---|
+| Revenue Y1/Y2/Y3 | ₹60.6L / ₹113.7L / ₹162.9L | BF `3yr_Scenarios` group 1 (planning case); ECO §1A |
+| EBITDA before salary | −₹2.8L / ₹16.3L / ₹39.3L | BF `3yr_Scenarios`; ECO §1A |
+| EBITDA after salary (₹9L/yr, +8%) | −₹11.8L / ₹6.6L / ₹28.8L | BF `3yr_Scenarios` memo row; A-ECO-138; ECO §1A, §1C #4 |
+| Cumulative cash end Y1/Y2/Y3 | −₹22.5L / −₹12.8L / +₹22.9L; after salary −₹6.3L at M36 | BF `3yr_Scenarios` row 55; `Payback_IRR`; ECO §1A, §1A.4 |
+| Year-3 decomposition | step 2 ₹15.2L (EBITDA ₹14.5L); Destination ₹21.0L; online ₹11.4L; adjacents ₹6.5L; base business ₹108.8L / −₹0.4L (−₹10.9L after salary) | BF `3yr_Scenarios` groups 6–9; ECO §1A.3; A-ECO-204/208, A-BM-09, A-ECO-227 |
+| Gated share | ₹54.1L (33%) | ECO §1A.3 |
+| Step-2 value vs conversion loss | +₹14.5L / +₹7.5L / +₹0.4L; nil at ≈21% | BF `Sensitivity` groups 6–8 (A-ECO-228a/b); ECO §1A.3 |
+| Payback | M29 (Mar 2029) / M40 (Feb 2030); base business beyond M60 | BF `Payback_IRR`; ECO §1A.4 |
+| IRR to M36 / M60 | 46% / −10%; 87% / 33% (Y4–Y5 flat, no terminal value) | BF `Payback_IRR`; ECO §1A.4 |
+| Base-business peak cash | ₹38.1L / ₹90.9L | BF `Payback_IRR`; ECO §1A.4 |
+| Conservative Year 3 | ₹36.7L; −₹9.6L | BF `3yr_Scenarios`; ECO §1B rows 22–23 |
+| Year-2 capex | ₹6.5L (incl. ₹3.5L library, A-ECO-129) | BF `3yr_Scenarios`; ECO §1A |
+
+### Slide 21 · First 90 days
+
+| Number | Value | Source |
+|---|---|---|
+| Window | 19 Oct 2026 – 17 Jan 2027; G0 Fri 15 Jan (day 88) | F90 header, §7; RM §3 |
+| Ops Lead start | Mon 2 Nov (latest 16 Nov); ₹40k/month | F90 §0, §2; RM §2 Q1, §5; A-GRO-45 + A-ECO-157 |
+| Lead Trainer start | Tue 1 Dec (M2); ₹60k | A-ECO-52; A-BM-04a; F90 §2 |
+| Cohort 1 | Mon 4 Jan, ≈3.2 students | BF `Staged_G1M9` section K; F90 §0 |
+| Day targets | GBP day 14; CRM/SLA day 20; survey day 20; CA opinion day 21; 5 pages day 27; Instagram day 34; B&WSSC by day 76; Outcomes Report 31 Jan | F90 §0, §3 (W2–W4, W11, W12), §4; MCP §4 |
+| Paid media | ₹15k Nov, ₹15k Dec, ₹40k Jan; ≤₹15k until G0 | A-GRO-BUD-01..03; A-ECO-151; F90 §0 |
+| G0 criteria (eight) | as listed | RS §7.1 G0; F90 §7; RM §3 |
+| 90-day costs | new spend ₹11.51L; running ₹3.19L; revenue ₹5.53L; EBITDA −₹6.67L; net cash −₹9.97L; T1 high ₹11.80L (Apr) | F90 §6 (`Staged_G1M9` rows 66, 103, 114, 115); RM §4.1, §4.3 |
+| Scope cut | G0 criteria + cohort 1; SEO pages beyond five, YouTube, interview wave 2 to Q2 | RS §10 row 24; F90 §3.1 |
+| D9 day 0 | manual footprint check | RS §9.1 D9; IR RT-09 |
+| Two finalists for Lead Trainer | rule | RS §8 risk 7; RM §5 |
+| B&WSSC route | fee-based programmes exist; fees unpublished | S-BM-12/13 |
+
+### Slide 22 · Twelve-month milestones
+
+| Number | Value | Source |
+|---|---|---|
+| Gate dates | G0 15 Jan; KT-1a cash check 26 Feb; SG + KT-1a cut review 5 Mar; upside check 30 Apr; G1 Mon 26 Jul; KT-10 watch from 27 Aug; Year-1 review 29 Oct; G2 28 Jan–28 Apr 2028 | RM §1, §3, §9; RS §7.1 |
+| Intakes and sizes | 4 Jan 3.2; 1 Mar 5.6; 26 Apr 8.7; 21 Jun 9.4; 16 Aug 9.1; 11 Oct 10.1 | BF `Staged_G1M9` section K (A-ECO-165); ECO §1A.6; RM §3.1; KPI §3 |
+| Station test first met | 21 Jun cohort (M8) | ECO §1A.6; RS §7.1, §10 row 32 |
+| Quarterly revenue / EBITDA / enrolments / cash | 5.53/13.37/16.63/25.03; −6.67/−0.95/+1.32/+3.48; 8.0/18.7/21.9/32.4; −9.97/−11.80/−25.18/−22.54 | BF `Staged_G1M9` rows 66, 103, 38, 115; RM §4.1, §8; KPI §3 |
+| Monthly cash | −3.93 … −22.54 | BF `Staged_G1M9` row 115; RM §4.3 |
+| Team dates | Ops Lead 2 Nov; Lead Trainer 1 Dec; retainer trainer Feb; certification 9 Apr; T2 hires 2 Aug; Academy Manager M13 | RM §5, §3.1, §11.3; A-ECO-163 (second trainer M10); A-ECO-125/126 |
+| Space | weekend slot 6 Mar (₹8k/month, A-ECO-154); seats bind May–Jul (78/67/77%); lease and fit-out week of 26 Jul; move Aug | RM §2, §6, §9; A-ECO-154..156; BF `Staged_G1M9` rows 25–44 |
+| Price step 1 | ₹75k list for enrolments from 1 Aug | A-ECO-160; RM §3 |
+| Media ramp | 15·15·40·50·60·60·60·60·60·80·100·100 ₹k; Q4 not pre-approved | MCP §3.2; BF row 97; RS §10 row 32 |
+| Proof dates | Outcomes Report 31 Jan; ≥30 reviews by 26 Feb; Report #2 Sep | RM §0, §9; F90 W3/W11 |
+| Destination pilot intakes; pop-ups | 16 Aug and 20 Sep (6 students); Ludhiana Sep, Patiala Oct (≤₹2L) | A-ECO-161; RM §6, §9; RS §4.2 |
+| Founder share and hours | 92→40%; 81·73·66·59·103·88·85·82·79·114·110·106 (upside 128 in May) | BF `Staged_G1M9` rows 12, 81; RM §7 (method: slots × share × 4 h × 22 days) |
+| Calendar caveat | revenue timing on the 8-weekly calendar is a deferred run | ECO §1A.8 item 5; RM §3.1 |
+| G1 test disclosure (R-7) | station test is a lower bar than the original ≥75%-of-12 test (never met in Year 1 on any run) | ECO §1A.6; RS §7.1, §10 row 22; IR §8.1 C2 |
+
+### Slide 23 · Risks and validation tests
+
+| Number | Value | Source |
+|---|---|---|
+| Top-10 risks and owners | as listed | RS §8 |
+| Fees swing; all-in +45% | ₹19.7L; ₹0.67L → ₹0.97L | BF `Flex_fee_*`; ECO §1A.5, §1C #6; IR RT-05 |
+| Post-move downside | ₹14.7L committed; ≈₹33L | ECO §1A.2; RS §8 risk 2 |
+| Pre-move downside | ₹2.3L/month; ≈₹36L | BF `Staged_Cons`; ECO §1A.2 |
+| Founder hours | 114 h Aug (planning); 128 h May (upside) | RM §7 |
+| Funnel benchmark risk | ~9x range; A-ECO-51 = 2.42; non-paid flat −₹2.5L (−6.9); masterclass half −₹5.9L | AF §10.2; ECO §1A.5, §1A.7 |
+| Trainer pay | ₹60k unsourced; ₹75k stress −₹1.7L | A-BM-04a; ECO §1A.5; IR RT-11 |
+| Capacity | 78/67/77% May–Jul | BF `Staged_G1M9`; ECO §1A |
+| GST, lease, NOC | ₹10.9L; ≤3 months' notice; fire NOC | ECO §1A.5; RS §7.1 (8), §8 risk 9 |
+| Safety; claims | 1 of 11 PG listings girls-only; "100% placement" universal | S-CHD-18/20; S-NC-04; S-INT-03/04 (kit complaints) |
+| Tornado | 19.7 / 12.6 / 10.9 / 6.5 / 5.1 / 2.5 / 1.1 / 0.7 | BF `Flex_*` on `Staged_G1M9`; ECO §1A.5 |
+| Validation tests V1–V7, T1–T8 | dates and thresholds as listed | F90 §3 (W1, W2, W5–W7, W10, W11), §5.1; RS §4.5; GMS §6.5; `research/customer_segments.md` §10 |
+| Destination pilot thresholds | completion ≥85%; practical within 5 points; price ≥90% | RS §7.1 G2 |
+| Kill triggers | KT-1a, KT-2 (from 26 Apr cohort), KT-3, KT-5, KT-10, KT-12, KT-13 | RS §7.3; RM §3.1 |
+
+### Slide 24 · Founder decisions and next actions
+
+| Number | Value | Source |
+|---|---|---|
+| Decisions D1–D10, D5a, D6a, D6b and dates | as listed (D9 day 0; D1 day 10; D2/D3/D5/D5a/D6 day 7; D8 opinion day 21; D7 day 24; D4 day 30) | RS §9.1; F90 §1; ES "Decisions needed" |
+| Boutique figures | +₹10.8L/yr on ₹39.8L; ≈52 students | BF `Plan10L_BaseRates`; ECO §1B row 21 |
+| Institution figures | ₹35L authorised; −₹11.8L after salary Year 1; payback Year 3 (M29/M40) | ECO §1A, §1A.4; RS §1 (10) |
+| D6b cash rule | studio pays by default; T1 cap read before the draw; academy-paid peak ₹32.6L, contingency consumed | RM §4.3; RS §9.1 D6b, §10 row 32; ECO §1A reading 5 |
+| "Find out for ≈₹12L before committing ₹14.7L" | ₹11.8L T1 use; ₹14.7L space | ECO §1A; RS §1 (10), §5; RM §4.2 |
+| Next actions days 0–7 | as listed | RS §9.2; F90 §0, §4 week 1; MCP §4 |
+| Ops Lead premium | ₹15k/month (₹1.8L/yr) | A-ECO-157; RS §9.1 D5a |
+
+### Slide A1 · Market sizing method and reconciliation
+
+| Number | Value | Source |
+|---|---|---|
+| Method 1 / Method 2; mean | ₹522 cr (M1 alone); mean ₹388 cr | `research/india_market_analysis.md` §8.1–8.3; MS `TAM_India`; MO §3 |
+| Makeup-led share; fee mix sensitivities | 15/25/35%; ₹313–731 cr; ₹304–834 cr | A-IND-04; A-IND-05; MO §6.2 |
+| Tricity harmonised methods | ₹2.18 / ₹3.96 / ₹3.67 cr → ₹1.45 / 3.27 / 5.28 cr | MS `Tricity_Recon`; ECO §2; AR reconciliation note; MO §4 |
+| Learner-gap decomposition | 10.5x gap; 5.76x explained (1.43 × 1.33 × 1.90 × 1.59); 1.82x residual | ECO §2; MO §4 |
+| North slice | ₹30 cr; 7.65% | S-IND-01 Table 5; MO §3 |
+| KPMG facts | 5.44M (0.68M/yr); ~60% unorganised; <30% skilled; Chandigarh 6.16%; 47% blended, 41% classroom, 90% short | S-IND-01 pp.9, 15, 33–35, 44–46, 56–57, 67 |
+| Certification throughput | 1.3–2.1 lakh/yr (conflicting counters) | S-IND-02/04/05 |
+| Do-not-use list | CA-05 ₹5.7 cr / 1,256; ₹800–1,500 cr; ₹0.3 cr; 4%; sector figures; "3 crore jobs" | MO §8; AR CA-05 note; ECO §1 note |
+| Workforce 2030 | 26.3M; 12.37M (2022) | S-IND-01 |
+
+### Slide A2 · Hypothesis verdicts
+
+| Number | Value | Source |
+|---|---|---|
+| H1–H7 verdicts, evidence, tests | as listed | RS §4.5; BM §5; `research/international_benchmarks.md` §6.3 |
+| Thresholds (≥20% out-of-town QLs; ≥8% pop-up; ≥75% team conversion; completion ≥85%) | | RS §7.1 |
+| S-CUS-14 / S-CUS-20 status | [CLAIM, vendor/commissioned] | IR RT-13; RS §10 row 29 |
+| Airblack completion claim | 80% (live-online) | S-CUS-33 |
+
+### Slide A3 · Gate definitions in full
+
+| Number | Value | Source |
+|---|---|---|
+| G0, SG1–SG5, G1 (eight tests), G2 thresholds | as listed | RS §7.1–7.2; GMS §9; RM §3 (dates and planning-case readings: paid enrolments ≈21, CAC ₹11.7k, founder share 45%, cash ₹11.8L) |
+| Planning-path cohort sizes | 26 Apr 8.7; 21 Jun 9.4; 16 Aug 9.1; 11 Oct 10.1 | ECO §1A.6; RM §3.1 |
+| SG4 planning readings | ₹11.7k; 53% | BF `Dashboard` rows 25, 27; ECO §1A |
+| G1 test disclosure (R-7) | lower bar than ≥75%-of-12; 8-weekly timing unmodelled | ECO §1A.6, §1A.8; IR §8.1 C2 |
+
+### Slide A4 · Kill and pivot triggers
+
+| Number | Value | Source |
+|---|---|---|
+| KT-1 … KT-13 definitions and actions | as listed | RS §7.3; RM §3, §3.1, §5 (stop-loss staffing) |
+| KT-1a modelled outcomes | ₹25.4L / ₹28.7L / ₹33.9L / ₹36.2L; notice ≈₹1.2–1.3L | BF `Staged_Cons*`; ECO §1A.2 |
+| KT-10 thresholds and costs | <60% of plan (≈5.5 / ≈6.1 students); ₹3.1L notice; ₹1.8L severance; ₹11.6L sunk; floor ₹32–33L | RM §3; A-ECO-158/159; ECO §1A.2 |
+| KT-10b boutique path | ≈52 students; +₹10.8L | BF `Plan10L_BaseRates` |
+| KT-11 | ₹28L; discretionary ≈₹1.2L/month; committed ≈₹4L/month | RS §7.3; IR RT-14 |
+
+### Slide A5 · Sensitivities and named stresses
+
+| Number | Value | Source |
+|---|---|---|
+| Tornado (planning case) | fees 19.7 (peak ₹33.3L); conversion 12.6 (₹29.7L); GST 10.9 (₹19.1L on top); rent 6.5 (₹29.6L); variable 5.1 (₹27.2L); CPL 2.5 (₹26.0L); media 1.1 (₹24.8L/₹26.2L); fill 0.7 (₹25.7L) | BF `Flex_*` on `Staged_G1M9`; ECO §1A.5 |
+| Named stresses | masterclass half −₹5.9L / +₹4.2L; non-paid flat −₹2.5L, −6.9; lead trainer ₹75k −₹1.7L; step 1 −₹0.8L / −₹2.0L | BF flex cells; ECO §1A.5 (RT-21, RT-08, RT-11) |
+| Step-2 Year-3 response | +₹14.5L / +₹7.5L / +₹0.4L | BF `Sensitivity` groups 6–8; ECO §1A.3 |
+| Superseded unstaged-Base tornado | 23.0 / 15.1 / 12.7 / 8.7 | BF `Sensitivity`; ECO §1B row 24 |
+| Masterclass seats Year 1 | 153 | BF `Staged_G1M9` row 46; RM §8 |
+
+### Slide A6 · Downside runs in detail
+
+| Number | Value | Source |
+|---|---|---|
+| Six runs: EBITDA, peak cash, visibility, exit | as tabled | BF `Staged_Cons`, `_CutM5_Deep`, `_CutM5`, `_CutM10`, `Staged_FalsePos`, `_M6`; ECO §1A.2 (final); RM §4.2 (quarterly cumulative cash) |
+| Deep-cut burn mechanics | ≈₹0.9L contribution vs ≈₹1.8L fixed; 2–3 enrolments/month; ₹10–11L a year if left running | ECO §1A.2 conclusion 2 |
+| Sunk / recoverable | ₹11.6L / ₹3.1L | A-ECO-121–123; ECO §1A.2 |
+| Exit terms | 3 months' notice; 1 month severance | A-ECO-158/159 |
+
+### Slide A7 · Cohort fill versus the G1 test
+
+| Number | Value | Source |
+|---|---|---|
+| 8-weekly cohort sizes | 3.2 · 5.6 · 8.7 · 9.4 · 9.1 · 10.1 | BF `Staged_G1M9` section K (A-ECO-165); ECO §1A.6; RM §3.1 |
+| 6-weekly cohort sizes | 3.2 · 5.6 · 6.3 · 7.2 · 6.8 · 6.9 · 7.5 (26–63% of 12) | BF section K (A-ECO-164); ECO §1A.6 |
+| First passable; post-move result | 21 Jun (M8) / met; 24 May (M7) / not met | ECO §1A.6 table |
+| Calendar decision and caveat | 8-weekly from 1 Mar; revenue timing deferred | RS §10 row 32; RM §3.1; ECO §1A.8 item 5 |
+
+### Slide A8 · Review changes and investor questions
+
+| Number | Value | Source |
+|---|---|---|
+| Objection counts | 3 Critical, 12 Major, 6 Minor; conditions C1–C8 | IR §2, §7 |
+| Changes adopted (RT-01…RT-15) | as listed | RS §10 rows 22–32 |
+| Fourteen investor questions | as listed | IR §5 |
+
+### Slide A9 · Evidence, sources and open model items
+
+| Number | Value | Source |
+|---|---|---|
+| Workbook integrity | 0 formula errors; all `Checks` TRUE; formula counts 535 / 1,002 / ≈63,800 | ECO header |
+| Access limitations | Instagram 429; Maps, Justdial, Sulekha blocked; site refused proxy | `research/sources.md` header; S-LC-56 |
+| Delivered final runs | `Staged_Cons_CutM5_Deep` ₹25.4L; station test M7 (6-weekly) / M8 (8-weekly) | ECO §1A.2, §1A.6; RS §10 rows 31–32 |
+| Outstanding items | phased fit-out; retainer trainer and incapacity stress; tier-matched SOM line; contingency sensitivity; 8-weekly revenue timing | ECO §1A.8; RS §11.3 |

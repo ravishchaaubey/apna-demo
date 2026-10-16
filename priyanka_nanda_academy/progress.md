@@ -27,3 +27,4 @@
 | 2026-10-16 | Final economics runs | Done | KT-1a deep-cut worst loss ₹25.4L (was ≈₹29L estimate); station test passable M7 (6-weekly) / M8 (8-weekly); post-move intakes set to 8-weekly (orchestrator). Strategy + exec summary synced (§10 row 31). |
 | 2026-10-16 | Roadmap re-base | Done | Execution files on Staged_G1M9; 8-weekly intakes from 1 Mar 2027 adopted across strategy/roadmap; SG4 red reading → Q4 media ramp is a founder decision at G1; KT-1a caps read before founder draw. |
 | 2026-10-16 | **Gate E — Independent QA** | **Passed** | Closure check: RT-01/02/03 Closed with model runs; C1/C3/C5/C6 Closed, C2/C4/C7/C8 Partially closed (disclosures + deferred runs). Residuals R-1–R-6 fixed by orchestrator; R-7 (8-weekly timing unmodelled) to be disclosed on G1 slide. |
+| 2026-10-16 | Storyboard | Done | 24 core + 9 appendix slides; deck build dispatched (Opus). |

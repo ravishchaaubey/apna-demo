@@ -36,3 +36,5 @@ Note: the brief suggests 3–5 concurrent agents. Competitive intelligence was s
 | 11b | Roadmap Gate E re-base (G1@M9, ops lead owner, defects) | opus (resumed #11) | Gate E | execution/first_90_days.md, twelve_month_roadmap.md, kpi_framework.md | done — 8-weekly calendar adopted; strategy synced (§10 row 32) |
 | 14 | Executive Storyline (storyboard, deck sources, consistency table) | fable | Gate F | final/slide_storyboard.md, final/deck_sources.md | dispatched |
 | 12b | Independent Reviewer closure check (C1–C8) | fable (resumed #12) | Gate E | strategy/independent_review.md §8 | done — fit for founder; Criticals closed; residuals R-1–R-7 fixed by orchestrator (§10 row 33) |
+| 14 | (status) Executive Storyline | fable | Gate F | final/slide_storyboard.md, final/deck_sources.md | done — 24 core + 9 appendix; 60-figure consistency table |
+| 15 | Presentation Production — phase 2 (build, render, inspect, number check) | opus | Gate F | final/Priyanka_Nanda_Academy_Growth_Strategy.pptx, final/deck_quality_review.md | dispatched |
