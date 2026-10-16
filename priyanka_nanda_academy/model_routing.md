@@ -9,7 +9,7 @@
 ## Agent log
 | # | Agent | Model | Phase | Output files | Status |
 |---|---|---|---|---|---|
-| 1 | India Market Research | sonnet | Gate A | research/india_market_analysis.md | dispatched |
+| 1 | India Market Research | sonnet | Gate A | research/india_market_analysis.md | done — search budget exhausted before creator/Tier-2/3 queries |
 | 2 | Chandigarh/Regional Market | sonnet | Gate A | research/chandigarh_market_analysis.md | dispatched |
 | 3 | National Competitive Intelligence | sonnet | Gate A | research/national_competitors.md | done — shared WebSearch budget exhausted before gap-fill; Instagram 429, Orane/Lakmé sites blocked |
 | 4 | Local Competitive Intelligence (+ PNA public footprint) | sonnet | Gate A | research/chandigarh_competitors.md | done — PNA site blocked by proxy; 4 queries unrun (search budget) |
