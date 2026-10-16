@@ -114,7 +114,9 @@ function fitText(text, o) {
     if (height > innerH + 1e-6) continue;
     if (hasBrokenWord(text, m)) continue;
     last.fits = true;
-    if (o.stable && wrap(text, { ...m, slack: 1.0 }).length !== wrap(text, { ...m, slack: 0.93 }).length) {
+    // Borderline in either direction (a line that is ~3% too long may still fit in one renderer and
+    // not in another), so compare a loose and a tight wrap around the nominal width.
+    if (o.stable && wrap(text, { ...m, slack: 1.03 }).length !== wrap(text, { ...m, slack: 0.93 }).length) {
       firstFit = firstFit || last;
       continue;
     }
