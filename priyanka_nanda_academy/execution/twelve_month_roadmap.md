@@ -10,11 +10,11 @@
 
 **How to read this roadmap**
 - **M0 = October 2026; M1 = November 2026 … M12 = October 2027.** Quarters follow the model year: **Q1 Nov–Jan (M1–M3), Q2 Feb–Apr (M4–M6), Q3 May–Jul (M7–M9), Q4 Aug–Oct (M10–M12).**
-- **Staged Plan** = Base rates and the Base (₹30L) plan, released in two tranches: **Tranche T1 Prove** (up to ₹15L, now → G1: Base team from M1, ₹10L-plan capex, studio stations only, media ≤₹15k a month until G0 and ≤₹60k until G1) and **Tranche T2 Build** (up to ₹15L more at G1, cumulative ≤₹30L: space, media to ₹1.0L, second counsellor, hybrid build, pop-up pilots, second trainer).
+- **Staged Plan** = Base rates and the Base (₹30L) plan, released in two tranches: **Tranche T1 Prove** (up to ₹15L, now → G1: Base team from M1, ₹10L-plan capex, studio stations only, media ≤₹15k a month until G0 and ≤₹60k until G1) and **Tranche T2 Build** (up to ₹15L more at G1, cumulative ≤₹30L planned: space at G1 + 1, media to ₹1.0L, second counsellor, pop-up pilots, second trainer), plus a **₹5L timing-only contingency** (Year-1 authorisation ₹35L, drawn only on the founder's sign-off). The **recorded hybrid pre-work library (₹3.5L) is deferred to Tranche T3** (after G2); the Destination pilot runs on live-online pre-work. A **weekend/evening batch slot in the studio from M5** softens the April seat bind (`recommended_strategy.md` §5).
 - **Price** follows the two-step path (`recommended_strategy.md` §7.2): today's fee (CA-02, modelled ₹60k incl. kit) → **step 1: ₹75k list** (₹66.7k realised) at proof gate 1, inside G1 → **step 2: ₹90k list** (₹80k realised, the planning fee) at proof gate 2, inside G2 (model M16).
 - **Founder share of contact hours:** ≤50% at M6, **≤40% at M12**, ≤30% at M18, ≤15% at M24, ≤10% at M36, each step conditional on trainer-parity metrics.
 - Every ₹ figure is ex-GST and comes from the workbook or an assumption ID. Sums are rounded to ₹0.01L.
-- Vocabulary: ladder **L0–L5**; **L3 Pro** in **Weekday / Flex / Destination** formats; stage gates **G0, G1, G2, G3a, G3b**; spend gates **SG1–SG5**; kill/pivot triggers **KT-1…KT-10**; tests **T1–T8** (always written "test T1" to avoid confusion with Tranche T1); Meta campaigns **MC1–MC6**; Google campaigns **GC1–GC4**.
+- Vocabulary: ladder **L0–L5**; **L3 Pro** in **Weekday / Flex / Destination** formats; stage gates **G0, G1, G2, G3a, G3b**; spend gates **SG1–SG5**; kill/pivot triggers **KT-1…KT-11** (KT-11 = cash warning); tests **T1–T8** (always written "test T1" to avoid confusion with Tranche T1); Meta campaigns **MC1–MC6**; Google campaigns **GC1–GC4**.
 
 ---
 
@@ -26,8 +26,8 @@
    - **Q2 Feb–Apr: prove.** Outcomes Report (31 Jan), ≥30 Google reviews, Lead Trainer certified, second cohort trainer-led, tests read out. **SG1–SG5 formal review Fri 5 Mar.** **G1 review 1 on Fri 9 Apr (M6, planning case)**: if green, Tranche T2 is released and the fit-out starts.
    - **Q3 May–Jul: build.** Move to a 12-station academy (3 May); price step 1 to ₹75k list; media ₹80k → ₹1.0L; Destination pilot cohort Jun–Jul; first pop-up pilot (Jul). **G1 latest decision Fri 30 Jul (M9)**: the late case moves in August.
    - **Q4 Aug–Oct: run and prepare Year 2.** Destination format live; second pop-up (Sep); Outcomes Report #2 (Sep, needed for price step 2); **Year-1 review Fri 29 Oct**, including KT-10 if G1 is still red; Academy Manager from Nov 2027. G2 (regional engine) window: Jan–Apr 2028.
-3. **Budget by quarter, planning case [EST, `Staged_G1M6`]:** outflow (opex + capex) ₹14.3L / ₹28.2L / ₹22.5L / ₹19.8L = **₹84.7L**; revenue ₹5.5L / ₹12.7L / ₹23.9L / ₹23.8L = **₹65.9L**; EBITDA −₹6.2L / −₹0.8L / +₹4.9L / +₹4.0L = **+₹1.9L** (−₹7.1L after a ₹75k/month founder-role salary). **Cash used before G1: ₹10.9L** (Tranche-T1 cap ₹15L). **Peak cash need ₹28.8L in May** against the ₹30L cumulative cap: only ₹1.2L of headroom. **We recommend scheduling the ₹3.5L hybrid build in July rather than May, which lowers the peak to ≈₹25.6L** (§4.3).
-4. **Late case (G1 at M9) [EST, `Staged_G1M9`]:** revenue ₹57.3L, EBITDA −₹1.8L, peak cash ₹28.2L (Aug), ≈15 fewer career enrolments (74.5 vs 89.3), because seats bind in the studio from April and only 55–65% of May–July demand fits.
+3. **Budget by quarter, planning case [EST, `Staged_G1M6`]:** outflow (opex + capex) ₹14.3L / ₹28.2L / ₹22.5L / ₹19.8L = **₹84.7L**; revenue ₹5.5L / ₹12.7L / ₹23.9L / ₹23.8L = **₹65.9L**; EBITDA −₹6.2L / −₹0.8L / +₹4.9L / +₹4.0L = **+₹1.9L** (−₹7.1L after a ₹75k/month founder-role salary). **Cash used before G1: ₹10.9L** (Tranche-T1 cap ₹15L). The model as built peaks at **₹28.8L in May**, only ₹1.2L under the ₹30L planned line and above the KT-11 warning line (₹28L), because it still books the ₹3.5L hybrid library in May. **With the library deferred to Tranche T3 as Gate D decided, the Year-1 peak is ≈₹25.6L (April) and headroom ≈₹4.4L** [EST, §4.3]. The ₹5L timing-only contingency sits on top (₹35L authorised).
+4. **Late case (G1 at M9) [EST, `Staged_G1M9`]:** revenue ₹57.3L, EBITDA −₹1.8L, peak cash ₹28.2L in August as built (≈₹24.9L in July with the hybrid library deferred), ≈15 fewer career enrolments (74.5 vs 89.3), because seats bind in the studio from April and only 55–65% of May–July demand fits.
 5. **Hiring:** T1: Admissions Counsellor and Assistant (Nov), Lead Trainer, shooter, Content Executive and performance freelancer (Dec), SEO freelancer (Jan). T2 (from G1): second counsellor (0.5 FTE), second assistant and front-desk coordinator (May in the planning case), second trainer (model need from Nov 2027; we recommend hiring in Aug 2027). Academy Manager from Nov 2027 (M13).
 6. **The hidden constraint is founder hours, not share.** Because volume triples while her share only falls to 40%, model-derived founder teaching rises from 59–81 h a month in Nov–Feb to **≈128 h in May** and stays ≥106 h through October [EST, §7], overlapping the next bridal season. The founder must budget for this or bring the second trainer forward.
 
@@ -108,14 +108,14 @@ Detailed week by week in `execution/first_90_days.md`.
 | Pro Circle opens (L3 graduates free for year 1; paid conversion only after ≥150 active alumni) | May | Content |
 | **Destination pilot cohort** (out-of-town students; 4 weeks of live-online pre-work using the T1 recordings + 5–6-week Chandigarh intensive; vetted accommodation; parents' orientation). This is the G2 pilot cohort | Jun–Jul | Lead Trainer |
 | Test T6 regional (MC2 + GC3 city searches; ₹15k over 6 weeks); Destination city pages | Jun–Jul | Performance freelancer, Content |
-| **Hybrid pre-work content build + LMS** (₹3.5L, A-ECO-129). The model books it in May; we recommend July (§4.3) | Jul [REC] | Founder, Lead Trainer |
+| Destination pilot review: completion, practical pass rate vs Weekday, realised price, pre-work completion (KT-7). The recorded hybrid library (₹3.5L, A-ECO-129) is **not built in Year 1**: it moves to Tranche T3 after G2 (the model still books it in May; §4.3) | Fri 30 Jul | Lead Trainer |
 | First regional pop-up pilot (discovery workshop, Ludhiana; ₹52k event cost, A-BM-06c) | Jul | Lead Trainer, Growth Lead |
 | PNA Method v2 (adds online pre-work and the intensive timetable); Assistant #1 certified Associate Educator | Fri 30 Jul | Founder, Lead Trainer |
 | **G1 latest decision** (late case if not passed earlier) | **Fri 30 Jul** | Founder |
 
 - **Capacity:** 27 usable seats; three active batch slots; utilisation 69% → 90%. Seats bind again in July (70% of demand fits). **If waitlists exceed 15% of seats, add a further weekend batch** (the Year-2 setting of 3 slots a day, A-ECO-220a) [REC].
 - **Founder share:** 48% → 45%; teaching peaks at ≈128 h a month in May [EST].
-- **Budget [EST]:** opex ₹18.97L; capex ₹3.50L (hybrid build, model timing); revenue ₹23.85L; **EBITDA +₹4.89L (first positive month: May)**; net cash +₹0.52L; cumulative −₹25.06L at end-July after the **₹28.84L peak in May**.
+- **Budget [EST]:** opex ₹18.97L; capex ₹3.50L in the model (the hybrid library, deferred to T3 by Gate D, so ₹0 in the plan); revenue ₹23.85L; **EBITDA +₹4.89L (first positive month: May)**; net cash +₹0.52L as built (+₹4.02L with the deferral); cumulative −₹25.06L at end-July as built (−₹21.56L with the deferral).
 - **Targets:** 33.8 career enrolments; ≈143 career leads a month; media CAC per paid career enrolment ≤₹9k green (the plan runs at ₹10.6k, amber); utilisation ≥75%; 57.8 masterclass seats.
 
 ### Q4 Aug – Oct 2027 (M10–M12): run, review, prepare Year 2
@@ -146,7 +146,7 @@ Criteria are `recommended_strategy.md` §7.1–§7.3; SG detail from `growth_mar
 |---|---|---|---|---|
 | **G0 Instrumented baseline** | **Fri 15 Jan 2027** (re-check Fri 29 Jan) | Founder data pull complete; CRM + WhatsApp BSP live with ≥95% of leads source- and city-tagged; median first human reply ≤15 min (≤5 min by M6); fee ladder, course pages, refund/EMI policy and GBP published; Lead Trainer hired and shadow-teaching; academy Instagram live; B&WSSC enquiry lodged; CA opinion on GST; consent forms in use; alumni survey sent | Paid tests above ₹15k a month (T1/T2 from 18 Jan); Tranche-T1 spend beyond foundations | Media held at ≤₹15k; no further hiring until data and CRM exist; weekly review. **KT-1** if still unmet at end-February (M4) |
 | **SG1–SG5 formal review** | **Fri 5 Mar 2027**, then weekly | SG1 tracking · SG2 follow-up discipline · SG3 capacity · SG4 unit economics (media CAC ≤₹9k green, ₹9–12k amber, >₹12k red; fully loaded ≤40% of career revenue in Year 1) · SG5 product proof (completion ≥85%, NPS ≥50, ≥30 reviews at ≥4.5, Outcomes Report n ≥30, refunds <10%); four consecutive green weeks before any increase | Readiness decisions for the S1 peak: Flex batch, Destination pilot design, pop-up cities, space heads of terms *subject to G1*. Media stays ≤₹60k until G1 (A-ECO-151) | Amber freezes media; red rolls it back to the last green level; diagnose by route |
-| **G1 Flagship proven, review 1 (planning case)** | **Fri 9 Apr 2027 (M6)** | 2 consecutive L3 cohorts ≥75% full; paid-social lead→enrolment ≥4%; SG4 green or amber; route-level CAC payback ≤3 months; completion ≥85%; NPS ≥50; ≥40% of completers review; trainer-led satisfaction within 0.3/5 of founder-led; team-led counselling conversion ≥75% of founder-led; founder share ≤50%; Outcomes Report (n ≥30) with a "% paid booking ≤90 days" baseline; cumulative cash within the T1 cap. **Proof gate 1 for price step 1:** Outcomes Report published, ≥30 reviews at ≥4.5, portfolio gallery live, published practice hours | **Tranche T2 (up to ₹15L more; cumulative ≤₹30L):** lease and fit-out (April), move 3 May; media ₹80k → ₹1.0L; second counsellor (0.5), second assistant, front desk; pop-up pilots (≤₹2L); hybrid build (we recommend July); second trainer; **price step 1** (₹75k list) | Monthly re-review: Fri 30 Apr, Fri 28 May, Fri 25 Jun |
+| **G1 Flagship proven, review 1 (planning case)** | **Fri 9 Apr 2027 (M6)** | 2 consecutive L3 cohorts ≥75% full; paid-social lead→enrolment ≥4%; SG4 green or amber; route-level CAC payback ≤3 months; completion ≥85%; NPS ≥50; ≥40% of completers review; trainer-led satisfaction within 0.3/5 of founder-led; team-led counselling conversion ≥75% of founder-led; founder share ≤50%; Outcomes Report (n ≥30) with a "% paid booking ≤90 days" baseline; cumulative cash within the T1 cap. **Proof gate 1 for price step 1:** Outcomes Report published, ≥30 reviews at ≥4.5, portfolio gallery live, published practice hours | **Tranche T2 (up to ₹15L more; cumulative ≤₹30L):** lease and fit-out (April), move 3 May; media ₹80k → ₹1.0L; second counsellor (0.5), second assistant, front desk; pop-up pilots (≤₹2L); second trainer; **price step 1** (₹75k list) the month after G1. **₹5L timing-only contingency** available on the founder's sign-off | Monthly re-review: Fri 30 Apr, Fri 28 May, Fri 25 Jun |
 | **G1 latest decision (late case)** | **Fri 30 Jul 2027 (M9)** | As above | As above, one quarter later: fit-out July, move 2 Aug, price step 1 and media ₹1.0L from August (`Staged_G1M9`) | **Tranche T2 not released**; stop-loss state on the ₹10L-plan cost base; re-review at M12 |
 | **T1 cash-cap review** | Monthly; formal no later than **Fri 30 Jul (M9)** | Cumulative cash need vs ₹15L (A-ECO-153). On a Conservative trajectory ≈₹13.4L is used by M9 (methodology §1C #7) | — | Cut to the ₹10L-plan cost base |
 | **Year-1 review** | **Fri 29 Oct 2027 (M12)** | Year-1 results vs `Staged_G1M6`; G1 status | Year-2 plan: Academy Manager (M13, ₹65k, A-ECO-125), third batch slot (A-ECO-220a), Year-2 media; T3 preparation | **KT-10:** G1 still red at M12 → pivot to the boutique path (founder-taught academy plus masterclasses on the ₹10L-plan cost base; ≈52 career students a year; step-back timeline abandoned) |
@@ -186,7 +186,7 @@ Criteria are `recommended_strategy.md` §7.1–§7.3; SG detail from `growth_mar
 | Cumulative cash (end of quarter) | −9.52 | −25.58 | −25.06 | −21.34 | | row 107 |
 | Peak cash need to date | 9.52 | 25.58 | **28.84 (May)** | 28.84 | | row 108 |
 
-Capex detail: Q1 CRM/WhatsApp BSP/GBP/photo-video proof kit ₹1.50L (A-ECO-136) and basic theory recording ₹1.00L (A-ECO-152). Q2, in April after G1: fit-out ₹10.40L (1,300 sq ft × ₹800, A-ECO-113/121), 4 extra stations ₹1.20L (A-ECO-122), deposit ₹3.12L (3 months × ₹1.04L rent, A-ECO-114/123). Q3: hybrid pre-work build + LMS set-up ₹3.50L (A-ECO-129), booked in May by the model. Memo: Year-1 EBITDA after a ₹75k/month founder-role salary is −₹7.11L (A-ECO-138).
+Capex detail: Q1 CRM/WhatsApp BSP/GBP/photo-video proof kit ₹1.50L (A-ECO-136) and basic theory recording ₹1.00L (A-ECO-152). Q2, in April after G1: fit-out ₹10.40L (1,300 sq ft × ₹800, A-ECO-113/121), 4 extra stations ₹1.20L (A-ECO-122), deposit ₹3.12L (3 months × ₹1.04L rent, A-ECO-114/123). Q3: the model books the recorded hybrid library + LMS set-up ₹3.50L (A-ECO-129) in May; Gate D defers it to Tranche T3, so the plan's Year-1 capex is ₹17.22L, its Year-1 net cash −₹17.84L and its peak ₹25.58L (end-April) [EST: model rows 104–107 less ₹3.5L from M7]. EBITDA is unchanged (capex). Memo: Year-1 EBITDA after a ₹75k/month founder-role salary is −₹7.11L (A-ECO-138).
 
 ### 4.2 Late case and reference runs by quarter, ₹ lakh [EST]
 
@@ -206,22 +206,21 @@ Sources: `Staged_G1M9`, `Outlook_Base`, `Outlook_Conservative`, `Plan10L_BaseRat
 
 **Reading [REC]:** the Staged Plan costs about ₹4.9L of Year-1 EBITDA versus the unstaged Base bundle, mainly because step 1 realises ₹66.7k rather than ₹80k (methodology §1A reading 2). In exchange it caps the cash at risk before proof at ≈₹11L instead of committing ₹14.7L of space before any cohort has been proven. More money does not buy more Year-1 profit: the ₹50L plan at Base rates loses ₹3.0L with a ₹44.2L cash need.
 
-### 4.3 Tranches, the cumulative cap and the hybrid-build timing
+### 4.3 Tranches, the contingency and the cash line
 
 | Tranche | Released | Authorised (`recommended_strategy.md` §5) | Planning-case use [EST] | What it buys |
 |---|---|---|---|---|
-| **T1 Prove** | D3, now | Up to ₹15L | **₹10.88L** (cumulative cash need to M5, the month before G1) | Base team from M1; set-up kit ₹1.5L; website ₹1.2L; B&WSSC/legal/accounting ₹1.5L; basic recording ₹1.0L; media ≤₹15k to G0 and ≤₹60k to G1; studio stations only |
-| **T2 Build** | G1 (planning case Fri 9 Apr 2027) | Up to ₹15L more; **cumulative ≤₹30L** | +₹17.96L to the ₹28.84L peak in May. That is more than ₹15L on its own, but it fits the cumulative cap because T1 under-ran its cap by ₹4.1L | Space ₹14.72L; hybrid build ₹3.5L; media ramp; second counsellor, second assistant, front desk; pop-up pilots; second trainer |
-| **T3 Extend** | G2 (Jan–Apr 2028) | ₹4–10L from operating cash plus the unreleased ₹30–50L reserve | Year 2 | Pop-up circuit, accommodation partners, third trainer, regional media; Academy Manager (model M13) |
+| **T1 Prove** | D3, now | Up to ₹15L | **₹10.88L** (cumulative cash need to M5, the month before G1) | Base team from M1; set-up kit ₹1.5L; website ₹1.2L; B&WSSC/legal/accounting ₹1.5L; basic recording ₹1.0L; media ≤₹15k to G0 and ≤₹60k to G1; studio stations only; weekend/evening studio slot from M5 |
+| **T2 Build** | G1 (default decision at M6: Fri 9 Apr 2027; latest M9) | Up to ₹15L more; **cumulative ≤₹30L planned** | +₹14.70L to a ₹25.58L peak in April (with the hybrid library deferred). As built, the model shows +₹17.96L to ₹28.84L in May, because it still books the library | Space at G1 + 1 (₹14.72L); media ramp; second counsellor, second assistant, front desk; pop-up pilots (≤₹2L); second trainer; price step 1 |
+| **Contingency** | Founder's sign-off only | **₹5L, timing only** (Year-1 authorisation ₹35L) | Not used in the plan | A later G1, GST or deposit timing, a slow-paying cohort; **never new scope** |
+| **T3 Extend** | G2 (Jan–Apr 2028) | ₹4–10L from operating cash plus the unreleased ₹35–50L reserve | Year 2 | **Recorded hybrid pre-work library and LMS (₹3.5L)**; pop-up circuit; accommodation partners; third trainer; regional media; Academy Manager (model M13); price step 2 |
 | **T4 Site** | G3a (≥M24) | ₹2–5L per partner site | — | Partner-hosted satellite |
 
-**The headroom problem and the fix [REC].** At ₹28.84L, the planning case leaves ₹1.16L under the ₹30L cumulative cap; about ₹1–2L of slippage breaches it (methodology §1A reading 3). **Schedule the ₹3.5L hybrid build for July (M9) instead of May (M7).** The cumulative cash position then reads −₹25.34L in May, −₹23.26L in June and −₹25.06L in July, so **the peak falls to ≈₹25.6L (end-April) and headroom rises to ≈₹4.4L** [EST: `Staged_G1M6` row 107 with ₹3.5L moved from M7 to M9]. Nothing is lost: the Jun–Jul Destination pilot runs on live-online pre-work plus the T1 recordings (`recommended_strategy.md` §10 #1), and the model's Destination format and LMS only start in August.
+**The cash line [EST].** With the hybrid library deferred, the planning case's cumulative cash position reads −₹25.58L (Apr), −₹25.34L (May), −₹23.26L (Jun), −₹21.56L (Jul) and −₹17.84L at year-end (`Staged_G1M6` row 107 with ₹3.5L removed from M7). The late case peaks at ≈₹24.9L in July (fit-out month). Both stay below the **KT-11 cash-warning line of ₹28L** (within ₹2L of the ₹30L planned line). The model as built (₹28.84L) would trip KT-11 in May, which is the arithmetic behind Gate D's deferral. Economics is confirming the deferred-library run (`recommended_strategy.md` §11.3 outstanding #1).
 
-**Options for the reserve (founder to choose at most one; [EST] arithmetic on the model, assuming the July hybrid build):**
-- **Second trainer from August** at ₹38k/month (A-BM-04b): +₹1.14L in Year 1; peak unchanged (the peak precedes it). Recommended (§5, §7).
-- **0.5-FTE Growth Lead from November** at ₹32.5k/month (0.5 × A-ECO-125): +₹3.9L in Year 1; peak ≈₹28.0L (July).
-
-If the Lead Strategist changes the contingency rule in `recommended_strategy.md` §5, that rule governs.
+**Second trainer and Growth Lead options (inside the ₹30L planned line; the contingency cannot fund new scope):**
+- **Second trainer from August** at ₹38k/month (A-BM-04b), a Tranche-T2 item: +₹1.14L in Year 1; peak unchanged (the peak precedes it). **Recommended** (§5, §7).
+- **0.5-FTE Growth Lead from November** at ₹32.5k/month (0.5 × A-ECO-125): +₹3.9L in Year 1; peak ≈₹27.6L (May), within ₹0.4L of the KT-11 line. Not recommended unless D5a options A/B fail.
 
 ---
 
@@ -327,7 +326,7 @@ Legend: **■** build / set up · **●** milestone · **◆** gate or decision 
 | Workstream | Oct-26 | Nov | Dec | Jan-27 | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct-27 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Data & baseline | ■ Pull | ■ Audit | ● Baseline | · | · | · | ● Re-fcst | · | · | ● Re-fcst | · | · | ● Y2 plan |
-| CRM, WhatsApp, tracking | ■ Select | ● Live | ■ CAPI | ◆ SG1/SG2 | · | · | · | ■ Seat 2 | · | ■ LMS | ● LMS live | · | · |
+| CRM, WhatsApp, tracking | ■ Select | ● Live | ■ CAPI | ◆ SG1/SG2 | · | · | · | ■ Seat 2 | ■ Live-online tools | · | · | · | · |
 | GBP & reviews | ■ Claim | ● Verified | · | ● 15 | ● 30 | · | · | · | · | · | · | · | · |
 | Website & SEO | ■ Brief | ● Core pgs | ● 4 SEO | · | ● 12 SEO | · | · | ● New fees | ■ City pgs | ● City pgs | · | ● Outcomes hub | · |
 | Fees & pricing | ■ Draft | ● Fee page | ■ T5 | · | ■ Price test | · | ◆ Proof gate 1 | ● ₹75k list | · | · | · | ● Proof pack 2 | · |
@@ -341,14 +340,14 @@ Legend: **■** build / set up · **●** milestone · **◆** gate or decision 
 | Paid tests | — | ● Plumbing | ● T3 | ● T1/T2 live | · | ● T1 read | · | · | ● T6 | · | · | · | · |
 | Content system | ■ Set up | ● Academy IG | · | ● YouTube | · | · | · | · | · | · | · | · | · |
 | Products (taster, L4, S5) | — | S5 season | ● Taster 1 | ● MC 1 | MC | MC | MC | MC | MC | MC | MC ×2 | MC ×2 | S5 peak |
-| Space & capacity | ■ Audit | · | · | ■ Long-list | ■ Shortlist | ■ Heads of terms | ◆ G1 → fit-out | ● Move (12) | · | ■ Wknd batch? | · | · | ■ Y2 slot |
+| Space & capacity | ■ Audit | · | · | ■ Long-list | ■ Shortlist | ● Studio wknd slot; ■ Heads of terms | ◆ G1 → fit-out | ● Move (12) | · | ■ Wknd batch? | · | · | ■ Y2 slot |
 | Credential, legal, GST | ■ CA / GST | ● Policies | · | ● B&WSSC | ■ Evaluate | · | ● Decision | · | · | · | · | · | · |
-| Out-of-town & Destination | — | · City tag | · | · | ■ Partners | ■ Pilot design | ● 2–3 partners | · | ● Pilot | ■ Hybrid build | ● Format live | · | ● Review |
+| Out-of-town & Destination | — | · City tag | · | · | ■ Partners | ■ Pilot design | ● 2–3 partners | · | ● Pilot | ● Pilot review | ● Format live | · | ● Review |
 | Regional pop-ups | — | — | — | — | — | ● Cities | — | — | — | ● Ludhiana | — | ● Patiala | — |
 | Alumni, referral, Pro Circle | — | ● Codes | · | · | ■ T8 | · | · | ● Pro Circle | · | · | · | · | ■ Desk log |
 | Founder share (path) | ~100% | 92% | 83% | 75% | 67% | 58% | 50% | 48% | 47% | 45% | 43% | 42% | 40% |
 | Gates & reviews | — | — | — | ◆ G0 15 Jan | — | ◆ SG 5 Mar | ◆ G1 9 Apr | ◆ G1 re-rev. | ◆ G1 re-rev. | ◆ G1 latest 30 Jul | — | — | ◆ Y1 review 29 Oct |
-| Tranches | ● T1 ≤₹15L | — | — | — | — | — | ● T2 ≤₹15L | — | — | — | — | — | ■ T3 prep |
+| Tranches | ● T1 ≤₹15L | — | — | — | — | — | ● T2 ≤₹15L (+₹5L contingency) | — | — | — | — | — | ■ T3 prep (incl. hybrid library) |
 
 ---
 
@@ -359,12 +358,12 @@ Legend: **■** build / set up · **●** milestone · **◆** gate or decision 
 | # | Risk or dependency | Signal | Impact (model) | Mitigation / owner |
 |---|---|---|---|---|
 | 1 | G1 evidence not ready by 9 April | Cohort 2 under 75% full; fewer than 12 paid career enrolments in the trailing 8 weeks (SG4 needs them) | Late case: −₹8.6L revenue, −₹3.7L EBITDA, ≈15 fewer enrolments | Start cohort 1 on 4 Jan and cohort 2 on 1 Mar; monthly G1 re-reviews; capacity bridge (weekend batch in the studio) while waiting (founder) |
-| 2 | Cumulative cash breaches ₹30L | Overruns of ₹1–2L | Planning-case headroom only ₹1.2L | Hybrid build in July (headroom ≈₹4.4L); monthly cash vs tranche review (founder + CA) |
+| 2 | Cumulative cash nears the ₹30L line | Cash within ₹2L of the line, or a month's cash use ahead of plan by more than the remaining contingency | Model as built leaves ₹1.2L; ≈₹4.4L with the hybrid library deferred | Library in Tranche T3; **KT-11:** freeze discretionary spend (media above test level, pop-ups, hires not yet started); founder decides on the ₹5L timing-only contingency; monthly cash report (founder + CA) |
 | 3 | Fit-out overruns three weeks | Contractor timeline | May intake starts in the studio | Quotes and heads of terms in March; phase the fit-out (stations first) |
 | 4 | Lead Trainer is a single point of failure | Teach-back fails; resignation | Founder-share path stalls; conversion ±20% swings Base Year-1 EBITDA by ₹15.1L (methodology §1B #24) | Two finalists; documented method; public educator profile; Assistant #1 developed as back-up; second trainer from August |
 | 5 | Price step 1 backfires | QL rate or counselled→applied falls >20% in the next intake | Fees are the top sensitivity (₹23.0L Base swing) | **KT-5:** revert for one intake and add proof; L2 Foundation stays as the entry |
 | 6 | CAC above ₹12k per paid career enrolment | SG4 red for 2 weekly reviews | Planning case already amber (₹10.6k; fully loaded 49%) | Hold media; shift to referral, organic, Search; **KT-4** kill rules per cell |
-| 7 | Capacity binds (Apr; Jul–Aug) | Waitlist ≥15% of seats | Lost enrolments (19% of April demand; 30% of July) | Waitlist to next intake; weekend batch from July (A-ECO-220a) |
+| 7 | Capacity binds (Apr; Jul–Aug) | Waitlist ≥15% of seats | Lost enrolments in the model (19% of April demand; 30% of July) | **Weekend/evening studio slot from March (M5)** (Gate D; not yet in the model, §11.3 outstanding #2); waitlist to next intake; extra weekend batch in the new academy from July (A-ECO-220a) |
 | 8 | Founder hours rise, not fall, in Year 1 | >120 h a month May–Jul | Burnout; studio season squeezed | Second trainer from August; D6 path is a ceiling |
 | 9 | Conservative trajectory | Enrolments track ~40% of plan; CAC >₹12k | ₹13.4L of T1 used by M9; ₹14.9L by M12 | T1 cash-cap review by M9; ₹10L-plan cost base; **KT-10** at M12 |
 | 10 | GST treatment | No CA opinion before the fee page | ₹12.7L swing in Base Year-1 EBITDA | CA opinion by day 21 (D8) |
