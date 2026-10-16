@@ -31,3 +31,4 @@ Note: the brief suggests 3–5 concurrent agents. Competitive intelligence was s
 | 9d | Economics Gate E fixes (C1, C2, C3 cost, C4, C5) | opus (resumed #9) | Gate E | economics/* | done — planning case G1@M9; downside, payback/IRR, tornado on Staged; 92 checks pass |
 | 7c | Growth Gate E fixes (C6, C7, defects) | opus (resumed #7) | Gate E | own 5 files | done — Destination pilot Aug–Sep 2027; media ≈₹27.0L total (₹30L plan) |
 | 10d | Lead Strategist Gate E re-decision | fable (resumed #10) | Gate E | 3 strategy/summary files | dispatched |
+| 13 | Presentation Production — phase 1 (design system + component library) | opus | Gate F prep | final/presentation_source/{theme,components,demo_build}.js, README.md | dispatched (parallel with #10d; no content/numbers) |
